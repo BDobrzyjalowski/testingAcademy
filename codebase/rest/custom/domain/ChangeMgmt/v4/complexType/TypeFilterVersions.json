@@ -1,0 +1,13 @@
+{
+    "name":"TypeFilterVersions",
+    "description":"TypeFilterVersions collection",
+    "attributes":[
+        {
+         "name":"TypeFilterName",
+         "type":"String"
+        }, {
+         "name":"TypeUsageMaturity",
+         "type":"String"
+        }
+    ]
+}

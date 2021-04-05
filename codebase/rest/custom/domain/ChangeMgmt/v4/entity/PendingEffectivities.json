@@ -1,0 +1,23 @@
+{
+	"name": "PendingEffectivity",
+	"collectionName": "PendingEffectivities",
+	"type": "wcType",
+	"wcType": "wt.eff.PendingEff",
+	"description": "Pending Effectivity",
+	"includeInServiceDocument": true,
+	"operations": "READ",
+	"hasCommonProperties": false,
+	"parent": {
+		"name": "WindchillEntities"
+	},
+	"inherits": [],
+	"attributes": [
+		{
+			"name": "EffectivityQualifier",
+			"internalName": "effTypeModifier",
+			"type": "PTC.EnumType"
+		}
+	],
+	"navigations": [
+	]
+}

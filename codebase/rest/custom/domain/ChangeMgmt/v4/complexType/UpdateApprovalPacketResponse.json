@@ -1,0 +1,15 @@
+{  
+    "name" : "UpdateApprovalPacketResponse",
+    "description": "Response for Update Approval Packet",
+    "inherits":[],
+    "attributes" : [
+        {
+            "name" : "code",
+            "type":"String"
+        },
+        {
+            "name" : "message",
+            "type":"String"
+        }
+    ]
+}

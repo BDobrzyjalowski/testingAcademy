@@ -1,0 +1,4 @@
+{
+    "extends": "ChangeNotice",
+     "operations": "CREATE,READ,UPDATE",
+}

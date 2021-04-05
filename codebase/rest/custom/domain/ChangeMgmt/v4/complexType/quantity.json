@@ -1,0 +1,18 @@
+{
+  "name": "quantity",
+  "description": "quantity",
+  "attributes": [
+    {
+      "name": "old",
+      "type": "Int64"
+    },
+    {
+      "name": "new",
+      "type": "Int64"
+    },
+    {
+      "name": "changeFlag",
+      "type": "String"
+    }
+  ]
+}

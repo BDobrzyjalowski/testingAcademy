@@ -1,0 +1,24 @@
+{
+  "name": "CalculateDeltaDataResponse",
+  "description": "Response for Calculate Deltadata",
+  "inherits": [],
+  "attributes": [
+    {
+      "name": "SBBID",
+      "type": "String"
+    },
+    {
+      "name": "releaseRequestID",
+      "type": "Int64"
+    },
+    {
+      "name": "approvalPacketChangeDate",
+      "type": "String"
+    },
+    {
+      "name": "releasePositionsDelta",
+      "type": "releasePositionsDelta",
+      "isCollection": true
+    }
+  ]
+}

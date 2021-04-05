@@ -1,0 +1,15 @@
+{  
+    "name" : "ApprovalStatusUpdateResponse",
+    "description": "Response for Update Approval Status",
+    "inherits":[],
+    "attributes" : [
+        {
+            "name" : "response",
+            "type":"Int16"
+        },
+        {
+            "name" : "message",
+            "type":"String"
+        }
+    ]
+}

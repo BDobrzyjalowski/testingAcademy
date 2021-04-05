@@ -1,0 +1,58 @@
+{
+  "name": "releasePositionsDelta",
+  "description": "Release Positions Delta",
+  "attributes": [
+    {
+      "name": "node",
+      "type": "String"
+    },
+    {
+      "name": "class",
+      "type": "String"
+    },
+    {
+      "name": "posVar",
+      "type": "String"
+    },
+    {
+      "name": "hPvGuid",
+      "type": "hPvGuid",
+      "isCollection": false
+    },
+    {
+      "name": "langtext",
+      "type": "langtext",
+      "isCollection": false
+    },
+    {
+      "name": "matNr",
+      "type": "matNr",
+      "isCollection": false
+    },
+    {
+      "name": "quantity",
+      "type": "quantity",
+      "isCollection": false
+    },
+    {
+      "name": "materialUnit",
+      "type": "materialUnit",
+      "isCollection": false
+    },
+    {
+      "name": "boole",
+      "type": "boole",
+      "isCollection": false
+    },
+        {
+      "name": "allDerivatives",
+      "type": "allDerivatives",
+      "isCollection": false
+    },
+        {
+      "name": "derivatives",
+      "type": "derivatives",
+      "isCollection": true
+    }
+  ]
+}

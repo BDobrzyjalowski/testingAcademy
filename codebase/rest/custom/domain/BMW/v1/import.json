@@ -1,0 +1,39 @@
+{
+    "imports":[
+		{name="DataAdmin", version="1"},
+        {name="ProdMgmt", version="1"}
+    ],
+    "functions":[
+        {
+            "name": "GetEtlStatusFlag",
+            "importName": "GetEtlStatusFlag",
+            "description": "Gets etl status flag",
+            "includeInServiceDocument": true,
+            "parameters": [
+            ],
+            "returnType": {
+                "type": "Int32",
+                "isCollection": false
+            }
+        },
+		{
+            "name": "AdjustFolderStructure",
+            "importName": "AdjustFolderStructure",
+            "description": "Adjust Folder Structure",
+            "includeInServiceDocument": true,
+            "parameters": [
+			{
+					"name": "fileName",
+					"type": "String",
+					"isNullable": false,
+					"isCollection": false
+				}
+            ],
+            "returnType": {
+                "type": "Int32",
+                "isCollection": false
+            }
+        }
+    ],
+    "actions":[]
+}

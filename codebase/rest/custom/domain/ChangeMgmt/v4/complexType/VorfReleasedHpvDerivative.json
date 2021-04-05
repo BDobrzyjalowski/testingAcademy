@@ -1,0 +1,15 @@
+{
+  "name": "VorfReleasedHpvDerivative",
+  "description": "Derivative",
+  "attributes": [
+    {
+      "name": "DerivativeName",
+      "type": "String"
+    },
+    {
+      "name": "Releases",
+      "type": "VorfReleasedHpvRelease",
+      "isCollection": true
+    }
+  ]
+}

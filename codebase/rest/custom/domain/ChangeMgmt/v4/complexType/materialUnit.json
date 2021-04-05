@@ -1,0 +1,18 @@
+{
+  "name": "materialUnit",
+  "description": "materialUnit",
+  "attributes": [
+    {
+      "name": "old",
+      "type": "String"
+    },
+    {
+      "name": "new",
+      "type": "String"
+    },
+    {
+      "name": "changeFlag",
+      "type": "String"
+    }
+  ]
+}

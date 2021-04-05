@@ -1,0 +1,23 @@
+<aspectj>
+    <aspects>
+        <aspect name="com.bmw.psmg.sbb.aspects.ClientNavigationCriteriaServiceImplAspect"/>
+        <aspect name="com.bmw.psmg.sbb.aspects.TypeDataUtilityAspect"/>
+        <aspect name="com.bmw.psmg.sbb.aspects.PartIconDelegateAspect"/>
+        <aspect name="com.bmw.psmg.sbb.aspects.ConfigurableLinksDataDelegateAspect"/>
+        <aspect name="com.bmw.psmg.sbb.aspects.DefaultModuleVariantInfoHistoryDelegateAspect"/>
+    </aspects>
+
+    <weaver>
+        <include within="com.bmw.psmg.sbb.aspects.ClientNavigationCriteriaServiceImplAspect"/>
+		<include within="com.ptc.windchill.option.delegate.DefaultModuleVariantInfoHistoryDelegate"/>
+        <include within="com.ptc.expansionui.server.ClientNavigationCriteriaServiceImpl"/>
+        <include within="com.bmw.psmg.sbb.aspects.TypeDataUtilityAspect"/>
+        <include within="com.ptc.windchill.enterprise.object.dataUtilities.TypeDataUtility"/>
+        <include within="com.bmw.psmg.sbb.aspects.PartIconDelegateAspect"/>
+        <include within="com.ptc.windchill.enterprise.part.commands.delegate.WTPartIconDelegate"/>
+        <include within="com.ptc.windchill.enterprise.part.commands.delegate.PartIconDelegate"/>
+        <include within="com.ptc.windchill.enterprise.object.configurablelink.ConfigurableLinksDataDelegate"/>
+        <include within="com.bmw.psmg.sbb.aspects.ConfigurableLinksDataDelegateAspect"/>
+        <include within="com.bmw.psmg.sbb.aspects.DefaultModuleVariantInfoHistoryDelegateAspect"/>
+    </weaver>
+</aspectj>

@@ -1,0 +1,5204 @@
+.icon-wait {
+}
+
+.x-portal-insert div {
+    height: 4px;
+    font-size: 0px;
+    border: 2px dotted blue;
+}
+
+.x-modal {
+    position: absolute;
+    z-index: 10;
+    background-color: black;
+    filter: alpha(opacity = 10);
+    opacity: .1;
+    left: 0px;
+    top: 0px;
+}
+
+.x-border {
+    border: 1px solid #DADADA;
+}
+
+.x-border-top {
+    border-top: 1px solid #DADADA;
+}
+
+.x-layout-popup {
+    background-color: #dff3d8;
+    border: 1px solid #DADADA;
+}
+
+.x-panel-popup-body {
+    border-top: 1px solid #DADADA;
+}
+
+.x-cursor-row-resize {
+    cursor: n-resize;
+    cursor: row-resize;
+}
+
+.x-drag-proxy {
+    border: 1px dashed #3b5a82;
+    background-color: #EDEDED;
+    filter: alpha(opacity = 50);
+    opacity: .5;
+    background-color: #c3daf9;
+}
+
+/** 
+   Styles for ext date picker added back for SPR 1997087.  The colors/fonts are not
+   consistent with the JCA theme, but as this component is inteded for use within the
+   PSB, we'll leave the styles as is for now, pending any decision to change them. 
+**/
+.x-date-picker {
+    background-color:#fff;
+    border-color:#1b376c;
+}
+
+.x-date-middle,.x-date-left,.x-date-right {
+    color:#fff;
+    font:bold 11px "sans serif", tahoma, verdana, helvetica;
+}
+
+.x-date-middle .x-btn-mc em.x-btn-arrow {
+}
+
+.x-date-right a {
+}
+
+.x-date-left a {
+}
+
+.x-date-inner th {
+    background-color:#dfecfb;
+    border-bottom-color:#a3bad9;
+    font:normal 10px arial, helvetica,tahoma,sans-serif;
+    color:#233d6d;
+}
+
+.x-date-inner td {
+    border-color:#fff;
+}
+
+.x-date-inner a {
+    font:normal 11px arial, helvetica,tahoma,sans-serif;
+    color:#000;
+}
+
+.x-date-inner .x-date-active {
+    color:#000;
+}
+
+.x-date-inner .x-date-today a {
+    border-color:#8B0000;
+}
+
+.x-date-inner .x-date-selected span {
+    font-weight:bold;
+}
+
+.x-date-inner .x-date-prevday a,.x-date-inner .x-date-nextday a {
+    color:#aaa;
+}
+
+.x-date-bottom {
+    border-top-color:#a3bad9;
+    background-color:#dfecfb;
+}
+
+.x-date-inner a:hover,.x-date-inner .x-date-disabled a:hover {
+    color:#000;
+    background-color:#ddecfe;
+}
+
+.x-date-inner .x-date-disabled a {
+    background-color:#eee;
+    color:#bbb;
+}
+
+.x-date-mmenu {
+    background-color:#eee!important;
+}
+
+.x-date-mmenu .x-menu-item {
+    font-size:10px;
+    color:#000;
+}
+
+.x-date-mp {
+    background-color:#fff;
+}
+
+.x-date-mp td {
+    font:normal 11px arial, helvetica,tahoma,sans-serif;
+}
+
+.x-date-mp-btns button {
+    background-color:#083772;
+    color:#fff;
+    font:normal 11px arial, helvetica,tahoma,sans-serif;
+    border-color:#36c #005 #005 #36c;
+}
+
+.x-date-mp-btns {
+    background-color:#dfecfb;
+}
+
+.x-date-mp-btns td {
+    border-top-color:#c5d2df;
+}
+
+td.x-date-mp-month a,td.x-date-mp-year a {
+    color:#15428b;
+}
+
+td.x-date-mp-month a:hover,td.x-date-mp-year a:hover {
+    color:#15428b;
+    background-color:#ddecfe;
+}
+
+.x-date-mp-ybtn a {
+}
+
+td.x-date-mp-sep {
+    border-right-color:#c5d2df;
+}
+
+.x-date-picker,.x-date-picker a {
+    font-size: 13px;
+}
+
+.x-date-days td {
+    border-bottom:1px solid #A3BAD9;
+    border-collapse:separate;
+    color:#233D6D;
+    cursor:default;
+    font-size:10px;
+    font-size-adjust:none;
+    font-stretch:normal;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    line-height:normal;
+    text-align:right!important;
+    padding:0;
+}
+
+.x-date-picker .x-date-header {
+    height:22px;
+    left:10px;
+    top:10px;
+    width:157px;
+}
+
+.x-date-middle .x-btn .x-btn-text,.x-date-header .x-btn .x-btn-text {
+    color:#fff;
+}
+
+.x-date-inner .x-date-selected a,td.x-date-mp-sel a {
+    background-color:#dfecfb;
+    border-color:#8db2e3;
+}
+
+.x-form-label {
+    padding: 2px 3px 3px 0px;
+    font-size: 12px;
+}
+
+.x-form-group-label,.x-form-cb-label {
+    padding-right: 10px;
+}
+
+.x-form-list {
+    border: 1px solid #B5B8C8;
+}
+
+.x-form-file-wrap .x-form-file-text {
+    color: #777;
+}
+
+.ext-ie .x-item-disabled .x-btn-mc img {
+    filter: alpha(opacity=60);
+}
+
+.ext-ie .x-item-disabled {
+    color: #B0B0B0;
+}
+
+/* SPR# 2167567 - Disabled buttons in Structure Component toolbar look like they are enabled in IE  */
+.ext-ie div#catGSEView table.x-item-disabled button {
+    filter: alpha(opacity=30);
+}
+
+/* D-18983 - Fix Related information menu in IE and PROE grayed out to be unreadable  */
+.ext-ie .x-item-disabled .x-menu-item-icon {
+    filter: alpha(opacity=30);
+}
+
+.x-grid3-row-body {
+    white-space: normal;
+    font-size: 13px;
+}
+
+
+.x-grid3-footer {
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.x-grid3-footer-row {
+    border-top: 1px solid #EEEEEE;
+    background-color: #f6f6f6;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: ignore;
+}
+
+.x-grid3-footer-row td {
+    line-height: 13px;
+    vertical-align: top;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.x-insert-bar td {
+    line-height: 1px;
+    font-size: 1px;
+}
+
+.x-insert-left {
+}
+
+.x-insert-mid {
+}
+
+.x-insert-right {
+}
+
+
+.x-ftree-selected .x-ftree-text {
+    background-color: #d9e8fb;
+}
+
+.x-ftree-node-over .x-ftree-text {
+    background-color: #eee;
+}
+
+.x-ftree-text {
+    color: black;
+    white-space: nowrap;
+    text-decoration: none;
+    color: black;
+    padding-left: 4px;
+    vertical-align: middle;
+    line-height: 18px;
+    padding: 2px 4px 4px 4px;
+}
+
+/* some default icons for leaf/folder */
+.x-ftree-expanded .x-ftree-icon {
+}
+
+.x-ftree-leaf .x-ftree-icon {
+}
+
+.x-ftree-collapsed .x-ftree-icon {
+}
+
+/* Arrows */
+.x-ftree-arrows .x-ftree-joint {
+}
+
+.x-ftree-arrows .x-ftree-joint-plus {
+}
+
+.x-ftree-arrows .x-ftree-joint-minus {
+}
+
+.x-ftree2-highlightrow {
+  border: 1px dotted #545352;
+}
+
+.x-ftree2-selected {
+    background-color: #d9e8fb !important;
+}
+
+.x-ftree2-node-over {
+    background-color: #eee;
+}
+
+.x-ftree2-node-drop {
+    background-color: #defadc;
+}
+
+
+.x-ftree2-text span {
+    color: black;
+    white-space: nowrap;
+    text-decoration: none;
+    color: black;
+    padding: 2px 4px 2px 1px;
+    display: block;
+}
+
+/* some default icons for leaf/folder */
+.x-ftree2-expanded .x-ftree2-icon {
+}
+
+.x-ftree2-leaf .x-ftree2-icon {
+}
+
+.x-ftree2-collapsed .x-ftree2-icon {
+}
+
+/* Arrows */
+.x-ftree2-arrows .x-ftree2-joint {
+}
+
+.x-ftree2-arrows .x-ftree2-joint-plus {
+}
+
+.x-ftree2-arrows .x-ftree2-joint-minus {
+}
+
+.x-date-picker, .x-date-picker a {
+    font-size: 13px; 
+}
+
+.x-date-right-icon {
+    margin-right: 2px;
+    text-decoration: none !important;
+}
+
+.x-date-left-icon {
+    margin-left: 4px;
+    text-decoration: none !important;
+}
+
+.x-date-inner .x-date-active-hover {
+}
+
+.x-menu {
+    border: 1px solid;
+    -moz-outline: none;
+    outline: 0 none;
+}
+
+.x-menu-text {
+    
+    border-style: solid;
+    border-color:#DAE6F4 #DADADA #DADADA #DAE6F4;
+    border-width: 1px;
+    margin:-2px -2px 0;
+    color:#15428b;
+    display:block;
+    padding:3px;
+}
+
+.x-menubar {
+    padding: 3px;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    cursor: default;
+    border-color: #a9bfd3;
+    background-color: #d0def0;
+    padding: 3px;
+}
+
+.x-menubar-item {
+    padding: 1px 8px;
+}
+
+.x-menubar-item-over {
+    background-color: #98c5f5;
+}
+
+.x-menubar-item-active {
+    background-color: #98c5f5;
+}
+
+.arrow-top {
+}
+.arrow-bottom {
+}
+.arrow-up {
+}
+.arrow-down {
+}
+.arrow-left {
+}
+.arrow-double-left {
+}
+.arrow-right {
+}
+.arrow-double-right {
+}
+.x-info {
+    border-style: solid;
+    border-color: #DADADA;
+    border-width: 0;
+    z-index: 99999999;
+}
+
+.x-info-header {
+    overflow: hidden;
+    zoom: 1;
+    color: black;
+    padding: 5px 3px 4px 5px;
+    line-height: 15px;
+}
+
+.x-info-tl .x-info-header {
+    color: #555555;
+    font-size: 13px;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: normal;
+    padding: 5px 0 4px 0;
+    border: 0 none;
+}
+
+.x-info-tc {
+    overflow: hidden;
+}
+
+.x-info-tl {
+    padding-left: 6px;
+    zoom: 1;
+}
+
+.x-info-tr {
+    zoom: 1;
+    padding-right: 6px;
+}
+
+.x-info-bc {
+    zoom: 1;
+    font-size: 0px;
+}
+
+.x-info-bc .x-info-footer {
+    zoom: 1;
+}
+
+.x-info-bl {
+    padding-left: 6px;
+    zoom: 1;
+}
+
+.x-info-br {
+    padding-right: 6px;
+    zoom: 1;
+}
+
+.x-info-mc {
+    border: 0 none;
+    padding: 0;
+    margin: 0;
+}
+
+.x-info-mc .x-info-body {
+    border: 0 none;
+}
+
+.x-info-ml {
+    padding-left: 6px;
+    zoom: 1;
+}
+
+.x-info-mr {
+    padding-right: 6px;
+    zoom: 1;
+}
+
+.x-info-body {
+    border-top: 0 none;
+    overflow: hidden;
+    position: relative; /* added for item scroll positioning */
+    zoom: 1;
+    color: #555555;
+    font-size: 12px;
+    font-size-adjust: none;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+}
+
+.x-combo-over {
+    border: 1px dotted #B5B4B4 !important;
+    cursor: pointer;
+}
+
+.x-view {
+  -moz-outline: none;
+  -moz-user-focus: normal;
+  outline: 0 none;
+  background-color: white;
+  cursor: default;
+  border: 1px solid #DADADA;
+  overflow: auto;
+  padding: 0px;
+  zoom: 1;
+}
+
+.x-view-item {
+    border: 1px solid #FFFFFF;
+    font-size: 12px;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: normal;
+    overflow: hidden;
+    padding: 2px;
+    white-space: nowrap;
+}
+
+.x-view-item-over {
+    border: 1px dotted #dddddd !important;
+    cursor: pointer;
+}
+
+.x-view-item-sel {
+    border: 1px dotted #A3BAE9 !important;
+    cursor: pointer;
+}
+
+.x-view-item-check td {
+    font-size: 12px;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding-left: 1px;
+}
+
+.x-splitbar-shim {
+    filter: alpha(opacity = 1);
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: white;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    -moz-outline: none;
+    -moz-user-focus: normal;
+    outline: 0 none;
+}
+
+.x-vsplitbar {
+    position: absolute;
+    z-index: 3;
+    cursor: e-resize;
+    cursor: col-resize;
+}
+
+.x-hsplitbar {
+    position: absolute;
+    font-size: 1px;
+    line-height: 1px;
+    z-index: 3;
+    cursor: s-resize;
+    cursor: row-resize;
+}
+
+.x-status-busy {
+}
+.x-status-text-panel {
+    border: 1px solid;
+    border-color: #DADADA #fff #fff #DADADA;
+}
+
+.tree-folder {
+}
+
+.tree-folder-open {
+}
+
+.x-grid3-td-numberer div {
+    font-size: 13px;
+    color: #444444;
+    padding: 3px 0px 0 5px !important;
+}
+
+.x-color-palette a.x-color-palette-hover, .x-color-palette a.x-color-palette-sel {
+    border-color:#8bb8f3;
+    background-color: #deecfd;
+}
+
+.x-aria-focusframe-side {
+    background-color: #15428B;
+    line-height: 2px;
+    font-size: 2px;
+}
+
+.x-tbar-refresh{
+}
+
+.x-grid3-hd-row .x-grid3-hd {
+    border-left-color: #FFFFFF;
+    border-right-color: transparent;
+}
+
+.x-grid-group-hd .x-grid-group-div {
+    color:#3764a0;
+}
+.x-grid-with-col-lines .x-grid3-row{
+    border-top-color:#ededed;
+}
+
+.x-grid3-check-col-disabled {
+    background-color:transparent;
+}
+
+.x-row-editor-header {
+}
+.x-row-editor-footer {
+}
+.x-row-editor-body {
+}
+.x-row-editor .x-btns {
+}
+.x-row-editor .x-btns .x-plain-bwrap {
+}
+.x-row-editor .x-btns .x-plain-body {
+}
+
+.x-tree3-loading {
+}
+
+.x-tree3-node-text {
+    color: black;
+}
+
+.x-menu-scroller {
+    border-width: 1px 0;
+}
+
+.x-portlet .x-panel-body {
+  background-color: white !important;
+}
+
+.ext-strict .ext-safari .x-small-editor .x-form-field-wrap .x-form-trigger {
+  height: 19px;
+}
+
+.ext-strict .ext-ie8 .x-small-editor .x-form-field-wrap .x-form-trigger {
+  height: 20px !important;
+}
+
+.ext-strict .ext-chrome .x-small-editor .x-form-field-wrap .x-form-trigger {
+    height: 20px !important;
+}
+
+.ext-strict .ext-gecko .x-small-editor .x-form-field-wrap .x-form-trigger {
+  height: 19px !important;
+}
+
+.ext-strict .ext-chrome .x-form-field-trigger-wrap .x-form-text {
+    height: 17px;
+}
+
+.ext-strict .ext-gecko .x-form-field-trigger-wrap .x-form-text {
+    height: 18px;
+}
+.ext-strict .ext-safari .x-form-field-trigger-wrap .x-form-text {
+    height: 18px;
+}
+
+.x-form-field-trigger-wrap .x-form-text {
+   padding-top:0;
+}
+
+/** taken from windchill-base, for search in table **/
+.x-small-editor .x-form-field-trigger-wrap .x-form-text {
+   padding: 2px 0 0 2px;
+   border-width: 1px;
+}
+
+.x-view-highlightrow  {
+  border: 1px dotted #545352 !important;
+}
+
+.x-spinner-field .x-form-spinner-up {
+}
+
+.x-spinner-field .x-form-spinner-down {
+}
+
+.x-grid3-highlightrow {
+  border: 1px dotted #545352;
+}
+
+.x-grid3-group-selected {
+  background-color: #b8cfee !important;
+}
+
+.x-grid3-invalid-cell {
+}
+
+.excludedNodes img {
+  margin: 2px 0px;
+}
+/**
+ * End gxt-all.css needed for Ext-GWT clients. 
+ */
+ 
+/*
+ * Begin subsection: Application-specific: Dual Structure Browser, Dual Structure Viewer, Structure Compare, Model Structure Report
+ */
+ 
+/* Toolbars */
+
+.dsbView .x-panel-header, 
+.dsbView .x-toolbar {
+    border-bottom-width: 1px !important;
+    border-bottom-style: solid !important;
+    border-bottom-color: #ACACAC !important;
+    border-right-width: 1px !important;
+    border-right-style: solid !important;
+    border-right-color: #ACACAC !important;
+    border-top-style: none !important;
+    border-left-style: none !important;
+}
+
+/* Initialize Dialog */
+
+.dsb-init-bold-font {
+    font-weight: bold;
+}
+
+.dsb-init-red-font {
+    color: #FF0000  !important;
+}
+
+.dsb-init-toolbar-white {
+    background-color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+}
+
+.dsb-init-whitespace-nowrap{
+    white-space: nowrap;
+}
+
+.dsb-init-hd-checkbox {
+    top: 0px !important;
+    left: 1px !important;
+}
+
+/* Attribute differences */
+
+.dsb-attributes-diff-left,
+.dsb-attributes-diff-right,
+.dsb-attributes-diff-left td,
+.dsb-attributes-diff-right td,
+.dsb-attributes-diff-left span,
+.dsb-attributes-diff-right span
+ {
+    color: #0000FF;
+}
+
+span.dsb-reference-designator-diffs-plus
+{
+    color: #53bc3c;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+span.dsb-reference-designator-diffs-minus
+{
+    color: #FF0000;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.dsv-attributes-diff-left div, 
+.dsv-attributes-diff-right div {
+    font-weight: bold !important;
+}
+
+.dsv-not-in-structure {
+    -moz-opacity: 0.50;
+    filter: alpha(opacity=50);
+    opacity: 0.50;
+}
+
+.dsv-not-in-structure .x-grid3-cell-inner,
+.dsv-not-in-structure .x-tree3-node-text {
+    font-style: italic;
+}
+
+.dsv-treeitem-diff .x-grid3-cell-inner,
+.dsv-treeitem-diff .x-tree3-node-text {
+    color: #FF0000 !important;
+}
+
+/* not wrap label */
+.dsbConfigurablePanel .x-fieldset .x-table-layout-cell  label.attributePanel-label {
+    white-space:nowrap;    
+}
+
+/* wrap attribute value */
+.dsbConfigurablePanel .x-fieldset .x-table-layout-cell .x-form-group table {
+    table-layout: fixed;
+    word-wrap:break-word;
+} 
+
+/* Icon overlays */
+.msr-nonlatest-working-copy {
+}
+
+.msr-modified-by-you {
+}
+
+.msr-modified-by-other {
+}
+
+/*
+ * End subsection: Application-specific: Dual Structure Browser, Dual Structure Viewer, Structure Compare, Model Structure Report
+ */
+
+/**
+ * Begin css needed for CAT Ext-GWT clients.
+ */
+ 
+/* ICON OVERLAYS  */
+
+.cat-checkedout-copy-tree {
+   height: 9px;
+   width: 9px; 
+   position:relative;
+   overflow: hidden;
+   left:-9px;
+   margin-right:-9px;
+    
+}
+
+.cat-working-copy-tree {
+   height: 9px;
+   width: 9px;
+   position:relative;
+   overflow: hidden;
+   left:-9px;
+   margin-right:-9px;
+}
+
+.cat-new-tree {
+   height: 9px;
+   width: 9px;
+   position:relative;
+   overflow: hidden;
+   left:-9px;
+   margin-right:-9px;
+}
+
+.cat-suppressed-tree {
+   height: 9px;
+   width: 9px;
+   position:relative;
+   overflow: hidden;
+   left:-1px;
+   top:-9px;
+   margin-right:-2px;
+}
+
+.cat-checkedout-copy {
+}
+.cat-working-copy {
+}
+.cat-new {
+}
+.cat-suppressed {
+}
+.cat-shared-project {
+}
+.cat-pdmcheckedout-project {
+}
+.cat-note-icon {
+}
+.cat-replacement {
+}
+.cat-docstructure {
+}
+.cat-table-loading {
+}
+.cat-table-icon {
+   
+}
+.cat-tabular-input {
+}
+.cat-pending_change_glyph {
+}
+.cat-variance_indicator_glyph {
+}
+.cat-hanging_change_glyph {
+}
+.cat-resulting_change_glyph {
+}
+
+.cat-remove-icon {
+}
+
+.cat-add-attribute-value {
+    height: 16px;
+    width: 16px;
+}
+
+.cat-remove-attribute-value {
+    height: 16px;
+    width: 16px;
+}
+
+/* STYLES USED IN THE MULTI-COMPONENT TAB */
+.cat-mc-x-fieldset {
+    margin: 12px 18px 12px 0px;
+    padding-left: 0px;
+    padding-top: 4px;
+    border: none;
+}
+
+.ext-webkit .cat-mc-x-fieldset {
+    padding-right: 25px;
+}
+
+.cat-mc-x-fieldset-button {
+    margin-top: 3px;
+    margin-left: 6px;
+}
+
+.cat-mc-x-toolbar {
+    border-right-style: solid !important;
+    border-left-style: solid !important;
+    border-right-color: #d0d0d0 !important;
+    border-left-color: #d0d0d0 !important;
+}
+
+/* TABULAR INPUT SEARCH SUPPORT */
+
+.cat-link-text {
+  font-size: 13px;
+  color: blue;
+  text-decoration: underline;
+  margin-left: 3px;
+  margin-top: 3px;
+}
+
+.cat-default-icon {
+   height: 18px;
+   width: 16px;
+}
+
+.cat-message-item {
+   font-size: 13px;
+   height: 2.6em;
+   border: 1px solid #FFFFFF;
+   white-space: normal;
+}
+
+.cat-search-item {
+  font-size: 13px;
+  height: 1.3em;
+  border: 1px solid #FFFFFF;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+/* EDITOR GRID */
+.cat-x-grid3-borders {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: #d0d0d0;
+}
+
+.cat-x-grid3-row-outline{
+    outline: 1px solid #3D4647;
+}
+
+.cat-x-grid3-cell-inner {
+   -o-text-overflow:ellipsis;
+   text-overflow:ellipsis;
+   padding:2px 1px 2px 5px !important;
+   white-space: nowrap;
+}
+
+.cat-x-grid3-hd-inner {
+   padding:2px 1px 2px 4px !important;
+}
+
+.cat-editable-cell {
+   border-width: 1px;
+   border-color: #DADADA;
+   border-style: solid;
+   overflow:hidden;
+   -o-text-overflow:ellipsis;
+   text-overflow:ellipsis;
+   padding-left:0px !important;
+   padding-right:0px !important;
+}
+
+.cat-editable-cell-italic {
+   font-style:italic !important;
+   color:#aaa;
+   border-width: 1px;
+   border-color: #DADADA;
+   border-style: solid;
+   overflow:hidden;
+   -o-text-overflow:ellipsis;
+   text-overflow:ellipsis;
+   padding-left:0px !important;
+   padding-right:0px !important;
+}
+
+.cat-tabular-editable-cell-non-gray {
+   border-width: 1px;
+   border-color: #DADADA;
+   border-style: solid;
+   overflow:hidden;
+   -o-text-overflow:ellipsis;
+   text-overflow:ellipsis;
+   padding-left:0px !important;
+   padding-right:0px !important;
+}
+
+.cat-tabular-editable-cell {
+   color:#aaa;
+   border-width: 1px;
+   border-color: #DADADA;
+   border-style: solid;
+   overflow:hidden;
+   -o-text-overflow:ellipsis;
+   text-overflow:ellipsis;
+   padding-left:0px !important;
+   padding-right:0px !important;
+}
+
+.cat_add_fade_1 {
+   background-color: #ffff40
+}
+.cat_add_fade_2 {
+   background-color: #ffff50
+}
+.cat_add_fade_3 {
+   background-color: #ffff60
+}
+.cat_add_fade_4 {
+   background-color: #ffff70
+}
+.cat_add_fade_5 {
+   background-color: #ffff80
+}
+.cat_add_fade_6 {
+   background-color: #ffff90
+}
+.cat_add_fade_7 {
+   background-color: #ffffa0
+}
+.cat_add_fade_8 {
+   background-color: #ffffb0
+}
+.cat_add_fade_9 {
+   background-color: #ffffc0
+}
+.cat_add_fade_10 {
+   background-color: #ffffd0
+}
+.cat_add_fade_11 {
+   background-color: #ffffe0
+}
+
+/* ---------------------------------------- */
+/* FIND IN TREE */
+
+.cat-fit-match {
+   background-color: #ffff00;
+   padding: 2px;
+}
+
+.cat-grid3-row-selected-fit {
+   background-color: #ff6600 !important;
+   border-color: #a3bae9;
+}
+
+.cat-grid3-row-start-fit {
+   background-color:#dff3d8 !important;
+   border-color:#dff3d8 !important;
+}
+
+.cat-rounded-right-corners {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top: 1px solid #898989;
+    border-right: 1px solid #898989;
+    border-bottom: 1px solid #898989;
+    height: 18px;
+}
+
+.ext-ie .cat-rounded-right-corners {
+    height: 18px !important;
+ }
+
+/* ---------------------------------------- */
+/* DIALOGS */
+
+/* This should match attributePanel-label in xtheme-windchill.css */
+#catGSEView .x-form-item label, #catDialogWidget .x-form-item label {
+   font-size: 12px;
+   font-weight: bold;
+}
+
+/* ---------------------------------------- */
+/* PROGRESS DIALOG ICON */
+
+.x-window-dlg .cat-msg-box-wait {
+   position: relative;
+   top: 5px;
+   left: 5px;
+}
+
+/* ---------------------------------------- */
+/* TOOLBAR */
+
+#catGSEView .x-toolbar .x-item-disabled {
+   opacity:.5;
+   -moz-opacity:.5;
+   filter:alpha(opacity=50);
+}
+
+/* ---------------------------------------- */
+/* SELENIUM SUPPORT */
+
+.cat-busy-status {
+   text-indent: 20px;
+}
+
+.cat-complete-status {
+   text-indent: 20px;
+}
+
+.cat-error-status {
+   text-indent: 20px;
+}
+
+/* ---------------------------------------- */
+/* DEBUGGING INFO */
+
+.handler-control {
+  border: 1px solid blue;
+  margin-right: 3em;
+  width: 15em;
+}
+
+.log-panel,.gwt-PopupWidgetHandler {
+  background-color: #E8EEF7;
+  border: 1px solid red;
+  padding: 0.2em;
+  margin: 0px;
+  filter: alpha(opacity=95);
+  opacity: 0.95;
+  z-index: 1000;
+  width: 15em;
+  height: 0em;
+  overflow: auto;
+}
+
+.log-panel .log-header {
+  cursor: move;
+}
+
+.log-panel .log-text-area {
+  text-align: left;
+  font-size: 10pt;
+}
+
+.log-panel .log-text-area * {
+  font-family: monospace;
+}
+
+.log-panel .log-stacktrace {
+  white-space: nowrap;
+}
+
+.log-panel .log-message {
+  cursor: help;
+}
+
+.log-panel .log-message-hover {
+  background-color: #444444;
+}
+
+.log-panel .log-scroll-panel {
+  background-color: #FFF;
+}
+
+/**
+ * End css needed for CAT Ext-GWT clients.
+ */
+ 
+
+/**
+ * Begin css changes for PPB-Playback function 
+ */
+ 
+/* Make currently played operation Bold */
+.ppb-playback-operation-current {
+    font-weight: bold;
+    background-color:#fbd9a7;
+}
+
+/* Make expanded operation as ghosted */
+ppb-playback-operation-expanded,
+.ppb-playback-operation-expanded span {
+    color: #808080;
+}
+
+/* set the font for playback slider markers */
+.ppb-playback-slider-marker-label {
+    font-size: 13px;
+}
+
+/* set tickers for transparency slider */
+.ppb-playback-slider-transparency {
+    
+}
+
+/* set tickers for delay slider */
+.ppb-playback-slider-delay {
+    
+}
+ 
+/**
+ * End css changes for PPB-Playback function 
+ */
+
+/* set the overall fonts correctly. */
+body, table td, select, textarea, input, .linkfont, .basefont, .wcshell {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 13px;
+    font-style:normal;
+    font-weight:normal;
+    color:#444444;
+}
+
+/* overall field colors. Need to be explicit because of differences between defaults in IE and FF */
+input[type='text'], input[type='file'], textarea, select {
+    border-color:#898989;
+    border-style:solid;
+    border-width:1px;
+}
+
+/* grays out disabled input fields (necessary because IE does NOT do this by default).
+   Styling to match <input type='file'> because we can't style it directly and we want to be consistent. */
+input[disabled], input[type='file'], textarea[disabled], select[disabled], input[readonly='readonly'], textarea[readonly='readonly'] {
+    background-color:#E2E2E2;
+    border-style:inset;
+    border-width:2px;
+}
+
+/* above disabled style caused look and feel issue in IE for radio button, hence overriding it here */
+input[type="radio"], input[type="checkbox"] {
+    border-style: none;
+    border-width:0;
+    background-color:#FFF;
+}
+
+/* ext table cells */
+.x-grid3-hd-row .x-grid3-hd, .x-grid3-row .x-grid3-cell, .x-grid3-summary-row .x-grid3-cell {
+    font-size: 13px;
+}
+
+.x-grid3-hd-row .x-grid3-hd .x-grid3-hd-inner, 
+.x-grid3-row .x-grid3-cell .x-grid3-cell-inner, 
+.x-grid3-summary-row .x-grid3-cell .x-grid3-cell-inner {
+    padding-left: 5px;
+    padding-right: 5px; 
+}
+
+.x-mask-loading div {
+    background-color:#444444
+}
+
+.x-item-disabled {
+    color:gray;
+}
+
+.x-splitbar-proxy {
+    background-color:#aaa;
+}
+
+.x-color-palette a {
+    border-color:#fff;
+}
+
+.x-color-palette a:hover,.x-color-palette a.x-color-palette-sel {
+    border-color:#8bb8f3;
+    background-color:#deecfd;
+}
+
+.x-color-palette em {
+    border-color:#aca899;
+}
+
+.x-ie-shadow {
+    background-color:#777;
+}
+
+.x-shadow .xsmc {
+}
+
+.x-shadow .xsml,.x-shadow .xsmr {
+}
+
+.x-shadow .xstl,.x-shadow .xstc,.x-shadow .xstr,.x-shadow .xsbl,.x-shadow .xsbc,.x-shadow .xsbr {
+}
+
+.loading-indicator {
+    font-size: 13px;
+}
+
+.x-spotlight {
+    background-color:#ccc;
+}
+
+.controls-disabled {
+    background-color: #ffffff;
+    z-index: 100;
+    position: absolute;
+    top:0;
+    left:0;
+    -moz-opacity: 0.5;
+    opacity: .50;
+    filter: alpha(opacity=50);
+    width: 100%;
+    height: 100%;
+    zoom: 1;
+}
+
+.controls-disabled-unix-browser {
+    background-color: #ffffff;
+    z-index: 100;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
+.x-panel-btns {
+    padding: 0 0 0 0;   
+}
+
+.x-tab-panel-header,.x-tab-panel-footer {
+    background-color:#ffffff;
+    overflow:hidden;
+    zoom:1;
+    font-size: 12px;
+    border-color:#d0d0d0;
+}
+
+ul.x-tab-strip-top {
+    background-color:#ffffff;
+    font-size: 12px;
+    border-bottom-width:0px;
+    height: 24px;
+}
+
+.x-tab-strip-top .x-tab-strip-active .x-tab-right {
+    margin-bottom: 0px;
+}
+
+.x-tab-panel-header-plain .x-tab-strip-top,
+.x-tab-panel-header .x-tab-strip-top {
+    border-bottom: 2px solid #DADADA;
+}
+
+ul.x-tab-strip-bottom {
+    background-color:#cedff5;
+    border-top-color:#8db2e3;
+    border-color:#d0d0d0;
+}
+
+.x-tab-panel-header-plain .x-tab-strip-spacer,.x-tab-panel-footer-plain .x-tab-strip-spacer {
+    border-color:#8db2e3;
+    background-color:#deecfd;
+}
+
+.x-tab-strip span.x-tab-strip-text {
+    font-weight: bold; 
+    font-size: 12px;
+    color:#fff;
+    height: 15px;
+}
+
+.x-tab-strip-active span.x-tab-strip-text {
+    font-weight: bold; 
+    font-size: 12px;
+    color:#444444;
+}
+.x-tab-strip-top .x-tab-strip-active .x-tab-right span.x-tab-strip-text {
+    padding-bottom: 0px;
+}
+
+.x-tab-strip-disabled .x-tabs-text {
+    font-size: 12px;
+    color:#aaaaaa;
+}
+
+.x-tab-strip-top .x-tab-right,.x-tab-strip-top .x-tab-left,.x-tab-strip-top .x-tab-strip-inner {
+    background-color: white;
+}
+
+/* not sure if the following tab styles are even used anywhere in Windchill? */
+.x-tab-strip-bottom .x-tab-right {
+}
+.x-tab-strip-bottom .x-tab-left {
+}
+.x-tab-strip-bottom .x-tab-strip-active .x-tab-right {
+}
+.x-tab-strip-bottom .x-tab-strip-active .x-tab-left {
+}
+
+.x-tab-strip .x-tab-strip-closable a.x-tab-strip-close {
+    margin-top:3px;
+    margin-right:3px;
+}
+
+.x-tab-strip .x-tab-strip-closable a.x-tab-strip-close:hover {
+    margin-top:3px;
+    margin-right:3px;
+}
+
+.x-tab-panel-body {
+    background-color:#fff;
+    border-color:#d0d0d0;
+}
+
+.x-tab-panel-body-top {
+    border-top:0 none;
+}
+
+.x-tab-panel-body-bottom {
+    border-bottom:0 none;
+}
+
+/*For Add tab button*/
+.x-tab-addTabButton-right {
+    border-bottom: 0px solid #fff;
+    width:18px;
+    position:absolute;
+    right:0;
+    top:0;
+    z-index:10;
+    cursor:pointer;
+    margin: -1px 0px 0px 0px;
+    padding-bottom:1px;
+    
+}
+
+.x-tab-addTabButton-over {
+    
+}
+
+.tab-add {
+}
+
+/*tab scrollers*/
+.x-tab-scrolling .x-tab-strip-wrap {
+    margin:0;
+    padding-right:37px;
+}
+
+/* so the tab scrollers line up with the tab border */
+.x-tab-scroller-left,
+.x-tab-scroller-right,
+.x-tab-addTabButton-right {
+    height: 26px !important;
+}
+
+.x-tab-scroller-left {
+    border-color:white;
+    border-bottom:0 none white;
+    padding-right:1px;
+    margin: -1px -1px 0px 0px;
+    padding-bottom:1px;
+}
+
+.x-tab-scroller-left-over {
+    
+}
+
+.x-tab-scroller-left-disabled {
+    
+    opacity:.5;
+    -moz-opacity:.5;
+    filter:alpha(opacity=50);
+    cursor:default;
+}
+
+.x-tab-scroller-right {
+    
+    border-color:white;
+    border-bottom:0 none white;
+    margin: -1px 0px 0px 0px;
+    padding-bottom:1px;
+}
+
+.x-tab-scroller-right-over {
+    
+}
+
+.stepLeftScroller {
+   
+   
+   background-color: transparent;
+   cursor: pointer; cursor: hand;
+   position:relative;
+   float: left;
+   width: 20px;
+   z-index: 20;
+}
+
+.stepRightScroller {
+   
+   
+   background-color: transparent;
+   cursor: pointer; cursor: hand;
+   position:relative;
+   float: right;
+   width: 20px;
+   z-index: 20;
+}
+
+/* Forms */
+.x-form-field {
+    font-size: 12px;
+}
+
+.x-form-text,textarea.x-form-field {
+    height:20px;
+    background-color:#fff;
+    border-color:#898989;
+}
+
+.reconciliation_panel_fullHorizontalExpand.x-form-textarea {
+    width: 100% !important;
+}
+
+.x-form-select-one {
+    background-color:#fff;
+    border-color:#b5b8c8;
+}
+
+.x-editor .x-form-check-wrap {
+    background-color:#fff;
+}
+
+.x-form-field-wrap .x-form-trigger {
+    border-bottom-color: transparent;
+}
+
+.x-form-field-wrap .x-form-date-trigger {
+    border-bottom:1px solid #898989;
+    height:19px;
+}
+
+.x-form-field-wrap .x-form-clear-trigger {
+    border-top: 1px solid #BDC0CE;
+    border-right: 1px solid #BDC0CE;    
+    border-bottom: 1px solid #BDC0CE;  
+    height:18px !important;
+    //Blue x box image was changed to red x box image.
+    //background-image:;
+    
+}
+
+.x-form-field-wrap .x-form-search-trigger {
+    border-bottom: 1px solid #BDC0CE; 
+}
+
+.x-form-field-wrap .x-form-revise-trigger {
+    width: 18px !important;
+    height: 20px !important;
+}
+
+.x-form-field-wrap .x-form-revise-trigger-over {
+    
+}
+
+.x-grid3-col-doReviseDownstream {
+    padding: 0px 1px !important;
+}
+
+.x-form-field-wrap .global-search-trigger {
+}
+
+.x-form-field-wrap .global-arrow-trigger {
+}
+
+.x-trigger-wrap-focus .x-form-trigger {
+    border-bottom-color:#d1d3d4;
+    border-top-color:#d1d3d4;    
+}
+
+.x-item-disabled .x-form-trigger-over {
+    border-bottom-color:#b5b8c8;
+}
+
+.x-item-disabled .x-form-trigger-click {
+    border-bottom-color:#b5b8c8;
+}
+
+.x-form-focus,textarea.x-form-focus {
+    border-color:#898989;
+}
+
+.x-form-invalid,textarea.x-form-invalid {
+    background-color:#fff;
+    border-color:#c30;
+}
+
+.ext-safari .x-form-invalid {
+    background-color:#fee;
+    border-color:#ff7870;
+    border: 1px solid;
+}
+
+.x-form-inner-invalid,textarea.x-form-inner-invalid {
+    background-color:#fff;
+}
+
+.x-form-grow-sizer {
+    font-size: 12px;
+}
+
+.x-form-item {
+    font-size: 12px;
+}
+
+.x-form-invalid-msg {
+    color:#c0272b;
+    font-size: 13px;
+}
+
+.x-form-empty-field {
+    color:gray;
+}
+
+.x-small-editor .x-form-field {
+    font-size: 13px;
+}
+
+.ext-safari .x-small-editor .x-form-field {
+    font-size: 12px;
+}
+
+.x-form-invalid-icon {
+}
+
+.x-fieldset {
+    border-color:#BEBEBE;
+}
+
+.x-fieldset legend {
+    font-weight:bold;
+    font-size: 13px;
+    color:#000;
+}
+
+.x-btn {
+    font-size: 13px;
+}
+
+.x-btn button {
+    font-size: 13px;
+    color:#444444;
+}
+
+.x-btn em {
+    font-style:normal;
+    font-weight:normal;
+}
+
+/** Spinner Field */
+
+.x-form-field-wrap .x-form-spinner-trigger {
+}
+
+.x-form-field-wrap .x-form-spinner-splitter {
+}
+
+/* Buttons */
+
+.x-btn-noicon .x-btn-small .x-btn-text {
+    height: 12px;
+    margin-bottom: 1px;
+    line-height: 8px;
+    /* Setting auto width property for button text to avoid truncation SPR 4726382 and 4790396 */
+    width :auto !important;
+}
+
+/* CSS needed to fix the Korean display in IE7 */
+.ext-webkit .x-btn-noicon .x-btn-small .x-btn-text, 
+.ext-ie7 .x-btn-noicon .x-btn-small .x-btn-text {
+    margin-top:-2px;
+}
+
+.x-btn-tl,.x-btn-tr,.x-btn-tc,.x-btn-ml,.x-btn-mr,.x-btn-mc,.x-btn-bl,.x-btn-br,.x-btn-bc {
+    background-image: none;
+}
+/** remove the box/border from help buttons, they'll have box/border onmouseover only */
+.help .x-btn-tl, .help .x-btn-tr, .help .x-btn-tc, .help .x-btn-ml, .help .x-btn-mr, .help .x-btn-mc, .help .x-btn-bl, .help .x-btn-br, .help .x-btn-bc {
+}
+/** keep the box/border onmouseover for help buttons */
+.x-btn-over .x-btn-tl, .x-btn-over .x-btn-tr, .x-btn-over .x-btn-tc, .x-btn-over .x-btn-ml, .x-btn-over .x-btn-mr, .x-btn-over .x-btn-mc, .x-btn-over .x-btn-bl, .x-btn-over .x-btn-br, .x-btn-over .x-btn-bc {
+    background-image:none;
+}
+
+.x-btn-click .x-btn-text,.x-btn-menu-active .x-btn-text,.x-btn-pressed .x-btn-text {
+    color:#000;
+}
+
+.x-btn-mc em.x-btn-arrow {
+}
+
+.x-btn-mc em.x-btn-split {
+}
+
+.x-btn-over .x-btn-mc em.x-btn-split,.x-btn-click .x-btn-mc em.x-btn-split,.x-btn-menu-active .x-btn-mc em.x-btn-split,.x-btn-pressed .x-btn-mc em.x-btn-split {
+}
+
+.x-btn-mc em.x-btn-arrow-bottom {
+}
+
+.x-btn-mc em.x-btn-split-bottom {
+}
+
+.x-btn-over .x-btn-mc em.x-btn-split-bottom,.x-btn-click .x-btn-mc em.x-btn-split-bottom,.x-btn-menu-active .x-btn-mc em.x-btn-split-bottom,.x-btn-pressed .x-btn-mc em.x-btn-split-bottom {
+}
+
+.x-btn-group-header {
+    color:#444444;
+    font-weight:bold;
+}
+
+.x-btn-group-tc {
+}
+
+.x-btn-group-tl {
+}
+
+.x-btn-group-tr {
+}
+
+.x-btn-group-bc {
+}
+
+.x-btn-group-bl {
+}
+
+.x-btn-group-br {
+}
+
+.x-btn-group-ml {
+}
+
+.x-btn-group-mr {
+}
+
+.x-btn-group-notitle .x-btn-group-tc {
+}
+
+.x-toolbar td,.x-toolbar span,.x-toolbar input,.x-toolbar div,.x-toolbar select,.x-toolbar label {
+    font-size: 13px;
+}
+
+.x-toolbar .x-item-disabled {
+    color:gray;
+}
+
+.x-toolbar .x-btn-mc em.x-btn-split {
+}
+
+.x-toolbar .x-btn-over .x-btn-mc em.x-btn-split,.x-toolbar .x-btn-click .x-btn-mc em.x-btn-split,.x-toolbar .x-btn-menu-active .x-btn-mc em.x-btn-split,.x-toolbar .x-btn-pressed .x-btn-mc em.x-btn-split {
+}
+
+.x-toolbar .x-btn-mc em.x-btn-split-bottom {
+}
+
+.x-toolbar .x-btn-over .x-btn-mc em.x-btn-split-bottom,.x-toolbar .x-btn-click .x-btn-mc em.x-btn-split-bottom,.x-toolbar .x-btn-menu-active .x-btn-mc em.x-btn-split-bottom,.x-toolbar .x-btn-pressed .x-btn-mc em.x-btn-split-bottom {
+}
+
+.x-toolbar .xtb-sep {
+}
+
+.x-tbar-page-first {
+}
+
+.x-tbar-loading {
+}
+
+.x-tbar-page-last {
+}
+
+.x-tbar-page-next {
+}
+
+.x-tbar-page-prev {
+}
+
+.x-item-disabled .x-tbar-loading {
+}
+
+.x-item-disabled .x-tbar-page-first {
+}
+
+.x-item-disabled .x-tbar-page-last {
+}
+
+.x-item-disabled .x-tbar-page-next {
+}
+
+.x-item-disabled .x-tbar-page-prev {
+}
+
+.x-paging-info {
+    color:#444;
+}
+
+.x-toolbar-more-icon {
+}
+
+.x-resizable-handle {
+    background-color:#fff;
+}
+
+.x-resizable-over .x-resizable-handle-east,.x-resizable-pinned .x-resizable-handle-east,.x-resizable-over .x-resizable-handle-west,.x-resizable-pinned .x-resizable-handle-west {
+}
+
+.x-resizable-over .x-resizable-handle-south,.x-resizable-pinned .x-resizable-handle-south,.x-resizable-over .x-resizable-handle-north,.x-resizable-pinned .x-resizable-handle-north {
+}
+
+.x-resizable-over .x-resizable-handle-north,.x-resizable-pinned .x-resizable-handle-north {
+}
+
+.x-resizable-over .x-resizable-handle-southeast,.x-resizable-pinned .x-resizable-handle-southeast {
+}
+
+.x-resizable-over .x-resizable-handle-northwest,.x-resizable-pinned .x-resizable-handle-northwest {
+}
+
+.x-resizable-over .x-resizable-handle-northeast,.x-resizable-pinned .x-resizable-handle-northeast {
+}
+
+.x-resizable-over .x-resizable-handle-southwest,.x-resizable-pinned .x-resizable-handle-southwest {
+}
+
+.x-resizable-proxy {
+    border-color:#3b5a82;
+}
+
+.x-resizable-overlay {
+    background-color:#fff;
+}
+
+/* Grid */
+.x-grid3 {
+    background-color:#fff;
+}
+
+.x-grid3-hd-row td,.x-grid3-row td,.x-grid3-summary-row td {
+    font-size: 12px;
+}
+
+.x-grid3-hd-row td {
+    border-left-color:white;
+    border-right-color:#D0D0D0;
+}
+
+.x-grid3-header-offset {
+    padding-left: 0px;
+} 
+
+.x-grid-row-loading {
+    background-color:#fff;
+}
+
+.x-grid3-row {
+    border-left-color:#ededed;
+    border-right-color:#ededed;
+    border-bottom-color:#ededed;
+    border-top-color:#fff;
+}
+
+.x-grid3-row-alt {
+    background-color:#E9EBF1;
+}
+
+.x-grid3-row-over {
+    border-color: #FFEA99;
+    background-color: #FFEA99;
+}
+
+.x-grid3-resize-proxy {
+    background-color:#777;
+}
+
+.x-grid3-resize-marker {
+    background-color:#777;
+}
+
+.x-grid3-header {
+    background-image:none;
+    background-color: #666666;
+    border-left-color:#acacac;
+    border-right-color:#acacac;
+    height:21px;
+}
+
+.x-grid3-header-pop {
+    border-left-color:#d0d0d0;
+}
+
+.x-grid3-header-pop-inner {
+    border-left-color:#eee;
+}
+
+td.x-grid3-hd-over,td.sort-desc,td.sort-asc,td.x-grid3-hd-menu-open {
+    border-left-color:#aaccf6;
+    border-right-color:#aaccf6;
+}
+
+td.x-grid3-hd-over .x-grid3-hd-inner,td.sort-desc .x-grid3-hd-inner,td.sort-asc .x-grid3-hd-inner,td.x-grid3-hd-menu-open .x-grid3-hd-inner {
+    background-color: #A3A3A3;
+    background-image: none;
+}
+
+.gridfileinputhandler td.x-grid3-hd-over .x-grid3-hd-inner,
+.gridfileinputhandler td.sort-desc .x-grid3-hd-inner,td.sort-asc .x-grid3-hd-inner,
+.gridfileinputhandler td.x-grid3-hd-menu-open .x-grid3-hd-inner {
+    background-color: inherit;
+}
+
+.sort-asc .x-grid3-sort-icon {
+}
+
+.sort-desc .x-grid3-sort-icon {
+}
+
+.x-grid3-cell-text,.x-grid3-hd-text {
+    color:#000;
+}
+
+.x-grid3-split {
+}
+
+.x-grid3-hd-text {
+    color:#15428b;
+}
+
+.x-dd-drag-proxy .x-grid3-hd-inner {
+    background-color:#ebf3fd;
+    border-color:#aaccf6;
+}
+
+.col-move-top {
+}
+
+.col-move-bottom {
+}
+
+.x-grid3-row-selected {
+    font-size: 12px;
+    background-color: #FFEA99 !important;
+    border-color: #FFEA99 !important;
+}
+
+.x-grid3-cell-selected {
+    background-color: #E0E0E0 !important;
+    color:#000;
+}
+
+.x-grid3-cell-selected span {
+    color:#000 !important;
+}
+
+.x-grid3-cell-selected .x-grid3-cell-text {
+    color:#000;
+}
+
+.x-grid3-locked td.x-grid3-row-marker,.x-grid3-locked .x-grid3-row-selected td.x-grid3-row-marker {
+    background-color:#ebeadb !important;
+    color:#000;
+    border-top-color:#fff;
+    border-right-color:#6fa0df !important;
+}
+
+.x-grid3-locked td.x-grid3-row-marker div,.x-grid3-locked .x-grid3-row-selected td.x-grid3-row-marker div {
+    color:#15428b !important;
+}
+
+.x-grid3-dirty-cell {
+}
+
+.x-grid3-topbar,.x-grid3-bottombar {
+    font-size: 13px;
+}
+
+.x-grid3-bottombar .x-toolbar {
+    border-top-color:#a9bfd3;
+}
+
+.x-props-grid .x-grid3-td-name .x-grid3-cell-inner {
+    color:#fff !important;
+}
+
+.x-props-grid .x-grid3-body .x-grid3-td-name {
+    background-color:#fff !important;
+    border-right-color:#eee;
+}
+
+.xg-hmenu-sort-asc .x-menu-item-icon {
+}
+
+.xg-hmenu-sort-desc .x-menu-item-icon {
+}
+
+.xg-hmenu-lock .x-menu-item-icon {
+}
+
+.xg-hmenu-unlock .x-menu-item-icon {
+}
+
+.x-grid3-hd-btn {
+    /*background-color:#fef7ea;*/
+    background-color: #A3A3A3;	
+    background-image: none;
+    border-left: 1px solid #FFFFFF;
+    padding: 0px 2px;
+}
+
+.x-grid3-hd-btn:after {
+    position: absolute;
+    content: "	";
+    top: 7px;
+    right: 2px;
+    /* Draw arrow */
+    width: 0; 
+    height: 0; 
+    border-left: 6px solid transparent; 
+    border-right: 6px solid transparent; 
+    border-top: 6px solid #E0E0E0;
+}
+
+
+.x-grid3-body .x-grid3-td-expander {
+}
+
+.x-grid3-row-expander {
+}
+
+.x-grid3-body .x-grid3-td-checker {
+	    background-image: none;
+}
+
+.x-grid3-row-checker,.x-grid3-hd-checker {
+}
+
+.x-grid3-hd-checker {
+    top:-1px;
+}
+
+.x-grid3-body .x-grid3-td-numberer {
+}
+
+.x-grid3-body .x-grid3-td-numberer .x-grid3-cell-inner {
+    color:#444;
+}
+
+.x-grid3-body .x-grid3-td-row-icon {
+}
+
+.x-grid3-body .x-grid3-row-selected .x-grid3-td-numberer,.x-grid3-body .x-grid3-row-selected .x-grid3-td-checker,.x-grid3-body .x-grid3-row-selected .x-grid3-td-expander {
+}
+
+.x-grid3-check-col {
+}
+
+.x-grid3-check-col-on {
+}
+
+.x-grid-group,.x-grid-group-body,.x-grid-group-hd {
+    zoom:1;
+}
+
+.x-grid-group-hd div.x-grid-group-title {
+    color:#3764a0;
+    font-weight:bold;
+    font-size: 13px;
+}
+
+.x-grid-group-collapsed .x-grid-group-hd div.x-grid-group-title {
+}
+
+.x-group-by-icon {
+}
+
+.x-cols-icon {
+}
+
+.x-show-groups-icon {
+}
+
+.x-grid-empty {
+    color:gray;
+    font-size: 13px;
+}
+
+.x-grid-with-col-lines .x-grid3-row td.x-grid3-cell {
+    border-right-color:#ededed;
+}
+
+.x-grid-with-col-lines .x-grid3-row-selected {
+    border-top-color:#a3bae9;
+}
+
+.x-dd-drop-nodrop .x-dd-drop-icon {
+}
+
+.x-dd-drop-ok .x-dd-drop-icon {
+}
+
+.x-dd-drop-ok-add .x-dd-drop-icon {
+}
+
+.x-view-selector {
+    background-color:#c3daf9;
+    border-color:#3399bb;
+}
+
+.x-tree-node-expanded .x-tree-node-icon {
+}
+
+.x-tree-node-leaf .x-tree-node-icon {
+}
+
+.x-tree-node-collapsed .x-tree-node-icon {
+}
+
+.x-tree-node-loading .x-tree-ec-icon {
+}
+
+.x-tree-node .x-tree-node-inline-icon {
+}
+
+.x-tree-node-loading a span {
+    font-style:italic;
+    color:#444444;
+}
+
+.ext-ie .x-tree-node-el input {
+    width:15px;
+    height:15px;
+}
+
+.x-tree-lines .x-tree-elbow {
+}
+
+.x-tree-lines .x-tree-elbow-plus {
+}
+
+.x-tree-lines .x-tree-elbow-minus {
+}
+
+.x-tree-lines .x-tree-elbow-end {
+}
+
+.x-tree-lines .x-tree-elbow-end-plus {
+}
+
+.x-tree-lines .x-tree-elbow-end-minus {
+}
+
+.x-tree-lines .x-tree-elbow-line {
+}
+
+.x-tree-no-lines .x-tree-elbow-plus {
+}
+
+.x-tree-no-lines .x-tree-elbow-minus {
+}
+
+.x-tree-no-lines .x-tree-elbow-end-plus {
+}
+
+.x-tree-no-lines .x-tree-elbow-end-minus {
+}
+
+.x-tree-arrows .x-tree-elbow-plus {
+}
+
+.x-tree-arrows .x-tree-elbow-minus {
+}
+
+.x-tree-arrows .x-tree-elbow-end-plus {
+}
+
+.x-tree-arrows .x-tree-elbow-end-minus {
+}
+
+.x-tree-node {
+    color:#444444;
+    font-size: 13px;
+}
+
+.x-tree-node a {
+    color:#000;
+}
+
+.x-tree-node a span {
+    color:#000;
+}
+
+.x-tree-node .x-tree-node-disabled a span {
+    color:gray !important;
+}
+
+.x-tree-node div.x-tree-drag-insert-below {
+    border-bottom-color:#36c;
+}
+
+.x-tree-node div.x-tree-drag-insert-above {
+    border-top-color:#36c;
+}
+
+.x-tree-dd-underline .x-tree-node div.x-tree-drag-insert-below a {
+    border-bottom-color:#36c;
+}
+
+.x-tree-dd-underline .x-tree-node div.x-tree-drag-insert-above a {
+    border-top-color:#36c;
+}
+
+.x-tree-node .x-tree-drag-append a span {
+    background-color:#ddd;
+    border-color:gray;
+}
+
+.x-tree-node .x-tree-node-over {
+    background-color:#FECB00;
+}
+
+li.x-tree-node .x-tree-node-over {
+    background-color:#FFEA99;
+}
+
+.x-tree-node .x-tree-selected {
+    background-color:#fed293;
+}
+
+.x-tree-drop-ok-append .x-dd-drop-icon {
+}
+
+.x-tree-drop-ok-above .x-dd-drop-icon {
+}
+
+.x-tree-drop-ok-below .x-dd-drop-icon {
+}
+
+.x-tree-drop-ok-between .x-dd-drop-icon {
+}
+
+
+.x-tip .x-tip-close {
+}
+
+.x-tip .x-tip-tc,.x-tip .x-tip-tl,.x-tip .x-tip-tr,.x-tip .x-tip-bc,.x-tip .x-tip-bl,.x-tip .x-tip-br,.x-tip .x-tip-ml,.x-tip .x-tip-mr {
+}
+
+.x-tip .x-tip-mc {
+    font-size: 13px;
+}
+
+.x-tip .x-tip-ml {
+    background-color:#fff;
+}
+
+/* IE specific Find in table/Find in tree text visualization. Without this the text is too high and cut off on top. */
+.ext-ie #findStatusText .x-tip-header {
+    line-height:1;
+    font-size: 13px;
+}
+
+/* IE7 styling for Find in table/tree status tooltip. */
+.ext-ie7 #findStatusText {
+    max-width: 20%;
+}
+
+.x-tip .x-tip-header-text {
+    font-weight:bold;
+    font-size: 13px;
+    color:#444;
+}
+
+.x-tip .x-tip-body {
+    font-size: 13px;
+    color: #444444;
+}
+
+.x-form-invalid-tip .x-tip-tc,.x-form-invalid-tip .x-tip-tl,.x-form-invalid-tip .x-tip-tr,.x-form-invalid-tip .x-tip-bc,.x-form-invalid-tip .x-tip-bl,.x-form-invalid-tip .x-tip-br,.x-form-invalid-tip .x-tip-ml,.x-form-invalid-tip .x-tip-mr {
+}
+
+.x-form-invalid-tip .x-tip-body {
+}
+
+.x-tip-anchor {
+}
+
+.x-menu {
+    background:#FFFFFF;
+}
+
+.x-menu-floating {
+    border-color: #B4B4B4;
+}
+
+.x-menu-nosep {
+}
+
+.x-menu-list-item {
+    font-size: 13px;
+}
+
+.x-menu-item-arrow {
+}
+
+.x-menu-sep {
+    background-color: #b8b8b8;
+    border-bottom-color: #f2f2f2;
+}
+
+a.x-menu-item, a.x-menu-item:focus, a.x-menu-item:active {
+    color:#222;
+}
+
+.x-menu-item-active {
+    background-color: #A3A3A3;
+    border-color: #A3A3A3;
+}
+
+.x-menu-item-active a.x-menu-item {
+    border-color: #A3A3A3;
+    color: #FFFFFF;
+
+}
+
+.x-menu-check-item .x-menu-item-icon {
+    
+    width: 13px;
+    height: 13px;
+    margin: 2px;
+}
+
+.x-menu-check-item .x-menu-item-icon:hover{
+    
+}
+
+.x-menu-check-item .x-menu-item-icon:active{
+    
+}
+
+.x-menu-item-checked .x-menu-item-icon {
+    
+}
+.x-menu-item-checked .x-menu-item-icon:hover {
+    
+}
+.x-menu-item-checked .x-menu-item-icon:active {
+    
+}
+.x-menu-item-checked .x-menu-group-item .x-menu-item-icon {
+}
+
+.x-menu-group-item .x-menu-item-icon {
+}
+
+.x-menu-plain {
+    background-color:#fff !important;
+}
+
+.x-menu .x-date-picker {
+    border-color:#a3bad9;
+}
+
+.x-cycle-menu .x-menu-item-checked {
+    border-color:#a3bae9 !important;
+    background-color:#def8f6;
+}
+
+.x-menu-scroller-top {
+}
+
+.x-menu-scroller-bottom {
+}
+
+.x-box-tl {
+    zoom:1;
+    background-color:transparent;
+    
+    
+}
+
+.x-box-tc {
+    background-color:transparent;
+    
+    
+    height:12px;
+    overflow:hidden;
+}
+
+.x-box-tr {
+    background-color:transparent;
+    
+    
+}
+
+.x-box-ml {
+    background-color:transparent;
+    
+    
+    padding-left:5px;
+    overflow:hidden;
+}
+
+.x-box-mr {
+    background-color:transparent;
+    
+    
+    padding-right:5px;
+    overflow:hidden;
+}
+
+.x-box-mc {
+    background-color:#fff;
+    padding:4px 8px;
+}
+
+.x-box-bl {
+    background-color:transparent;
+    
+    
+    zoom:1;
+}
+
+.x-box-bc {
+    background-color:transparent;
+    
+    
+    height:12px;
+    overflow:hidden;
+}
+
+.x-box-br {
+    background-color:transparent;
+    
+    
+}
+
+/* Main Content Area (region:center) */
+#background_image .progress {
+    
+}
+
+
+#contentPanel_contentArea .x-panel-body {
+    background-color:transparent;
+}
+
+#contentPanel_contentArea .x-box-mc {
+    padding:0;
+}
+
+#contentPanel_contentArea .x-box-bl,#contentPanel_contentArea .x-box-bc,#contentPanel_contentArea .x-box-br {
+    background-color:transparent;
+    
+    
+    height:0;
+}
+
+.x-box-tl,.x-box-bl {
+    padding-left:12px;
+    overflow:hidden;
+}
+
+.x-box-tr,.x-box-br {
+    padding-right:12px;
+    overflow:hidden;
+}
+
+.x-box-mc h3 {
+    font-size:14px;
+    font-weight:bold;
+}
+
+#contentPanel_breadcrumb {
+    padding: 0 10px 0 8px;
+    height: 20px;
+}
+
+#contentPanel_crumbs {
+    padding-top: 2px;
+}
+
+.x-combo-list {
+    border-color:#D0D0D0;
+    font-size: 12px;
+    background-color:#fff;
+}
+
+.x-combo-list-inner {
+    background-color:#fff;
+}
+
+.x-combo-list-hd {
+    font-weight:bold;
+    font-size: 13px;
+    background-color:#444444
+    color:#444444;
+    padding: 2px;
+    border:1px solid #DADADA;
+}
+
+.x-resizable-pinned .x-combo-list-inner {
+    border-bottom-color:#D0D0D0;
+}
+
+.x-combo-list-item {
+    border-color:#fff;
+}
+
+.x-combo-list .x-combo-selected {
+    background-color:#dff3d8;
+    border:1px solid #dff3d8 !important;
+}
+
+.x-combo-list .x-toolbar {
+    border-top-color:#d1d3d4;
+}
+
+.x-combo-list-small {
+    font-size: 13px;
+}
+
+.x-panel-header {
+    font-weight:bold;
+    font-size: 13px;
+    color:#444444;
+    border:1px solid #acacac;
+}
+
+.x-panel-tl .x-panel-header {
+    color:#d0d0d0;
+}
+
+.x-panel-tc {
+}
+
+.x-panel-bc {
+}
+
+.x-panel-mc {
+    font-size: 13px;
+    background-color:#444444
+}
+
+.x-panel-ml {
+    background-color:#fff;
+}
+
+.x-panel-mr {
+}
+
+/* Tools */
+.x-tool {
+}
+
+.x-panel-dd-spacer {
+    border-color:#D1D3D4;
+}
+
+.x-panel-fbar td,.x-panel-fbar span,.x-panel-fbar input,.x-panel-fbar div,.x-panel-fbar select,.x-panel-fbar label {
+    font-size:12px;
+    font-size-adjust:none;
+    font-stretch:normal;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    line-height:normal;
+}
+
+/* Layout classes */
+.x-accordion-hd {
+    color:#222;
+    font-weight:normal;
+    background-color: #e5e5e5;
+}
+
+.x-layout-collapsed {
+    border-color:#e0e0e0;
+}
+
+.x-layout-collapsed-over {
+    background-color:#fbfbfb;
+}
+
+.x-layout-split-west .x-layout-mini {
+}
+
+.x-layout-split-east .x-layout-mini {
+}
+
+.x-layout-split-north .x-layout-mini {
+}
+
+.x-layout-split-south .x-layout-mini {
+}
+
+.x-layout-cmini-west .x-layout-mini {
+}
+
+.x-layout-cmini-east .x-layout-mini {
+}
+
+.x-layout-cmini-north .x-layout-mini {
+}
+
+.x-layout-cmini-south .x-layout-mini {
+}
+
+/* --- styles for the html 5 progress element ---
+   bluish colors e0e8f3/6593cf/9cbfee chosen from Ext progress bar colors */
+progress {
+    /* This color takes effect as the progress bar color for IE 11 */
+    color: #9cbfee;
+    /* This background takes effect as the progress bar background in Firefox/IE 11 */
+    border:1px solid #6593cf;
+    height: 12px;
+    /* 100px allows an invalid value prog bar to render inside default column width */
+    width:100px;
+}
+/* This background takes effect as the progress bar color in Firefox */
+progress::-moz-progress-bar {
+}
+/* This background takes effect as the progress bar color in Chrome 
+   It did not take effect if combined into one style block with progress::-moz-progress-bar?? so keep standalone. */
+progress::-webkit-progress-value {
+}
+/* This background takes effect as the progress bar background for Chrome */
+progress::-webkit-progress-bar {
+}
+/* remove the little black line on the right of the progress bar color in IE 11 */
+progress::-ms-fill {
+    border: none;
+}       
+/* styles for the progress bar if there is an overflow/underflow */
+.progress-error progress {
+    border:1px solid red;
+    /* This color takes effect as the progress bar color for IE 11 */
+    color: red;
+    /* This background takes effect as the progress bar background in Firefox/IE 11 */
+}
+/* color of the <<, >> text that is additional visual indicator of overflow/underflow */
+.progress-error {
+    font-weight: bold;
+    color: red;
+}
+/* This background takes effect as the progress bar color in Firefox */
+.progress-error progress::-moz-progress-bar {
+}
+/* This background takes effect as the progress bar color in Chrome 
+   It did not take effect if combined into one style block with progress::-moz-progress-bar?? so keep standalone. */
+.progress-error progress::-webkit-progress-value {
+}
+/* This background takes effect as the progress bar background for Chrome */
+.progress-error progress::-webkit-progress-bar {
+}
+/* --- end of styles for html 5 progress element --- */
+
+.x-progress-wrap {
+    border-color:#6593cf;
+}
+
+.x-progress-inner {
+    background-color:#e0e8f3;
+}
+
+.x-progress-bar {
+    background-color:#9cbfee;
+    border-top-color:#d1e4fd;
+    border-bottom-color:#7fa9e4;
+    border-right-color:#7fa9e4;
+}
+
+.x-progress-text {
+    font-size: 13px;
+    font-weight:bold;
+    color:#fff;
+}
+
+.x-progress-text-back {
+    color:#396095;
+}
+
+.x-list-header {
+    background-color:#f9f9f9;
+}
+
+.x-list-header-inner div em {
+    border-left-color:#ddd;
+    font-size: 13px;
+}
+
+.x-list-body dt em {
+    font-size: 13px;
+}
+
+.x-list-over {
+    background-color:#eee;
+}
+
+.x-list-selected {
+    background-color:#dff3d8;
+}
+
+.x-list-resizer {
+    border-left-color:#555;
+    border-right-color:#555;
+}
+
+.x-list-header-inner em.sort-asc,.x-list-header-inner em.sort-desc {
+    border-color:#D1D3D4;
+}
+
+.x-slider-horz,.x-slider-horz .x-slider-end,.x-slider-horz .x-slider-inner {
+}
+
+.x-slider-horz .x-slider-thumb {
+}
+
+.x-slider-vert,.x-slider-vert .x-slider-end,.x-slider-vert .x-slider-inner {
+}
+
+.x-slider-vert .x-slider-thumb {
+}
+
+body {
+    background-color:#ffffff;
+}
+a:visited, .x-panel-reset .x-panel-body a:visited, .x-reset a:visited {
+    color: #444444;
+}
+a:link, .x-panel-reset .x-panel-body a:link, .x-reset a:link {
+    color: #444444;
+    text-decoration: none;
+}
+a:hover, .x-panel-reset .x-panel-body a:hover, .x-reset a:hover {
+    /*text-decoration: underline;*/
+    color: #B4B4B4;
+    
+}
+a:focus, .x-panel-reset .x-panel-body a:focus, .x-reset a:focus {
+    color: #444444;
+    text-decoration: none;
+}
+a:active, .x-panel-reset .x-panel-body a:active, .x-reset a:active {
+    color: #444444;
+    text-decoration: none;
+}
+
+
+.x-menu .x-item-disabled a:link {
+    color: #8F8F8F;
+}
+
+.x-grid3-col-folderName a:link, .x-grid3-col-folderName a:visited {
+    vertical-align:top;
+}
+
+/** Navigator */
+.x-navigatorPanel-body {
+    width: auto !important;
+}
+
+#navigatorTabPanel {
+    border:0 none white;
+    margin-top:-8px;
+    padding-bottom:13px;
+    padding-right:8px;
+    padding-left:8px;
+}
+
+/* fix navigator tabs for old versions of gecko */
+.ext-gecko2 #navigatorTabPanel {
+    margin-top:8px;
+    margin-bottom:0;
+}
+
+#navigatorTabPanel ul.x-tab-strip-top {
+    background-color: transparent;
+    width: auto;
+    padding-left:0;
+}
+
+/*fixes issue with rendering margin in IE7 (overrides gwt style)*/
+#navigatorTabPanel ul.x-tab-strip li {
+    margin-left:0;
+}
+/* no space between tabs */
+ul.x-tab-strip li {
+    margin-left: 0px;
+}
+
+#navigatorTabPanel .x-tab-panel-header {
+    padding-bottom:0;
+}
+
+#navigatorTabPanel .x-tab-panel-header,
+#navigatorTabPanel .x-tab-panel-body {
+    border:0 none;
+}
+
+/** can not use x-item-disabled because of  .ext.ie .x-item-disabled*/
+.navBarDisableExpCol{
+    cursor: default;
+    opacity: .6;
+    -moz-opacity: .6;
+    filter: alpha(opacity=60);
+}
+
+#object_search_navigation,
+#object_main_navigation {
+    padding: 0 8px 8px;
+}
+
+#navigatorTabPanel {
+    background-color: #3D4647;
+}
+/* end Navigator */
+
+#contentPanel_contentArea {
+    background-color: #DADADA;
+}
+
+
+.x-border-layout-ct {
+    background-color:transparent;
+}
+
+/* header styles */
+#header {
+    border:none;
+    height: 43px;
+    z-index:1000;
+    /* height attribute required by ie7 so img does not slowly disappear as window is resized.
+     * For some reason adding it the ext layout does not get picked up by ie7
+     */
+}
+/**** Application Logos for the header area */
+#logoNav.wncApplLogo, #logoNav.pjlApplLogo, #logoNav.pdmlApplLogo {
+    background-image: url(../../../../../images/PSBOM-Logo.svg);
+    background-position: center;
+    background-size: cover;
+    margin-top: -2px;
+}
+
+#logoNav.proIApplLogo {
+    width: 210px;
+    margin-top: -1px;
+    margin-left: -19px;
+}
+
+#logoNav.atcmApplLogo {
+    width: 220px;
+    margin-top: -3px;
+}
+#logoNav {
+    
+    background-color: transparent;
+    
+    border: none;
+    height: 13px;
+    padding: 23px 0 0 7px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: normal;
+    color: #58595b;
+}
+#globalUser {
+    color: #B4B4B4;	
+    position: absolute;
+    top: 17px;
+}
+/****/
+
+#header .x-panel-body {
+    padding: 4px 10px 0 0;
+    font-size:12px;
+    font-style:normal;
+    font-weight:normal;
+    color:#444444;
+}
+
+#pageHeaderActions {
+    margin-right: -10px;
+    padding-right: 10px;
+}
+
+#typeChooserTrigger {
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+#typeChooserTrigger .x-form-text, 
+#globalSearch .x-form-text {
+    width:155px;
+    height: 16px;
+}
+
+#typeChooserTrigger input {
+    background-color:#FFFFFF;
+    border-color:#898989;
+    border-style:solid;
+    border-width:1px;
+}
+
+#globalSearch {
+    padding-right:10px;
+    width:200px; /* forces div in IE to have layout (without it, the padding will not have an affect) */
+}
+
+#globalSearch .x-form-search-trigger {
+    border-bottom:1px solid #898989;
+    border-top: 1px solid #898989;
+    height: 18px;
+}
+
+#license {
+    padding-right: 10px;
+}
+
+#globalSearch>div, #typeChooserTrigger>div,
+    #pageHeaderActions>table {
+    margin-top: 10px;
+}
+
+#pageHeaderActions, #globalSearch, #typeChooserTrigger {
+    background-color: #444444;
+    margin-top: -4px;
+}
+.x-form-field-wrap .x-form-trigger {
+    height:19px;
+}
+
+/* end header styles */
+
+/* Info Page */
+#infoPageinfoPanelID {
+    background-color:#ffffff;
+}
+
+#infoPageIdentityDisplayText {
+    font-weight:normal;
+    font-size: 16px;
+}
+
+#infoPageIdentityObjectIdentifier {
+    font-weight:bold;
+}
+
+.myTab-toc {
+    padding: 6px 0 8px;
+}
+
+.adminOOTBTab span {
+}
+
+
+.x-panel {
+    border-color:transparent;
+    border-style:none;
+    border-width:0;
+}
+
+.x-panel-body {
+    border-color:transparent;
+}
+
+#accordion .x-panel-body,#contentPanel .x-panel-body {
+    background-color:#FFFFFF;
+    border-color:#D0D0D0;
+}
+
+.x-panel-bbar .x-toolbar {
+    border-color:#d0d0d0;
+    height:20px;
+}
+
+.x-panel-tbar .x-toolbar {
+    border-color:#d0d0d0;
+    height:auto;
+}
+
+.x-panel-tbar-noheader .x-toolbar,.x-panel-mc .x-panel-tbar .x-toolbar {
+    border-color:#d0d0d0;
+}
+
+.x-panel-body-noheader,.x-panel-mc .x-panel-body {
+    border-color:#d0d0d0;
+}
+
+#wizard_viewport .x-panel-body-noheader,#wizard_viewport .x-panel-mc .x-panel-body {
+    border-color:transparent;
+    background-color:transparent;
+}
+
+.contentBody {
+    border:none;
+}
+
+.x-panel-tl {
+    border-color:#d0d0d0;
+}
+
+.x-panel-tr {
+}
+
+.x-panel-bl {
+}
+
+.x-panel-br {
+}
+
+.x-panel-mc .x-panel-body {
+    border:0 none;
+}
+
+.x-grid-panel .x-panel-mc .x-panel-body {
+    border:0 solid #DADADA;
+}
+
+/* Icon Button */
+.x-icnbtn-tl,.x-icnbtn-tr,.x-icnbtn-tc,.x-icnbtn-ml,.x-icnbtn-mr,.x-icnbtn-mc,.x-icnbtn-bl,.x-icnbtn-br,.x-icnbtn-bc {
+}
+
+.x-btn-left {
+}
+
+.x-btn-right {
+}
+
+.x-btn-center {
+}
+
+/* QTips */
+.x-tip .x-tip-top {
+}
+
+.x-tip .x-tip-top-left {
+}
+
+.x-tip .x-tip-top-right {
+}
+
+.x-tip .x-tip-ft {
+}
+
+.x-tip .x-tip-ft-left {
+}
+
+.x-tip .x-tip-ft-right {
+}
+
+.x-tip .x-tip-bd-left {
+}
+
+.x-tip .x-tip-bd-right {
+}
+
+.x-tab-strip-wrap {
+    padding-top:0;
+    margin-left:0;
+    margin-right:0;
+}
+
+#stephdr .x-tab-strip-wrap {
+    overflow: visible;
+}
+
+#stephdr.empty {
+    padding-bottom: 12px;
+}
+
+/* Tabs */
+.x-tab-panel-header {
+    border-color:#d0d0d0;
+}
+
+.x-tab-panel-footer {
+    border-color:#d0d0d0;
+}
+
+.x-tab-strip-top .x-tab-right,
+.x-tab-strip-top .x-tab-strip-inner,
+.x-tab-strip-top .x-tab-left {
+    background-color: #92A2BD
+}
+.x-tab-strip-top .x-tab-strip-active .x-tab-right,
+.x-tab-strip-top .x-tab-strip-active .x-tab-strip-inner,
+.x-tab-strip-top .x-tab-strip-active .x-tab-left,
+.x-tab-strip-top .x-tab-strip-active.x-tab-strip-closable.privateEditableTab  .x-tab-right,
+.x-tab-strip-top .x-tab-strip-active.x-tab-strip-closable.privateEditableTab .x-tab-strip-inner,
+.x-tab-strip-top .x-tab-strip-active.x-tab-strip-closable.privateEditableTab .x-tab-left {
+    background-color: white;
+    border-bottom: 2px solid white;
+}
+
+.x-tab-strip-top li {
+    border: 1px solid #DADADA;
+    border-bottom: none;
+}
+/* on hover give the tab orange */
+.x-tab-strip-top li:hover {
+    border-top: 1px solid #f38800;
+    border-right: 1px solid #f38800;
+    border-left: 1px solid #f38800;
+}
+
+.x-tab-strip-closable.adminOOTBTab {
+
+}
+
+/* The next three apply to all tabs */
+.x-tab-strip-top .x-tab-strip-closable.privateEditableTab .x-tab-right,
+.x-tab-strip-top .x-tab-strip-closable.privateEditableTab .x-tab-strip-inner,
+.x-tab-strip-top .x-tab-strip-closable.privateEditableTab .x-tab-left,
+/* The next three apply to the 'add new tab'*/
+.x-tab-strip-top .privateEditableTab.x-tab-with-icon .x-tab-right,
+.x-tab-strip-top .privateEditableTab.x-tab-with-icon .x-tab-strip-inner,
+.x-tab-strip-top .privateEditableTab.x-tab-with-icon .x-tab-left {
+    background-color: #DADADA;
+}
+
+.x-tab-panel-bbar .x-toolbar {
+    border-color:#d0d0d0;
+}
+
+.x-tab-panel-tbar .x-toolbar {
+    border-color:#d0d0d0;
+}
+
+.x-tab-panel-header-plain .x-tab-strip-spacer {
+    border-color: transparent;
+    border: 0px;
+    height: 2px;
+    background-color:transparent;
+}
+
+/* Borders go last for specificity */
+.x-panel-noborder .x-panel-body-noborder {
+    border-width:0;
+}
+
+.x-panel-noborder .x-panel-header-noborder {
+    border-width:0;
+    border-bottom:1px solid #d0d0d0;
+}
+
+.x-panel-noborder .x-panel-tbar-noborder .x-toolbar {
+    border-width:0;
+}
+
+/* Get rid of the left padding for the table title bar. */
+.x-panel-noborder .x-panel-tbar-noborder div[id$=".titleBar"] {
+    padding:2px 2px 2px 0px;
+}
+
+/* Remove borders from the title bar of a table, and removes left padding. */
+.x-panel-noborder .x-panel-tbar-noborder .x-toolbar:first-child {
+    border-style: none;
+}
+
+.x-panel-noborder .x-panel-bbar-noborder .x-toolbar {
+    border-width:0;
+}
+
+.x-panel-bbar-noborder {
+    border-bottom:1px solid #d0d0d0;
+}
+
+.frame_outer {
+   margin-left:   0;
+   margin-top:    0;
+   margin-bottom: 16px;
+   margin-right:  8px;
+}
+
+.x-tab-panel-body > div {
+    padding-left: 8px;
+}
+
+.x-tab-panel-body > #infoPage_myTab_psb_productStructureGWT {
+    padding-left: 0;
+}
+
+.frame_outer .x-panel-bbar, 
+.frame_outer .x-panel-tbar, 
+.frame_outer .x-panel-body, 
+#wizard_viewport .frame_outer .x-panel-body {
+    border: 1px solid;
+    border-color: #B4B4B4;
+}
+
+.x-window-noborder .x-window-mc {
+    border-width:0;
+}
+
+.x-window-plain .x-window-body-noborder {
+    border-width:0;
+}
+
+.x-tab-panel-noborder .x-tab-panel-body-noborder {
+    border-width:0;
+}
+
+.x-tab-panel-noborder .x-tab-panel-header-noborder {
+    border-top-width:0;
+    border-left-width:0;
+    border-right-width:0;
+}
+
+.x-tab-panel-noborder .x-tab-panel-footer-noborder {
+    border-bottom-width:0;
+    border-left-width:0;
+    border-right-width:0;
+}
+
+.x-tab-panel-bbar-noborder .x-toolbar {
+    border-width:0;
+    border-top:1px solid #d0d0d0;
+}
+
+.x-tab-panel-tbar-noborder .x-toolbar {
+    border-width:0;
+    border-bottom:1px solid #d0d0d0;
+}
+
+.x-form-check-group-label {
+    border-bottom:1px solid #DADADA;
+    color:#15428b;
+}
+
+/* Toolbar */
+.x-toolbar {
+    background:#DADADA;
+
+    font-weight:bold;
+    font-size: 12px;
+    color:#444444;
+    height:25px;
+    border-bottom-width:1px;
+    border-top-style:solid;
+    border-right-style:none;
+    border-bottom-style:solid;
+    border-left-style:none;
+    border-bottom-color:#b7b7b7;
+    border-top-width:1px;
+    border-top-color:#b7b7b7;
+}
+
+.x-toolbar > .xtoolbar {
+    border-top:none;
+}
+
+.x-grid3-row-focus {
+    border-color:#fbd9a7;
+    background-color:#fbd9a7;
+}
+
+.ptc-grid-row-focus {
+    border-color: #FECB00 !important;
+    background-color: #FECB00 !important;
+}
+
+/* column header highlighting when column is in sorted condition */
+td.x-grid3-sort-asc1, td.x-grid3-sort-asc2, td.x-grid3-sort-asc3, td.x-grid3-sort-desc1, td.x-grid3-sort-desc2, td.x-grid3-sort-desc3 {
+    background-color: inherit;
+    color: #FFFFFF;
+    border-color: inherit;
+    background-image: none;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* used for focused row highlight which is already selected */
+.ptc-grid-row-checker-focus .x-grid3-row-checker {
+    background-color: #fbd9a7;
+    border-color:#a3bae9;
+ }
+
+.tablehighlightrowbg {
+    border-color:#ffebc5;
+    background-color:#ffebc5;
+}
+
+.x-grid-group-hd {
+    border-bottom-color:#707070;
+}
+
+.fbdetailsbox {
+    color:#004663;
+    font-weight:bold;
+    font-size: 13px;
+    font-size-adjust:inherit;
+}
+
+.searchBar {
+    color:#000000;
+    font-size: 13px;
+    padding:3px;
+    position:absolute;
+    margin-right:10px;
+    text-align:right;
+}
+
+.x-column-layout-ct {
+    padding-left: 0;
+}
+
+#titlebar {
+    
+    height:35px;/* IE only */
+    border:none;
+    font-weight:bold;
+    font-size:16px;
+    border-bottom:0px none white;
+}
+
+html>body #titlebar {
+    height:27px;/* All browsers but IE */
+}
+
+.x-toolbar div.xtb-text, span.xtb-text {
+    font-weight:bold;
+    font-size:14px;
+    color:#636363;
+}
+
+.x-toolbar div.xtb-text {
+    display:block;
+    margin-bottom: 2px;
+    padding:3px 5px 2px 0;
+}
+
+.x-toolbar-ct {
+    vertical-align:middle;
+    margin-top:0;
+    margin-right:0;
+    width: 100%;
+}
+
+/* Navigator */
+#navigatorPanel {
+    background-color:white;
+}
+
+#navigatorPanel .x-panel-body {
+    background-color: transparent;
+}
+
+#navigatorPanel .x-tab-panel-header, .x-tab-panel-footer {
+    background-color: transparent;
+}
+
+
+#object_main_navigation , #object_search_navigation{
+    border-right:1px solid #DADADA;
+    border-left:1px solid #DADADA;
+    border-bottom:1px solid #DADADA;
+}
+
+#object_main_navigation ul.x-tab-strip-top {
+    background-color: transparent;
+    border-bottom: 1px solid #999999;
+    height: auto;
+}
+
+#object_search_navigation .x-tab-panel-body{
+    border:1px solid #D0D0D0;
+}
+
+#object_search_navigation ul.x-tab-strip-top {
+    background-color: transparent;
+    border-bottom: 1px solid #999999;
+    height: auto;
+}
+
+#browseTabPanel .x-tab-strip span.x-tab-strip-text {
+    color: #000000;
+    text-decoration: none;
+}
+
+#browseTabPanel .x-tab-strip-over span.x-tab-strip-text {
+    text-decoration: underline;
+}
+
+#browseTabPanel .x-subtab-strip a {
+    text-decoration: none;
+}
+
+#navigatorPanel-xcollapsed, 
+#accordion-xcollapsed {
+    color: white;
+    background-color: #3D4647;
+    position: absolute;
+    left: 0px;
+    top: 56px;
+    visibility: hidden;
+    width: 30px;
+    height: 20px;
+    overflow: hidden;
+    z-index: 20;
+    border: none;
+    font-size:14px;
+    border-right:2px solid #FECB00;
+}
+
+#navigatorPanel-xcollapsed .x-tool,
+#accordion-xcollapsed .x-tool-expand-east,#accordion-xcollapsed .x-tool-expand-west{
+    float: none;
+    margin: 12px 7px;
+    z-index: 2;
+    position: relative;
+}
+
+#navigatorPanel-xcollapsed:hover {
+    /* lighter version of #3D4647 (filter: brightness(115%) still not working yet in IE 11) */
+    background-color: #465153; 
+}
+
+#navigatorPanel-xcollapsed .rotate-text {
+    height: 15px;
+    width: 15px;
+    margin: 0 8px;
+    text-align: left;
+    line-height: 15px;
+}
+
+.ext-ie8 #navigatorPanel-xcollapsed .rotate-text {
+    height: auto;
+    width: auto;
+    margin: 0 5px;
+}
+    
+#navlinks {
+    top: 68px;
+    z-index: 2;
+}
+
+#navlinks a {
+    font-weight: bold;
+    color: white;
+}
+#navlinks a:hover {
+    text-decoration: underline;
+}
+
+.ext-ie8 #navlinks .mnemonic {
+    position: relative;
+    left: 2px;
+}
+
+.ext-ie10 #navlinks .mnemonic,
+.ext-ie11 #navlinks .mnemonic {
+    left: 0px;
+    bottom:2px;
+}
+
+#navtitle {
+    bottom: 70px;
+    font-weight: bold;
+}
+
+.ext-ie8 #navigatorPanel-xcollapsed #navtitle {
+    bottom: 16px;
+    margin: 0 7px;
+}
+
+#preload1 {
+}
+
+/* the search history/advanced search/classification explorer links in the navigator are a tab set?! Remove the tab border styles from those */
+.x-tab-strip-top li.navigator-tab {
+    border: none;
+}
+/* the search history/advanced search/classification explorer links in the navigator are a tab set?! Remove the tab background-color from those */
+.x-tab-strip .navigator-tab  a.x-tab-right,
+.x-tab-strip .navigator-tab em.x-tab-left,
+.x-tab-strip .navigator-tab span.x-tab-strip-inner {
+    background-color: white;
+/* SPR 6478218 Navigator in windchill upsets icons. So added border-bottom and set it to none value */
+    border-bottom:none;
+}
+
+.x-tab-strip .navigator-tab .x-tab-strip-inner span.x-tab-strip-text {
+    color: #03447E;
+}
+
+.x-tab-strip .navigator-tab .x-tab-strip-inner span.x-tab-strip-text:hover {
+   text-decoration: underline;
+}
+
+.x-tab-strip .navigator-tab.x-tab-strip-active .x-tab-strip-inner span.x-tab-strip-text:hover {
+   color: #03447E;
+   text-decoration: none;
+}
+
+/* End Navigator */
+
+/* my stuff panel*/
+#myStuffPanel {
+    padding-top: 8px;
+}
+
+#myStuffPanel .x-panel-body {
+    border: none;
+    border-top: 1px solid #DADADA;
+    margin-left: 4px; 
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+#myStuffPanel .x-panel-bwrap {
+    border: 1px solid #D0D0D0;
+}
+
+/* end my Stuff panel*/
+
+#contentDiv {
+    padding-left: 8px;
+}
+#contentPanel_breadcrumb .homeNavigation-icon {
+    position:relative;
+    top:-2px;
+    padding:0;
+    margin:0;
+}
+
+#contentPanel_twoPanes_left {
+    border-top:1px solid #DADADA;
+    border-left:none;
+    border-bottom:none;
+    border-right:none;
+}
+
+#contentPanel_twoPanes_left>.x-panel-bwrap, #contentPanel_twoPanes_top>.x-panel-bwrap {
+    border-left:none;
+    border-bottom:none;
+    padding-top: 8px;
+    padding-left: 8px;
+}
+
+#contentPanel_twoPanes_left>.x-panel-bwrap {
+    border-top:2px solid #DADADA;
+    border-right:1px solid #DADADA;    
+}
+
+#contentPanel_twoPanes_top>.x-panel-bwrap {
+    border-bottom:1px solid #DADADA;    
+}
+
+#contentPanel_twoPanes_center {
+    border-top:1px solid #DADADA;
+    border-left:none;
+    border-bottom:none;
+    border-right:none;
+}
+
+#contentPanel_twoPanes_center>.x-panel-bwrap, #contentPanel_twoPanes_bottom>.x-panel-bwrap {
+    border-bottom:none;
+    border-right:none;
+    padding-top: 8px;
+    padding-left: 8px;
+}
+
+#contentPanel_twoPanes_center>.x-panel-bwrap {
+    border-top:2px solid #DADADA;
+    border-left:1px solid #DADADA;
+}
+
+#contentPanel_twoPanes_bottom>.x-panel-bwrap {
+    border-top:1px solid #DADADA;    
+}
+
+#contentPanel_twoPanes_center>.x-panel-bwrap>.x-panel-body,
+#contentPanel_twoPanes_left>.x-panel-bwrap>.x-panel-body {
+    border: none;
+}
+
+#twoPanes_BOTTOMPANE, #twoPanes_TOPPANE {
+    padding-left: 8px;
+}
+
+/* wizard properties */
+.wizardPanel-body {
+    background-color: white;
+    border:0px none white;
+}
+
+.wizbodybg {
+    background-color: white;
+    border:0px none white;
+}
+
+#wiz_step_contents {
+    background-color:white;
+}
+
+#contentArea {
+    background-color:transparent;
+}
+
+#wizard_viewport .x-box-mc {
+    padding: 0 0 0 8px;
+}
+
+#wizard_viewport #footerPanel .xtb-text{
+    white-space:normal;
+}
+
+#footerPanel {
+    background-color:transparent;
+}
+.stepIcon-active{
+   padding: 3px;
+   color: white;
+   text-shadow: #f37200 1px 1px;
+}
+
+.stepIcon-visited{
+   padding: 3px;
+   color: white;
+   text-shadow: #2ba307 1px 1px;
+}
+
+.stepIcon-nonVisited{
+   padding: 3px;
+   color: white;
+   text-shadow: #747474 1px 1px;
+}
+
+.ext-el-mask {    
+    background-color: #CCCCCC;
+}
+
+#wiz_step_contents .ext-el-mask {
+    background-color:white;
+}
+
+#headerPanel .x-tab-strip-wrap {
+    overflow: visible;
+}
+
+.aboutPage, 
+.aboutPage .productTable {
+    width: 100%;
+}
+
+.aboutPage #logo {
+    margin-left: 100px;
+}
+
+.aboutPage .products {
+    text-align: center;
+}
+
+.aboutPage label {
+    font-weight: bold;
+}
+
+.aboutPage td.copyright {
+    padding: 0 10px 0 10px;
+}
+
+.aboutPage iframe {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ababab;
+}
+
+.aboutPage .aboutOK {
+    margin: 10px;
+    float:right;
+}
+
+
+/*
+ * Ext Windows: default windchill style (e.g rename tab, Save As view, etc.)
+ * NOTE: css properties are sometimes defined twice but done differently (e.g background vs background-image) on
+ * purpose. Inheritance is coming from multiple places (gxt-all.css, ext-all-notheme.css, etc.) and because it is
+ * defined differently in each place, this affirms both ways are overridden.
+ */
+
+.x-window-plain {
+}
+
+.x-window {
+    border:1px solid #606060;
+    background-color:white;
+}
+
+.x-window-body {
+    border:1px solid #606060;
+    background-color:#FFF;
+}
+
+.x-window-plain .x-window-body {
+    border:none;
+}
+
+body.x-body-masked .x-window-plain .x-window-mc {
+}
+
+.x-window-proxy {
+    background-color:#e0e0e0;
+    border-color:#b0b0b0;
+}
+
+.x-window-tl .x-window-header {
+    font-size:14px;
+    font-weight:bold;
+    color:#444444;
+    background-color:transparent;
+    padding:8px 0;
+}
+
+.x-window-tl {
+    background-color:transparent;
+    padding-left:10px;
+}
+
+.x-window-tr {
+    background-color:transparent;
+    padding-right:8px;
+}
+
+.x-window-tc {
+    background-color:transparent;
+}
+
+.x-window-mc {
+    font-size: 12px;
+    border:0px none #fff;
+    background-color:transparent;
+}
+
+.x-window-ml {
+    padding-left:8px;
+}
+
+.x-window-mr {
+    background-color:transparent;
+    padding-right:8px;
+}
+
+.x-window-mc {
+    background-color:transparent;
+}
+
+.x-window-bl {
+    padding-left:0;
+}
+
+.x-window-br {
+    padding-right:0;
+}
+
+.x-window-bc {
+}
+
+.x-window-bc .x-window-footer {
+    background-color:white;
+    padding-bottom:8px;
+}
+
+.x-window-bwrap {
+}
+
+.x-window-maximized .x-window-tc {
+    background-color:#fff;
+}
+
+.x-window-bbar .x-toolbar {
+    border-top-color:#D1D3D4;
+}
+
+.x-panel-collapsed .x-window-tl {
+    border-color:#d0d0d0;
+}
+
+.x-window-plain .x-window-mc {
+    background-color:#fff;
+    border:0px solid #fff;
+}
+
+.x-window-body .ext-mb-content {
+    overflow:auto;
+}
+
+/* Dialoge windows (e.g stack traces, etc.)*/
+.x-window-dlg {
+    background-color:white;
+}
+
+.x-window-dlg .x-window-body {
+    /* Necessary to use important here so we can override gxt !important usage */
+    border:1px solid #868585 !important;
+    overflow:hidden !important;
+    padding:0;
+}
+
+.x-window-dlg .x-dlg-icon .ext-mb-content {
+    margin-left:0;
+    padding-top:8px;
+    padding-bottom:8px;
+    padding-right:8px;
+    padding-left:0;
+}
+
+.x-window-dlg .x-window-header-text {
+    font-size:14px;
+}
+
+.x-window-dlg .ext-mb-text {
+    font-size:12px;
+}
+
+.x-window-dlg .ext-mb-textarea {
+    font:normal 12px helvitica,arial,sans-serif,Segoe UI,tahoma;
+}
+
+/* IE only class coming from gxt that is messing up the width in IE */
+.ext-ie .x-window-dlg .ext-mb-icon {
+    width:32px;
+}
+
+.x-window-dlg .x-msg-box-wait {
+    display: block;
+    margin:8px;
+    height:32px;
+    width:32px;
+}
+
+.x-window-dlg .ext-mb-info {
+    display: block;
+    margin:8px;
+    height:32px;
+    width:32px;
+}
+
+.x-window-dlg .ext-mb-warning {
+    display: block;
+    margin:8px;
+    height:32px;
+    width:32px;
+}
+
+.x-window-dlg .ext-mb-question {
+    display: block;
+    margin:8px;
+    height:32px;
+    width:32px;
+}
+
+.x-window-dlg .ext-mb-error {
+    display: block;
+    margin:8px;
+    height:32px;
+    width:32px;
+}
+
+.x-dlg-mask {
+    background-color:#ccc;
+}
+
+/* Panels in Ext Windows */
+.x-window .x-panel-bc .x-panel-footer {
+    padding-bottom:0;
+}
+
+.x-window .x-panel-btns {
+    overflow:hidden;
+    padding: 8px 0;
+}
+
+.x-window .x-panel-fbar {
+    display:block;
+    left:0;
+    overflow:hidden;
+    padding:0;
+    position:relative;
+    top:0;
+}
+
+.x-window .x-panel-mc .x-panel-body {
+}
+
+.x-window .x-panel-fbar td.x-toolbar-cell {
+    padding: 0 0 0 8px;
+}
+
+.x-window .x-panel-tl {
+    background-color:#fff;
+    padding-left:0;
+    border:0px none #fff;
+}
+
+.x-window .x-panel-tr {
+    background-color:#fff;
+    padding-left:0;
+    border:0px none #fff;
+}
+
+.x-window .x-panel-ml {
+    background-color:#fff;
+    padding-left:0;
+}
+
+.x-window .x-panel-mr {
+    background-color:#fff;
+    padding-right:0;
+}
+
+.x-window .x-panel-mc {
+    padding: 0 0 0 0;
+    border: 1px solid #868585;
+}
+
+.x-window .x-panel-bl {
+    background-color:transparent;
+}
+
+.x-window .x-panel-br {
+    background-color:transparent;
+    padding-right:0;
+}
+
+.x-window .x-panel-bc {
+    background-color:transparent;
+}
+
+.x-window-body .x-form-item {
+    display:block;
+    margin-bottom:0;
+    padding:4px;
+}
+
+/* used when draging a msg window */
+.x-panel-ghost {
+    background-color:white;
+}
+
+/* Special Ext Window: Mini infos */
+.miniInfoWindowStyle {
+    border:0 solid #606060;
+}
+
+.miniInfoWindowStyle .x-window-bwrap {
+}
+
+.miniInfoWindowStyle .x-window-body {
+   border-color:white;
+   border-style:none;
+   border-width:0px;
+}
+
+.miniInfoWindowStyle .x-window-tl {
+    border-bottom:0 solid #fff;
+    border-left:0 solid #fff;
+    border-top:0 solid #fff;
+    padding-left:6px;
+    padding-bottom:0;
+    margin-bottom:-4px;
+    z-index:9009;
+}
+
+.miniInfoWindowStyle .x-window-tr {
+    border-bottom:0 solid #fff;
+    border-right:0 solid #fff;
+    border-top:0 solid #fff;
+    padding-right:6px;
+    padding-bottom:0;
+}
+
+.miniInfoWindowStyle .x-window-tc {
+    border-bottom:0 solid #fff;
+    border-top:0 solid #fff;
+}
+
+.miniInfoWindowStyle .x-window-ml {
+    padding-left:5px;
+}
+
+.miniInfoWindowStyle .x-window-mr {
+    padding-right:5px;
+}
+
+.miniInfoWindowStyle .x-window-mc {
+   border-color:white;
+   border-style:none;
+   border-width:0px;
+}
+
+.miniInfoWindowStyle div.x-window-bl {
+    margin-top:-6px;
+    z-index:9009;
+}
+
+.miniInfoWindowStyle .x-window-bl {
+    padding-left:6px;
+    padding-top:2px;
+}
+
+.miniInfoWindowStyle .x-window-br {
+    padding-right:6px;
+    padding-top:2px;
+}
+
+.miniInfoWindowStyle .x-window-bc {
+}
+
+.miniInfoWindowStyle .x-window-header {
+    padding:4px 0;
+}
+
+.miniTable .x-list-over {
+    background-color: #fef1de;
+}
+
+.miniInfoWindowStyle #vis .x-panel-mc {
+    border: 0;
+    border-right: 1px solid #DADADA;
+}
+.miniInfoWindowStyle #minicontentPanel_parent {
+    border: 0;
+    border-left: 1px solid #DADADA;
+}
+
+.miniInfoWindowStyle #vis-xsplit:hover {
+    
+    
+}
+
+#miniInfo_centerContentPanel .x-panel, .x-panel-body, .x-panel-mc, .x-panel-body-noheader {
+    border-top:0px none white;
+    border-bottom:0px none white;
+    border-left:0px none white;
+    border-right:0px none white;
+    border-color:white;
+    border-style:none;
+    border-width:0;
+    border:0px none white;
+}
+
+#miniInfoCloseButton:hover {
+   
+}
+
+#miniInfo_attributePanel .x-grid3-cell-inner {
+    overflow: visible;
+    white-space: normal !important;
+}
+
+.miniInfo_titlePanel {
+    overflow: visible;
+    white-space: normal !important;
+    font-size:16px;
+}
+
+.attributePanel-label, .pplabel {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Drop-down message window */
+/* use id here to be more specific and assure style gets chosen */
+#inlineWindow {
+    /*Removed is not working in embedded browser*/
+    background-color: rgba(255,255,207,0.8);
+}
+
+/* no alpha transparency for embedded IE8 and inside DTI with IE. */
+.ext-ie8.embedded #inlineWindow, .DTI #inlineWindow {
+    background-color: #FFFFCF;
+}
+
+.inlineWindow {
+    width: 100%;
+}
+
+.inlineWindow .x-window-header {
+    padding: 3px;
+}
+
+.inlineWindow .x-window-tl, .inlineWindow .x-window-tr, .inlineWindow .x-window-tc,
+.inlineWindow .x-window-ml, .inlineWindow .x-window-mr, .inlineWindow .x-window-mc,
+.inlineWindow .x-window-bl, .inlineWindow .x-window-br, .inlineWindow .x-window-bc {
+    background-color: transparent;
+    border: none;
+}
+
+.inlineWindow .x-window-bwrap {
+    border-bottom: 1px solid #897a0a;
+}
+
+.inlineWindow .x-window {
+    border:0 solid #fff;
+}
+
+.inlineWindow .x-window-body {
+    border-color:transparent;
+    border-style:none;
+    border-width:0px;
+    margin-right: 6px;
+    margin-left: 6px;
+    margin-top: 2px;
+    overflow: auto;
+    background-color:transparent;
+}
+
+.inlineWindow .x-window-header {
+    background-color:transparent;
+}
+
+.inlineWindow .x-window-bwrap {
+}
+
+.inlineWindow .x-window-tl {
+    
+    background-color:transparent;
+    border-bottom:0 solid #fff;
+    border-left:0 solid #fff;
+    border-top:0 solid #fff;
+    padding-left:0;
+    padding-bottom:0;
+    margin-bottom:0;
+}
+
+.inlineWindow .x-window-tr {
+    
+    background-color:transparent;
+    border-bottom:0 solid #fff;
+    border-right:0 solid #fff;
+    border-top:0 solid #fff;
+    padding-right:0;
+    padding-bottom:0;
+}
+
+.inlineWindow .x-window-tc {
+    
+    background-color:transparent;
+    border-bottom:0 solid #fff;
+    border-top:0 solid #fff;
+}
+
+.inlineWindow .x-window-header {
+    background-color:transparent;
+}
+
+.inlineWindow .x-window-ml {
+    
+    background-color:transparent;
+    margin-left:0;
+    padding-left:0;
+}
+
+.inlineWindow .x-window-mr {
+    
+    background-color:transparent;
+    padding-right:0;
+}
+
+.inlineWindow .x-window-mc{
+   border-color:white;
+   border-style:none;
+   border-width:0px;
+}
+
+.inlineWindow div.x-window-bl {
+    margin-top:0;
+}
+
+.inlineWindow .x-window-bl {
+    background-color:transparent;
+    padding-left:0;
+    padding-top:0;
+}
+
+.inlineWindow .x-window-br {
+    background-color:transparent;
+    padding-right:0;
+    padding-top:0;
+}
+
+.inlineWindow .x-window-bc {
+    
+    background-color:transparent;
+}
+
+.inlineWindow .inlineIcon {
+    float:left;
+    margin: 0 10px 0 0;
+}
+
+.inlineMessage .msgObjIdentityLine {
+    padding-left: 48px;
+    font-size: 1.2em;
+}
+
+.inlineMessage .msgLabel {
+    font-size:1.2em;
+    padding-bottom: 5px;
+}
+
+.inlineMessage .msgIdentityText {
+    position: relative;
+    top: -3px;
+    padding-left: 3px;
+}
+
+.inlineMessage {
+    clear:left;
+    margin-top: 6px;
+}
+
+.utilities { 
+    padding: 0;
+}
+
+.utilities #utilTable { 
+    width:100%; 
+    margin-top: -1em;
+}
+
+.utilities .title {
+   padding: 0 12px;
+   vertical-align: top;
+}
+
+.utilities td {
+   padding-bottom: 6px;
+}
+
+.utilities .header, #carambolaReport h2 {
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+#carambolaReport h4 {
+    margin-top: 8px;
+}
+
+.utilities #help_viewport {
+    padding-right: 10px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 999;
+}
+
+.home_icon {
+    
+    width: 16px;
+    height: 16px;
+    margin: 0;
+ }
+
+.home_icon_header {
+    
+    padding: 2px;
+    border-style: none;
+    cursor: pointer;
+ }
+
+div.x-tool-home {
+    margin-right:3px;
+    margin-top:3px;
+    position:relative;
+    top:18px;
+    z-index:5;
+}
+
+/* fix home icon for older versions of gecko */
+.ext-gecko2 div.x-tool-home {
+    top:0;
+}
+
+div.x-tool-windchillHelp {
+    margin-right:3px;
+    margin-top:-15px;
+    position:relative;
+    top:30px;
+    z-index:5;
+    width:20px;
+    height:20px;
+}
+
+#contentPanel_crumbs {
+    margin-left: 10px;
+}
+
+.mnemonic {
+    text-decoration: none;    
+}
+
+.inlineHelpBox {
+    margin: 0 8px 8px 0;
+}
+
+/*  Styles affecting the look of the visualization panel */
+#visualizationAndAttributesWrapper #wvs_pview_div {
+    border: 4px solid #f38800;
+    overflow: hidden;
+}
+
+/**
+ * These measurements should match the values specified in wvs.properties.xconf 
+ * Refer to these two properties set in wvs.properties.xconf:
+ * thumbnail.generator.width and thumbnail.generator.height
+ */
+#visualizationAndAttributesWrapper #wvs_pview_div img, #visualizationAndAttributesWrapper .vizComponent #runpview {
+    width: 288px;
+    height: 192px;
+}
+
+#visualizationPanel {
+  float:left; 
+  overflow:hidden;
+  text-align:center;
+  margin-bottom: 12px;
+  margin-right: 8px;
+}
+
+#vizAttributePanel {
+    height: 202px;
+    /*Adding the flex CSS attribute to resolve SPRS 4351903 and 4832568 */
+    -webkit-flex:2;
+    flex:2;
+}
+
+#visualizationAndAttributesWrapper {
+    border: none;
+    padding:0;
+    margin: 0 8px 12px 0;
+    /*Adding the flex CSS attribute to the wrapper to resolve SPRS 4351903 and 4832568*/
+    display: -webkit-flex;
+    display: flex;
+}
+
+#visualizationAndAttributesWrapper td {
+    border: none;
+}
+
+/** 
+ *  The attributes panel by the vizualization is special: a fixed height, scrolling, no collapse tool
+ **/
+#visualizationAndAttributesWrapper .x-fieldset {
+    margin: 0px;
+}
+
+#visualizationAndAttributesWrapper .x-fieldset-bwrap {
+    height: 163px;
+    overflow: auto;
+}
+
+#visualizationAndAttributesWrapper .x-fieldset legend .x-tool-toggle {
+    display: none;
+}
+
+.attribute-apanel {
+    padding: 0 8px 12px 0; 
+}
+
+#visualizationAndAttributesWrapper .attribute-apanel {
+    padding: 0 0 0 8px;
+}
+
+#prefSearch {
+    margin-left: 8px;
+    margin-bottom: 16px;
+}
+
+
+#prefSearch .searchBar {
+    position: inherit;
+    padding: 0;
+    margin-right: 8px;
+    float: right;
+}
+
+.x-panel-resize {
+    height:6px;
+    position:relative;
+    top:1px;
+    left:0;
+    cursor:s-resize;
+    font-size:1px;
+    overflow:hidden;
+    margin-top: -2px;
+}
+
+.x-panel-resize:hover {
+}
+
+.x-resizable-over .x-resizable-handle-east, .x-resizable-pinned .x-resizable-handle-east
+{
+}
+
+div.x-reqlDescription strong {
+    font-weight:bolder;
+}
+
+div.x-reqlDescription ol {
+    list-style: decimal inside none;
+}
+
+div.x-reqlDescription ul {
+    list-style: disc inside none;
+}
+
+div.x-reqlDescription em {
+    font-style:italic;
+}
+
+div.x-reqlDescription strong em,div.x-reqlDescription em strong{
+    font-weight:bolder;
+    font-style:italic;
+}
+
+div.x-reqlDescription caption,th {
+    text-align:center;
+}
+
+div.x-reqlDescription h1 {
+    font-size:28px;
+}
+
+div.x-reqlDescription h2 {
+    font-size:23px;
+}
+
+div.x-reqlDescription h3 {
+    font-size:19px;
+}
+
+div.x-reqlDescription h4 {
+    font-size:16px;
+}
+
+div.x-reqlDescription h5 {
+    font-size:13px;
+}
+
+div.x-reqlDescription h6 {
+    font-size: 13px;
+}
+
+.add-item-button {
+    float: right;
+    margin-right:8px;
+}
+
+/* style applied when a workflow task is passed the due date */
+.overdueDate {
+    color: red;
+    font-weight: bold;
+}
+
+/* x-tool definition for tool icons appearing in a window */
+.window-xtool{
+    overflow:hidden;
+    width:16px;
+    height:16px;
+    float:right;
+    cursor:pointer;
+    margin-left:2px;
+}
+
+/* Definition for help tool icon appearing in a window */
+.window-help-xtool{
+}
+
+/* Custom background image for GXT window dialogs */
+.custom-background-window {
+    background-color: white;
+}
+
+/* Custom background image for GXT window dialogs */
+.custom-background-window .x-window-bc .x-window-footer  {
+    background-color: white;
+}
+/* Custom padding for the toolbar buttons of a CAT dialog widget */
+#catDialogWidget.x-window .x-panel-fbar td.x-toolbar-cell {
+    padding: 0 0 0 3px;
+}
+
+/* windchill home page table margins */
+#contentPanel_homepage {
+    padding-left:8px;
+}
+
+#contentPanel_homepage .myTab-toc {
+    padding-top: 0;
+}
+
+.x-window-dlg .ext-mb-icon {
+    height: 32px;
+    width: 32px;
+ }
+ 
+ /* icon for save view button*/
+ .saveView button {
+     
+}
+ /* special rule for expand button of tables, removes button background */
+ .tableToggle.x-btn-over .x-btn-tl, .tableToggle.x-btn-over .x-btn-tr, .tableToggle.x-btn-over .x-btn-tc,
+ .tableToggle.x-btn-over .x-btn-ml, .tableToggle.x-btn-over .x-btn-mr, .tableToggle.x-btn-over .x-btn-mc, 
+ .tableToggle.x-btn-over .x-btn-bl, .tableToggle.x-btn-over .x-btn-br, .tableToggle.x-btn-over .x-btn-bc {
+     
+}
+
+.tableToggle button {
+    
+}
+.tableToggle button.expandCollapse_collapsed {
+    
+}
+.tableToggle.x-btn-over button.expandCollapse_collapsed {
+    
+}
+.tableToggle button.expandCollapse_expanded {
+    
+}
+.tableToggle.x-btn-over button.expandCollapse_expanded {
+    
+}
+
+/* any text that is rotated and contains a link needs an underline, otherwise the text will jump on hover */
+div.rotate-text a {
+    text-decoration: underline;    
+}
+
+/* fixes SPR 1995207: checkbox disappears in IE - http://www.satzansatz.de/cssd/rpfloat.html */
+.x-form-element {
+    position:static;    
+}
+
+/* Put side and top borders on the actions toolbar; this becomes the visual top of the table. */
+.x-toolbar.x-small-editor.ecaToolbar.x-toolbar-layout-ct {
+    border-style: solid solid none solid;
+    border-width: 1px;
+    border-color: #B4B4B4;
+}
+
+/* Lighten the borders of the search-in-list and find-in-tree text fields. */
+input[id$=".searchInListTextBox"] {
+    border-width:2px;
+    border-color: #D0D0D0;
+}
+
+.ext-ie input[id$=".searchInListTextBox"]:focus, textarea:focus {
+    border-style:dotted;
+    border-width:2px;
+    background-color:#fef1de;
+}
+.ext-gecko input[id$=".searchInListTextBox"]:focus, textarea:focus {
+    border-style:dotted;
+    border-width:2px;
+    background-color:#fef1de;
+}
+
+
+input[id$=".fitTextField"] {
+    border-color: #D0D0D0
+}
+
+/* Render the actions menu in color. */
+.actions-menu .x-btn-text {
+    color: #666666;
+}
+.actions-menu em.x-btn-arrow {
+}
+
+/* Make the title bar look above, not within, the table. */
+div[id$=".titleBar"] {
+    background-color: inherit;
+    border: none;
+}
+.ext-ie7 div[id$=".titleBar"] {
+    background-color: transparent; /* inherit fails in IE7 */
+}
+.x-panel-tbar.x-panel-tbar-noheader.x-panel-tbar-noborder {
+    /* Needed to override a 1px border from the .frame_outer .x-panel-tbar selector. */
+    border: none;
+}
+
+/* Specify the font for title bar object count. */
+span.tableCount {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+/* make sure appropriate elements get visually focused.  Firefox handles button focus fine, but IE does not */
+input[type="radio"]:focus, 
+input[type="checkbox"]:focus, 
+.ext-ie .x-btn-mc button:focus, 
+.ext-webkit .x-btn-mc button:focus {
+    border-style:dotted;
+    border-width:1px;
+}
+
+a.linkfont.icon {
+    display: block;
+}
+
+.ext-webkit a.linkfont:focus {
+    border-style:dotted;
+    border-width:1px;
+}
+
+.ext-webkit a.linkfont.icon:focus {
+    position:relative;
+    top: -1px;
+    left: -1px;
+}
+
+input[type="text"]:focus, input[type="select"]:focus, select:focus, textarea:focus {
+    border-style:dotted;
+    border-width:1px;
+    background-color: #E9EBF1;
+}
+
+/* Lighten and color the view selection listbox. */
+div[id$=".titleBar"] .x-form-field-wrap .x-form-trigger {
+    
+    
+    border: none;
+}
+
+input[id$="filterSelect"],
+input[id$="filterSelect"]:focus {
+    border-style: none solid none none;
+    border-color: #E0E0E0;
+    color: #2D647E;
+    font-size: 13px;
+}
+
+/* Firefox only vertical alignment for Views Combo box text. */
+.ext-gecko input[id$="filterSelect"] {
+    padding-top: 0px;
+}
+
+div[id$=".titleBar"] div.x-panel-bwrap>div.x-panel-body {
+    border: 1px solid #D0D0D0;
+}
+
+/* Border for wizard view dropdowns */
+#wizard_viewport .x-toolbar-left .x-form-field-trigger-wrap {
+    border: 1px solid #E0E0E0;
+}
+
+.navigator-treePanel-header {
+}
+
+#object_main_navigation .navigator-treePanel-body {
+    border: 1px solid #D0D0D0;
+}
+
+.navigator-treePanel-tool-viewAll {
+    width: auto;
+    padding-left: 15px;
+}
+
+#object_main_navigation .x-tab-panel-body > div {
+    padding: 0;
+}
+
+img[name='calImg'] {
+    margin: 0 5px -5px 0
+}
+
+.navigatorPanel-iframe {
+    filter: alpha(opacity=0);
+}
+
+#navigatorPanel .x-panel-bwrap {
+    position:relative;
+    z-index:2;
+}
+
+/* make sure links in the menu don't jump when focused */
+.x-menu a:focus {
+    border-width: 0px;
+    border-style:none;
+}
+
+/* make sure that active menu item receives correct border on top and bottom */
+.x-menu-item-active a.x-menu-item {
+    border-style: solid;
+    border-width: 0 1px;
+}
+
+/* subtract from margin of focused buttons with arrow dropdown in IE, otherwise button grows on focus */
+.ext-ie .x-btn-mc .x-btn-arrow button:focus {
+    margin-left: -1px;
+    margin-right: -1px; 
+}
+
+#optionmanager_leftpane > .x-panel-bwrap {
+    border-top:2px solid #DADADA;
+    border-left:none;
+    border-bottom:none;
+    border-right:1px solid #DADADA;
+    padding-top: 8px;
+}
+
+#optionmanager_rightpanetabs > .x-tab-panel-bwrap {
+    border-top:2px solid #DADADA;
+    border-left:1px solid #DADADA;
+    border-bottom:none;
+    border-right:none;
+    padding-top: 8px;
+}
+
+/*
+miniNavigator MTWindow and .mini*
+*/
+#MTWindow fieldset {  
+    margin-top: 1px;  
+    line-height: normal;
+}
+
+#MTWindow .x-fieldset {
+   border: 0px;
+   padding: 0px;
+   margin: 0px;
+   marging-bottom: 0px;   
+   font-size: 13px;
+}
+
+#MTWindow .x-fieldset legend {
+   margin-bottom:0px;
+}
+
+#MTWindow .linkfont {
+   font-size: 13px;
+}
+
+#MTWindow .attributePanel-group-panel td {
+   padding: 0 0 0 5px;
+   font-size: 13px;
+}
+
+#MTWindow .x-fieldset legend .x-tool-toggle {
+    display: none;
+}
+
+#MTWindow .attribute-apanel {
+    padding: 0 0 8px 0;
+}
+
+
+.miniNavTitle  {
+}
+
+.miniNavTitle .x-btn-tl {
+    
+}
+
+.miniNavTitle .x-btn-tr {
+    
+}
+
+.miniNavTitle .x-btn-tc {
+    
+}
+
+.miniNavTitle .x-btn-ml {
+    
+}
+
+.miniNavTitle .x-btn-mr {
+    
+}
+
+.miniNavTitle .x-btn-mc {
+    
+}
+
+.miniNavTitle .x-btn-bl {
+    
+}
+
+.miniNavTitle .x-btn-bc {
+    
+}
+
+.miniNavTitle .x-btn-br {
+    
+}
+
+#MTWindow .x-tool {
+   float: left;
+}
+
+#MTWindow .xtb-text img {
+   vertical-align: middle;
+}
+
+.x-panel.x-portlet .x-panel-tl,
+.x-panel.x-portlet .x-panel-tr,
+.x-panel.x-portlet .x-panel-tc {
+}
+
+#navigation_myStuffTab {
+    padding-right: 8px;
+}
+
+.x-panel .x-portlet .frame_outer .x-panel-body {
+    border: 0 none transparent;
+}
+
+.x-panel .x-portlet .x-panel-tl {
+    border: 1px solid #D0D0D0;
+    border-bottom-color: #DADADA;
+}
+
+.x-panel .x-portlet .x-tool-toggle {
+    float:left;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+.x-panel .x-portlet .x-panel-header {
+    color: #444444;
+}
+
+.x-portlet .x-panel-mc {
+    padding-top:0px;
+}
+
+#vis_img_panel .x-panel-header {
+    border-top: 1px solid #ACACAC;
+    border-bottom: 1px solid #ACACAC;
+    border-left: 0 none white;
+    border-right: 0 none white;
+}
+
+/* styles for portlet in mini navigator */
+#minicontentPanel_parent .x-panel .x-portlet .x-panel-tl {
+    color: #444444;
+    font-size: 13px;
+    font-weight: bold;
+    border-top: 1px solid #ACACAC;
+    border-bottom: 1px solid #ACACAC;
+    border-left: 0 none white;
+    border-right: 0 none white;
+}
+
+#minicontentPanel_parent .x-panel .x-portlet .x-panel-tr {
+    background-color:transparent;
+    
+}
+
+#minicontentPanel_parent .x-panel .x-portlet .x-panel-mc {
+    border: 0 none white;
+}
+
+#minicontentPanel_parent .x-portlet .x-panel-nofooter .x-panel-bc {
+    height: 0;
+}
+
+#thumbNailNavPanel .x-panel-header {
+    border-top: 1px solid #ACACAC;
+    border-bottom: 1px solid #ACACAC;
+    border-left: 0 none white;
+    border-right: 0 none white;
+}
+
+#MTWindow .miniInfoTitleBar {
+    border-top: 0 none;
+    border-bottom: 0 none;
+    border-left: 0 none;
+    border-right: 0 none;
+}
+
+#actionToolbar .x-toolbar{
+    background-color:#FFF;
+}
+
+/*style for editable field in Structure Component*/
+.cat-editable-field {
+   border-width: 1px;
+   border-color: #DADADA !important;
+   border-style: solid;
+}
+
+/*style for text area in Structure Component*/
+#AttributesTab textarea:focus {
+   background-color:transparent;
+}
+
+/* Style to fix misalignment in combo box text field and down trigger arrow in Structure Component */
+.x-form-field-wrap .x-form-text {
+    padding: 1px 0 1px 3px;
+}
+
+.ext-strict .x-small-editor input.x-form-text {
+    margin-top: -1px;
+    height: 16px !important;
+    padding-top: 1px;
+}
+
+.ext-strict .frame_outer .x-small-editor input.x-form-text {
+    margin-top: 0;
+    height: 17px !important;
+}
+
+/* Style used for Rich Text Quick Tips*/
+.qtip-richtext {
+     width: auto !important;
+     max-width: 600px;
+}
+
+/* Style used for body of Rich Text Quick Tips*/
+.qtip-richtext-content {
+               max-height:200px;
+               overflow: auto;
+}
+
+/* Style used for body of Rich Text Quick Tips*/
+.qtip-richtext-content.x-tip-body {
+     width: auto !important;
+     max-width: 600px;
+}
+
+/* White background used for rich text tooltips */
+.qtip-richtext .x-tip-tc, .qtip-richtext .x-tip-tl, .qtip-richtext .x-tip-tr, .qtip-richtext .x-tip-bc, .qtip-richtext .x-tip-bl, .qtip-richtext .x-tip-br, .qtip-richtext .x-tip-ml, .qtip-richtext .x-tip-mr {
+}
+
+/* Icons for wrap and unwrap column level action*/
+.xg-hmenu-wrap .x-menu-item-icon{
+}
+
+.xg-hmenu-unwrap .x-menu-item-icon{
+}
+
+/* Style for WGM on software download page. */
+table.wgm{
+    border-collapse: collapse;
+    width: 75%;
+}
+.wgm th {
+    text-align:left;
+    border: 1px solid black;
+ }
+ 
+.wgm td {
+    text-align:left;
+    vertical-align:top;
+    border: 1px solid black;
+}
+
+.action-group-cell {
+   vertical-align: center;
+   padding-left: 5px;
+   padding-top: 5px;
+}
+
+.action-group-cell-for-no-action {
+   vertical-align: center;
+   padding-left: 0px;
+   padding-top: 5px;
+}
+
+.action-group-label {
+   font-weight:bold;
+}
+
+.action-group-toolbar {
+    border-bottom: 0px solid #b7b7b7;
+    border-style: solid none;
+    border-top: 0px solid #b7b7b7;
+    color: #444444;
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px;
+}
+.action-group-highlight-search-results {
+    font-weight: bold;
+}
+
+.action-group-highlight-search-group {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.action-group-subject {
+    padding-left: 12px;
+}
+
+.pref-long-description{
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.pref-long-description code{
+    padding-left:20px;
+}
+
+
+#structure_leftpane>.x-panel-bwrap, #structure_rightpanetabs>.x-tab-panel-bwrap {
+        border: 1px solid #DADADA;
+        border-top: 2px solid #DADADA;
+        padding-top: 8px;
+}
+
+/** Styles for the welcome pages */
+    .guide-bg {
+        position:relative;
+        font-size: 13px;
+        text-align: center;
+    }
+    .guide-bg h1 {
+        font-size: 32px;
+        color: #007a3e;
+        text-align: center;
+        font-weight: normal;
+        white-space: nowrap;
+        padding-top: 40px;
+    }
+    .guide-bg h2 {
+        font-size: 20px;
+        color: black;
+        text-align: center;
+        font-weight: normal;
+    }
+    .guide-bg h3 {
+        color: #007a3e;
+        font-size: 13px;
+        margin: 0;
+        font-weight: bold;
+    }
+    .guide-bg .guide-text {
+        padding-top: 7px;
+        position:absolute;
+        text-align:left;
+    }
+    .guide-sizing-div {
+        height:100%;
+        width:100%;
+    }
+    .guide-sizing-div-not-ipad {
+        overflow:hidden;
+    }
+/** end of Styles for the welcome pages */
+
+/* Styles added to make consistent button color on mouse hover for certain UIs SPR#6612953 */
+button, input[type="button"]:enabled {
+     border: none;
+     background-color: #E0E0E0;
+}
+button:hover, input[type="button"]:enabled:hover {
+     background-color: transparent;
+     color: #666666;
+     font-style: italic;
+     text-decoration: underline;
+}
+
+#header{
+	background-color:#444444;
+}
+
+.x-grid3-hd-row {
+	background-color: #666666; 
+}
+
+.x-grid3-hd-inner{
+	color: #FFFFFF;	
+}
+
+.x-toolbar.x-component.x-border-panel.x-toolbar-layout-ct {
+ 	background-color: #FFFFFF;
+ }
+ 
+.x-panel-footer.x-panel-footer-noborder.x-panel-btns .x-btn.x-btn-noicon{
+	background-color: #E0E0E0;
+}
+
+.x-panel-footer.x-panel-footer-noborder.x-panel-btns .x-btn.x-btn-noicon.x-btn-over{
+	background-color: #92A2BD;
+}
+
+.x-panel-footer.x-panel-footer-noborder.x-panel-btns .x-btn.x-btn-noicon.x-btn-over button{
+	color: #FFFFFF;
+	background-color: #92A2BD;
+
+}
+
+.x-grid3-hd-inner.cat-x-grid3-hd-inner.x-component {
+    background-color: #666666;
+    background-image:none;
+    /*box-sizing: border-box;    */
+}
+
+#pageHeaderActions .x-btn-noicon .x-btn-small .x-btn-text{
+	  color: #B4B4B4;
+}
+
+#pageHeaderActions .x-btn-noicon .x-btn-small .x-btn-text:hover{
+	  color: #FFFFFF;
+    background-color: transparent;
+}
+
+.banner-top-custom-style{
+    float: left;
+    clear: both;
+    /* width: 635px; */
+    position: absolute;
+    text-align: center;
+    margin: 7px 500px 5px 650px;
+    padding: 3px 30px 3px 30px;
+    /* border-radius: 0px 5px; */
+    border: 1px solid #FFFFFF;
+    background-color: #d20000;
+    top: 3px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 12px;
+    z-index: 1000;
+}

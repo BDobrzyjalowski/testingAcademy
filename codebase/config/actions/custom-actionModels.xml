@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE actionmodels SYSTEM "actionmodels.dtd">
+<actionmodels>
+    <model name="attachments wizard table toolbar actions">
+        <action name="remove" type="object" shortcut="true"/>
+        <action name="separator" type="separator" shortcut="true"/>
+        <!--<action name="addFileAttachment" type="attachments" shortcut="true"/>-->
+        <action name="addUrlAttachment" type="attachments" shortcut="true"/>
+        <action name="addEsaAttachment" type="attachments" shortcut="true"/>
+        <action name="AddSCMAttachments" type="scmi" shortcut="true"/>        
+    </model>
+    
+    <model name="notebook actions">
+        <action name="list_cut" type="object"/>
+        <action name="list_copy" type="object"/>
+        <action name="notebook_list_paste" type="notebookfolder"/>
+        <action name="list_delete" type="object"/>
+        <action name="separator" type="separator"/>
+        <action name="explode" type="folder" shortcut="true"/>
+        <action name="implode" type="folder" shortcut="true"/>
+        <action name="separator" type="separator"/>
+        <!--<action name="import_bk" type="bookmark" shortcut="true"/>-->
+        <action name="create" type="notebookfolder" shortcut="true"/>
+        <action name="create" type="bookmark" shortcut="true"/>
+    </model>
+
+    <model name="notebook readonly actions">
+        <action name="list_copy" type="object"/>
+        <action name="separator" type="separator"/>
+        <action name="explode" type="folder"/>
+        <action name="implode" type="folder"/>
+        <!--<action name="import_bk" type="bookmark"/>-->
+    </model>
+
+    <model name="notebookfolder actions" menufor="wt.workflow.notebook.NotebookFolder">
+        <action name="create" type="notebookfolder"/>
+        <action name="delete" type="notebookfolder"/>
+        <action name="rename" type="notebookfolder"/>
+        <action name="create" type="bookmark"/>
+        <!--<action name="import_bk" type="bookmark"/>-->
+    </model>
+
+    <model name="notebookfolder readonly actions">
+        <action name="create" type="notebookfolder"/>
+        <action name="create" type="bookmark"/>
+        <!--<action name="import_bk" type="bookmark"/>-->
+    </model>
+
+    <model name="site navigation">
+        <description>
+            Sub tabs under the site main tab
+        </description>
+        <action name="listFiles" type="site"/>
+        <action name="listAdmin" type="site"/>
+        <action name="listProfiles" type="site"/>
+        <action name="listTemplates" type="site"/>
+        <action name="reports" type="site"/>
+        <action name="listAgreements" type="agreements"/>
+        <action name="listUtilities" type="site"/>
+        <action name="wexman" type="com.wincomplm.wex.manager" wexid="com.wincomplm.wex.manager" /> 
+        <action name="wexcenter" type="com.wincomplm.wex.center" wexid="com.wincomplm.wex.center" />
+        <action name="sbbTools" type="sbb"/>
+    </model>
+
+</actionmodels>

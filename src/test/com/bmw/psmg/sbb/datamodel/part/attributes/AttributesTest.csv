@@ -1,0 +1,803 @@
+com.bmw.psmg.sbb.Root,BMW_STRUCTURE_KEY,BMW Key,BMW Schluessel
+com.bmw.psmg.sbb.Root,BMW_PDM_GUID,PDM GUID,PDM GUID
+com.bmw.psmg.sbb.Node,BMW_MODULEORG,Module Org.,Modulorg.
+com.bmw.psmg.sbb.Node,BMW_NODENUMBER,Node Number,Knotennummer
+com.bmw.psmg.sbb.Node,BMW_MODULE,Module,Modul
+com.bmw.psmg.sbb.Node,BMW_CLASS,Class,Klasse
+com.bmw.psmg.sbb.Node,BMW_PDM_PARENT_GUID,Productline Node GUID,Produktlinienspezifischer Knoten GUID
+com.bmw.psmg.sbb.Node,BMW_TYPE,Type,Typ
+com.bmw.psmg.sbb.Node,BMW_DEPARTMENT,Department,Fachbereich
+com.bmw.psmg.sbb.Node,BMW_PDM_TIMESTAMP,CREATIMSTMP,CREATIMSTMP
+com.bmw.psmg.sbb.Node,BMW_PRODUCT_PROCESS_GRP,PPG,PPG
+com.bmw.psmg.sbb.Node,BMW_COMMODITY,Commodity,Commodity
+com.bmw.psmg.sbb.Node,BMW_UNIFIED_PARTS_GRP,UPG,KoGr
+com.bmw.psmg.sbb.Node,BMW_PDM_GENERIC_PARENT_GUID,Generic Node GUID,Generischer Knoten GUID
+com.bmw.psmg.sbb.Node,BMW_STRUCTURE_KEY,BMW Key,BMW Schluessel
+com.bmw.psmg.sbb.Node,BMW_PDM_PARENT_NAME,Productline Node Name,Produktlinienspezifischer Knotenname
+com.bmw.psmg.sbb.Node,BMW_PDM_GUID,PDM GUID,PDM GUID
+com.bmw.psmg.sbb.Node,BMW_SUBTYPE,Sub Type,Subtyp
+com.bmw.psmg.sbb.GenericPart,BMW_STRUCTURE_KEY,BMW Key,BMW Schluessel
+com.bmw.psmg.sbb.GenericPart,BMW_PDM_GUID,PDM GUID,PDM GUID
+com.bmw.psmg.sbb.NodePlant,BMW_MODULEORG,Module Org.,Modulorg.
+com.bmw.psmg.sbb.NodePlant,BMW_NODENUMBER,Node Number,Knotennummer
+com.bmw.psmg.sbb.NodePlant,BMW_MODULE,Module,Modul
+com.bmw.psmg.sbb.NodePlant,BMW_CLASS,Class,Klasse
+com.bmw.psmg.sbb.NodePlant,BMW_PDM_PARENT_GUID,Productline Node GUID,Produktlinienspezifischer Knoten GUID
+com.bmw.psmg.sbb.NodePlant,BMW_TYPE,Type,Typ
+com.bmw.psmg.sbb.NodePlant,BMW_DEPARTMENT,Department,Fachbereich
+com.bmw.psmg.sbb.NodePlant,BMW_PDM_TIMESTAMP,CREATIMSTMP,CREATIMSTMP
+com.bmw.psmg.sbb.NodePlant,BMW_PRODUCT_PROCESS_GRP,PPG,PPG
+com.bmw.psmg.sbb.NodePlant,BMW_COMMODITY,Commodity,Commodity
+com.bmw.psmg.sbb.NodePlant,BMW_UNIFIED_PARTS_GRP,UPG,KoGr
+com.bmw.psmg.sbb.NodePlant,BMW_PDM_GENERIC_PARENT_GUID,Generic Node GUID,Generischer Knoten GUID
+com.bmw.psmg.sbb.NodePlant,BMW_PDM_PARENT_NAME,Productline Node Name,Produktlinienspezifischer Knotenname
+com.bmw.psmg.sbb.NodePlant,BMW_PDM_GUID,PDM GUID,PDM GUID
+com.bmw.psmg.sbb.NodePlant,BMW_SUBTYPE,Sub Type,Subtyp
+com.bmw.psmg.sbb.NoGenericPart,BMW_STRUCTURE_KEY,BMW Key,BMW Schluessel
+com.bmw.psmg.sbb.NoGenericPart,BMW_PDM_GUID,PDM GUID,PDM GUID
+com.bmw.psmg.sbb.NodeMMG,BMW_MODULEORG,Module Org.,Modulorg.
+com.bmw.psmg.sbb.NodeMMG,BMW_NODENUMBER,Node Number,Knotennummer
+com.bmw.psmg.sbb.NodeMMG,BMW_MODULE,Module,Modul
+com.bmw.psmg.sbb.NodeMMG,BMW_CLASS,Class,Klasse
+com.bmw.psmg.sbb.NodeMMG,BMW_PDM_PARENT_GUID,Productline Node GUID,Produktlinienspezifischer Knoten GUID
+com.bmw.psmg.sbb.NodeMMG,BMW_TYPE,Type,Typ
+com.bmw.psmg.sbb.NodeMMG,BMW_DEPARTMENT,Department,Fachbereich
+com.bmw.psmg.sbb.NodeMMG,BMW_PDM_TIMESTAMP,CREATIMSTMP,CREATIMSTMP
+com.bmw.psmg.sbb.NodeMMG,BMW_PRODUCT_PROCESS_GRP,PPG,PPG
+com.bmw.psmg.sbb.NodeMMG,BMW_COMMODITY,Commodity,Commodity
+com.bmw.psmg.sbb.NodeMMG,BMW_UNIFIED_PARTS_GRP,UPG,KoGr
+com.bmw.psmg.sbb.NodeMMG,BMW_PDM_PARENT_NAME,Productline Node Name,Produktlinienspezifischer Knotenname
+com.bmw.psmg.sbb.NodeMMG,BMW_PDM_GUID,PDM GUID,PDM GUID
+com.bmw.psmg.sbb.NodeMMG,BMW_SUBTYPE,Sub Type,Subtyp
+com.bmw.psmg.sbb.NoGenericNode,BMW_MODULEORG,Module Org.,Modulorg.
+com.bmw.psmg.sbb.NoGenericNode,BMW_NODENUMBER,Node Number,Knotennummer
+com.bmw.psmg.sbb.NoGenericNode,BMW_MODULE,Module,Modul
+com.bmw.psmg.sbb.NoGenericNode,BMW_CLASS,Class,Klasse
+com.bmw.psmg.sbb.NoGenericNode,BMW_PDM_PARENT_GUID,Productline Node GUID,Produktlinienspezifischer Knoten GUID
+com.bmw.psmg.sbb.NoGenericNode,BMW_TYPE,Type,Typ
+com.bmw.psmg.sbb.NoGenericNode,BMW_DEPARTMENT,Department,Fachbereich
+com.bmw.psmg.sbb.NoGenericNode,BMW_PDM_TIMESTAMP,CREATIMSTMP,CREATIMSTMP
+com.bmw.psmg.sbb.NoGenericNode,BMW_PRODUCT_PROCESS_GRP,PPG,PPG
+com.bmw.psmg.sbb.NoGenericNode,BMW_COMMODITY,Commodity,Commodity
+com.bmw.psmg.sbb.NoGenericNode,BMW_UNIFIED_PARTS_GRP,UPG,KoGr
+com.bmw.psmg.sbb.NoGenericNode,BMW_PDM_PARENT_NAME,Productline Node Name,Produktlinienspezifischer Knotenname
+com.bmw.psmg.sbb.NoGenericNode,BMW_PDM_GUID,PDM GUID,PDM GUID
+com.bmw.psmg.sbb.NoGenericNode,BMW_SUBTYPE,Sub Type,Subtyp
+com.bmw.psmg.sbb.ModularScope,BMW_MODULEORG,Module Org.,Modulorg.
+com.bmw.psmg.sbb.ModularScope,BMW_SERIES_PROD_PART_WEIGHT,Series Prod. Part Weight,Serienteilgewicht
+com.bmw.psmg.sbb.ModularScope,BMW_PART_TYPE,Part type,Teileart
+com.bmw.psmg.sbb.ModularScope,BMW_PDM_PARENT_GUID,Productline Node GUID,Produktlinienspezifischer Knoten GUID
+com.bmw.psmg.sbb.ModularScope,BMW_DEPARTMENT,Department,Fachbereich
+com.bmw.psmg.sbb.ModularScope,BMW_JIT_CODE,JIT-Co.,JIT-Kz.
+com.bmw.psmg.sbb.ModularScope,BMW_COMMODITY,Commodity,Commodity
+com.bmw.psmg.sbb.ModularScope,BMW_STRUCTURE_KEY,BMW Key,BMW Schluessel
+com.bmw.psmg.sbb.ModularScope,BMW_PDM_PARENT_NAME,Productline Node Name,Produktlinienspezifischer Knotenname
+com.bmw.psmg.sbb.ModularScope,BMW_MATERIAL_NAME,Descript.,Benennung
+com.bmw.psmg.sbb.ModularScope,BMW_PDM_GUID,PVGUID,PVGUID
+com.bmw.psmg.sbb.ModularScope,BMW_EFFECTIVITY,MMG date line,MMG Terminzeile
+com.bmw.psmg.sbb.ModularScope,BMW_MATERIAL_NO,Part-no,SNR
+com.bmw.psmg.sbb.ModularScope,BMW_PRODUCT_PROCESS_GRP,PPG,PPG
+com.bmw.psmg.sbb.ModularScope,BMW_CHARACTER_CODE,Character key,Charakters.
+com.bmw.psmg.sbb.ModularScope,BMW_UNIFIED_PARTS_GRP,UPG,KoGr
+com.bmw.psmg.sbb.ModularScope,BMW_PDM_GENERIC_PARENT_GUID,Generic Node GUID,Generischer Knoten GUID
+com.bmw.psmg.sbb.ModularScope,BMW_MATERIAL_VERSION,AI_ZI,AI_ZI
+com.bmw.psmg.sbb.ModularScope,BMW_SOURCING_TYPE,Supply type,Bezugsart
+com.bmw.psmg.sbb.ModularScope,BMW_LEFT_RIGHT_CODE,L/R-Kz.,L/R-Kz.
+com.bmw.psmg.sbb.ModularScope,BMW_L_CODE,L-Flag,L-Kz.
+com.bmw.psmg.sbb.ModularScope,BMW_MAT_EFFECTIVITY,Effectivity AI_ZI,Gueltigkeit AI_ZI
+com.bmw.psmg.sbb.ModularScope,BMW_JIT_VARIANT,JIT-Var.,JIT-Varianz
+com.bmw.psmg.sbb.ModularScope,BMW_TYPE_ASSIGNMENT,Type Assignment,Typzuordnung
+com.bmw.psmg.sbb.ModularScope,BMW_LAST_UPDATED,DLC,Änd.-Datum
+com.bmw.psmg.sbb.ModularScope,BMW_DRAWING_NOTE,Draw. Ref.,ZCH-Hinw.
+com.bmw.psmg.sbb.ModularScope,BMW_DRAWING_FORMAT,DF,ZCH-Format
+com.bmw.psmg.sbb.ModularScope,BMW_PART_MATERIAL,Material,Werkstoff
+com.bmw.psmg.sbb.ModularScope,BMW_VCR,VCR,VCR
+com.bmw.psmg.sbb.ModularScope,BMW_TEC_CLEANLINESS,TecSa,TecSa
+com.bmw.psmg.sbb.ModularScope,BMW_MATERIAL_COLOR_CODE,Color/Paint,Farbe/Lack
+com.bmw.psmg.sbb.ModularScope,BMW_STD_DESC,Standard,Std.-Ben.
+com.bmw.psmg.sbb.ModularScope,BMW_PART_NUMBER_STATUS,Status,Status
+com.bmw.psmg.sbb.ModularScope,BMW_MIRROR_INVERTED_ID,Mir.-Co.,Spiegel-Kz
+com.bmw.psmg.sbb.ModularScope,BMW_ALL_COLOR_NO,PNo. All Colors,SNR A.F.
+com.bmw.psmg.sbb.ModularScope,BMW_PART_NUMBER_TYPE,PNo-Cla,SNR-Art
+com.bmw.psmg.sbb.ModularScope,BMW_PART_NUMBER_DEPARTMENT,PNo-Dpt,SNR-Abt
+com.bmw.psmg.sbb.ModularScope,BMW_PART_SURFACE,Surface,Oberfläche
+com.bmw.psmg.sbb.ModularScope,BMW_NAEL,NRCL,NAEL
+com.bmw.psmg.sbb.ModularScope,BMW_ABBREV_DESCRIPTION,Ab. Desc.,Kurzben.
+com.bmw.psmg.sbb.ModularScope,BMW_DESIGNER,Engin.,Konstr.
+com.bmw.psmg.sbb.ModularScope,BMW_PART_NUMBER_GROUP,PNo-Gr,Klasse
+com.bmw.psmg.sbb.ModularScope,BMW_HW_SW_CODE,HW/SW-Kz.,HW/SW-Kz.
+com.bmw.psmg.sbb.ModularScope,BMW_WEIGHT_TYPE,Wgt-Typ,Gewichtsart
+com.bmw.psmg.sbb.ModularScope,BMW_TRANSMISSION_CODE,Getriebecode,Getriebecode
+com.bmw.psmg.sbb.ModularScope,BMW_GENERIC_PART,Gen.Teil,Gen. Teil
+com.bmw.psmg.sbb.ModularScope,BMW_HAZARDOUS_GOODS_MARKING,Hazard,Gefahrgut-Kz.
+com.bmw.psmg.sbb.ModularScope,BMW_ESD_MARKING,ESD-Co.,ESD-Kz.
+com.bmw.psmg.sbb.ModularScope,BMW_SPARE_PART_CODE,Spare Pt.,Ersatzteil
+com.bmw.psmg.sbb.ModularScope,BMW_PREDECESSOR_PART_NUMBER,Subst. f.,Ersatz für
+com.bmw.psmg.sbb.ModularScope,BMW_DMU_MODELL,DMU-Modell,DMU-Modell
+com.bmw.psmg.sbb.ModularScope,BMW_EDITOR,Issu.,Bearbeiter
+com.bmw.psmg.sbb.ModularScope,BMW_ORIGINAL_PART_NUMBER,Source Part,Ausgangsteil
+com.bmw.psmg.sbb.ModularScope,BMW_DATE_OF_CREATION,DOG,Anl.-Datum
+com.bmw.psmg.sbb.ModularScope,BMW_INIT_USE_MODEL,1. Type,1. Typ
+com.bmw.psmg.sbb.ModularScope,BMW_FIRST_UPG,1. UPG,1. KoGr
+com.bmw.psmg.sbb.ModularScope,BMW_RECYCLING_CLASS,Recyclingkl,Recyclingkl
+com.bmw.psmg.sbb.SinglePart,BMW_MODULEORG,Module Org.,Modulorg.
+com.bmw.psmg.sbb.SinglePart,BMW_SERIES_PROD_PART_WEIGHT,Series Prod. Part Weight,Serienteilgewicht
+com.bmw.psmg.sbb.SinglePart,BMW_PART_TYPE,Part type,Teileart
+com.bmw.psmg.sbb.SinglePart,BMW_PDM_PARENT_GUID,Productline Node GUID,Produktlinienspezifischer Knoten GUID
+com.bmw.psmg.sbb.SinglePart,BMW_DEPARTMENT,Department,Fachbereich
+com.bmw.psmg.sbb.SinglePart,BMW_JIT_CODE,JIT-Co.,JIT-Kz.
+com.bmw.psmg.sbb.SinglePart,BMW_COMMODITY,Commodity,Commodity
+com.bmw.psmg.sbb.SinglePart,BMW_STRUCTURE_KEY,BMW Key,BMW Schluessel
+com.bmw.psmg.sbb.SinglePart,BMW_PDM_PARENT_NAME,Productline Node Name,Produktlinienspezifischer Knotenname
+com.bmw.psmg.sbb.SinglePart,BMW_MATERIAL_NAME,Descript.,Benennung
+com.bmw.psmg.sbb.SinglePart,BMW_PDM_GUID,PVGUID,PVGUID
+com.bmw.psmg.sbb.SinglePart,BMW_EFFECTIVITY,MMG date line,MMG Terminzeile
+com.bmw.psmg.sbb.SinglePart,BMW_MATERIAL_NO,Part-no,SNR
+com.bmw.psmg.sbb.SinglePart,BMW_PRODUCT_PROCESS_GRP,PPG,PPG
+com.bmw.psmg.sbb.SinglePart,BMW_CHARACTER_CODE,Character key,Charakters.
+com.bmw.psmg.sbb.SinglePart,BMW_UNIFIED_PARTS_GRP,UPG,KoGr
+com.bmw.psmg.sbb.SinglePart,BMW_PDM_GENERIC_PARENT_GUID,Generic Node GUID,Generischer Knoten GUID
+com.bmw.psmg.sbb.SinglePart,BMW_MATERIAL_VERSION,AI_ZI,AI_ZI
+com.bmw.psmg.sbb.SinglePart,BMW_SOURCING_TYPE,Supply type,Bezugsart
+com.bmw.psmg.sbb.SinglePart,BMW_LEFT_RIGHT_CODE,L/R-Kz.,L/R-Kz.
+com.bmw.psmg.sbb.SinglePart,BMW_L_CODE,L-Flag,L-Kz.
+com.bmw.psmg.sbb.SinglePart,BMW_MAT_EFFECTIVITY,Effectivity AI_ZI,Gueltigkeit AI_ZI
+com.bmw.psmg.sbb.SinglePart,BMW_JIT_VARIANT,JIT-Var.,JIT-Varianz
+com.bmw.psmg.sbb.SinglePart,BMW_TYPE_ASSIGNMENT,Type Assignment,Typzuordnung
+com.bmw.psmg.sbb.SinglePart,BMW_LAST_UPDATED,DLC,Änd.-Datum
+com.bmw.psmg.sbb.SinglePart,BMW_DRAWING_NOTE,Draw. Ref.,ZCH-Hinw.
+com.bmw.psmg.sbb.SinglePart,BMW_DRAWING_FORMAT,DF,ZCH-Format
+com.bmw.psmg.sbb.SinglePart,BMW_PART_MATERIAL,Material,Werkstoff
+com.bmw.psmg.sbb.SinglePart,BMW_VCR,VCR,VCR
+com.bmw.psmg.sbb.SinglePart,BMW_TEC_CLEANLINESS,TecSa,TecSa
+com.bmw.psmg.sbb.SinglePart,BMW_MATERIAL_COLOR_CODE,Color/Paint,Farbe/Lack
+com.bmw.psmg.sbb.SinglePart,BMW_STD_DESC,Standard,Std.-Ben.
+com.bmw.psmg.sbb.SinglePart,BMW_PART_NUMBER_STATUS,Status,Status
+com.bmw.psmg.sbb.SinglePart,BMW_MIRROR_INVERTED_ID,Mir.-Co.,Spiegel-Kz
+com.bmw.psmg.sbb.SinglePart,BMW_ALL_COLOR_NO,PNo. All Colors,SNR A.F.
+com.bmw.psmg.sbb.SinglePart,BMW_PART_NUMBER_TYPE,PNo-Cla,SNR-Art
+com.bmw.psmg.sbb.SinglePart,BMW_PART_NUMBER_DEPARTMENT,PNo-Dpt,SNR-Abt
+com.bmw.psmg.sbb.SinglePart,BMW_PART_SURFACE,Surface,Oberfläche
+com.bmw.psmg.sbb.SinglePart,BMW_NAEL,NRCL,NAEL
+com.bmw.psmg.sbb.SinglePart,BMW_ABBREV_DESCRIPTION,Ab. Desc.,Kurzben.
+com.bmw.psmg.sbb.SinglePart,BMW_DESIGNER,Engin.,Konstr.
+com.bmw.psmg.sbb.SinglePart,BMW_PART_NUMBER_GROUP,PNo-Gr,Klasse
+com.bmw.psmg.sbb.SinglePart,BMW_HW_SW_CODE,HW/SW-Kz.,HW/SW-Kz.
+com.bmw.psmg.sbb.SinglePart,BMW_WEIGHT_TYPE,Wgt-Typ,Gewichtsart
+com.bmw.psmg.sbb.SinglePart,BMW_TRANSMISSION_CODE,Getriebecode,Getriebecode
+com.bmw.psmg.sbb.SinglePart,BMW_GENERIC_PART,Gen.Teil,Gen. Teil
+com.bmw.psmg.sbb.SinglePart,BMW_HAZARDOUS_GOODS_MARKING,Hazard,Gefahrgut-Kz.
+com.bmw.psmg.sbb.SinglePart,BMW_ESD_MARKING,ESD-Co.,ESD-Kz.
+com.bmw.psmg.sbb.SinglePart,BMW_SPARE_PART_CODE,Spare Pt.,Ersatzteil
+com.bmw.psmg.sbb.SinglePart,BMW_PREDECESSOR_PART_NUMBER,Subst. f.,Ersatz für
+com.bmw.psmg.sbb.SinglePart,BMW_DMU_MODELL,DMU-Modell,DMU-Modell
+com.bmw.psmg.sbb.SinglePart,BMW_EDITOR,Issu.,Bearbeiter
+com.bmw.psmg.sbb.SinglePart,BMW_ORIGINAL_PART_NUMBER,Source Part,Ausgangsteil
+com.bmw.psmg.sbb.SinglePart,BMW_DATE_OF_CREATION,DOG,Anl.-Datum
+com.bmw.psmg.sbb.SinglePart,BMW_INIT_USE_MODEL,1. Type,1. Typ
+com.bmw.psmg.sbb.SinglePart,BMW_FIRST_UPG,1. UPG,1. KoGr
+com.bmw.psmg.sbb.SinglePart,BMW_RECYCLING_CLASS,Recyclingkl,Recyclingkl
+com.bmw.psmg.sbb.ColorPosition,BMW_MODULEORG,Module Org.,Modulorg.
+com.bmw.psmg.sbb.ColorPosition,BMW_SERIES_PROD_PART_WEIGHT,Series Prod. Part Weight,Serienteilgewicht
+com.bmw.psmg.sbb.ColorPosition,BMW_PART_TYPE,Part type,Teileart
+com.bmw.psmg.sbb.ColorPosition,BMW_PDM_PARENT_GUID,Productline Node GUID,Produktlinienspezifischer Knoten GUID
+com.bmw.psmg.sbb.ColorPosition,BMW_DEPARTMENT,Department,Fachbereich
+com.bmw.psmg.sbb.ColorPosition,BMW_JIT_CODE,JIT-Co.,JIT-Kz.
+com.bmw.psmg.sbb.ColorPosition,BMW_COMMODITY,Commodity,Commodity
+com.bmw.psmg.sbb.ColorPosition,BMW_STRUCTURE_KEY,BMW Key,BMW Schluessel
+com.bmw.psmg.sbb.ColorPosition,BMW_PDM_PARENT_NAME,Productline Node Name,Produktlinienspezifischer Knotenname
+com.bmw.psmg.sbb.ColorPosition,BMW_MATERIAL_NAME,Descript.,Benennung
+com.bmw.psmg.sbb.ColorPosition,BMW_PDM_GUID,PVGUID,PVGUID
+com.bmw.psmg.sbb.ColorPosition,BMW_EFFECTIVITY,MMG date line,MMG Terminzeile
+com.bmw.psmg.sbb.ColorPosition,BMW_MATERIAL_NO,Part-no,SNR
+com.bmw.psmg.sbb.ColorPosition,BMW_PRODUCT_PROCESS_GRP,PPG,PPG
+com.bmw.psmg.sbb.ColorPosition,BMW_CHARACTER_CODE,Character key,Charakters.
+com.bmw.psmg.sbb.ColorPosition,BMW_UNIFIED_PARTS_GRP,UPG,KoGr
+com.bmw.psmg.sbb.ColorPosition,BMW_PDM_GENERIC_PARENT_GUID,Generic Node GUID,Generischer Knoten GUID
+com.bmw.psmg.sbb.ColorPosition,BMW_MATERIAL_VERSION,AI_ZI,AI_ZI
+com.bmw.psmg.sbb.ColorPosition,BMW_SOURCING_TYPE,Supply type,Bezugsart
+com.bmw.psmg.sbb.ColorPosition,BMW_LEFT_RIGHT_CODE,L/R-Kz.,L/R-Kz.
+com.bmw.psmg.sbb.ColorPosition,BMW_L_CODE,L-Flag,L-Kz.
+com.bmw.psmg.sbb.ColorPosition,BMW_MAT_EFFECTIVITY,Effectivity AI_ZI,Gueltigkeit AI_ZI
+com.bmw.psmg.sbb.ColorPosition,BMW_JIT_VARIANT,JIT-Var.,JIT-Varianz
+com.bmw.psmg.sbb.ColorPosition,BMW_TYPE_ASSIGNMENT,Type Assignment,Typzuordnung
+com.bmw.psmg.sbb.ColorPosition,BMW_COLOR_CODE,Color Code,Farbergänzungsschlüssel
+com.bmw.psmg.sbb.PositionVariant,BMW_MODULEORG,Module Org.,Modulorg.
+com.bmw.psmg.sbb.PositionVariant,BMW_PRIORITIZED_WEIGHT,Weight,Gewicht
+com.bmw.psmg.sbb.PositionVariant,BMW_SERIES_PROD_PART_WEIGHT,Series Prod. Part Weight,Serienteilgewicht
+com.bmw.psmg.sbb.PositionVariant,BMW_PART_TYPE,Part type,Teileart
+com.bmw.psmg.sbb.PositionVariant,BMW_PDM_PARENT_GUID,Productline Node GUID,Produktlinienspezifischer Knoten GUID
+com.bmw.psmg.sbb.PositionVariant,BMW_DEPARTMENT,Department,Fachbereich
+com.bmw.psmg.sbb.PositionVariant,BMW_JIT_CODE,JIT-Co.,JIT-Kz.
+com.bmw.psmg.sbb.PositionVariant,BMW_COMMODITY,Commodity,Commodity
+com.bmw.psmg.sbb.PositionVariant,BMW_STRUCTURE_KEY,BMW Key,BMW Schluessel
+com.bmw.psmg.sbb.PositionVariant,BMW_PDM_PARENT_NAME,Productline Node Name,Produktlinienspezifischer Knotenname
+com.bmw.psmg.sbb.PositionVariant,BMW_MATERIAL_NAME,Descript.,Benennung
+com.bmw.psmg.sbb.PositionVariant,BMW_PDM_GUID,PVGUID,PVGUID
+com.bmw.psmg.sbb.PositionVariant,BMW_EFFECTIVITY,MMG date line,MMG Terminzeile
+com.bmw.psmg.sbb.PositionVariant,BMW_MATERIAL_NO,Part-no,SNR
+com.bmw.psmg.sbb.PositionVariant,BMW_PRODUCT_PROCESS_GRP,PPG,PPG
+com.bmw.psmg.sbb.PositionVariant,BMW_CHARACTER_CODE,Character key,Charakters.
+com.bmw.psmg.sbb.PositionVariant,BMW_UNIFIED_PARTS_GRP,UPG,KoGr
+com.bmw.psmg.sbb.PositionVariant,BMW_PDM_GENERIC_PARENT_GUID,Generic Node GUID,Generischer Knoten GUID
+com.bmw.psmg.sbb.PositionVariant,BMW_MATERIAL_VERSION,AI_ZI,AI_ZI
+com.bmw.psmg.sbb.PositionVariant,BMW_SOURCING_TYPE,Supply type,Bezugsart
+com.bmw.psmg.sbb.PositionVariant,BMW_LEFT_RIGHT_CODE,L/R-Kz.,L/R-Kz.
+com.bmw.psmg.sbb.PositionVariant,BMW_L_CODE,L-Flag,L-Kz.
+com.bmw.psmg.sbb.PositionVariant,BMW_MAT_EFFECTIVITY,Effectivity AI_ZI,Gueltigkeit AI_ZI
+com.bmw.psmg.sbb.PositionVariant,BMW_JIT_VARIANT,JIT-Var.,JIT-Varianz
+com.bmw.psmg.sbb.PositionVariant,BMW_MATERIAL_QUANTITY,Material Quantity,Materialmenge
+com.bmw.psmg.sbb.PositionVariant,BMW_MATERIAL_UNIT,Unit of measure,Mengenein.
+com.bmw.psmg.sbb.PositionVariant,BMW_TYPE_ASSIGNMENT,Type Assignment,Typzuordnung
+com.bmw.psmg.sbb.PositionVariant,BMW_LAST_UPDATED,DLC,Änd.-Datum
+com.bmw.psmg.sbb.PositionVariant,BMW_DRAWING_NOTE,Draw. Ref.,ZCH-Hinw.
+com.bmw.psmg.sbb.PositionVariant,BMW_DRAWING_FORMAT,DF,ZCH-Format
+com.bmw.psmg.sbb.PositionVariant,BMW_PART_MATERIAL,Material,Werkstoff
+com.bmw.psmg.sbb.PositionVariant,BMW_VCR,VCR,VCR
+com.bmw.psmg.sbb.PositionVariant,BMW_TEC_CLEANLINESS,TecSa,TecSa
+com.bmw.psmg.sbb.PositionVariant,BMW_MATERIAL_COLOR_CODE,Color/Paint,Farbe/Lack
+com.bmw.psmg.sbb.PositionVariant,BMW_STD_DESC,Standard,Std.-Ben.
+com.bmw.psmg.sbb.PositionVariant,BMW_PART_NUMBER_STATUS,Status,Status
+com.bmw.psmg.sbb.PositionVariant,BMW_MIRROR_INVERTED_ID,Mir.-Co.,Spiegel-Kz
+com.bmw.psmg.sbb.PositionVariant,BMW_ALL_COLOR_NO,PNo. All Colors,SNR A.F.
+com.bmw.psmg.sbb.PositionVariant,BMW_PART_NUMBER_TYPE,PNo-Cla,SNR-Art
+com.bmw.psmg.sbb.PositionVariant,BMW_PART_NUMBER_DEPARTMENT,PNo-Dpt,SNR-Abt
+com.bmw.psmg.sbb.PositionVariant,BMW_PART_SURFACE,Surface,Oberfläche
+com.bmw.psmg.sbb.PositionVariant,BMW_NAEL,NRCL,NAEL
+com.bmw.psmg.sbb.PositionVariant,BMW_ABBREV_DESCRIPTION,Ab. Desc.,Kurzben.
+com.bmw.psmg.sbb.PositionVariant,BMW_DESIGNER,Engin.,Konstr.
+com.bmw.psmg.sbb.PositionVariant,BMW_PART_NUMBER_GROUP,PNo-Gr,Klasse
+com.bmw.psmg.sbb.PositionVariant,BMW_HW_SW_CODE,HW/SW-Kz.,HW/SW-Kz.
+com.bmw.psmg.sbb.PositionVariant,BMW_WEIGHT_TYPE,Wgt-Typ,Gewichtsart
+com.bmw.psmg.sbb.PositionVariant,BMW_TRANSMISSION_CODE,Getriebecode,Getriebecode
+com.bmw.psmg.sbb.PositionVariant,BMW_GENERIC_PART,Gen.Teil,Gen. Teil
+com.bmw.psmg.sbb.PositionVariant,BMW_HAZARDOUS_GOODS_MARKING,Hazard,Gefahrgut-Kz.
+com.bmw.psmg.sbb.PositionVariant,BMW_ESD_MARKING,ESD-Co.,ESD-Kz.
+com.bmw.psmg.sbb.PositionVariant,BMW_SPARE_PART_CODE,Spare Pt.,Ersatzteil
+com.bmw.psmg.sbb.PositionVariant,BMW_PREDECESSOR_PART_NUMBER,Subst. f.,Ersatz für
+com.bmw.psmg.sbb.PositionVariant,BMW_DMU_MODELL,DMU-Modell,DMU-Modell
+com.bmw.psmg.sbb.PositionVariant,BMW_EDITOR,Issu.,Bearbeiter
+com.bmw.psmg.sbb.PositionVariant,BMW_ORIGINAL_PART_NUMBER,Source Part,Ausgangsteil
+com.bmw.psmg.sbb.PositionVariant,BMW_DATE_OF_CREATION,DOG,Anl.-Datum
+com.bmw.psmg.sbb.PositionVariant,BMW_INIT_USE_MODEL,1. Type,1. Typ
+com.bmw.psmg.sbb.PositionVariant,BMW_FIRST_UPG,1. UPG,1. KoGr
+com.bmw.psmg.sbb.PositionVariant,BMW_RECYCLING_CLASS,Recyclingkl,Recyclingkl
+com.bmw.psmg.sbb.ModularAssembly,BMW_MODULEORG,Module Org.,Modulorg.
+com.bmw.psmg.sbb.ModularAssembly,BMW_SERIES_PROD_PART_WEIGHT,Series Prod. Part Weight,Serienteilgewicht
+com.bmw.psmg.sbb.ModularAssembly,BMW_PART_TYPE,Part type,Teileart
+com.bmw.psmg.sbb.ModularAssembly,BMW_PDM_PARENT_GUID,Productline Node GUID,Produktlinienspezifischer Knoten GUID
+com.bmw.psmg.sbb.ModularAssembly,BMW_DEPARTMENT,Department,Fachbereich
+com.bmw.psmg.sbb.ModularAssembly,BMW_JIT_CODE,JIT-Co.,JIT-Kz.
+com.bmw.psmg.sbb.ModularAssembly,BMW_COMMODITY,Commodity,Commodity
+com.bmw.psmg.sbb.ModularAssembly,BMW_STRUCTURE_KEY,BMW Key,BMW Schluessel
+com.bmw.psmg.sbb.ModularAssembly,BMW_PDM_PARENT_NAME,Productline Node Name,Produktlinienspezifischer Knotenname
+com.bmw.psmg.sbb.ModularAssembly,BMW_MATERIAL_NAME,Descript.,Benennung
+com.bmw.psmg.sbb.ModularAssembly,BMW_PDM_GUID,PVGUID,PVGUID
+com.bmw.psmg.sbb.ModularAssembly,BMW_EFFECTIVITY,MMG date line,MMG Terminzeile
+com.bmw.psmg.sbb.ModularAssembly,BMW_MATERIAL_NO,Part-no,SNR
+com.bmw.psmg.sbb.ModularAssembly,BMW_PRODUCT_PROCESS_GRP,PPG,PPG
+com.bmw.psmg.sbb.ModularAssembly,BMW_CHARACTER_CODE,Character key,Charakters.
+com.bmw.psmg.sbb.ModularAssembly,BMW_UNIFIED_PARTS_GRP,UPG,KoGr
+com.bmw.psmg.sbb.ModularAssembly,BMW_PDM_GENERIC_PARENT_GUID,Generic Node GUID,Generischer Knoten GUID
+com.bmw.psmg.sbb.ModularAssembly,BMW_MATERIAL_VERSION,AI_ZI,AI_ZI
+com.bmw.psmg.sbb.ModularAssembly,BMW_SOURCING_TYPE,Supply type,Bezugsart
+com.bmw.psmg.sbb.ModularAssembly,BMW_LEFT_RIGHT_CODE,L/R-Kz.,L/R-Kz.
+com.bmw.psmg.sbb.ModularAssembly,BMW_L_CODE,L-Flag,L-Kz.
+com.bmw.psmg.sbb.ModularAssembly,BMW_MAT_EFFECTIVITY,Effectivity AI_ZI,Gueltigkeit AI_ZI
+com.bmw.psmg.sbb.ModularAssembly,BMW_JIT_VARIANT,JIT-Var.,JIT-Varianz
+com.bmw.psmg.sbb.ModularAssembly,BMW_TYPE_ASSIGNMENT,Type Assignment,Typzuordnung
+com.bmw.psmg.sbb.ModularAssembly,BMW_LAST_UPDATED,DLC,Änd.-Datum
+com.bmw.psmg.sbb.ModularAssembly,BMW_DRAWING_NOTE,Draw. Ref.,ZCH-Hinw.
+com.bmw.psmg.sbb.ModularAssembly,BMW_DRAWING_FORMAT,DF,ZCH-Format
+com.bmw.psmg.sbb.ModularAssembly,BMW_PART_MATERIAL,Material,Werkstoff
+com.bmw.psmg.sbb.ModularAssembly,BMW_VCR,VCR,VCR
+com.bmw.psmg.sbb.ModularAssembly,BMW_TEC_CLEANLINESS,TecSa,TecSa
+com.bmw.psmg.sbb.ModularAssembly,BMW_MATERIAL_COLOR_CODE,Color/Paint,Farbe/Lack
+com.bmw.psmg.sbb.ModularAssembly,BMW_STD_DESC,Standard,Std.-Ben.
+com.bmw.psmg.sbb.ModularAssembly,BMW_PART_NUMBER_STATUS,Status,Status
+com.bmw.psmg.sbb.ModularAssembly,BMW_MIRROR_INVERTED_ID,Mir.-Co.,Spiegel-Kz
+com.bmw.psmg.sbb.ModularAssembly,BMW_ALL_COLOR_NO,PNo. All Colors,SNR A.F.
+com.bmw.psmg.sbb.ModularAssembly,BMW_PART_NUMBER_TYPE,PNo-Cla,SNR-Art
+com.bmw.psmg.sbb.ModularAssembly,BMW_PART_NUMBER_DEPARTMENT,PNo-Dpt,SNR-Abt
+com.bmw.psmg.sbb.ModularAssembly,BMW_PART_SURFACE,Surface,Oberfläche
+com.bmw.psmg.sbb.ModularAssembly,BMW_NAEL,NRCL,NAEL
+com.bmw.psmg.sbb.ModularAssembly,BMW_ABBREV_DESCRIPTION,Ab. Desc.,Kurzben.
+com.bmw.psmg.sbb.ModularAssembly,BMW_DESIGNER,Engin.,Konstr.
+com.bmw.psmg.sbb.ModularAssembly,BMW_PART_NUMBER_GROUP,PNo-Gr,Klasse
+com.bmw.psmg.sbb.ModularAssembly,BMW_HW_SW_CODE,HW/SW-Kz.,HW/SW-Kz.
+com.bmw.psmg.sbb.ModularAssembly,BMW_WEIGHT_TYPE,Wgt-Typ,Gewichtsart
+com.bmw.psmg.sbb.ModularAssembly,BMW_TRANSMISSION_CODE,Getriebecode,Getriebecode
+com.bmw.psmg.sbb.ModularAssembly,BMW_GENERIC_PART,Gen.Teil,Gen. Teil
+com.bmw.psmg.sbb.ModularAssembly,BMW_HAZARDOUS_GOODS_MARKING,Hazard,Gefahrgut-Kz.
+com.bmw.psmg.sbb.ModularAssembly,BMW_ESD_MARKING,ESD-Co.,ESD-Kz.
+com.bmw.psmg.sbb.ModularAssembly,BMW_SPARE_PART_CODE,Spare Pt.,Ersatzteil
+com.bmw.psmg.sbb.ModularAssembly,BMW_PREDECESSOR_PART_NUMBER,Subst. f.,Ersatz für
+com.bmw.psmg.sbb.ModularAssembly,BMW_DMU_MODELL,DMU-Modell,DMU-Modell
+com.bmw.psmg.sbb.ModularAssembly,BMW_EDITOR,Issu.,Bearbeiter
+com.bmw.psmg.sbb.ModularAssembly,BMW_ORIGINAL_PART_NUMBER,Source Part,Ausgangsteil
+com.bmw.psmg.sbb.ModularAssembly,BMW_DATE_OF_CREATION,DOG,Anl.-Datum
+com.bmw.psmg.sbb.ModularAssembly,BMW_INIT_USE_MODEL,1. Type,1. Typ
+com.bmw.psmg.sbb.ModularAssembly,BMW_FIRST_UPG,1. UPG,1. KoGr
+com.bmw.psmg.sbb.ModularAssembly,BMW_RECYCLING_CLASS,Recyclingkl,Recyclingkl
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_MODULEORG,Module Org.,Modulorg.
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_ASIS_DEV_OF_DIM,As-Is Deviation,Ist-Bauabweichung
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_SERIES_PROD_PART_WEIGHT,Series Prod. Part Weight,Serienteilgewicht
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_PART_TYPE,Part type,Teileart
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_PDM_PARENT_GUID,Productline Node GUID,Produktlinienspezifischer Knoten GUID
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_CLASS,Class,Klasse
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_DEPARTMENT,Department,Fachbereich
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_JIT_CODE,JIT-Co.,JIT-Kz.
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_COMMODITY,Commodity,Commodity
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_STRUCTURE_KEY,BMW Key,BMW Schluessel
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_PDM_PARENT_NAME,Productline Node Name,Produktlinienspezifischer Knotenname
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_RELEASE_EFFECTIVITY,Release Effectivity,Release-Gueltigkeit
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_MATERIAL_NAME,Descript.,Benennung
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_PDM_GUID,PVGUID,PVGUID
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_EFFECTIVITY,MMG date line,MMG Terminzeile
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_MATERIAL_NO,Part-no,SNR
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_PDM_COUNT,PVCDCNT,PVCDCNT
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_PRODUCT_PROCESS_GRP,PPG,PPG
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_CHARACTER_CODE,Character key,Charakters.
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_UNIFIED_PARTS_GRP,UPG,KoGr
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_PDM_GENERIC_PARENT_GUID,Generic Node GUID,Generischer Knoten GUID
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_MATERIAL_VERSION,AI_ZI,AI_ZI
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_SOURCING_TYPE,Supply type,Bezugsart
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_LEFT_RIGHT_CODE,L/R-Kz.,L/R-Kz.
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_L_CODE,L-Flag,L-Kz.
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_MAT_EFFECTIVITY,Effectivity AI_ZI,Gueltigkeit AI_ZI
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_PDM_CHANGE_NO,SAP Change Number,SAP Änderungsnummer
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_JIT_VARIANT,JIT-Var.,JIT-Varianz
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_TYPE_ASSIGNMENT,Type Assignment,Typzuordnung
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_SUPPL_COLOR_DEVIATIONS,Supplemental Color Deviations,Abweichende Farbergänzungen
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_LABEL_APPLICATION_LOC,Application location,Anbringungsort
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_LABEL_LEGALLY_STIP,Label legally stipulated,Schild gesetzlich vorgeschrieben
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_LABEL_APP_LOC_LEG_STIP,Application location legally stipulated,Anbringungsort gesetzlich vorgeschrieben
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_LABEL_INSTALLATION_LOC,Installation location,Verbauort
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_LABEL_REQUESTOR,Requestor,Anforderer
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_LABEL_RELEASE,Label Release,Hinweisschild Freigabe
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_LABEL_CONSTRUCTION,Construction,Konstruktion
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_SERIAL_MASTER,Master Serial,Master Serial
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_SERIAL,Revision Serial,Revision Serial
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_RELEASE_NOTE,Release Note,Freigabehinweis
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_DOC_INFO_RECORD,Document Info Record,Dokumentinfosatz
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_COLOR_CONTROL_CODE,Color Control Code,Farbsteuerungskennzeichen
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_CREATE_TIMESTAMP,CREATIMSTMP,CREATIMSTMP
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_PVH_GUID,PVHGUID,PVHGUID
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_PREL_COMMENTARY_DE,Vorkommentar,Vorkommentar
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_PREL_COMMENTARY_EN,Preliminary Comment,Preliminary Comment
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_SUBS_COMMENTARY_DE,Nachkommentar,Nachkommentar
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_SUBS_COMMENTARY_EN,Subsequent Commentary,Subsequent Commentary
+com.bmw.psmg.sbb.Material,BMW_MATERIAL_NO,Part-no,SNR
+com.bmw.psmg.sbb.Material,BMW_MATERIAL_VERSION,AI_ZI,AI_ZI
+com.bmw.psmg.sbb.Material,name,Descript.,Benennung
+com.bmw.psmg.sbb.Material,BMW_ABBREV_DESCRIPTION,Ab. Desc.,Kurzben.
+com.bmw.psmg.sbb.Material,BMW_DATE_OF_CREATION,DOG,Anl.-Datum
+com.bmw.psmg.sbb.Material,BMW_DESIGNER,Engin.,Konstr.
+com.bmw.psmg.sbb.Material,BMW_PART_NUMBER_STATUS,Status,Status
+com.bmw.psmg.sbb.Material,BMW_INIT_USE_MODEL,1. Type,1. Typ
+com.bmw.psmg.sbb.Material,BMW_FIRST_UPG,1. UPG,1. KoGr
+com.bmw.psmg.sbb.Material,BMW_PREDECESSOR_PART_NUMBER,Subst. f.,Ersatz für
+com.bmw.psmg.sbb.Material,defaultUnit,Unit of measure,Mengenein.
+com.bmw.psmg.sbb.Material,BMW_ORIGINAL_PART_NUMBER,Source Part,Ausgangsteil
+com.bmw.psmg.sbb.Material,BMW_WEIGHT_TYPE,Wgt-Typ,Gewichtsart
+com.bmw.psmg.sbb.Material,BMW_PRIORITIZED_WEIGHT,Weight,Gewicht
+com.bmw.psmg.sbb.Material,BMW_NAEL,NRCL,NAEL
+com.bmw.psmg.sbb.Material,BMW_EDITOR,Issu.,Bearbeiter
+com.bmw.psmg.sbb.Material,BMW_LAST_UPDATED,DLC,Änd.-Datum
+com.bmw.psmg.sbb.Material,BMW_PART_NUMBER_DEPARTMENT,PNo-Dpt,SNR-Abt
+com.bmw.psmg.sbb.Material,BMW_PART_NUMBER_TYPE,PNo-Cla,SNR-Art
+com.bmw.psmg.sbb.Material,BMW_PART_NUMBER_GROUP,PNo-Gr,Klasse
+com.bmw.psmg.sbb.Material,BMW_GENERIC_PART,Gen.Teil,Gen. Teil
+com.bmw.psmg.sbb.Material,BMW_STD_DESC,Standard,Std.-Ben.
+com.bmw.psmg.sbb.Material,BMW_L_CODE,L-Flag,L-Kz.
+com.bmw.psmg.sbb.Material,BMW_SPARE_PART_CODE,Spare Pt.,Ersatzteil
+com.bmw.psmg.sbb.Material,BMW_SOURCING_TYPE,Supply type,Bezugsart
+com.bmw.psmg.sbb.Material,BMW_PART_TYPE,Part type,Teileart
+com.bmw.psmg.sbb.Material,BMW_CHARACTER_CODE,Character key,Charakters.
+com.bmw.psmg.sbb.Material,BMW_PART_MATERIAL,Material,Werkstoff
+com.bmw.psmg.sbb.Material,BMW_PART_SURFACE,Surface,Oberfläche
+com.bmw.psmg.sbb.Material,BMW_ALL_COLOR_NO,PNo. All Colors,SNR A.F.
+com.bmw.psmg.sbb.Material,BMW_MATERIAL_COLOR_CODE,Color/Paint,Farbe/Lack
+com.bmw.psmg.sbb.Material,BMW_DRAWING_FORMAT,DF,ZCH-Format
+com.bmw.psmg.sbb.Material,BMW_DRAWING_NOTE,Draw. Ref.,ZCH-Hinw.
+com.bmw.psmg.sbb.Material,BMW_LEFT_RIGHT_CODE,L/R-Kz.,L/R-Kz.
+com.bmw.psmg.sbb.Material,BMW_MIRROR_INVERTED_ID,Mir.-Co.,Spiegel-Kz.
+com.bmw.psmg.sbb.Material,BMW_VCR,VCR,VCR
+com.bmw.psmg.sbb.Material,BMW_DMU_MODELL,DMU-Modell,DMU-Modell
+com.bmw.psmg.sbb.Material,BMW_JIT_VARIANT,JIT-Var.,JIT-Varianz
+com.bmw.psmg.sbb.Material,BMW_JIT_CODE,JIT-Co.,JIT-Kz
+com.bmw.psmg.sbb.Material,BMW_HW_SW_CODE,HW/SW-Kz.,HW/SW-Kz.
+com.bmw.psmg.sbb.Material,BMW_ESD_MARKING,ESD-Co.,ESD-Kz.
+com.bmw.psmg.sbb.Material,BMW_HAZARDOUS_GOODS_MARKING,Hazard,Gefahrgut-Kz.
+com.bmw.psmg.sbb.Material,BMW_TEC_CLEANLINESS,TecSa,TecSa
+com.bmw.psmg.sbb.Material,BMW_RECYCLING_CLASS,Recyclingkl.,Recyclingkl.
+com.bmw.psmg.sbb.Material,BMW_CODING_RELEVANCE,Codierrel.,Codierrel.
+com.bmw.psmg.sbb.Material,BMW_PART_INSELECTION_TABLE_ID,Part in selection Table Identifier,Auswahltabellen-Kennzeichen
+com.bmw.psmg.sbb.Material,BMW_TRANSMISSION_CODE,Getriebecode,Getriebecode
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_MODULEORG,Module Org.,Modulorg.
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_SERIES_PROD_PART_WEIGHT,Series Prod. Part Weight,Serienteilgewicht
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_PART_TYPE,Part type,Teileart
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_PDM_PARENT_GUID,Productline Node GUID,Produktlinienspezifischer Knoten GUID
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_DEPARTMENT,Department,Fachbereich
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_JIT_CODE,JIT-Co.,JIT-Kz.
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_COMMODITY,Commodity,Commodity
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_STRUCTURE_KEY,BMW Key,BMW Schluessel
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_PDM_PARENT_NAME,Productline Node Name,Produktlinienspezifischer Knotenname
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_MATERIAL_NAME,Descript.,Benennung
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_PDM_GUID,PVGUID,PVGUID
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_EFFECTIVITY,MMG date line,MMG Terminzeile
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_MATERIAL_NO,Part-no,SNR
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_PRODUCT_PROCESS_GRP,PPG,PPG
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_CHARACTER_CODE,Character key,Charakters.
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_UNIFIED_PARTS_GRP,UPG,KoGr
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_PDM_GENERIC_PARENT_GUID,Generic Node GUID,Generischer Knoten GUID
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_MATERIAL_VERSION,AI_ZI,AI_ZI
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_SOURCING_TYPE,Supply type,Bezugsart
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_LEFT_RIGHT_CODE,L/R-Kz.,L/R-Kz.
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_L_CODE,L-Flag,L-Kz.
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_MAT_EFFECTIVITY,Effectivity AI_ZI,Gueltigkeit AI_ZI
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_JIT_VARIANT,JIT-Var.,JIT-Varianz
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_TYPE_ASSIGNMENT,Type Assignment,Typzuordnung
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_LAST_UPDATED,DLC,Änd.-Datum
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_DRAWING_NOTE,Draw. Ref.,ZCH-Hinw.
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_DRAWING_FORMAT,DF,ZCH-Format
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_PART_MATERIAL,Material,Werkstoff
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_VCR,VCR,VCR
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_TEC_CLEANLINESS,TecSa,TecSa
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_MATERIAL_COLOR_CODE,Color/Paint,Farbe/Lack
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_STD_DESC,Standard,Std.-Ben.
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_PART_NUMBER_STATUS,Status,Status
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_MIRROR_INVERTED_ID,Mir.-Co.,Spiegel-Kz
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_ALL_COLOR_NO,PNo. All Colors,SNR A.F.
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_PART_NUMBER_TYPE,PNo-Cla,SNR-Art
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_PART_NUMBER_DEPARTMENT,PNo-Dpt,SNR-Abt
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_PART_SURFACE,Surface,Oberfläche
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_NAEL,NRCL,NAEL
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_ABBREV_DESCRIPTION,Ab. Desc.,Kurzben.
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_DESIGNER,Engin.,Konstr.
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_PART_NUMBER_GROUP,PNo-Gr,Klasse
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_HW_SW_CODE,HW/SW-Kz.,HW/SW-Kz.
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_WEIGHT_TYPE,Wgt-Typ,Gewichtsart
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_TRANSMISSION_CODE,Getriebecode,Getriebecode
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_GENERIC_PART,Gen.Teil,Gen. Teil
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_HAZARDOUS_GOODS_MARKING,Hazard,Gefahrgut-Kz.
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_ESD_MARKING,ESD-Co.,ESD-Kz.
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_SPARE_PART_CODE,Spare Pt.,Ersatzteil
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_PREDECESSOR_PART_NUMBER,Subst. f.,Ersatz für
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_DMU_MODELL,DMU-Modell,DMU-Modell
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_EDITOR,Issu.,Bearbeiter
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_ORIGINAL_PART_NUMBER,Source Part,Ausgangsteil
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_DATE_OF_CREATION,DOG,Anl.-Datum
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_INIT_USE_MODEL,1. Type,1. Typ
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_FIRST_UPG,1. UPG,1. KoGr
+com.bmw.psmg.sbb.PositionVariantPSMG,BMW_RECYCLING_CLASS,Recyclingkl,Recyclingkl
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_MODULEORG,Module Org.,Modulorg.
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_SERIES_PROD_PART_WEIGHT,Series Prod. Part Weight,Serienteilgewicht
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_PART_TYPE,Part type,Teileart
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_PDM_PARENT_GUID,Productline Node GUID,Produktlinienspezifischer Knoten GUID
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_DEPARTMENT,Department,Fachbereich
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_JIT_CODE,JIT-Co.,JIT-Kz.
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_COMMODITY,Commodity,Commodity
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_STRUCTURE_KEY,BMW Key,BMW Schluessel
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_PDM_PARENT_NAME,Productline Node Name,Produktlinienspezifischer Knotenname
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_MATERIAL_NAME,Descript.,Benennung
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_PDM_GUID,PVGUID,PVGUID
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_EFFECTIVITY,MMG date line,MMG Terminzeile
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_MATERIAL_NO,Part-no,SNR
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_PRODUCT_PROCESS_GRP,PPG,PPG
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_CHARACTER_CODE,Character key,Charakters.
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_UNIFIED_PARTS_GRP,UPG,KoGr
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_PDM_GENERIC_PARENT_GUID,Generic Node GUID,Generischer Knoten GUID
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_MATERIAL_VERSION,AI_ZI,AI_ZI
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_SOURCING_TYPE,Supply type,Bezugsart
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_LEFT_RIGHT_CODE,L/R-Kz.,L/R-Kz.
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_L_CODE,L-Flag,L-Kz.
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_MAT_EFFECTIVITY,Effectivity AI_ZI,Gueltigkeit AI_ZI
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_JIT_VARIANT,JIT-Var.,JIT-Varianz
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_TYPE_ASSIGNMENT,Type Assignment,Typzuordnung
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_LAST_UPDATED,DLC,Änd.-Datum
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_DRAWING_NOTE,Draw. Ref.,ZCH-Hinw.
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_DRAWING_FORMAT,DF,ZCH-Format
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_PART_MATERIAL,Material,Werkstoff
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_VCR,VCR,VCR
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_TEC_CLEANLINESS,TecSa,TecSa
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_MATERIAL_COLOR_CODE,Color/Paint,Farbe/Lack
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_STD_DESC,Standard,Std.-Ben.
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_PART_NUMBER_STATUS,Status,Status
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_MIRROR_INVERTED_ID,Mir.-Co.,Spiegel-Kz
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_ALL_COLOR_NO,PNo. All Colors,SNR A.F.
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_PART_NUMBER_TYPE,PNo-Cla,SNR-Art
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_PART_NUMBER_DEPARTMENT,PNo-Dpt,SNR-Abt
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_PART_SURFACE,Surface,Oberfläche
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_NAEL,NRCL,NAEL
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_ABBREV_DESCRIPTION,Ab. Desc.,Kurzben.
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_DESIGNER,Engin.,Konstr.
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_PART_NUMBER_GROUP,PNo-Gr,Klasse
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_HW_SW_CODE,HW/SW-Kz.,HW/SW-Kz.
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_WEIGHT_TYPE,Wgt-Typ,Gewichtsart
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_TRANSMISSION_CODE,Getriebecode,Getriebecode
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_GENERIC_PART,Gen.Teil,Gen. Teil
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_HAZARDOUS_GOODS_MARKING,Hazard,Gefahrgut-Kz.
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_ESD_MARKING,ESD-Co.,ESD-Kz.
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_SPARE_PART_CODE,Spare Pt.,Ersatzteil
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_PREDECESSOR_PART_NUMBER,Subst. f.,Ersatz für
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_DMU_MODELL,DMU-Modell,DMU-Modell
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_EDITOR,Issu.,Bearbeiter
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_ORIGINAL_PART_NUMBER,Source Part,Ausgangsteil
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_DATE_OF_CREATION,DOG,Anl.-Datum
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_INIT_USE_MODEL,1. Type,1. Typ
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_FIRST_UPG,1. UPG,1. KoGr
+com.bmw.psmg.sbb.FlexibleAssembly,BMW_RECYCLING_CLASS,Recyclingkl,Recyclingkl
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_MODULEORG,Module Org.,Modulorg.
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_ASIS_DEV_OF_DIM,As-Is Deviation,Ist-Bauabweichung
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_SERIES_PROD_PART_WEIGHT,Series Prod. Part Weight,Serienteilgewicht
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_PART_TYPE,Part type,Teileart
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_PDM_PARENT_GUID,Assembly Kit GUID,Baukastengruppen GUID
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_CLASS,Class,Klasse
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_DEPARTMENT,Department,Fachbereich
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_JIT_CODE,JIT-Co.,JIT-Kz.
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_COMMODITY,Commodity,Commodity
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_STRUCTURE_KEY,BMW Key,BMW Schluessel
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_PDM_PARENT_NAME,Assembly Kit Group Name,Baukastengruppenname
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_RELEASE_EFFECTIVITY,Release Effectivity,Release-Gueltigkeit
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_MATERIAL_NAME,Descript.,Benennung
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_PDM_GUID,PVGUID,PVGUID
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_EFFECTIVITY,MMG date line,MMG Terminzeile
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_MATERIAL_NO,Part-no,SNR
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_PDM_COUNT,PVCDCNT,PVCDCNT
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_PRODUCT_PROCESS_GRP,PPG,PPG
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_CHARACTER_CODE,Character key,Charakters.
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_UNIFIED_PARTS_GRP,UPG,KoGr
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_PDM_GENERIC_PARENT_GUID,Generic Node GUID,Generischer Knoten GUID
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_MATERIAL_VERSION,AI_ZI,AI_ZI
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_SOURCING_TYPE,Supply type,Bezugsart
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_LEFT_RIGHT_CODE,L/R-Kz.,L/R-Kz.
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_L_CODE,L-Flag,L-Kz.
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_MAT_EFFECTIVITY,Effectivity AI_ZI,Gueltigkeit AI_ZI
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_PDM_CHANGE_NO,SAP Change Number,SAP Änderungsnummer
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_JIT_VARIANT,JIT-Var.,JIT-Varianz
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_TYPE_ASSIGNMENT,Type Assignment,Typzuordnung
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_COLOR_CONTROL_CODE,Color Control Code,Farbsteuerungskennzeichen
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_LAST_UPDATED,DLC,Änd.-Datum
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_DRAWING_NOTE,Draw. Ref.,ZCH-Hinw.
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_DRAWING_FORMAT,DF,ZCH-Format
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_PART_MATERIAL,Material,Werkstoff
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_VCR,VCR,VCR
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_TEC_CLEANLINESS,TecSa,TecSa
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_MATERIAL_COLOR_CODE,Color/Paint,Farbe/Lack
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_STD_DESC,Standard,Std.-Ben.
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_PART_NUMBER_STATUS,Status,Status
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_MIRROR_INVERTED_ID,Mir.-Co.,Spiegel-Kz
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_ALL_COLOR_NO,PNo. All Colors,SNR A.F.
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_PART_NUMBER_TYPE,PNo-Cla,SNR-Art
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_PART_NUMBER_DEPARTMENT,PNo-Dpt,SNR-Abt
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_PART_SURFACE,Surface,Oberfläche
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_NAEL,NRCL,NAEL
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_ABBREV_DESCRIPTION,Ab. Desc.,Kurzben.
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_DESIGNER,Engin.,Konstr.
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_PART_NUMBER_GROUP,PNo-Gr,Klasse
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_HW_SW_CODE,HW/SW-Kz.,HW/SW-Kz.
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_WEIGHT_TYPE,Wgt-Typ,Gewichtsart
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_TRANSMISSION_CODE,Getriebecode,Getriebecode
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_GENERIC_PART,Gen.Teil,Gen. Teil
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_HAZARDOUS_GOODS_MARKING,Hazard,Gefahrgut-Kz.
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_ESD_MARKING,ESD-Co.,ESD-Kz.
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_SPARE_PART_CODE,Spare Pt.,Ersatzteil
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_PREDECESSOR_PART_NUMBER,Subst. f.,Ersatz für
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_DMU_MODELL,DMU-Modell,DMU-Modell
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_EDITOR,Issu.,Bearbeiter
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_ORIGINAL_PART_NUMBER,Source Part,Ausgangsteil
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_DATE_OF_CREATION,DOG,Anl.-Datum
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_INIT_USE_MODEL,1. Type,1. Typ
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_FIRST_UPG,1. UPG,1. KoGr
+com.bmw.psmg.sbb.AssemblyKitHeader,BMW_RECYCLING_CLASS,Recyclingkl,Recyclingkl
+com.bmw.psmg.sbb.AssemblyLocation,BMW_BAND,Band,Band
+com.bmw.psmg.sbb.AssemblyLocation,BMW_DEPENDENCY,Boolean,Beziehungswissen
+com.bmw.psmg.sbb.AssemblyLocation,BMW_QUANTITY,Quantity,Menge
+com.bmw.psmg.sbb.AssemblyLocation,BMW_EBO,EBO,Verbauortdifferenzierung
+com.bmw.psmg.sbb.AssemblyLocation,BMW_MAPP_ID,MAPP ID,MAPP ID
+com.bmw.psmg.sbb.AssemblyLocation,BMW_ASSEMBLY_STATION,Assembly Station,Station
+com.bmw.psmg.sbb.LineSideLocation,BMW_ASSEMBLY_STATION_SIDE,Band/Assembly Station/Side,Band/Station/Seite
+com.bmw.psmg.sbb.InhouseProduction,BMW_ALTERNATIVEBOM,Alternative BOM,Stücklistenalternative
+com.bmw.psmg.sbb.InhouseProduction,BMW_BOMTEXT,BOM Text,Stücklistentext
+com.bmw.psmg.sbb.InhouseProduction,BMW_DIFFERENTCOMPONENTQUANTITY,Different Component Quantity,Abweichende Verwendungsmenge
+com.bmw.psmg.sbb.InhouseProduction,BMW_ALTERNATIVEITEM,Alternative Item,Alternativposition
+com.bmw.psmg.sbb.InhouseProduction,BMW_ALTERNATIVEITEMUSEPROBABILITY,Alternative Item - Use Probability,Alternativposition - Einsatzwahrscheinlichkeit
+com.bmw.psmg.sbb.InhouseProduction,BMW_EXPLOSIONTYPE,Explosion Type,Auflösungssteuerung
+com.bmw.psmg.sbb.InhouseProduction,BMW_INDICATORBULKMATERIAL,Indicator Bulk Material,Kennzeichen Schüttgut
+com.bmw.psmg.sbb.InhouseProduction,BMW_COMPONENTSCRAP,Component Scrap,Komponentenausschuss
+com.bmw.psmg.sbb.InhouseProduction,BMW_INDICATORCOPRODUCT,Indicator Co-Product,Kuppelprodukt Kennzeichen
+com.bmw.psmg.sbb.InhouseProduction,BMW_LEADTIMEOFFSET,Lead-Time Offset,Nachlaufzeit
+com.bmw.psmg.sbb.InhouseProduction,BMW_BOMITEMNUMBER,BOM Item Number,Positionsnummer
+com.bmw.psmg.sbb.InhouseProduction,BMW_ISSUELOCATIONFORPRODUCTIONORDER,Issue Location For Production Order,Produktionslagerort
+com.bmw.psmg.sbb.InhouseProduction,BMW_INDICATORRESCURSIVENESSALLOWED,Indicator Recursiveness Allowed,Rekursivität erlaubt
+com.bmw.psmg.sbb.InhouseProduction,BMW_SPECIALTYPEFORBOMITEM,Special Procurement Type For BOM Item,Sonderbeschaffungsart der Stücklistenposition
+com.bmw.psmg.sbb.InhouseProduction,BMW_SORTSTRING,Sort String,Sortierbegriff
+com.bmw.psmg.sbb.InhouseProduction,BMW_BOMITEMTEXT1,BOM Item Text 1,Stücklistenpositionstext 1
+com.bmw.psmg.sbb.InhouseProduction,BMW_BOMITEMTEXT2,BOM Item Text 2,Stücklistenpositionstext 2
+com.bmw.psmg.sbb.Supplier,BMW_PORTAL_M_ID,Portal M ID,Portal M ID
+com.bmw.psmg.sbb.Supplier,BMW_SUPPLIER_DELIVERY_LOCATION,Supplier Delivery Location,Lieferantenauslieferstandort
+com.bmw.psmg.sbb.Supplier,BMW_SUPPLIER_DELIVERY_LOCATION_ADDRESS,Supplier Delivery Location Address,Lieferantenauslieferstandort Adresse
+com.bmw.psmg.sbb.Supplier,BMW_SUPPLIER_DELIVERY_LOCATION_COUNTRY_CODE,Supplier Delivery Location Country Code,Lieferantenauslieferstandort Länderkennzeichen
+com.bmw.psmg.sbb.Supplier,BMW_SUPPLIER_PRODUCTION_LOCATION,Supplier Production Location,Lieferantenproduktionsstandort
+com.bmw.psmg.sbb.Supplier,BMW_SUPPLIER_PRODUCTION_LOCATION_ADDRESS,Supplier Production Location Address,Lieferantenproduktionsstandort Adresse
+com.bmw.psmg.sbb.Supplier,BMW_SUPPLIER_PRODUCTION_LOCATION_COUNTRY_CODE,Supplier Production Location Country Code,Lieferantenproduktionsstandort Länderkennzeichen
+com.bmw.psmg.sbb.Supplier,BMW_SUPPLIER_PREPACKAGING,Supplier Prepackaging,Anforderung LVV
+wt.part.WTPart,BMW_UPG_CLASS,UPG/PPG (Classification),KoGr/PPG (Klassifikation)
+wt.part.WTPart,BMW_MODULEORG_CLASS,Module Org. (Classification),Modulorg. (Klassifikation)
+wt.part.WTPart,BMW_COMMODITY_CLASS,Commodity/Gen. Part (Classification),Commodity/Gen. Teil (Klassifikation)
+wt.part.WTPart,BMW_GENERIC_CLASS,Generic Node (Classification),Generischer Knoten (Klassifikation)
+wt.part.WTPart,BMW_CLASS_DESIGN_SCOPE,Design Scope,Konstruktionsumfang
+wt.part.WTPart,BMW_CLASS_GENERIC_PART_GUID,Generic Part GUID,Generisches Teil GUID
+wt.part.WTPart,BMW_CLASS_GENERIC_PART_ID,Generic Part ID,GenTeil ID
+wt.part.WTPart,BMW_CLASS_STD_DESC,Standard Description,Standardbenennung
+wt.part.WTPart,BMW_CLASS_SMALL_PART,Small Part,Kleinteil
+wt.part.WTPart,BMW_CLASS_MULTIPLE_USAGE,Multiple Usage,Mehrfachverwendung
+wt.part.WTPart,BMW_CLASS_DEPARTMENT,Department,Fachbereich
+com.bmw.psmg.sbb.ColorVariant,BMW_COLOR_CODE,Color Code,Farbergänzungsschlüssel
+com.bmw.psmg.sbb.ColorVariant,BMW_COLOR_CONTROL_CODE,Color Control Code,Farbsteuerungskennzeichen
+com.bmw.psmg.sbb.ColorVariant,BMW_LAST_UPDATED,DLC,Änd.-Datum
+com.bmw.psmg.sbb.ColorVariant,BMW_DRAWING_NOTE,Draw. Ref.,ZCH-Hinw.
+com.bmw.psmg.sbb.ColorVariant,BMW_DRAWING_FORMAT,DF,ZCH-Format
+com.bmw.psmg.sbb.ColorVariant,BMW_PART_MATERIAL,Material,Werkstoff
+com.bmw.psmg.sbb.ColorVariant,BMW_VCR,VCR,VCR
+com.bmw.psmg.sbb.ColorVariant,BMW_TEC_CLEANLINESS,TecSa,TecSa
+com.bmw.psmg.sbb.ColorVariant,BMW_MATERIAL_COLOR_CODE,Color/Paint,Farbe/Lack
+com.bmw.psmg.sbb.ColorVariant,BMW_STD_DESC,Standard,Std.-Ben.
+com.bmw.psmg.sbb.ColorVariant,BMW_PART_NUMBER_STATUS,Status,Status
+com.bmw.psmg.sbb.ColorVariant,BMW_MIRROR_INVERTED_ID,Mir.-Co.,Spiegel-Kz
+com.bmw.psmg.sbb.ColorVariant,BMW_ALL_COLOR_NO,PNo. All Colors,SNR A.F.
+com.bmw.psmg.sbb.ColorVariant,BMW_PART_NUMBER_TYPE,PNo-Cla,SNR-Art
+com.bmw.psmg.sbb.ColorVariant,BMW_PART_NUMBER_DEPARTMENT,PNo-Dpt,SNR-Abt
+com.bmw.psmg.sbb.ColorVariant,BMW_PART_SURFACE,Surface,Oberfläche
+com.bmw.psmg.sbb.ColorVariant,BMW_NAEL,NRCL,NAEL
+com.bmw.psmg.sbb.ColorVariant,BMW_ABBREV_DESCRIPTION,Ab. Desc.,Kurzben.
+com.bmw.psmg.sbb.ColorVariant,BMW_DESIGNER,Engin.,Konstr.
+com.bmw.psmg.sbb.ColorVariant,BMW_PART_NUMBER_GROUP,PNo-Gr,Klasse
+com.bmw.psmg.sbb.ColorVariant,BMW_HW_SW_CODE,HW/SW-Kz.,HW/SW-Kz.
+com.bmw.psmg.sbb.ColorVariant,BMW_WEIGHT_TYPE,Wgt-Typ,Gewichtsart
+com.bmw.psmg.sbb.ColorVariant,BMW_TRANSMISSION_CODE,Getriebecode,Getriebecode
+com.bmw.psmg.sbb.ColorVariant,BMW_GENERIC_PART,Gen.Teil,Gen. Teil
+com.bmw.psmg.sbb.ColorVariant,BMW_HAZARDOUS_GOODS_MARKING,Hazard,Gefahrgut-Kz.
+com.bmw.psmg.sbb.ColorVariant,BMW_ESD_MARKING,ESD-Co.,ESD-Kz.
+com.bmw.psmg.sbb.ColorVariant,BMW_SPARE_PART_CODE,Spare Pt.,Ersatzteil
+com.bmw.psmg.sbb.ColorVariant,BMW_PREDECESSOR_PART_NUMBER,Subst. f.,Ersatz für
+com.bmw.psmg.sbb.ColorVariant,BMW_DMU_MODELL,DMU-Modell,DMU-Modell
+com.bmw.psmg.sbb.ColorVariant,BMW_EDITOR,Issu.,Bearbeiter
+com.bmw.psmg.sbb.ColorVariant,BMW_ORIGINAL_PART_NUMBER,Source Part,Ausgangsteil
+com.bmw.psmg.sbb.ColorVariant,BMW_DATE_OF_CREATION,DOG,Anl.-Datum
+com.bmw.psmg.sbb.ColorVariant,BMW_INIT_USE_MODEL,1. Type,1. Typ
+com.bmw.psmg.sbb.ColorVariant,BMW_FIRST_UPG,1. UPG,1. KoGr
+com.bmw.psmg.sbb.ColorVariant,BMW_RECYCLING_CLASS,Recyclingkl,Recyclingkl
+com.ptc.windchill.option.model.ModuleVariantInformationLink,BMW_TYP_USAGE_STATE,Type State,Typstatus
+com.ptc.windchill.option.model.ModuleVariantInformationLink,BMW_TYP_USAGE_DATE,Type Usage Released Date,Typverwendungsfreigabedatum
+com.ptc.windchill.option.model.ModuleVariantInformationLink,BMW_TYP_USAGE_RELOBJID,Type Usage Release Object-ID,Typverwendungsfreigabeobjekt-ID
+com.ptc.windchill.option.model.ModuleVariantInformationLink,BMW_TYP_USAGE_AEKONTX,Type Usage Changekontext-ID,Typverwendungsaenderungskontext-ID
+com.ptc.windchill.option.model.ModuleVariantInformationLink,BMW_TYP_USAGE_KEY,Modeltype,Fahrzeugtyp
+com.ptc.windchill.option.model.ModuleVariantInformationLink,BMW_TYP_USAGE_INFO,Typeinformation,Typinformation
+com.ptc.windchill.option.model.ModuleVariantInformationLink,BMW_TYPE_USAGE_SOP,Type SOP,Type SOP
+com.ptc.windchill.option.model.ModuleVariantInformationLink,BMW_TYPE_USAGE_EOP,Type EOP,Typ-EOP
+com.ptc.windchill.option.model.ModuleVariantInformationLink,BMW_TYPE_USAGE_PLANT,Plant,Werke
+com.ptc.windchill.option.model.ModuleVariantInformationLink,BMW_TYP_M_STATUS,M Status,M Status
+com.ptc.windchill.option.model.ModuleVariantInformationLink,BMW_TYP_T_STATUS,T Status,T Status
+com.ptc.windchill.option.model.ModuleVariantInformationLink,BMW_TARGET_USAGE_MATURITY,Type Usage Pending Maturity (Calc.),geplanter Verwendungsstatus
+com.ptc.windchill.option.model.ModuleVariantInformationLink,BMW_TYP_USAGE_TARGET_EFF,Type Usage Pending Effectivity (Calc.),geplant gültig ab (Calc.)
+com.ptc.windchill.option.model.ModuleVariantInformationLink,BMW_TYP_USAGE_EFF_VORF,VORF Effectivity,VORF Gültig ab
+com.ptc.windchill.option.model.ModuleVariantInformationLink,BMW_TYP_USAGE_EFF_PROF,PROF Effectivity,PROF Gültig ab
+com.ptc.windchill.option.model.ModuleVariantInformationLink,BMW_TYP_USAGE_EFF_ENTFALL,ENTFALL Effectivity,ENTFALL Gültig ab
+com.ptc.windchill.option.model.ModuleVariantInformationLink,BMW_TYP_USAGE_EFF_BAW,BAW Effectivity,BAW Gültig ab
+com.ptc.windchill.option.model.ModuleVariantInformationLink,BMW_TYP_USAGE_CHANGETASK_STATE,Type Usage Change Task State,Status Änderungsaufgabe-Verwendung
+com.ptc.windchill.option.model.ModuleVariantInformationLink,BMW_TYP_USAGE_CHANGETASK,Type Usage Change Task,Änderungsaufgabe-Verwendung
+com.ptc.windchill.option.model.ModuleVariantInfoLinkHistory,BMW_TARGET_USAGE_MATURITY,Type Usage Pending Maturity (Calc.),geplanter Verwendungsstatus (Kalk.)
+com.ptc.windchill.option.model.ModuleVariantInfoLinkHistory,BMW_TYP_USAGE_TARGET_EFF,Type Usage Pending Effectivity (Calc.),geplant gültig ab (Kalk.)
+com.ptc.windchill.option.model.ModuleVariantInfoLinkHistory,BMW_TYP_USAGE_EFF_VORF,VORF Effectivity,VORF Gültig ab
+com.ptc.windchill.option.model.ModuleVariantInfoLinkHistory,BMW_TYP_USAGE_EFF_PROF,PROF Effectivity,PROF Gültig ab
+com.ptc.windchill.option.model.ModuleVariantInfoLinkHistory,BMW_TYP_USAGE_EFF_ENTFALL,ENTFALL Effectivity,ENTFALL Gültig ab
+com.ptc.windchill.option.model.ModuleVariantInfoLinkHistory,BMW_TYP_USAGE_EFF_BAW,BAW Effectivity,BAW Gültig ab
+com.ptc.windchill.option.model.ModuleVariantInfoLinkHistory,BMW_TYP_USAGE_CHANGETASK_STATE,Type Usage Change Task State,Status Änderungsaufgabe-Verwendung
+com.ptc.windchill.option.model.ModuleVariantInfoLinkHistory,BMW_TYP_USAGE_CHANGETASK,Type Usage Change Task,Änderungsaufgabe-Verwendung
+com.bmw.psmg.sbb.AssemblySite,BMW_MO,AS,MO
+com.bmw.psmg.sbb.AssemblySite,BMW_MO_SUPPLIERID,AS - Supplier ID,MO - Lieferanten ID
+com.bmw.psmg.sbb.AssemblySite,BMW_MO_PLANT,AS - Plant,MO - Werk
+com.bmw.psmg.sbb.AssemblySite,BMW_MO_PLANTKEY,AS - Plant Key,MO - Werkschlüssel
+com.bmw.psmg.sbb.AssemblySite,BMW_MO_PLANTDESCRIPTION,AS - Plant Description,MO - Werksbeschreibung
+com.bmw.psmg.sbb.DemandLocation,BMW_BO,DL,BO
+com.bmw.psmg.sbb.DemandLocation,BMW_BO_SUPPLIERID,DL - Supplier ID,BO - Lieferanten ID
+com.bmw.psmg.sbb.DemandLocation,BMW_BO_PLANT,DL - Plant,BO - Werk
+com.bmw.psmg.sbb.DemandLocation,BMW_BO_PLANTKEY,DL - Plant Key,BO - Werkschlüssel
+com.bmw.psmg.sbb.DemandLocation,BMW_BO_PLANTDESCRIPTION,DL - Plant Description,BO - Werksbeschreibung
+com.bmw.psmg.sbb.BuildingLocationComponent,BMW_BK,BK,BK
+com.bmw.psmg.sbb.BuildingLocationComponent,BMW_BK_SUPPLIERID,BK - Supplier ID,BK - Lieferanten ID
+com.bmw.psmg.sbb.BuildingLocationComponent,BMW_BK_PLANT,BK - Plant,BK - Werk
+com.bmw.psmg.sbb.BuildingLocationComponent,BMW_BK_PLANTKEY,BK - Plant Key,BK - Werkschlüssel
+com.bmw.psmg.sbb.BuildingLocationComponent,BMW_BK_PLANTDESCRIPTION,BK - Description,BK - Beschreibung
+com.bmw.psmg.sbb.BuildingLocationComponent,BMW_BK_SUPPLIERTYPE,BK - Supplier Type,BK - Lieferanten Bezugsart
+com.bmw.psmg.sbb.LineSideLocation,BMW_ASSEMBLY_STATION_SIDE,Band/Assembly Station/Side,Band/Station/Seite
+com.bmw.psmg.sbb.Takerate,BMW_UNITSOVERTIME,Units over Lifetime,Material über Laufzeit
+com.bmw.psmg.sbb.Takerate,BMW_PEAKPRODVOL,Peak Production Volume,Peakstückzahl
+com.bmw.psmg.sbb.Takerate,BMW_PEAKYEAR,Peak Year,Peakjahr
+com.bmw.psmg.sbb.SupplyType,BMW_INCOTERMS,Incoterms,Incoterms
+com.bmw.psmg.sbb.SupplyType,BMW_LOGISTIC_PROCESS,Logistic Process,Logistikprozess
+com.bmw.psmg.sbb.Packaging,BMW_CONTAINER_OWNER,Container Owner,Behältereigentümer
+com.bmw.psmg.sbb.Packaging,BMW_LOAD_UNIT_NUMBER,Load Unit Nr.,Ladeeinheit Nr.
+com.bmw.psmg.sbb.Packaging,BMW_TYPE_LOAD_UNIT,Type Load Unit,Typ Ladeeinheit
+com.bmw.psmg.sbb.Packaging,BMW_CLASSIFICATION_LOAD_UNIT,Classification Load Unit,Klassifizierung Ladeeinheit
+com.bmw.psmg.sbb.Packaging,BMW_LOAD_UNIT_LENGTH,Load Unit Length,Ladeeinheit Länge
+com.bmw.psmg.sbb.Packaging,BMW_LOAD_UNIT_WIDTH,Load Unit Width,Ladeeinheit Breite
+com.bmw.psmg.sbb.Packaging,BMW_LOAD_UNIT_HEIGHT,Load Unit Height,Ladeeinheit Höhe
+com.bmw.psmg.sbb.Packaging,BMW_FILLING_DEGREE_LOAD_UNIT,Filling Degree Load Unit,Füllgrad Ladeeinheit
+com.bmw.psmg.sbb.Packaging,BMW_STACKING_FACTOR_LOAD_UNIT,Stacking Factor Load Unit,Stapelfaktor Ladeeinheit
+com.bmw.psmg.sbb.Packaging,BMW_BIN_NUMBER,Bin Nr.,Bin Nr.
+com.bmw.psmg.sbb.Packaging,BMW_TYPE_BIN,Type Bin,Typ Bin
+com.bmw.psmg.sbb.Packaging,BMW_FILLING_DEGREE_BIN,Filling Degree Bin,Füllgrad Bin
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_COLOR_EXC_CODE,Color Exception Code,Farbausnahmeschlüssel
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_LAST_UPDATED,DLC,Änd.-Datum
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_DRAWING_NOTE,Draw. Ref.,ZCH-Hinw.
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_DRAWING_FORMAT,DF,ZCH-Format
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_PART_MATERIAL,Material,Werkstoff
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_VCR,VCR,VCR
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_TEC_CLEANLINESS,TecSa,TecSa
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_MATERIAL_COLOR_CODE,Color/Paint,Farbe/Lack
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_STD_DESC,Standard,Std.-Ben.
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_PART_NUMBER_STATUS,Status,Status
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_MIRROR_INVERTED_ID,Mir.-Co.,Spiegel-Kz
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_ALL_COLOR_NO,PNo. All Colors,SNR A.F.
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_PART_NUMBER_TYPE,PNo-Cla,SNR-Art
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_PART_NUMBER_DEPARTMENT,PNo-Dpt,SNR-Abt
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_PART_SURFACE,Surface,Oberfläche
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_NAEL,NRCL,NAEL
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_ABBREV_DESCRIPTION,Ab. Desc.,Kurzben.
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_DESIGNER,Engin.,Konstr.
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_PART_NUMBER_GROUP,PNo-Gr,Klasse
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_HW_SW_CODE,HW/SW-Kz.,HW/SW-Kz.
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_WEIGHT_TYPE,Wgt-Typ,Gewichtsart
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_TRANSMISSION_CODE,Getriebecode,Getriebecode
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_GENERIC_PART,Gen.Teil,Gen. Teil
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_HAZARDOUS_GOODS_MARKING,Hazard,Gefahrgut-Kz.
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_ESD_MARKING,ESD-Co.,ESD-Kz.
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_SPARE_PART_CODE,Spare Pt.,Ersatzteil
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_PREDECESSOR_PART_NUMBER,Subst. f.,Ersatz für
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_DMU_MODELL,DMU-Modell,DMU-Modell
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_EDITOR,Issu.,Bearbeiter
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_ORIGINAL_PART_NUMBER,Source Part,Ausgangsteil
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_DATE_OF_CREATION,DOG,Anl.-Datum
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_INIT_USE_MODEL,1. Type,1. Typ
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_FIRST_UPG,1. UPG,1. KoGr
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_RECYCLING_CLASS,Recyclingkl,Recyclingkl
+com.bmw.psmg.sbb.PositionVariantMMG,BMW_RELEASE_REQUEST_ID,Release Request ID,Freigabeanforderung ID
+com.bmw.psmg.sbb.ColorPosition,BMW_COLOR_EXC_CODE,Color Exception Code,Farbausnahmeschlüssel
+com.bmw.psmg.sbb.ColorPosition,BMW_LAST_UPDATED,DLC,Änd.-Datum
+com.bmw.psmg.sbb.ColorPosition,BMW_DRAWING_NOTE,Draw. Ref.,ZCH-Hinw.
+com.bmw.psmg.sbb.ColorPosition,BMW_DRAWING_FORMAT,DF,ZCH-Format
+com.bmw.psmg.sbb.ColorPosition,BMW_PART_MATERIAL,Material,Werkstoff
+com.bmw.psmg.sbb.ColorPosition,BMW_VCR,VCR,VCR
+com.bmw.psmg.sbb.ColorPosition,BMW_TEC_CLEANLINESS,TecSa,TecSa
+com.bmw.psmg.sbb.ColorPosition,BMW_MATERIAL_COLOR_CODE,Color/Paint,Farbe/Lack
+com.bmw.psmg.sbb.ColorPosition,BMW_STD_DESC,Standard,Std.-Ben.
+com.bmw.psmg.sbb.ColorPosition,BMW_PART_NUMBER_STATUS,Status,Status
+com.bmw.psmg.sbb.ColorPosition,BMW_MIRROR_INVERTED_ID,Mir.-Co.,Spiegel-Kz
+com.bmw.psmg.sbb.ColorPosition,BMW_ALL_COLOR_NO,PNo. All Colors,SNR A.F.
+com.bmw.psmg.sbb.ColorPosition,BMW_PART_NUMBER_TYPE,PNo-Cla,SNR-Art
+com.bmw.psmg.sbb.ColorPosition,BMW_PART_NUMBER_DEPARTMENT,PNo-Dpt,SNR-Abt
+com.bmw.psmg.sbb.ColorPosition,BMW_PART_SURFACE,Surface,Oberfläche
+com.bmw.psmg.sbb.ColorPosition,BMW_NAEL,NRCL,NAEL
+com.bmw.psmg.sbb.ColorPosition,BMW_ABBREV_DESCRIPTION,Ab. Desc.,Kurzben.
+com.bmw.psmg.sbb.ColorPosition,BMW_DESIGNER,Engin.,Konstr.
+com.bmw.psmg.sbb.ColorPosition,BMW_PART_NUMBER_GROUP,PNo-Gr,Klasse
+com.bmw.psmg.sbb.ColorPosition,BMW_HW_SW_CODE,HW/SW-Kz.,HW/SW-Kz.
+com.bmw.psmg.sbb.ColorPosition,BMW_WEIGHT_TYPE,Wgt-Typ,Gewichtsart
+com.bmw.psmg.sbb.ColorPosition,BMW_TRANSMISSION_CODE,Getriebecode,Getriebecode
+com.bmw.psmg.sbb.ColorPosition,BMW_GENERIC_PART,Gen.Teil,Gen. Teil
+com.bmw.psmg.sbb.ColorPosition,BMW_HAZARDOUS_GOODS_MARKING,Hazard,Gefahrgut-Kz.
+com.bmw.psmg.sbb.ColorPosition,BMW_ESD_MARKING,ESD-Co.,ESD-Kz.
+com.bmw.psmg.sbb.ColorPosition,BMW_SPARE_PART_CODE,Spare Pt.,Ersatzteil
+com.bmw.psmg.sbb.ColorPosition,BMW_PREDECESSOR_PART_NUMBER,Subst. f.,Ersatz für
+com.bmw.psmg.sbb.ColorPosition,BMW_DMU_MODELL,DMU-Modell,DMU-Modell
+com.bmw.psmg.sbb.ColorPosition,BMW_EDITOR,Issu.,Bearbeiter
+com.bmw.psmg.sbb.ColorPosition,BMW_ORIGINAL_PART_NUMBER,Source Part,Ausgangsteil
+com.bmw.psmg.sbb.ColorPosition,BMW_DATE_OF_CREATION,DOG,Anl.-Datum
+com.bmw.psmg.sbb.ColorPosition,BMW_INIT_USE_MODEL,1. Type,1. Typ
+com.bmw.psmg.sbb.ColorPosition,BMW_FIRST_UPG,1. UPG,1. KoGr
+com.bmw.psmg.sbb.ColorPosition,BMW_RECYCLING_CLASS,Recyclingkl,Recyclingkl
+com.ptc.windchill.enterprise.data.enterpriseData.PlantSpecificEnterpriseData,BMW_VSED_TYPE,VSED Type,VSED Type
+com.ptc.windchill.enterprise.data.enterpriseData.PlantSpecificEnterpriseData,BMW_STRUCTURE_KEY,BMW Key,BMW Schlüssel

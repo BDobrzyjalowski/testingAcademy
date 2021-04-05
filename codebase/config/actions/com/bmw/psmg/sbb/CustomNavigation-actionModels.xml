@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE actionmodels SYSTEM 'actionmodels.dtd'>
+
+<actionmodels>
+
+    <model name="home customization">
+        <description>
+            Used for the customization options on the homepage
+        </description>
+        <action name="listAssignments" type="work"/>
+        <action name="listUpdates" type="report"/>
+        <action name="listCheckedOutWork" type="user"/>
+        <action name="homeList" type="wp"/>
+        <action name="list_mine" type="meeting"/>
+        <action name="userNotebook" type="user"/>
+        <action name="listSubscriptions" type="subscription"/>
+        <action name="reports" type="user"/>
+        <action name="savedReports" type="user"/>
+        <action name="dataMonitors" type="user"/>
+        <action name="assignedClashesNav" type="clashReport"/>
+        <action name="participationView" type="forumTopic"/>
+        <action name="actionGroup" type="user"/>
+        <action name="listAccMaps_homePage" type="accmap"/>
+    </model>
+
+</actionmodels>
+

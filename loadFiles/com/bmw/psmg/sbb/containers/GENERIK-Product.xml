@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE NmLoader SYSTEM "standard12_0.dtd">
+<NmLoader>
+    <csvProductContainer handler="wt.part.LoadPart.createProductContainer">
+        <csvuser></csvuser>
+        <csvname>GENERIK</csvname>
+        <csvnumber></csvnumber>
+        <csvdescription>GENERIK</csvdescription>
+        <csvview>Design</csvview>
+        <csvsource>make</csvsource>
+        <csvdefaultUnit/>
+        <csvtype>separable</csvtype>
+        <csvcontainerTemplate></csvcontainerTemplate>
+        <csvorganizationName>SBB</csvorganizationName>
+        <csvorganizationID></csvorganizationID>
+    </csvProductContainer>
+</NmLoader>

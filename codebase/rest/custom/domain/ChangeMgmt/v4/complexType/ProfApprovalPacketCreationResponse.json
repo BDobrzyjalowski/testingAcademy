@@ -1,0 +1,11 @@
+{
+    "name": "ProfApprovalPacketCreationResponse",
+    "description": "Response from creation of PROF released approval packet",
+    "inherits": [],
+    "attributes": [
+        {
+            "name": "ID",
+            "type": "String"
+        }
+    ]
+}

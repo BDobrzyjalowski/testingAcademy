@@ -1,0 +1,15 @@
+ {  
+    "name" : "PendingDateRange",
+    "description": "Range of the Date Effectivity",
+    "inherits":[],
+    "attributes" : [
+        {
+            "name" : "StartDate",
+            "type":"DateTimeOffset"
+        },
+        {
+            "name" : "EndDate",
+            "type":"DateTimeOffset"
+        }
+    ]
+ }

@@ -1,0 +1,42 @@
+<%@ page import="com.ptc.netmarkets.util.NmUtils"%>
+<%@ page import="com.ptc.netmarkets.util.beans.NmHelperBean"%>
+<%@ page import="wt.util.WTProperties"%>
+<%@ page import="java.io.FileReader"%>
+<%@ page import="java.io.BufferedReader"%>
+<%@ page import="java.io.File"%>
+<%@ page import="java.util.Locale"%>
+<%@ page contentType="text/html; charset=UTF-8"%>
+
+<%response.setContentType("text/html; charset=UTF-8");%>
+
+<%
+    final String BANNERBASEFILENAME = "/netmarkets/jsp/util/banner";
+    final String BANNERFILEEXTENSION = "txt";
+    NmHelperBean helper = new NmHelperBean(pageContext);
+    try {
+        String codebaseLoc = WTProperties.getLocalProperties().getProperty("wt.codebase.location");
+        String bannerFileName = NmUtils.getLocaleSpecificFileName(helper.getNmLocaleBean().getLocale(), BANNERBASEFILENAME, BANNERFILEEXTENSION);
+        String bannerAbsolutePath = codebaseLoc + bannerFileName;
+        File bannerFile = new File(bannerAbsolutePath);
+        if (!bannerFile.exists()) {
+            // Fallback scenario - browser locale based file not found, going to use default one
+            bannerFileName = NmUtils.getLocaleSpecificFileName(Locale.US, BANNERBASEFILENAME, BANNERFILEEXTENSION);
+            bannerAbsolutePath = codebaseLoc + bannerFileName;
+            bannerFile = new File(bannerAbsolutePath);
+        }
+        if (bannerFile.length() > 0) {
+%>
+            <!-- style "banner-top-custom-style" defined in custom-xtheme-windchill.css -->
+            <div class="banner-top-custom-style" id="banner-top-custom">
+                <jsp:include page="<%=bannerFileName%>" flush="true"/>
+            </div>
+<%
+        }
+    }
+    catch (Throwable t) {
+        helper.getNmErrorBean().setThrowable(t);
+        %><jsp:include page="/netmarkets/jsp/util/error.jsp" flush="true"/><%//
+        helper.getNmErrorBean().setThrowable(null);
+   }
+%><%@ page contentType="text/html; charset=UTF-8"
+%><%response.setContentType("text/html; charset=UTF-8");%>

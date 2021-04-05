@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE NmLoader SYSTEM "standard12_0.dtd">
+<NmLoader>
+    <csvExportDefinition handler="com.ptc.core.lwc.server.TypeDefinitionExporter.beginExportDefinition">
+        <csvtoLocation>loadFiles/com/bmw/psmg/sbb/types</csvtoLocation>
+        <csvtoFileName>WTPart.xml</csvtoFileName>
+        <csvexportDefClass>com.ptc.core.lwc.server.LWCTypeDefinition</csvexportDefClass>
+        <csvexportNames>wt.part.WTPart</csvexportNames>
+        <csvmode>0</csvmode>
+        <csvExportAncestorTypes>true</csvExportAncestorTypes>
+    </csvExportDefinition>
+</NmLoader>
+
+        <!--
+            windchill wt.load.LoadFromFile -d loadFiles/com/bmw/psmg/sbb/types/export/DefinitionExporter_WTPart.xml -u <username> -p <password>
+        -->

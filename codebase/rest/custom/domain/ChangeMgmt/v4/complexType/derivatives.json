@@ -1,0 +1,29 @@
+{
+  "name": "derivatives",
+  "description": "derivatives",
+  "attributes": [
+    {
+      "name": "derivativeName",
+      "type": "String"
+    },
+    {
+      "name": "changeFlag",
+      "type": "String"
+    },
+    {
+      "name": "derivativeTypes",
+      "type": "derivativeTypes",
+      "isCollection": false
+    },
+    {
+      "name": "releases",
+      "type": "releases",
+      "isCollection": false
+    },
+	{
+      "name": "typeGroups",
+      "type": "typeGroups",
+      "isCollection": true
+    }
+  ]
+}

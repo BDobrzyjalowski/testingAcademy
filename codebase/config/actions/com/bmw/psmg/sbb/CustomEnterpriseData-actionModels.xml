@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE actionmodels SYSTEM '../../actionmodels.dtd'>
+
+<actionmodels resourceBundle="com.ptc.windchill.enterprise.data.enterpriseDataResource">
+
+    <model name="enterpriseDataTabSet" >
+        <submodel name="infoDetails"/>
+        <submodel name="enterpriseDataInfoRelatedItemsTab"/>
+        <submodel name="changesTab"/>
+        <submodel name="enterpriseDataInfoHistoryTab"/>
+		<submodel name="customEnterpriseDataEffectivityTab"/>
+    </model> 
+	
+	<!-- Plant Functional Data Info Page - START -->
+   <model name="plantFunctionalDataTabSet" >
+      <submodel name="infoDetails"/>
+      <submodel name="changesTab"/>
+      <submodel name="enterpriseDataInfoHistoryTab"/>
+      <submodel name="customEnterpriseDataEffectivityTab"/> 
+   </model>
+
+    <model name="customEnterpriseDataEffectivityTab" resourceBundle="com.bmw.psmg.sbb.actions.clientResource">
+        <action name="effTableForPartsAndMPMLinkInfoPage" type="effectivity"/>
+		<action name="effectivityHistory" type="history"/>
+    </model>    
+    
+</actionmodels>

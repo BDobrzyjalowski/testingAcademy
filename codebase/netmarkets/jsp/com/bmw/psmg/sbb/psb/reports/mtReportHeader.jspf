@@ -1,0 +1,254 @@
+<%@ page import="java.util.Date"%>
+<%@ page import="com.ptc.core.ui.componentRB"%>
+<%@ page import="com.ptc.netmarkets.util.beans.NmCommandBean"%>
+<%@ page import="com.ptc.windchill.enterprise.part.reports.partReportsRB"%>
+<%@ page import="com.ptc.windchill.enterprise.util.PartManagementHelper"%>
+<%@ page import="wt.configuration.ConfigurationHelper"%>
+<%@ page import="wt.fc.ObjectIdentifier"%>
+<%@ page import="wt.fc.ObjectReference"%>
+<%@ page import="wt.org.WTUser"%>
+<%@ page import="wt.part.WTPart"%>
+<%@ page import="wt.part.WTProductConfiguration"%>
+<%@ page import="wt.part.WTProductInstance2"%>
+<%@ page import="wt.session.SessionHelper"%>
+<%@ page import="wt.vc.Iterated"%>
+<%@ page import="wt.util.EncodingConverter"%>
+<%@ page import="wt.util.HTMLEncoder"%>
+<%@ page import="wt.util.WTContext"%>
+<%@ page import="wt.util.WTStandardDateFormat"%>
+
+<%-- Javascript that implements custom sorting for columns in the reports --%>
+<script type="text/javascript" src="netmarkets/javascript/part/report/util/PartReportUtil.js"></script>
+<script type="text/javascript" src="netmarkets/javascript/part/report/util/PartReportComparators.js"></script>
+
+<%-- Get the user who generated the report --%>
+<%
+	HTMLEncoder encoder = new HTMLEncoder();
+	WTUser user = (WTUser)SessionHelper.getPrincipal();
+	String userName = user.getAuthenticationName();
+	userName = encoder.encodeForHTMLContent(userName);
+	Locale locale = SessionHelper.getLocale();
+%>
+
+<%-- Get the time at which the report is being generated --%>
+<fmt:setBundle basename="com.ptc.core.ui.componentRB" />
+<fmt:message var="dateFormat"  key="<%=componentRB.STANDARD_DATE_TIME_ZONE_DISPLAY_FORMAT%>" />
+<%
+	String executionTime = WTStandardDateFormat.format(new Date(), (String)pageContext.getAttribute("dateFormat"));
+%>
+
+<%
+    // Create the display string for the part the report is being created for
+    //Fix for SPR 7192405:Creating a new PSB report custom action doesn't work in Windchill PDMLink 11.0.
+    String oidString = request.getParameter("oid");
+    Iterated contextObj = null;
+
+    if (oidString != null && !oidString.startsWith("OR:")) {
+        ObjectIdentifier oi = ObjectIdentifier.newObjectIdentifier(oidString);
+        contextObj = (Iterated) (ObjectReference.newObjectReference(oi).getObject());
+    }
+    else {
+        contextObj = (Iterated) commandBean.getActionOid().getRef();
+    }
+
+    WTPart part = null;
+    if (contextObj instanceof WTPart) {
+        part = (WTPart) contextObj;
+    }
+    else if (contextObj instanceof WTProductConfiguration) {
+        part = (WTPart) ConfigurationHelper.service.getConfiguredVersion((WTProductConfiguration) contextObj);
+    }
+    else if (contextObj instanceof WTProductInstance2) {
+        WTProductInstance2 instance = (WTProductInstance2) contextObj;
+        part = (WTPart) ConfigurationHelper.service
+                .getConfiguredVersion((WTProductConfiguration) instance.getConfiguration());
+    }
+
+    StringBuffer targetPart = new StringBuffer("");
+    if (part != null) {
+        String partId = part.getDisplayIdentifier().toString();
+        partId = encoder.encodeForHTMLContent(partId);
+        targetPart.append(partId);
+    }
+
+    //Get the URL that the part display is connected to
+    NmAction nmaction = NmActionServiceHelper.getAction("object", "view", locale);
+    NmOid nmOid = new NmOid(contextObj);
+    nmaction.setContextObject(nmOid);
+    String url = nmaction.getActionUrlExternal();
+
+    // Get the container of the part
+    String containerNameLabel = null;
+    String containerName = null;
+
+    if (part != null) {
+        try {
+            if (part.getContainer() != null) {
+                containerNameLabel = part.getContainer().getClassInfo().getDisplayName();
+                containerNameLabel = encoder.encodeForHTMLContent(containerNameLabel);
+                containerName = part.getContainerName();
+                containerName = encoder.encodeForHTMLContent(containerName);
+            }
+        } catch (Exception e) {
+            containerNameLabel = WTMessage.getLocalizedMessage("com.ptc.windchill.enterprise.part.partResource",
+                    com.ptc.windchill.enterprise.part.partResource.CONTEXT_COLUMN_LABEL, null, locale);
+            containerName = WTMessage.getLocalizedMessage("wt.access.accessResource",
+                    wt.access.accessResource.SECURED_INFORMATION, (Object[]) null, locale);
+        }
+    }
+
+    // Set up URL and other arguments for Filter Properties popup dialog
+    boolean launchedFromProject = (part == null ? true : PartManagementHelper.isProjectLink(part));
+    if (!launchedFromProject) {
+
+        // encode each request parameter that we retrieved earlier   
+        EncodingConverter converter = new EncodingConverter();
+        String seedOids = converter.encode(request.getParameter("oid"));
+
+        // Get the URL to use when user clicks on Filter Properties
+        WTContext context = WTContext.getContext();
+        String baseUrl = context.getCodeBase().toString();
+        String label = "Filter Properties";
+
+        StringBuilder filterPropertiesURL = new StringBuilder();
+        filterPropertiesURL.append(baseUrl)
+                .append("netmarkets/jsp/ecComponent/ecComponent.jsp?")
+                .append("seed_oids=")
+                .append(seedOids)
+                .append("&ncid=")
+                .append(converter.encode(ncId))
+                .append("&app=")
+                .append(converter.encode(appName))
+                .append("&hostname=")
+                .append(converter.encode(host))
+                .append("&sessionid=")
+                .append(converter.encode(sessionId))
+                .append("&action=miniinfo");
+
+        String containerOid = request.getParameter("ContainerOid");
+        if (containerOid != null && !"".equals(containerOid)) {
+            filterPropertiesURL.append("&containerOid=").append(converter.encode(containerOid));
+        }
+
+        // Do Javascript encoding of this URL because it is being used in JavaScript
+        String linkEncodedForJS = encoder.encodeForJavascript(filterPropertiesURL.toString());
+        String linkEncodedForHREF = encoder.encodeURIForHTMLAttribute(filterPropertiesURL.toString());
+        request.setAttribute("linkEncodedForJS", linkEncodedForJS);
+        request.setAttribute("linkEncodedForHREF", linkEncodedForHREF);
+
+        String javascriptArgs = "toolbar=0,location=0,statusbar=0,directory=0,menubar=0,scrollbars=1,resizable=1,modal=0,width=462,height=550";
+        request.setAttribute("javascriptArgs", javascriptArgs);
+
+    }
+%>
+ 
+<%-- Set window title  based on rbinfo value --%>
+<script language="javascript">
+    window.document.title = '<c:out value="${tableLabel}"/>';
+</script>
+    
+<script language="javascript" type="text/javascript">
+<!--
+    function openFilterProperties(url, javascriptArgs) {
+        // the windowName argument for window.open needs to have no spaces in it to work in IE
+        // This is NOT what is displayed in the title of the popup
+        filterPropsWindow = window.open(url, "FilterPropertiesDialog", javascriptArgs);
+        if (window.focus) {filterPropsWindow.focus()}
+    	return false;           
+    }  
+ // -->
+        
+</script>
+
+<div class="x-toolbar x-small-editor x-panel-header wizard-title-text x-toolbar-layout-ct" id="reportTitleBar">
+  <table cellspacing="0" class="x-toolbar-ct">
+	<tbody>
+	  <tr>
+		<td align="left" class="x-toolbar-left">
+		  <table cellspacing="0">
+			<tbody>
+			  <tr class="x-toolbar-left-row">
+				<td class="x-toolbar-cell" id="report-1"><div class="xtb-text" id="report-2">${tableLabel}</div></td>
+			  </tr>
+			</tbody>
+		  </table>
+		</td>
+	  </tr>
+	</tbody>
+  </table>
+</div>
+
+
+		
+<div id="report-3" class="wizardPanel-body wizardPanel-body-noheader">
+  <div id="report-4" class=" x-panel stepHeader x-panel-noborder">
+    <div class="stepPanel" id="report-5">
+	  <div class="x-header-strip-wrap" id="report-6" style="left: 0px;"> 
+		 <table  class="header-strip" id="report-7"  >
+		  <tr>
+		    <td align = "left" valign="top" class="attributePanel-label"><b>&nbsp;&nbsp;${TargetPart}&nbsp;</b></td>
+		    <td align = "left" valign="top" class="attributePanel-value"><a href=<%=url + " target='_blank'>"%><%=targetPart %></td>
+		  </tr>
+		  <% if (containerName != null) { %>
+		  <tr>
+		    <td align = "left" valign="top" class="attributePanel-label"><b>&nbsp;&nbsp;<%=containerNameLabel%>:&nbsp;</b></td>
+		    <td align = "left" valign="top" class="attributePanel-value"><%=containerName%></td>
+		  </tr>
+		  <% } %>
+		  <tr>
+		    <td align = "left" valign="top" class="attributePanel-label"><b>&nbsp;&nbsp;${ExecutedBy}&nbsp;</b></font></td>
+		    <td align = "left" valign="top" class="attributePanel-value"><%=userName%></font></td>
+		  </tr>
+		  <tr>
+		    <td align = "left" valign="top" class="attributePanel-label"><b>&nbsp;&nbsp;${TimeOfExec}&nbsp;</b></td>
+		    <td align = "left" valign="top" class="attributePanel-value"><%=executionTime%></td>
+		  </tr>
+          <c:if test="${ not empty sourcingContextValue }">
+          <tr>
+             <td align = "left" valign="top" class="attributePanel-label"><b>&nbsp;&nbsp;${ sourcingContextLabel }:&nbsp;</b></td>
+             <td align = "left" valign="top" class="attributePanel-value">${ sourcingContextValue }</td>
+          </tr>
+          </c:if>       
+		  <% if (!launchedFromProject) { %>
+		  <tr>
+		    <td align = "left" valign="top" class="attributePanel-label"><b>&nbsp;&nbsp;${inputDateEffectivityLabel}:&nbsp;</b></td> 	
+			<td align = "left" valign="top" class="attributePanel-value"><%= WTStandardDateFormat.format(inputEffectivity, (String)pageContext.getAttribute("dateFormat"))%></td>	     
+		  </tr>
+		  <tr>
+		     <td colspan='2' align = "left" valign="top" class="attributePanel-label">
+		       <b>&nbsp;&nbsp;<a href="${linkEncodedForHREF}" 
+		           onclick="return openFilterProperties('${linkEncodedForJS}', '${javascriptArgs}')">${FilterPropertiesLabel}</a></b>
+		     </td>		     
+		  </tr>
+		  <% } %>
+		
+		</table>
+	   </div>
+    </div>
+  </div>
+</div>
+
+
+<%-- Display CAD Phantom message --%>
+<div id='filteringCADPhantomPartsMsg'></div>
+<script type="text/javascript">
+	var filteringInfoPanel = null;
+	var showFilteringCADPhantomPartsMsg = function(tableId) {
+		Ext.ComponentMgr.onAvailable(tableId, function(table) {
+			table.getStore().on('dataSourceComplete', function() {
+				if (filteringInfoPanel === null) {
+					filteringInfoPanel = new Ext.Panel({
+						renderTo : 'filteringCADPhantomPartsMsg',
+						autoHeight : true,
+						autoWidth : true,
+						layout : 'fit'
+					});
+				}
+				filteringInfoPanel.load({
+					url : "netmarkets/jsp/part/reports/cadPhantomToggle.jsp",
+					script : true
+				});
+			});
+		});
+	}
+</script>

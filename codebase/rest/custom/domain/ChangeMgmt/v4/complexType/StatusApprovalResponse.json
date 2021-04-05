@@ -1,0 +1,19 @@
+{  
+    "name" : "StatusApprovalResponse",
+    "description": "Response for Start or Stop Approval process from FOV",
+    "inherits":[],
+    "attributes" : [
+        {
+            "name" : "Code",
+            "type":"String"
+        },
+        {
+            "name" : "ApprovalObjectNumber",
+            "type":"String"
+        },
+        {
+            "name" : "Message",
+            "type":"String"
+        }
+    ]
+ }

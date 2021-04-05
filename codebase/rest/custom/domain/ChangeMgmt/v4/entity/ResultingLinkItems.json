@@ -1,0 +1,46 @@
+{
+    "name": "ResultingLinkItem",
+    "collectionName": "ResultingLinkItems",
+    "type": "wcType",
+    "wcType": "wt.change2.ChangeRecord2",
+    "description": "ResultingLink",
+    "operations": "UPDATE,READ",
+    "includeInServiceDocument": true,
+    "attributes":[
+        {    
+            "name":"Description",
+            "internalName":"description",
+            "type":"String"
+        }, {    
+            "name":"TargetTransition",
+            "internalName":"targetTransition",
+            "type":"PTC.EnumType"
+        }
+    ],
+    "navigations": [      
+       {
+          "name":"PendingEffectivities",
+          "target":"PendingEffectivities",
+          "type":"PTC.ChangeMgmt.PendingEffectivity",
+          "isCollection":true
+       },
+	   {
+          "name":"BMWPendingEffectivities",
+          "target":"BMWPendingEffectivities",
+          "type":"PTC.ChangeMgmt.BMWPendingEffectivity",
+          "isCollection":true
+       }
+    ],
+    "inherits":[            
+        {
+            "name":"ResultingObjects"
+        }, 
+        {
+            "name":"ResultedByObjects"
+        },
+        {
+	      "name": "softattributable",
+	      "version": "2"
+        }
+    ] 
+}

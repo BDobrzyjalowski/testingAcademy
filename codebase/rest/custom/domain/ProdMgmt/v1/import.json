@@ -1,0 +1,10 @@
+{
+    "imports":[
+      {name="PTC", version="1"},
+      {name="DataAdmin", version="1"},
+      {name="DocMgmt", version="1"},
+      {name="PrincipalMgmt", version="1"}
+    ],
+    "functions":[],
+    "actions":[]
+}

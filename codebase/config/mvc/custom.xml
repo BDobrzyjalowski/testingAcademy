@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Configurations in this file override all other configurations -->
+	<bean class="com.bmw.psmg.sbb.part.table.builder.TypeUsageLinksTableBuilder"/>
+	<bean class="com.bmw.psmg.sbb.reports.service.MTStatusReportTableBuilder"/>
+	<bean class="com.bmw.psmg.sbb.table.builder.BmwCreatePFDAttributeWizardBuilder"/>
+</beans>

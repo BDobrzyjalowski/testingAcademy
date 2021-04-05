@@ -1,0 +1,15 @@
+{
+  "name": "Hpvs",
+  "description": "Hpvs",
+  "attributes": [
+    {
+      "name": "HpvId",
+      "type": "String"
+    },
+    {
+      "name": "Derivatives",
+      "type": "String",
+      "isCollection": true
+    }
+  ]
+}

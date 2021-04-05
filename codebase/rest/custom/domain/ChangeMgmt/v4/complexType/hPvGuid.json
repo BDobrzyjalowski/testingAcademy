@@ -1,0 +1,14 @@
+{
+  "name": "hPvGuid",
+  "description": "hPvGuid",
+  "attributes": [
+    {
+      "name": "old",
+      "type": "String"
+    },
+    {
+      "name": "new",
+      "type": "String"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+    "name": "TypeUsageChangeNotice",
+    "collectionName": "TypeUsageChangeNotices",
+    "includeInServiceDocument":true,
+    "type": "wcType",
+    "wcType": "com.bmw.psmg.sbb.TypeUsageChangeNotice",
+    "description": "TypeUsageChangeNotice",
+    "operations": "READ,CREATE,UPDATE",
+    "parent": {
+        "name": "ChangeNotices"
+    },
+    "actions": [
+        {
+            "name": "UpdateApprovalPacket",
+            "description": "Update Type Usage Change Notice Attributes",
+            "parameters": [
+                {
+                    "name": "TypeUsageChangeNotice",
+                    "type": "TypeUsageChangeNotice",
+                    "isNullable": false,
+                    "isCollection": false
+                },
+                {
+                    "name":"LastChangedDate",
+                    "type":"String"
+                },
+                {
+                    "name": "ReleasePositions",
+                    "type": "ReleasePositions",
+                    "isNullable": true,
+                    "isCollection": true
+                },
+                {
+                    "name": "Approvers",
+                    "type": "String",
+                    "isNullable": true,
+                    "isCollection": true
+                }
+            ],
+            "returnType": {
+                "type": "UpdateApprovalPacketResponse",
+                "isCollection": false
+            }
+        },
+        {
+        "name":"StartApprovalProcess",
+        "description":"Start Approval Process (If necessary, create or re-open Approval Object)",
+        "parameters":[
+            {
+               "name":"TypeUsageChangeNotice",
+               "type":"TypeUsageChangeNotice",
+               "isNullable":false,
+               "isCollection":false
+            },
+            {
+               "name":"LastChangedDate",
+               "type":"String",
+               "isNullable":false
+            },
+            {
+               "name":"SubmitContent",
+               "type":"Boolean",
+               "isNullable":false
+            },
+            {
+               "name":"SetApprovers",
+               "type":"Boolean",
+               "isNullable":false
+            },
+            {
+               "name":"StartApproval",
+               "type":"Boolean",
+               "isNullable":false
+            }
+        ],
+        "returnType":{
+            "type":"StatusApprovalResponse",
+            "isCollection":false
+            }
+        },
+        {
+         "name":"StopApprovalProcess",
+         "description":"Stop Approval Process",
+         "parameters":[
+            {
+               "name":"TypeUsageChangeNotice",
+               "type":"TypeUsageChangeNotice",
+               "isNullable":false,
+               "isCollection":false
+            },
+            {
+               "name":"LastChangedDate",
+               "type":"String",
+               "isNullable":false
+            }
+         ],
+         "returnType":{
+            "type":"StatusApprovalResponse",
+            "isCollection":false
+            }
+        },
+	{
+      "name": "CalculatehPVDeltaData",
+      "description": "Calculate hPV Delta Data",
+      "parameters": [
+        {
+          "name": "TypeUsageChangeNotice",
+          "type": "TypeUsageChangeNotice",
+          "isNullable": false,
+          "isCollection": false
+        }
+      ],
+      "returnType": {
+        "type": "CalculateDeltaDataResponse",
+        "isCollection": false
+      }
+    }
+  ],
+  "inherits": [
+    {
+      "name": "contextManaged"
+    },
+    {
+      "name": "subtypeable"
+    },
+    {
+      "name": "softattributable",
+      "version": "2"
+    },
+    {
+      "name": "changeContentHolder"
+    },
+    {
+      "name": "securityLabeled"
+    }
+  ],
+	"attributes": [
+		{
+			"name":"BMWAPPROVALTYPE",
+			"internalName":"BMW_APPROVAL_TYPE",
+			"type":"PTC.EnumType"
+		}
+	]
+}

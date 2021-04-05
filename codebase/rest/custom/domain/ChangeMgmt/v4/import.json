@@ -1,0 +1,80 @@
+{
+    "imports": [
+        {"name": "PTC", "version": "4"},
+        {"name": "ChangeMgmt", "version": "4"}
+    ],
+    "functions": [],
+    "actions": [
+        {
+            "name": "UpdateApprovalStatus",
+            "importName": "UpdateApprovalStatus",
+            "description": "Update Approval Status",
+            "parameters": [
+                {
+                    "name": "approvalObjectNumber",
+                    "type": "String"
+                },
+                {
+                    "name": "approvalObjectVersion",
+                    "type": "Int16"
+                },
+                {
+                    "name": "status",
+                    "type": "String"
+                }
+            ],
+            "returnType": {
+                "type": "ApprovalStatusUpdateResponse",
+                "isCollection": false
+            }
+        },
+        {
+            "name": "SearchPositionVariants",
+            "importName": "SearchPositionVariants",
+            "description": "Search Position Variants",
+            "parameters": [
+                {
+                    "name": "ApprovalProcess",
+                    "type": "String"
+                },
+                {
+                    "name": "Hpvs",
+                    "type": "Hpvs",
+                    "isCollection": true
+                },
+                {
+                    "name": "ThreeCycle",
+                    "type": "String"
+                }
+            ],
+            "returnType": {
+                "type": "VorfReleasedHpvSearchResponse",
+                "isNullable": true,
+                "isCollection": true
+            }
+        },
+        {
+            "name": "CreateProfReleasedApprovalPacket",
+            "importName": "CreateProfReleasedApprovalPacket",
+            "description": "Create PROF Released Approval Packet",
+            "parameters": [
+                {
+                    "name": "ApprovalProcess",
+                    "type": "String"
+                },
+                {
+                    "name": "Hpvs",
+                    "type": "Hpvs",
+                    "isCollection": true
+                },
+                {
+                    "name": "ThreeCycle",
+                    "type": "String"
+                }
+            ],
+            "returnType": {
+                "type": "ProfApprovalPacketCreationResponse"
+            }
+        }
+    ]
+}

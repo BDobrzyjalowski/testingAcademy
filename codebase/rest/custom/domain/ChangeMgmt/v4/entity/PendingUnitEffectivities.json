@@ -1,0 +1,20 @@
+{
+    "name" : "PendingUnitEffectivity",
+    "collectionName": "PendingUnitEffectivities",
+    "type": "wcType",
+    "wcType": "wt.eff.form.UnitEffForm",
+    "description": "Pending Unit Effectivity",
+    "includeInServiceDocument":false,
+    "operations":"READ",
+    "hasCommonProperties":false,
+    "parent": {
+        "name": "PendingEffectivities"
+        },
+    "inherits":[],
+    "attributes" : [
+        {
+            "name" : "UnitRange",
+            "type": "PendingUnitRange"
+        }
+    ]
+}

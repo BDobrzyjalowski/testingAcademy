@@ -1,0 +1,593 @@
+<?xml version = "1.0"?>
+
+<!--
+1. HOW TO RUN SCRIPT
+
+    1.1 Running all tests:
+    ant -f run_tests_bmw.xml -Dusername=username -Dpassword=password
+
+    1.2 Running specific test(s):
+    ant -f run_tests_bmw.xml run-from-path -Dtest.path=path/to/TestClass.class -Dusername=username -Dpassword=password
+
+    1.3 Running specific test from codebase:
+    ant -f run_tests_bmw.xml run-from-codebase -Dtest.classpath=path.to.TestClass -Dusername=username -Dpassword=password
+
+    1.4 Running specific test from codebase in debug mode:
+    ant -f run_tests_bmw.xml run-from-codebase -Dtest.classpath=path.to.TestClass -Ddebug=true -Dusername=username -Dpassword=password
+
+    1.5 Running User Story specific test suite:
+    ant -f run_tests_bmw.xml us-tests -Dus.number=number -Dusername=username -Dpassword=password
+
+    1.6 Running all smoke tests:
+    ant -f run_tests_bmw.xml smoke-tests -Dusername=username -Dpassword=password
+    
+    1.7 Running all non-smoke tests:
+    ant -f run_tests_bmw.xml non-smoke-tests -Dusername=username -Dpassword=password
+    
+    1.8 Running all unit tests:
+    ant -f run_tests_bmw.xml unit-tests -Dusername=username -Dpassword=password
+
+2. EXAMPLES
+    2.1 Running all tests:
+    ant -f run_tests_bmw.xml -Dusername=username -Dpassword=password
+
+    2.2 Running specific test(s):
+    ant -f run_tests_bmw.xml run-from-path -Dtest.path=test/com/bmw/psmg/sbb/interfaces/mmg/mmg100/AssignItemExpressionIntoPosVarsTest.class -Dusername=username -Dpassword=password
+    ant -f run_tests_bmw.xml run-from-path -Dtest.path=test/com/bmw/psmg/sbb/interfaces/mmg/mmg100/ -Dusername=username -Dpassword=password
+
+    2.3 Running specific test from codebase:
+    ant -f run_tests_bmw.xml run-from-codebase -Dtest.classpath=test.com.bmw.psmg.sbb.interfaces.mmg.mmg100.AssignItemExpressionIntoPosVarsTest -Dusername=username -Dpassword=password
+
+    2.4 Running specific test from codebase in debug mode:
+    ant -f run_tests_bmw.xml run-from-codebase -Dtest.classpath=test.com.bmw.psmg.sbb.interfaces.mmg.mmg100.AssignItemExpressionIntoPosVarsTest -Ddebug=true -Dusername=username -Dpassword=password
+
+    2.5 Running User Story specific test suite:
+    ant -f run_tests_bmw.xml us-tests -Dus.number=PSMGSBB-3153 -Dusername=username -Dpassword=password
+
+    2.6 Running all smoke tests:
+    ant -f run_tests_bmw.xml smoke-tests -Dusername=username -Dpassword=password
+    
+    2.7 Running all non-smoke tests:
+    ant -f run_tests_bmw.xml non-smoke-tests -Dusername=username -Dpassword=password
+
+WARNING
+    1. If reports frames option is wanted instead noframes The script should not be run from Windchill
+    Shell but from a regular terminal with the ANT_HOME environment variable set to the ant folder which
+    is not OOTB (the latest version downloaded from the internet should work). This is due to the presence
+    of saxon.jar in the OOTB ant folder. Which causes the erroneous parsing of the file junit-frames.xsl
+    from ant-junit.jar during run of the script with the "frames" option in the formatTestReport target -
+    report tag.
+-->
+
+<project xmlns:if="ant:if" xmlns:unless="ant:unless" name="BMW PSMGSBB Unit Tests" default="all-tests">
+
+    <property environment="env"/>
+    <property name="wt.java.home" value="${env.JAVA_HOME}"/>
+    <property name="wt.home" value="${env.WT_HOME}"/>
+    <property name="wt.logs" value="${wt.home}/logs"/>
+    <property name="ant.home" value="${wt.home}/ant"/>
+    <property name="wt.codebase" value="${wt.home}/codebase"/>
+    <property name="wt.codebase.test" value="${wt.codebase}"/>
+    <property name="global.excludes" value="test/com/bmw/psmg/sbb/interfaces/jms/JmsCreateMMGPositionVariantTest.class,
+test/com/bmw/psmg/sbb/interfaces/jms/JmsSynchronizeMMGStructureTest.class,
+test/com/bmw/psmg/sbb/interfaces/jms/JmsSendAndReceiveMessageTest.class,
+test/com/bmw/psmg/sbb/interfaces/rest/"/>
+    <property name="smoke-tests-inc-excludes" value="
+test/com/bmw/psmg/sbb/ato/data/AliasExpressionForClassesSmokeTest.class,
+test/com/bmw/psmg/sbb/classification/ClassificationSmokeTest.class"/>
+    <property name="non-smoke-tests-inc-excludes" value="
+test/com/bmw/psmg/sbb/table/views/TableViewTest.class,
+test/com/bmw/psmg/sbb/datamodel/option/OptionPoolTest.class"/>
+    <property name="classification-structure-tests" value="
+test/com/bmw/psmg/sbb/interfaces/mmg/mmg005/UPGClassificationNodeDeleteTest.class,
+test/com/bmw/psmg/sbb/interfaces/mmg/mmg005/UPGClassificationNodeCreateAndUpdateTest.class,
+test/com/bmw/psmg/sbb/interfaces/mmg/mmg005/OutDatedMessageTest.class,
+test/com/bmw/psmg/sbb/interfaces/mmg/mmg002/CreateGenericPartClassificationNodeTest.class,
+test/com/bmw/psmg/sbb/interfaces/mmg/mmg002/UpdateGenericPartClassificationNodeTest.class,
+test/com/bmw/psmg/sbb/interfaces/mmg/mmg002/DeleteGenericPartClassificationNodeTest.class,
+test/com/bmw/psmg/sbb/interfaces/mmg/mmg006/OutdatedMessagesTest.class"/>
+    <property name="inc-not-ready-sits" value="**/*QueueEntryBmwCucumberRunner.class,
+    										   **/*AcknowledgeMQBmwCucumberRunner.class,
+    										   **/*WaitingQueueBmwCucumberRunner.class,
+    										   **/*MbbSbb101BmwCucumberRunner.class,
+    										   **/*GenericCarBmwCucumberRunner.class,
+    										   **/*GenericPartBmwCucumberRunner.class,
+    										   **/*PpgBmwCucumberRunner.class,
+    										   **/*ModulOrgBmwCucumberRunner.class,
+    										   **/*RomSbb001BmwCucumberRunner.class"/>
+    <property name="e2e-tests" value="**/*PositionVariantE2EBmwCucumberRunner.class,**/*AssemblyKitE2EBmwCucumberRunner.class,**/*EReleaseE2EBmwCucumberRunner.class"/>
+    <property name="e2e-smoke-tests" value="**/*E2EPositionVariantSmokeTestBmwCucumberRunner.class,**/*E2EAssemblyKitSmokeTestBmwCucumberRunner.class"/>
+    <property name="username" value=""/>
+    <property name="password" value=""/>
+    <property name="test.path" value=""/>
+    <property name="test.classpath" value=""/>
+    <property name="debug" value="false"/>
+    <property name="append-jacoco-agent" value="false"/>
+    <property name="us.number" value=""/>
+
+    <target name="all-tests">
+        <property name="source" value="${wt.codebase}/WEB-INF/lib/psmgsbb.jar"/>
+        <property name="test.reports.dir" value="${wt.home}/testReports-all"/>
+        <property name="source.includes" value="test/**/*Test.class"/>
+        <property name="source.excludes" value=""/>
+        <antcall target="execute-junit-tests"/>
+    </target>
+
+    <target name="integration-tests">
+        <property name="checkCredentials" value="false"/>
+        <property name="test.reports.dir" value="${wt.home}/testReports-integration"/>
+        <property name="source" value="${wt.codebase}/WEB-INF/lib/psmgsbb-integration-test.jar"/>
+        <property name="source.includes" value="**/*BmwCucumberRunner.class"/>
+        <property name="source.excludes" value="${e2e-tests},${e2e-smoke-tests}"/>
+        <property name="test.timeout" value="3600000"/> <!-- 1 hour -->
+        <antcall target="execute-junit-tests"/>
+    </target>
+
+    <target name="integration-tests-eop">
+        <property name="checkCredentials" value="false"/>
+        <property name="test.reports.dir" value="${wt.home}/testReports-integration-eop"/>
+        <property name="source" value="${wt.codebase}/WEB-INF/lib/psmgsbb-integration-test.jar"/>
+        <property name="source.includes" value="**/*BmwCucumberRunner.class"/>
+        <property name="source.excludes" value="${e2e-tests},${e2e-smoke-tests},${inc-not-ready-sits}"/>
+        <property name="test.timeout" value="3600000"/> <!-- 1 hour -->
+        <antcall target="execute-junit-tests"/>
+    </target>
+
+    <target name="e2e-tests">
+        <property name="checkCredentials" value="false"/>
+        <property name="test.reports.dir" value="${wt.home}/testReports-e2e-tests"/>
+        <property name="source" value="${wt.codebase}/WEB-INF/lib/psmgsbb-integration-test.jar"/>
+        <property name="source.includes" value="${e2e-tests}"/>
+        <property name="source.excludes" value=""/>
+        <property name="test.timeout" value="54000000"/> <!-- 15 hours -->
+        <antcall target="execute-junit-tests"/>
+    </target>
+
+    <target name="e2e-smoke-tests">
+        <property name="checkCredentials" value="false"/>
+        <property name="test.reports.dir" value="${wt.home}/testReports-e2e-smoke-tests"/>
+        <property name="source" value="${wt.codebase}/WEB-INF/lib/psmgsbb-integration-test.jar"/>
+        <property name="source.includes" value="${e2e-smoke-tests}"/>
+        <property name="source.excludes" value=""/>
+        <property name="test.timeout" value="3600000"/> <!-- 1 hour -->
+        <antcall target="execute-junit-tests"/>
+    </target>
+    
+    <target name="e2e-erelease-tests">
+        <property name="checkCredentials" value="false"/>
+        <property name="test.reports.dir" value="${wt.home}/testReports-e2e-erelease-tests"/>
+        <property name="source" value="${wt.codebase}/WEB-INF/lib/psmgsbb-integration-test.jar"/>
+        <property name="source.includes" value="**/*EReleaseE2EBmwCucumberRunner.class"/>
+        <property name="source.excludes" value=""/>
+        <property name="test.timeout" value="54000000"/> <!-- 15 hours -->
+        <antcall target="execute-junit-tests"/>
+    </target>
+
+    <target name="integration-tests-hof">
+        <property name="checkCredentials" value="false"/>
+        <property name="test.reports.dir" value="${wt.home}/testReports-integration"/>
+        <property name="source" value="${wt.codebase}/WEB-INF/lib/psmgsbb-integration-test.jar"/>
+        <property name="source.includes" value="**/*BmwCucumberRunner.class"/>
+        <property name="source.excludes" value=""/>
+        <property name="test.timeout" value="3600000"/> <!-- 1 hour -->
+        <antcall target="execute-junit-tests-hof"/>
+    </target>
+    
+    <target name="unit-tests">
+        <property name="checkCredentials" value="false"/>
+        <property name="test.reports.dir" value="${wt.home}/testReports-unit"/>
+        <property name="source" value="${wt.codebase}/WEB-INF/lib/psmgsbb-test.jar"/>
+        <property name="source.includes" value="**/*Test.class"/>
+        <property name="source.excludes" value=""/>
+        <property name="test.timeout" value="600000"/> <!-- 10 minutes -->
+        <antcall target="execute-junit-tests"/>
+    </target>
+	
+	<target name="unit-tests-ci">
+        <property name="checkCredentials" value="false"/>
+        <property name="test.reports.dir" value="./testReports-unit"/>
+        <property name="source" value="./bin/test/psmgsbb-test.jar"/>
+        <property name="source.includes" value="**/*Test.class"/>
+        <property name="source.excludes" value=""/>
+        <property name="test.timeout" value="600000"/> <!-- 10 minutes -->
+        <antcall target="execute-junit-tests-ci"/>
+    </target>
+    
+    <target name="unit-tests-hof">
+        <property name="checkCredentials" value="false"/>
+        <property name="test.reports.dir" value="${wt.home}/testReports-unit"/>
+        <property name="source" value="${wt.codebase}/WEB-INF/lib/psmgsbb-test.jar"/>
+        <property name="source.includes" value="**/*Test.class"/>
+        <property name="source.excludes" value=""/>
+        <property name="test.timeout" value="600000"/> <!-- 10 minutes -->
+        <antcall target="execute-junit-tests-hof"/>
+    </target>
+
+    <target name="smoke-tests">
+        <property name="test.reports.dir" value="${wt.home}/testReports-smoke"/>
+        <property name="source" value="${wt.codebase}/WEB-INF/lib/psmgsbb.jar"/>
+        <property name="source.includes" value="test/**/*SmokeTest.class"/>
+        <property name="source.excludes" value=""/>
+        <property name="test.timeout" value="600000"/> <!-- 10 minutes -->
+        <antcall target="execute-junit-tests"/>
+    </target>
+    
+    <target name="smoke-tests-inc">
+        <property name="test.reports.dir" value="${wt.home}/testReports-smoke"/>
+        <property name="source" value="${wt.codebase}/WEB-INF/lib/psmgsbb.jar"/>
+        <property name="source.includes" value="test/**/*SmokeTest.class"/>
+        <property name="source.excludes" value="${smoke-tests-inc-excludes}"/>
+        <property name="test.timeout" value="600000"/> <!-- 10 minutes -->
+        <antcall target="execute-junit-tests"/>
+    </target>
+    
+    <target name="smoke-tests-hof">
+        <property name="test.reports.dir" value="${wt.home}/testReports-smoke"/>
+        <property name="source" value="${wt.codebase}/WEB-INF/lib/psmgsbb.jar"/>
+        <property name="source.includes" value="test/**/*SmokeTest.class"/>
+        <property name="source.excludes" value=""/>
+        <property name="test.timeout" value="600000"/> <!-- 10 minutes -->
+        <antcall target="execute-junit-tests-hof"/>
+    </target>
+
+    <target name="non-smoke-tests">
+        <property name="test.reports.dir" value="${wt.home}/testReports-non-smoke"/>
+        <property name="source" value="${wt.codebase}/WEB-INF/lib/psmgsbb.jar"/>
+        <property name="source.includes" value="test/**/*Test.class"/>
+        <property name="source.excludes" value="test/**/*SmokeTest.class,${classification-structure-tests}"/>
+        <property name="test.timeout" value="3600000"/> <!-- 1 hour -->
+        <antcall target="execute-junit-tests"/>
+    </target>
+    
+    <target name="non-smoke-tests-inc">
+        <property name="test.reports.dir" value="${wt.home}/testReports-non-smoke"/>
+        <property name="source" value="${wt.codebase}/WEB-INF/lib/psmgsbb.jar"/>
+        <property name="source.includes" value="test/**/*Test.class"/>
+        <property name="source.excludes" value="test/**/*SmokeTest.class,${classification-structure-tests},${non-smoke-tests-inc-excludes}"/>
+        <property name="test.timeout" value="3600000"/> <!-- 1 hour -->
+        <antcall target="execute-junit-tests"/>
+    </target>
+    
+    <target name="classification-structure-tests">
+        <property name="test.reports.dir" value="${wt.home}/testReports-classification-structure"/>
+        <property name="source" value="${wt.codebase}/WEB-INF/lib/psmgsbb.jar"/>
+        <property name="source.includes" value="${classification-structure-tests}"/>
+        <property name="source.excludes" value=""/>
+        <property name="test.timeout" value="600000"/> <!-- 10 minutes -->
+        <antcall target="execute-junit-tests"/>
+    </target>
+
+    <target name="run-from-path">
+        <fail message="Usage: ant -f run_test_bmw.xml run-from-path -Dtest.path=path/to/TestClass.class -Dusername=username -Dpassword=password">
+            <condition>
+                <equals arg1="${test.path}" arg2=""/>
+            </condition>
+        </fail>
+        <property name="test.reports.dir" value="${wt.home}/testReports"/>
+        <property name="source" value="${wt.codebase}/WEB-INF/lib/psmgsbb.jar"/>
+        <property name="source.includes" value="${test.path}"/>
+        <property name="source.excludes" value=""/>
+        <antcall target="execute-junit-tests"/>
+    </target>
+
+    <target name="run-from-codebase">
+        <fail message="Usage: ant -f run_test_bmw.xml run-from-codebase -Dtest.classpath=path.to.TestClass [-Ddebug=true] -Dusername=username -Dpassword=password">
+            <condition>
+                <equals arg1="${test.classpath}" arg2=""/>
+            </condition>
+        </fail>
+        <property name="test.reports.dir" value="${wt.home}/testReports"/>
+        <antcall target="execute-junit-test"/>
+    </target>
+
+    <target name="us-tests">
+        <fail message="Please specify 'us.number' property">
+            <condition>
+                <equals arg1="${us.number}" arg2=""/>
+            </condition>
+        </fail>
+        <property name="us.file" value="scripts/tests/${us.number}"/>
+        <fail message="Test Suite for User Story '${us.number}' is not available">
+            <condition>
+                <not>
+                    <available file="${us.file}"/>
+                </not>
+            </condition>
+        </fail>
+        <loadfile property="us.tests" srcFile="${us.file}">
+            <filterchain>
+                <striplinebreaks/>
+            </filterchain>
+        </loadfile>
+        <echo message="us.number=${us.number}"/>
+        <property name="source" value="${wt.codebase}/WEB-INF/lib/psmgsbb.jar"/>
+        <property name="test.reports.dir" value="${wt.home}/testReports-${us.number}"/>
+        <property name="source.includes" value="${us.tests}"/>
+        <property name="source.excludes" value=""/>
+        <antcall target="execute-junit-tests"/>
+    </target>
+
+    <target name="execute-junit-tests" depends="createReportDirs, run-junit-tests-with-parameter, formatTestReports"/>
+	<target name="execute-junit-tests-ci" depends="createReportDirs-ci, run-junit-tests-with-parameter-ci, formatTestReports-ci"/>
+    <target name="execute-junit-tests-hof" depends="createReportDirs, run-junit-tests-with-parameter-hof, formatTestReports"/>
+    
+    <target name="run-junit-tests-with-parameter">
+        <!-- if the test.timeout property is not set then set to 1 hour in milliseconds -->
+        <property unless:set="property" name="test.timeout" value="3600000"/>
+        <echo message="test.timeout=${test.timeout}"/>
+        <junit jvm="${wt.java.home}/bin/java" printsummary="yes" haltonfailure="false" showoutput="true" fork="true" timeout="${test.timeout}">
+            <jvmarg if:true="${append-jacoco-agent}" value="-javaagent:${wt.home}/srclib/jacocoagent.jar=includes=com/bmw/psmg/sbb/**,destfile=${wt.logs}/jacoco/${now}.exec"/>
+            <jvmarg value="-Dcom.ptc.test.adminName=${username}"/>
+            <jvmarg value="-Dcom.ptc.test.adminPassword=${password}"/>
+            <batchtest todir="${test.reports.xml.dir}">
+                <zipfileset src="${source}" includes="${source.includes}" excludes="${global.excludes},${source.excludes}"/>
+            </batchtest>
+            <jvmarg value="-Dcom.ptc.test.integration=true"/>
+            <jvmarg value="-Dwt.home=${wt.home}"/>
+            <jvmarg if:true="${debug}" value="-Xdebug"/>
+            <jvmarg if:true="${debug}" value="-Xrunjdwp:transport=dt_socket,address=*:8007,server=y,suspend=y"/>
+            <jvmarg line="--add-opens java.xml/jdk.xml.internal=ALL-UNNAMED"/>
+            <formatter type="xml"/>
+            <classpath>
+                <path refid="wt.classpath"/>
+            </classpath>
+        </junit>
+    </target>
+	
+	<target name="run-junit-tests-with-parameter-ci">
+	    <!-- if the test.timeout property is not set then set to 1 hour in milliseconds -->
+        <property unless:set="property" name="test.timeout" value="3600000"/>
+        <echo message="test.timeout=${test.timeout}"/>
+        <junit jvm="${wt.java.home}/bin/java" printsummary="yes" haltonfailure="false" showoutput="true" fork="true" timeout="${test.timeout}">
+            <jvmarg value="-Dcom.ptc.test.adminName=${username}"/>
+            <jvmarg value="-Dcom.ptc.test.adminPassword=${password}"/>
+            <batchtest todir="${test.reports.xml.dir}">
+                <zipfileset src="${source}" includes="${source.includes}" excludes="${global.excludes},${source.excludes}"/>
+            </batchtest>
+            <jvmarg value="-Dcom.ptc.test.integration=true"/>
+            <jvmarg value="-Dwt.home=${wt.home}"/>
+            <jvmarg if:true="${debug}" value="-Xdebug"/>
+            <jvmarg if:true="${debug}" value="-Xrunjdwp:transport=dt_socket,address=*:8007,server=y,suspend=y"/>
+            <jvmarg line="--add-opens java.xml/jdk.xml.internal=ALL-UNNAMED"/>
+            <formatter type="xml"/>
+            <classpath>
+                <path refid="wt.classpath"/>
+            </classpath>
+        </junit>
+    </target>
+    
+    <target name="run-junit-tests-with-parameter-hof">
+	    <!-- if the test.timeout property is not set then set to 1 hour in milliseconds -->
+        <property unless:set="property" name="test.timeout" value="3600000"/>
+        <echo message="test.timeout=${test.timeout}"/>
+        <junit jvm="${wt.java.home}/bin/java" printsummary="yes" haltonfailure="true" showoutput="true" fork="true" timeout="${test.timeout}">
+            <jvmarg if:true="${append-jacoco-agent}" value="-javaagent:${wt.home}/srclib/jacocoagent.jar=includes=com/bmw/psmg/sbb/**,destfile=${wt.logs}/jacoco/${now}.exec"/>
+            <jvmarg value="-Dcom.ptc.test.adminName=${username}"/>
+            <jvmarg value="-Dcom.ptc.test.adminPassword=${password}"/>
+            <batchtest todir="${test.reports.xml.dir}">
+                <zipfileset src="${source}" includes="${source.includes}" excludes="${global.excludes},${source.excludes}"/>
+            </batchtest>
+            <jvmarg value="-Dcom.ptc.test.integration=true"/>
+            <jvmarg value="-Dwt.home=${wt.home}"/>
+            <jvmarg if:true="${debug}" value="-Xdebug"/>
+            <jvmarg if:true="${debug}" value="-Xrunjdwp:transport=dt_socket,address=*:8007,server=y,suspend=y"/>
+            <jvmarg line="--add-opens java.xml/jdk.xml.internal=ALL-UNNAMED"/>
+            <formatter type="xml"/>
+            <classpath>
+                <path refid="wt.classpath"/>
+            </classpath>
+        </junit>
+    </target>
+
+    <target name="execute-junit-test" depends="createReportDirs, run-junit-test-with-parameter, formatTestReports"/>
+
+    <target name="run-junit-test-with-parameter">
+        <junit jvm="${wt.java.home}/bin/java" printsummary="yes" haltonfailure="false" showoutput="true" fork="true" forkmode="once">
+            <jvmarg value="-Dcom.ptc.test.adminName=${username}"/>
+            <jvmarg value="-Dcom.ptc.test.adminPassword=${password}"/>
+            <test name="${test.classpath}" todir="${test.reports.xml.dir}"/>
+            <jvmarg value="-Dcom.ptc.test.integration=true"/>
+            <jvmarg value="-Dwt.home=${wt.home}"/>
+            <jvmarg if:true="${debug}" value="-Xdebug"/>
+            <jvmarg if:true="${debug}" value="-Xrunjdwp:transport=dt_socket,address=*:8007,server=y,suspend=y"/>
+            <jvmarg line="--add-opens java.xml/jdk.xml.internal=ALL-UNNAMED"/>
+            <formatter type="xml"/>
+            <classpath>
+                <path refid="wt.classpath"/>
+            </classpath>
+        </junit>
+    </target>
+
+    <target name="init">
+        <fail message="Property 'username' needs to be set.">
+            <condition>
+		        <and>
+                    <not>
+		                <equals arg1="${checkCredentials}" arg2="false"/>
+   		            </not>
+                    <equals arg1="${username}" arg2=""/>
+		        </and>
+            </condition>
+        </fail>
+        <fail message="Property 'password' needs to be set.">
+            <condition>
+		<and>
+		    <not>
+			    <equals arg1="${checkCredentials}" arg2="false"/>
+		    </not>
+            <equals arg1="${password}" arg2=""/>
+		</and>
+            </condition>
+        </fail>
+        <path id="wt.home.id" path="${wt.home}"/>
+        <pathconvert dirsep="/" property="wt.home" refid="wt.home.id"/>
+        <property name="wt.testdata" value="${wt.home}/testdata"/>
+        <tstamp>
+			<format property="now" pattern="yyyyMMddHHmmssSSS"/>
+		</tstamp>
+        <echo message="java.home=${java.home}"/>
+        <echo message="ant.home=${ant.home}"/>
+        <echo message="wt.java.home=${wt.java.home}"/>
+        <echo message="wt.home=${wt.home}"/>
+        <echo message="wt.logs=${wt.logs}"/>
+        <echo message="wt.codebase=${wt.codebase}"/>
+    </target>
+	
+	<target name="init-ci">
+        <fail message="Property 'username' needs to be set.">
+            <condition>
+		        <and>
+                    <not>
+		                <equals arg1="${checkCredentials}" arg2="false"/>
+   		            </not>
+                    <equals arg1="${username}" arg2=""/>
+		        </and>
+            </condition>
+        </fail>
+        <fail message="Property 'password' needs to be set.">
+            <condition>
+		<and>
+		    <not>
+			    <equals arg1="${checkCredentials}" arg2="false"/>
+		    </not>
+            <equals arg1="${password}" arg2=""/>
+		</and>
+            </condition>
+        </fail>
+        <path id="wt.home.id" path="${wt.home}"/>
+        <pathconvert dirsep="/" property="wt.home" refid="wt.home.id"/>
+        <property name="wt.testdata" value="${wt.home}/testdata"/>
+        <echo message="java.home=${java.home}"/>
+        <echo message="ant.home=${ant.home}"/>
+        <echo message="wt.java.home=${wt.java.home}"/>
+        <echo message="wt.home=${wt.home}"/>
+        <echo message="wt.codebase=${wt.codebase}"/>
+    </target>
+
+    <target name="init_test" depends="init">
+        <property name="test.reports.dir" value="${wt.home}/testReports"/>
+        <property name="test.reports.xml.dir" value="${test.reports.dir}/xml"/>
+        <property name="test.reports.html.dir" value="${test.reports.dir}/html"/>
+        <path id="wt.classpath">
+            <pathelement path="${wt.codebase}"/>
+            <fileset dir="${wt.codebase}/WEB-INF/lib">
+                <include name="aspectjrt.jar"/>
+                <include name="com.ibm.mq.iiop.jar"/>
+                <include name="com.ibm.mq.jar"/>
+                <include name="ie.jar"/>
+                <include name="ie3rdpartylibs.jar"/>
+                <include name="ieWeb.jar"/>
+                <include name="prowtWeb.jar"/>
+                <include name="wncWeb.jar"/>
+                <include name="junit-4.12.jar"/>
+                <include name="hamcrest-core-1.3.jar"/>
+                <include name="hamcrest-library-1.3"/>
+                <include name="assertj-core-3.9.1.jar"/>
+                <include name="groovy-2.4.12.jar"/>
+                <include name="groovy-json-2.4.12.jar"/>
+                <include name="groovy-xml-2.4.12.jar"/>
+                <include name="rest-assured-3.1.0.jar"/>
+                <include name="JUnitParams-1.1.1.jar"/>
+                <include name="ie3rdpartylibs.jar"/>
+                <include name="wc3rdpartylibs.jar"/>
+                <include name="byte-buddy-1.9.10.jar"/>
+                <include name="byte-buddy-agent-1.9.10.jar"/>
+                <include name="javassist-3.27.0-GA.jar"/>
+                <include name="mockito-core-2.26.0.jar"/>
+                <include name="objenesis-2.6.jar"/>
+                <include name="powermock-api-mockito2-2.0.7.jar"/>
+                <include name="powermock-api-support-2.0.7.jar"/>
+                <include name="powermock-core-2.0.7.jar"/>
+                <include name="powermock-module-junit4-2.0.7.jar"/>
+                <include name="powermock-module-junit4-common-2.0.7.jar"/>
+                <include name="powermock-reflect-2.0.7.jar"/>
+            </fileset>
+            <fileset dir="${wt.home}/srclib">
+                <include name="log4j.jar"/>
+            </fileset>
+            <fileset dir="${wt.home}/lib">
+                <include name="servlet.jar"/>
+                <include name="wnc.jar"/>
+            </fileset>
+        </path>
+        <echo message="test.reports.dir=${test.reports.dir}"/>
+        <echo message="test.reports.xml.dir=${test.reports.xml.dir}"/>
+        <echo message="test.reports.html.dire=${test.reports.html.dir}"/>
+    </target>
+	
+	<target name="init_test-ci" depends="init-ci">
+        <property name="test.reports.dir" value="${wt.home}/testReports"/>
+        <property name="test.reports.xml.dir" value="${test.reports.dir}/xml"/>
+        <property name="test.reports.html.dir" value="${test.reports.dir}/html"/>
+        <path id="wt.classpath">
+            <pathelement path="${wt.codebase}"/>
+            <fileset dir="${wt.codebase}/WEB-INF/lib">
+                <include name="ie3rdpartylibs.jar"/>
+                <include name="ieWeb.jar"/>
+                <include name="install.jar"/>
+                <include name="jmxcoreWeb.jar"/>
+                <include name="prowtWeb.jar"/>
+                <include name="wc3rdpartylibs.jar"/>
+                <include name="wncWeb.jar"/>
+            </fileset>
+            <fileset dir="${wt.home}/srclib">
+                <include name="log4j.jar"/>
+            </fileset>
+            <fileset dir="${wt.home}/lib">
+                <include name="servlet.jar"/>
+                <include name="wnc.jar"/>
+            </fileset>
+			<fileset dir=".">
+				<include name="**/*.jar"/>
+                <exclude name="codebase/**/powermock-core-2.0.7.jar"/>
+			</fileset>
+        </path>
+        <echo message="test.reports.dir=${test.reports.dir}"/>
+        <echo message="test.reports.xml.dir=${test.reports.xml.dir}"/>
+        <echo message="test.reports.html.dire=${test.reports.html.dir}"/>
+    </target>
+
+    <target name="clean" description = "Clean output directories">
+        <delete dir="${test.reports.dir}" failonerror="false"/>
+    </target>
+	
+	 <target name="clean-ci" description = "Clean output directories">
+        <delete dir="${test.reports.dir}" failonerror="false"/>
+    </target>
+	
+    <target name="createReportDirs" depends="init_test, clean">
+        <echo message="Creating report dirs"/>
+        <mkdir dir="${test.reports.dir}"/>
+        <mkdir dir="${test.reports.html.dir}"/>
+        <mkdir dir="${test.reports.xml.dir}"/>
+    </target>
+	
+	<target name="createReportDirs-ci" depends="init_test-ci, clean-ci">
+        <echo message="Creating report dirs"/>
+        <mkdir dir="${test.reports.dir}"/>
+        <mkdir dir="${test.reports.html.dir}"/>
+        <mkdir dir="${test.reports.xml.dir}"/>
+    </target>
+
+    <target name="formatTestReports" depends="createReportDirs">
+        <echo message="Start of test reports creation"/>
+        <junitreport todir="${test.reports.html.dir}">
+            <fileset dir="${test.reports.xml.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="noframes" todir="${test.reports.html.dir}"/>
+        </junitreport>
+        <echo message="End of test reports creation"/>
+    </target>
+	
+	<target name="formatTestReports-ci" depends="createReportDirs-ci">
+        <echo message="Start of test reports creation"/>
+        <junitreport todir="${test.reports.html.dir}">
+            <fileset dir="${test.reports.xml.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="noframes" todir="${test.reports.html.dir}"/>
+        </junitreport>
+        <echo message="End of test reports creation"/>
+    </target>
+</project>

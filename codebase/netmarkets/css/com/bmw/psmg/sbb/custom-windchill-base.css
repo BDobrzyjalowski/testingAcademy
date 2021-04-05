@@ -1,0 +1,8408 @@
+/* ------------ START OF CSS FILE  ext-all-notheme.css */
+/*!
+ * Ext JS Library 3.2.1
+ * Copyright(c) 2006-2010 Ext JS, Inc.
+ * licensing@extjs.com
+ * http://www.extjs.com/license
+ */
+/*!
+ * Ext JS Library 3.2.1
+ * Copyright(c) 2006-2010 Ext JS, Inc.
+ * licensing@extjs.com
+ * http://www.extjs.com/license
+ */
+
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{margin:0;padding:0;}img,body,html{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul {list-style:none;}caption,th {text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;}q:before,q:after{content:'';}.ext-el-mask {
+    z-index: 100;
+    position: absolute;
+    top:0;
+    left:0;
+    -moz-opacity: 0.5;
+    opacity: .50;
+    filter: alpha(opacity=50);
+    width: 100%;
+    height: 100%;
+    zoom: 1;
+}
+
+.ext-el-mask-msg {
+    z-index: 20001;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border:1px solid;
+    padding:2px;
+}
+
+.ext-el-mask-msg div {
+    padding:5px 10px 5px 10px;
+    border:1px solid;
+    cursor:wait;
+}
+
+.ext-shim {
+    position:absolute;
+    visibility:hidden;
+    left:0;
+    top:0;
+    overflow:hidden;
+}
+
+.ext-ie .ext-shim {
+    filter: alpha(opacity=0);
+}
+
+.x-mask-loading div {
+    padding:5px 10px 5px 25px;
+    line-height:16px;
+}
+
+/* class for hiding elements without using display:none */
+.x-hidden, .x-hide-offsets {
+    position:absolute !important;
+    left:-10000px;
+    top:-10000px;
+    visibility:hidden;
+}
+
+.x-hide-display {
+    display:none !important;
+}
+
+.x-hide-visibility {
+    visibility:hidden !important;
+}
+
+.x-masked {
+    overflow: hidden !important;
+}
+.x-masked-relative {
+    position: relative !important;
+}
+
+.x-masked select, .x-masked object, .x-masked embed {
+    visibility: hidden;
+}
+
+.x-layer {
+    visibility: hidden;
+}
+
+.x-repaint {
+    zoom: 1;
+    background-color: transparent;
+    -moz-outline: none;
+    outline: none;
+}
+
+.x-item-disabled {
+    cursor: default;
+    opacity: .6;
+    -moz-opacity: .6;
+    filter: alpha(opacity=60);
+}
+
+.x-item-disabled * {
+    cursor: default !important;
+}
+
+.x-form-radio-group .x-item-disabled {
+    filter: none;
+}
+
+.x-splitbar-proxy {
+    position: absolute;
+    visibility: hidden;
+    z-index: 20001;
+    zoom: 1;
+    line-height: 1px;
+    font-size: 1px;
+    overflow: hidden;
+}
+
+.x-splitbar-h, .x-splitbar-proxy-h {
+    cursor: e-resize;
+    cursor: col-resize;
+}
+
+.x-splitbar-v, .x-splitbar-proxy-v {
+    cursor: s-resize;
+    cursor: row-resize;
+}
+
+.x-color-palette {
+    width: 150px;
+    height: 92px;
+    cursor: pointer;
+}
+
+.x-color-palette a {
+    border: 1px solid;
+    float: left;
+    padding: 2px;
+    text-decoration: none;
+    -moz-outline: 0 none;
+    outline: 0 none;
+    cursor: pointer;
+}
+
+.x-color-palette a:hover, .x-color-palette a.x-color-palette-sel {
+    border: 1px solid;
+}
+
+.x-color-palette em {
+    display: block;
+    border: 1px solid;
+}
+
+.x-color-palette em span {
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    line-height: 10px;
+    width: 10px;
+}
+
+.x-ie-shadow {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    left:0;
+    top:0;
+    zoom:1;
+}
+
+.x-shadow {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    left:0;
+    top:0;
+}
+
+.x-shadow * {
+    overflow: hidden;
+}
+
+.x-shadow * {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    clear: none;
+    zoom: 1;
+}
+
+/* top  bottom */
+.x-shadow .xstc, .x-shadow .xsbc {
+    height: 6px;
+    float: left;
+}
+
+/* corners */
+.x-shadow .xstl, .x-shadow .xstr, .x-shadow .xsbl, .x-shadow .xsbr {
+    width: 6px;
+    height: 6px;
+    float: left;
+}
+
+/* sides */
+.x-shadow .xsc {
+    width: 100%;
+}
+
+.x-shadow .xsml, .x-shadow .xsmr {
+    width: 6px;
+    float: left;
+    height: 100%;
+}
+
+.x-shadow .xsmc {
+    float: left;
+    height: 100%;
+}
+
+.x-shadow .xst, .x-shadow .xsb {
+    height: 6px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.x-shadow .xsml {
+}
+
+.x-shadow .xsmr {
+}
+
+.x-shadow .xstl {
+}
+
+.x-shadow .xstc {
+}
+
+.x-shadow .xstr {
+}
+
+.x-shadow .xsbl {
+}
+
+.x-shadow .xsbc {
+}
+
+.x-shadow .xsbr {
+}
+
+.loading-indicator {
+    padding-left: 20px;
+    line-height: 16px;
+    margin: 3px;
+}
+
+.x-text-resize {
+    position: absolute;
+    left: -1000px;
+    top: -1000px;
+    visibility: hidden;
+    zoom: 1;
+}
+
+.x-drag-overlay {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 20000;
+}
+
+.x-clear {
+    clear:both;
+    height:0;
+    overflow:hidden;
+    line-height:0;
+    font-size:0;
+}
+
+.x-spotlight {
+    z-index: 8999;
+    position: absolute;
+    top:0;
+    left:0;
+    -moz-opacity: 0.5;
+    opacity: .50;
+    filter: alpha(opacity=50);
+    width:0;
+    height:0;
+    zoom: 1;
+}
+
+#x-history-frame {
+    position:absolute;
+    top:-1px;
+    left:0;
+	width:1px;
+    height:1px;
+    visibility:hidden;
+}
+
+#x-history-field {
+    position:absolute;
+    top:0;
+    left:-1px;
+	width:1px;
+    height:1px;
+    visibility:hidden;
+}
+.x-resizable-handle {
+    position:absolute;
+    z-index:100;
+    /* ie needs these */
+    font-size:1px;
+    line-height:6px;
+    overflow:hidden;
+	filter:alpha(opacity=0);
+	opacity:0;
+	zoom:1;
+}
+
+.x-resizable-handle-east{
+    width:6px;
+    cursor:e-resize;
+    right:0;
+    top:0;
+    height:100%;
+}
+
+.ext-ie .x-resizable-handle-east {
+    margin-right:-1px; /*IE rounding error*/
+}
+
+.x-resizable-handle-south{
+    width:100%;
+    cursor:s-resize;
+    left:0;
+    bottom:0;
+    height:6px;
+}
+
+.ext-ie .x-resizable-handle-south {
+    margin-bottom:-1px; /*IE rounding error*/
+}
+
+.x-resizable-handle-west{
+    width:6px;
+    cursor:w-resize;
+    left:0;
+    top:0;
+    height:100%;
+}
+
+.x-resizable-handle-north{
+    width:100%;
+    cursor:n-resize;
+    left:0;
+    top:0;
+    height:6px;
+}
+
+.x-resizable-handle-southeast{
+    width:6px;
+    cursor:se-resize;
+    right:0;
+    bottom:0;
+    height:6px;
+    z-index:101;
+}
+
+.x-resizable-handle-northwest{
+    width:6px;
+    cursor:nw-resize;
+    left:0;
+    top:0;
+    height:6px;
+    z-index:101;
+}
+
+.x-resizable-handle-northeast{
+    width:6px;
+    cursor:ne-resize;
+    right:0;
+    top:0;
+    height:6px;
+    z-index:101;
+}
+
+.x-resizable-handle-southwest{
+    width:6px;
+    cursor:sw-resize;
+    left:0;
+    bottom:0;
+    height:6px;
+    z-index:101;
+}
+
+.x-resizable-over .x-resizable-handle, .x-resizable-pinned .x-resizable-handle{
+    filter:alpha(opacity=100);
+	opacity:1;
+}
+
+.x-resizable-over .x-resizable-handle-east, .x-resizable-pinned .x-resizable-handle-east,
+.x-resizable-over .x-resizable-handle-west, .x-resizable-pinned .x-resizable-handle-west
+{
+	
+}
+
+.x-resizable-over .x-resizable-handle-south, .x-resizable-pinned .x-resizable-handle-south,
+.x-resizable-over .x-resizable-handle-north, .x-resizable-pinned .x-resizable-handle-north
+{
+    
+}
+
+.x-resizable-over .x-resizable-handle-southeast, .x-resizable-pinned .x-resizable-handle-southeast{
+    
+}
+
+.x-resizable-over .x-resizable-handle-northwest, .x-resizable-pinned .x-resizable-handle-northwest{
+    
+}
+
+.x-resizable-over .x-resizable-handle-northeast, .x-resizable-pinned .x-resizable-handle-northeast{
+    
+}
+
+.x-resizable-over .x-resizable-handle-southwest, .x-resizable-pinned .x-resizable-handle-southwest{
+    
+}
+
+.x-resizable-proxy{
+    border: 1px dashed;
+    position:absolute;
+    overflow:hidden;
+    display:none;
+	left:0;
+    top:0;
+    z-index:50000;
+}
+
+.x-resizable-overlay{
+    width:100%;
+	height:100%;
+	display:none;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:200000;
+	-moz-opacity: 0;
+    opacity:0;
+    filter: alpha(opacity=0);
+}
+.x-tab-panel {
+    overflow:hidden;
+}
+
+.x-tab-panel-header, .x-tab-panel-footer {
+	border: 1px solid;
+    overflow:hidden;
+    zoom:1;
+}
+
+.x-tab-panel-header {
+	border: 1px solid;
+	padding-bottom: 2px;
+}
+
+.x-tab-panel-footer {
+	border: 1px solid;
+	padding-top: 2px;
+}
+
+.x-tab-strip-wrap {
+	width:100%;
+    overflow:hidden;
+    position:relative;
+    zoom:1;
+}
+
+ul.x-tab-strip {
+	display:block;
+    width:5000px;
+    zoom:1;
+}
+
+ul.x-tab-strip-top{
+	padding-top: 1px;
+	border-bottom: 1px solid;
+}
+
+ul.x-tab-strip-bottom{
+	padding-bottom: 1px;
+	border-top: 1px solid;
+	border-bottom: 0 none;
+}
+
+.x-tab-panel-header-plain .x-tab-strip-top {
+    padding-top:0 !important;
+}
+
+.x-tab-panel-header-plain {
+    border-width:0 !important;
+    padding-bottom:0 !important;
+}
+
+.x-tab-panel-header-plain .x-tab-strip-spacer,
+.x-tab-panel-footer-plain .x-tab-strip-spacer {
+    border:1px solid;
+    height:2px;
+    font-size:1px;
+    line-height:1px;
+}
+
+.x-tab-panel-header-plain .x-tab-strip-spacer {
+    border-top: 0 none;
+}
+
+.x-tab-panel-footer-plain .x-tab-strip-spacer {
+    border-bottom: 0 none;
+}
+
+.x-tab-panel-footer-plain .x-tab-strip-bottom {
+    padding-bottom:0 !important;
+}
+
+.x-tab-panel-footer-plain {
+    border-width:0 !important;
+    padding-top:0 !important;
+}
+
+.ext-border-box .x-tab-panel-header-plain .x-tab-strip-spacer,
+.ext-border-box .x-tab-panel-footer-plain .x-tab-strip-spacer {
+    height:3px;
+}
+
+ul.x-tab-strip li {
+    float:left;
+    margin-left:2px;
+}
+
+ul.x-tab-strip li.x-tab-edge {
+    float:left;
+    margin:0 !important;
+    padding:0 !important;
+    border:0 none !important;
+    font-size:1px !important;
+    line-height:1px !important;
+    overflow:hidden;
+    zoom:1;
+    width:1px;
+}
+
+.x-tab-strip a, .x-tab-strip span, .x-tab-strip em {
+	display:block;
+}
+
+.x-tab-strip a {
+	text-decoration:none !important;
+	-moz-outline: none;
+	outline: none;
+	cursor:pointer;
+}
+
+.x-tab-strip-inner {
+    overflow:hidden;
+	text-overflow: ellipsis;
+}
+
+.x-tab-strip span.x-tab-strip-text {
+	white-space: nowrap;
+	cursor:pointer;
+    padding:4px 0;
+}
+
+.x-tab-strip-top .x-tab-with-icon .x-tab-right {
+    padding-left:6px;
+}
+
+.x-tab-strip .x-tab-with-icon span.x-tab-strip-text {
+	padding-left:20px;
+    
+    
+}
+
+.x-tab-strip-active, .x-tab-strip-active a.x-tab-right {
+    cursor:default;
+}
+
+.x-tab-strip-active span.x-tab-strip-text {
+	cursor:default;
+}
+
+.x-tab-strip-disabled .x-tabs-text {
+	cursor:default;
+}
+
+.x-tab-panel-body {
+    overflow:hidden;
+}
+
+.x-tab-panel-bwrap {
+    overflow:hidden;
+}
+
+.ext-ie .x-tab-strip .x-tab-right {
+    position:relative;
+}
+
+.x-tab-strip-top .x-tab-strip-active .x-tab-right {
+    margin-bottom:-1px;
+}
+
+.x-tab-strip-top .x-tab-strip-active .x-tab-right span.x-tab-strip-text {
+    padding-bottom:5px;
+}
+
+.x-tab-strip-bottom .x-tab-strip-active .x-tab-right {
+    margin-top:-1px;
+}
+
+.x-tab-strip-bottom .x-tab-strip-active .x-tab-right span.x-tab-strip-text {
+    padding-top:5px;
+}
+
+.x-tab-strip-top .x-tab-right {
+    padding-left:10px;
+}
+
+.x-tab-strip-top .x-tab-left {
+    padding-right:10px;
+}
+
+.x-tab-strip-top .x-tab-strip-inner {
+}
+
+.x-tab-strip-top .x-tab-strip-over .x-tab-right {
+	 
+}
+
+.x-tab-strip-top .x-tab-strip-over .x-tab-left {
+	 
+}
+
+.x-tab-strip-top .x-tab-strip-over .x-tab-strip-inner {
+	 
+}
+
+.x-tab-strip-top .x-tab-strip-active .x-tab-right {
+	
+}
+
+.x-tab-strip-top .x-tab-strip-active .x-tab-left {
+	
+}
+
+.x-tab-strip-top .x-tab-strip-active .x-tab-strip-inner {
+	
+}
+
+.x-tab-strip-bottom .x-tab-right {
+}
+
+.x-tab-strip-bottom .x-tab-left {
+}
+
+.x-tab-strip-bottom .x-tab-strip-active .x-tab-right {
+}
+
+.x-tab-strip-bottom .x-tab-strip-active .x-tab-left {
+}
+
+.x-tab-strip-bottom .x-tab-left {
+    margin-right: 3px;
+    padding:0 10px;
+}
+
+.x-tab-strip-bottom .x-tab-right {
+    padding:0;
+}
+
+.x-tab-strip .x-tab-strip-close {
+    display:none;
+}
+
+.x-tab-strip-closable {
+    position:relative;
+}
+
+.x-tab-strip-closable .x-tab-left {
+    padding-right:19px;
+}
+
+.x-tab-strip .x-tab-strip-closable a.x-tab-strip-close {
+    opacity:.6;
+    -moz-opacity:.6;
+    
+    display:block;
+	width:11px;
+    height:11px;
+    position:absolute;
+    top:3px;
+    right:3px;
+    cursor:pointer;
+    z-index:2;
+}
+
+.x-tab-strip .x-tab-strip-active a.x-tab-strip-close {
+    opacity:.8;
+    -moz-opacity:.8;
+}
+.x-tab-strip .x-tab-strip-closable a.x-tab-strip-close:hover{
+    opacity:1;
+    -moz-opacity:1;
+}
+
+.x-tab-panel-body {
+    border: 1px solid;
+}
+
+.x-tab-panel-body-top {
+    border-top: 0 none;
+}
+
+.x-tab-panel-body-bottom {
+    border-bottom: 0 none;
+}
+
+.x-tab-scroller-left {
+    border-bottom: 1px solid;
+    width:18px;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:10;
+    cursor:pointer;
+}
+.x-tab-scroller-left-over {
+    
+}
+
+.x-tab-scroller-left-disabled {
+    
+    opacity:.5;
+    -moz-opacity:.5;
+    filter:alpha(opacity=50);
+    cursor:default;
+}
+
+.x-tab-scroller-right {
+    border-bottom: 1px solid;
+    width:18px;
+    position:absolute;
+    right:0;
+    top:0;
+    z-index:10;
+    cursor:pointer;
+}
+
+.x-tab-scroller-right-over {
+    
+}
+
+.x-tab-scroller-right-disabled {
+    
+    opacity:.5;
+    -moz-opacity:.5;
+    filter:alpha(opacity=50);
+    cursor:default;
+}
+
+.x-tab-scrolling-bottom .x-tab-scroller-left, .x-tab-scrolling-bottom .x-tab-scroller-right{
+    margin-top: 1px;
+}
+
+.x-tab-scrolling .x-tab-strip-wrap {
+    margin-left:18px;
+    margin-right:18px;
+}
+
+.x-tab-scrolling {
+    position:relative;    
+}
+
+.x-tab-panel-bbar .x-toolbar {
+    border:1px solid;
+    border-top:0 none;
+    overflow:hidden;
+    padding:2px;
+}
+
+.x-tab-panel-tbar .x-toolbar {
+    border:1px solid;
+    border-top:0 none;
+    overflow:hidden;
+    padding:2px;
+}/* all fields */
+.x-form-field{
+    margin: 0 0 0 0;
+}
+
+.ext-webkit *:focus{
+    outline: none !important;
+}
+
+/* ---- text fields ---- */
+.x-form-text, textarea.x-form-field{
+    padding:1px 3px;
+    border:1px solid;
+}
+
+textarea.x-form-field {
+    padding:2px 3px;
+}
+
+.x-form-text, .ext-ie .x-form-file {
+    height:22px;
+    line-height:18px;
+    vertical-align:middle;
+}
+
+.ext-ie7 .x-form-text {
+    margin:-1px 0; /* ie bogus margin bug */
+    height:22px; /* ie quirks */
+    line-height:18px;
+}
+
+.ext-ie7 textarea.x-form-field {
+    margin:-1px 0; /* ie bogus margin bug */
+}
+
+.ext-strict .x-form-text {
+    height:18px;
+}
+
+.ext-safari.ext-mac textarea.x-form-field {
+    margin-bottom:-2px; /* another bogus margin bug, safari/mac only */
+}
+
+.ext-strict .ext-ie8 .x-form-text, .ext-strict .ext-ie8 textarea.x-form-field {
+    margin-bottom: 1px;
+}
+
+.ext-gecko .x-form-text , .ext-ie8 .x-form-text {
+    padding-top:2px; /* FF won't center the text vertically */
+    padding-bottom:0;
+}
+
+.ext-ie7 .x-form-composite .x-form-text.x-box-item {
+    margin: 0 !important; /* clear ie bogus margin bug fix */
+}
+
+textarea {
+    resize: none;  /* Disable browser resizable textarea */
+}
+
+/* select boxes */
+.x-form-select-one {
+    height:20px;
+    line-height:18px;
+    vertical-align:middle;
+    border: 1px solid;
+}
+
+/* multi select boxes */
+
+/* 2.0.2 style */
+.x-form-check-wrap {
+    line-height:18px;
+    height: auto;
+}
+
+.ext-ie .x-form-check-wrap input {
+    width:15px;
+    height:15px;
+}
+
+.x-form-check-wrap input{
+    vertical-align: bottom;
+}
+
+.x-editor .x-form-check-wrap {
+    padding:3px;
+}
+
+.x-editor .x-form-checkbox {
+    height:13px;
+}
+
+.x-form-check-group-label {
+    border-bottom: 1px solid;
+    margin-bottom: 5px;
+    padding-left: 3px !important;
+    float: none !important;
+}
+
+/* wrapped fields and triggers */
+.x-form-field-wrap .x-form-trigger{
+    width:17px;
+    height:21px;
+    border:0;
+    cursor:pointer;
+    border-bottom: 1px solid;
+    position:absolute;
+    top:0;
+}
+
+.x-form-field-wrap .x-form-date-trigger, .x-form-field-wrap .x-form-clear-trigger, .x-form-field-wrap .x-form-search-trigger{
+    cursor:pointer;
+}
+
+.x-form-field-wrap .x-form-twin-triggers .x-form-trigger{
+    position:static;
+    top:auto;
+    vertical-align:top;
+}
+
+.x-form-field-wrap {
+    position:relative;
+    left:0;top:0;
+    text-align: left;
+    zoom:1;
+    white-space: nowrap;
+}
+
+.ext-strict .ext-ie8 .x-toolbar-cell .x-form-field-trigger-wrap .x-form-trigger {
+    right: 0; /* IE8 Strict mode trigger bug */
+}
+
+.x-form-field-wrap .x-form-trigger-over{
+    
+}
+
+.x-form-field-wrap .x-form-trigger-click{
+    
+}
+
+.x-trigger-wrap-focus .x-form-trigger{
+    
+}
+
+.x-trigger-wrap-focus .x-form-trigger-over{
+    
+}
+
+.x-trigger-wrap-focus .x-form-trigger-click{
+    
+}
+
+.x-trigger-wrap-focus .x-form-trigger{
+    border-bottom: 1px solid;
+}
+
+.x-item-disabled .x-form-trigger-over{
+    
+    border-bottom: 1px solid;
+}
+
+.x-item-disabled .x-form-trigger-click{
+    
+    border-bottom: 1px solid;
+}
+
+.x-trigger-noedit{
+    cursor:pointer;
+}
+
+/* field focus style */
+.x-form-focus, textarea.x-form-focus{
+    border: 1px solid;
+}
+
+/* invalid fields */
+.x-form-invalid, textarea.x-form-invalid{
+    border: 1px solid;
+}
+
+.x-form-inner-invalid, textarea.x-form-inner-invalid{
+}
+
+/* editors */
+.x-editor {
+    visibility:hidden;
+    padding:0;
+    margin:0;
+}
+
+.x-form-grow-sizer {
+    left: -10000px;
+    padding: 8px 3px;
+    position: absolute;
+    visibility:hidden;
+    top: -10000px;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    zoom:1;
+}
+
+.x-form-grow-sizer p {
+    margin:0 !important;
+    border:0 none !important;
+    padding:0 !important;
+}
+
+/* Form Items CSS */
+
+.x-form-item {
+    display:block;
+    margin-bottom:4px;
+    zoom:1;
+}
+
+.x-form-item label.x-form-item-label {
+    display:block;
+    float:left;
+    width:100px;
+    padding:3px;
+    padding-left:0;
+    clear:left;
+    z-index:2;
+    position:relative;
+}
+
+.x-form-element {
+    padding-left:105px;
+    position:relative;
+}
+
+.x-form-invalid-msg {
+    padding:2px;
+    padding-left:18px;
+    line-height:16px;
+    width:200px;
+}
+
+.x-form-label-left label.x-form-item-label {
+   text-align:left;
+}
+
+.x-form-label-right label.x-form-item-label {
+   text-align:right;
+}
+
+.x-form-label-top .x-form-item label.x-form-item-label {
+    width:auto;
+    float:none;
+    clear:none;
+    display:inline;
+    margin-bottom:4px;
+    position:static;
+}
+
+.x-form-label-top .x-form-element {
+    padding-left:0;
+    padding-top:4px;
+}
+
+.x-form-label-top .x-form-item {
+    padding-bottom:4px;
+}
+
+/* Editor small font for grid, toolbar and tree */
+.x-small-editor .x-form-text {
+    height:20px;
+    line-height:16px;
+    vertical-align:middle;
+}
+
+.ext-ie7 .x-small-editor .x-form-text {
+    margin-top:-1px !important; /* ie bogus margin bug */
+    margin-bottom:-1px !important;
+    height:20px !important; /* ie quirks */
+    line-height:16px !important;
+}
+
+.ext-strict .x-small-editor .x-form-text {
+    height:16px !important;
+}
+
+.ext-ie7 .x-small-editor .x-form-text {
+    height:20px;
+    line-height:16px;
+}
+
+.ext-border-box .x-small-editor .x-form-text {
+    height:20px;
+}
+
+.x-small-editor .x-form-select-one {
+    height:20px;
+    line-height:16px;
+    vertical-align:middle;
+}
+
+.x-small-editor .x-form-num-field {
+    text-align:right;
+}
+
+.x-small-editor .x-form-field-wrap .x-form-trigger{
+    height:19px;
+}
+
+.ext-webkit .x-small-editor .x-form-text{padding-top:3px;font-size:100%;}
+
+.x-form-clear {
+    clear:both;
+    height:0;
+    overflow:hidden;
+    line-height:0;
+    font-size:0;
+}
+.x-form-clear-left {
+    clear:left;
+    height:0;
+    overflow:hidden;
+    line-height:0;
+    font-size:0;
+}
+
+.ext-border-box .x-form-check-wrap input{
+   margin-top: 3px;
+}
+
+.x-form-cb-label {
+    position: relative;
+    margin-left:4px;
+    top: 2px;
+}
+
+.ext-ie .x-form-cb-label{
+    top: 1px;
+}
+
+.ext-border-box .x-form-cb-label{
+    top: 3px;
+}
+
+.x-form-display-field{
+    padding-top: 2px;
+}
+
+.ext-gecko .x-form-display-field, .ext-strict .ext-ie7 .x-form-display-field{
+    padding-top: 1px;
+}
+
+.ext-ie .x-form-display-field{
+    padding-top: 3px;
+}
+
+.ext-strict .ext-ie8 .x-form-display-field{
+    padding-top: 0;
+}
+
+.x-form-column {
+    float:left;
+    padding:0;
+    margin:0;
+    width:48%;
+    overflow:hidden;
+    zoom:1;
+}
+
+/* buttons */
+.x-form .x-form-btns-ct .x-btn{
+    float:right;
+    clear:none;
+}
+
+.x-form .x-form-btns-ct .x-form-btns td {
+    border:0;
+    padding:0;
+}
+
+.x-form .x-form-btns-ct .x-form-btns-right table{
+    float:right;
+    clear:none;
+}
+
+.x-form .x-form-btns-ct .x-form-btns-left table{
+    float:left;
+    clear:none;
+}
+
+.x-form .x-form-btns-ct .x-form-btns-center{
+    text-align:center; /*ie*/
+}
+
+.x-form .x-form-btns-ct .x-form-btns-center table{
+    margin:0 auto; /*everyone else*/
+}
+
+.x-form .x-form-btns-ct table td.x-form-btn-td{
+    padding:3px;
+}
+
+.x-form .x-form-btns-ct .x-btn-focus .x-btn-left{
+    
+}
+
+.x-form .x-form-btns-ct .x-btn-focus .x-btn-right{
+    
+}
+
+.x-form .x-form-btns-ct .x-btn-focus .x-btn-center{
+    
+}
+
+.x-form .x-form-btns-ct .x-btn-click .x-btn-center{
+    
+}
+
+.x-form .x-form-btns-ct .x-btn-click  .x-btn-right{
+    
+}
+
+.x-form .x-form-btns-ct .x-btn-click .x-btn-left{
+    
+}
+
+.x-form-invalid-icon {
+    width:16px;
+    height:18px;
+    visibility:hidden;
+    position:absolute;
+    left:0;
+    top:0;
+    display:block;
+}
+
+/* fieldsets */
+.x-fieldset {
+    border:1px solid;
+    padding:10px;
+    margin-bottom:10px;
+    display:block; /* preserve margins in IE */
+}
+
+/* make top of checkbox/tools visible in webkit */
+.ext-webkit .x-fieldset-header {
+    padding-top: 1px;
+}
+
+.ext-ie .x-fieldset legend {
+    margin-bottom:10px;
+}
+
+.ext-ie .x-fieldset {
+    padding-top: 0;
+    padding-bottom:10px;
+}
+
+.x-fieldset legend .x-tool-toggle {
+    margin-right:3px;
+    margin-left:0;
+    float:left !important;
+}
+
+.x-fieldset legend input {
+    margin-right:3px;
+    float:left !important;
+    height:13px;
+    width:13px;
+}
+
+fieldset.x-panel-collapsed {
+    padding-bottom:0 !important;
+    border-width: 1px 1px 0 1px !important;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+fieldset.x-panel-collapsed .x-fieldset-bwrap {
+    visibility:hidden;
+    position:absolute;
+    left:-1000px;
+    top:-1000px;
+}
+
+.ext-ie .x-fieldset-bwrap {
+    zoom:1;
+}
+
+.x-fieldset-noborder {
+    border:0px none transparent;
+}
+
+.x-fieldset-noborder legend {
+    margin-left:-3px;
+}
+
+/* IE legend positioning bug */
+.ext-ie .x-fieldset-noborder legend {
+    position: relative;
+    margin-bottom:23px;
+}
+.ext-ie .x-fieldset-noborder legend span {
+    position: absolute;
+    left:16px;
+}
+
+.ext-gecko .x-window-body .x-form-item {
+    -moz-outline: none;
+    outline: none;
+    overflow: auto;
+}
+
+.ext-gecko .x-form-item {
+    -moz-outline: none;
+    outline: none;
+}
+
+.x-hide-label label.x-form-item-label {
+     display:none;
+}
+
+.x-hide-label .x-form-element {
+     padding-left: 0 !important;
+}
+
+.x-form-label-top .x-hide-label label.x-form-item-label{
+    display: none;
+}
+
+.x-fieldset {
+    overflow:hidden;
+}
+
+.x-fieldset-bwrap {
+    overflow:hidden;
+    zoom:1;
+}
+
+.x-fieldset-body {
+    overflow:hidden;
+}
+.x-btn{
+	cursor:pointer;
+	white-space: nowrap;
+}
+
+.x-btn button{
+    border:0 none;
+    padding-left:3px;
+    padding-right:3px;
+    cursor:pointer;
+    margin:0;
+    overflow:visible;
+    width:auto;
+    -moz-outline:0 none;
+    outline:0 none;
+}
+
+.ext-gecko .x-btn button, .ext-webkit .x-btn button {
+    padding-left:0;
+    padding-right:0;
+}
+
+.ext-gecko .x-btn button::-moz-focus-inner {
+    padding:0;
+}
+
+.ext-ie .x-btn button {
+    padding-top:2px;
+}
+
+.x-btn td {
+    padding:0 !important;
+}
+
+.x-btn-text {
+    cursor:pointer;
+	white-space: nowrap;
+    padding:0;
+}
+
+/* icon placement and sizing styles */
+
+/* Only text */
+.x-btn-noicon .x-btn-small .x-btn-text{
+	height: 16px;
+}
+
+.x-btn-noicon .x-btn-medium .x-btn-text{
+    height: 24px;
+}
+
+.x-btn-noicon .x-btn-large .x-btn-text{
+    height: 32px;
+}
+
+/* Only icons */
+.x-btn-icon .x-btn-text{
+    
+	
+}
+
+.x-btn-icon .x-btn-small .x-btn-text{
+	height: 16px;
+	width: 16px;
+}
+
+.x-btn-icon .x-btn-medium .x-btn-text{
+    height: 24px;
+	width: 24px;
+}
+
+.x-btn-icon .x-btn-large .x-btn-text{
+    height: 32px;
+	width: 32px;
+}
+
+/* Icons and text */
+/* left */
+.x-btn-text-icon .x-btn-icon-small-left .x-btn-text{
+    
+	
+    padding-left:18px;
+    height:16px;
+}
+
+.x-btn-text-icon .x-btn-icon-medium-left .x-btn-text{
+    
+	
+    padding-left:26px;
+    height:24px;
+}
+
+.x-btn-text-icon .x-btn-icon-large-left .x-btn-text{
+    
+	
+    padding-left:34px;
+    height:32px;
+}
+
+/* top */
+.x-btn-text-icon .x-btn-icon-small-top .x-btn-text{
+    
+	
+    padding-top:18px;
+}
+
+.x-btn-text-icon .x-btn-icon-medium-top .x-btn-text{
+    
+	
+    padding-top:26px;
+}
+
+.x-btn-text-icon .x-btn-icon-large-top .x-btn-text{
+    
+	
+    padding-top:34px;
+}
+
+/* right */
+.x-btn-text-icon .x-btn-icon-small-right .x-btn-text{
+    
+	
+    padding-right:18px;
+    height:16px;
+}
+
+.x-btn-text-icon .x-btn-icon-medium-right .x-btn-text{
+    
+	
+    padding-right:26px;
+    height:24px;
+}
+
+.x-btn-text-icon .x-btn-icon-large-right .x-btn-text{
+    
+	
+    padding-right:34px;
+    height:32px;
+}
+
+/* bottom */
+.x-btn-text-icon .x-btn-icon-small-bottom .x-btn-text{
+    
+	
+    padding-bottom:18px;
+}
+
+.x-btn-text-icon .x-btn-icon-medium-bottom .x-btn-text{
+    
+	
+    padding-bottom:26px;
+}
+
+.x-btn-text-icon .x-btn-icon-large-bottom .x-btn-text{
+    
+	
+    padding-bottom:34px;
+}
+
+/* background positioning */
+.x-btn-tr i, .x-btn-tl i, .x-btn-mr i, .x-btn-ml i, .x-btn-br i, .x-btn-bl i{
+	font-size:1px;
+    line-height:1px;
+    width:3px;
+    display:block;
+    overflow:hidden;
+}
+
+.x-btn-tr i, .x-btn-tl i, .x-btn-br i, .x-btn-bl i{
+	height:3px;
+}
+
+.x-btn-tl{
+	width:3px;
+	height:3px;
+}
+.x-btn-tr{
+	width:3px;
+	height:3px;
+}
+.x-btn-tc{
+	height:3px;
+}
+
+.x-btn-ml{
+	width:3px;
+}
+.x-btn-mr{
+	width:3px;
+}
+
+.x-btn-mc{
+    vertical-align: middle;
+	text-align:center;
+	padding:0 5px;
+	cursor:pointer;
+	white-space:nowrap;
+}
+
+/* Fixes an issue with the button height */
+.ext-strict .ext-ie7 .x-btn-mc {
+    height: 100%;
+}
+
+.x-btn-bl{
+	width:3px;
+	height:3px;
+}
+
+.x-btn-br{
+	width:3px;
+	height:3px;
+}
+
+.x-btn-bc{
+	height:3px;
+}
+
+.x-btn-over .x-btn-tl{
+	
+}
+
+.x-btn-over .x-btn-tr{
+	
+}
+
+.x-btn-over .x-btn-tc{
+	
+}
+
+.x-btn-over .x-btn-ml{
+	
+}
+
+.x-btn-over .x-btn-mr{
+	
+}
+
+.x-btn-over .x-btn-mc{
+	
+}
+
+.x-btn-over .x-btn-bl{
+	
+}
+
+.x-btn-over .x-btn-br{
+	
+}
+
+.x-btn-over .x-btn-bc{
+	
+}
+
+.x-btn-click .x-btn-tl, .x-btn-menu-active .x-btn-tl, .x-btn-pressed .x-btn-tl{
+	
+}
+
+.x-btn-click .x-btn-tr, .x-btn-menu-active .x-btn-tr, .x-btn-pressed .x-btn-tr{
+	
+}
+
+.x-btn-click .x-btn-tc, .x-btn-menu-active .x-btn-tc, .x-btn-pressed .x-btn-tc{
+	
+}
+
+.x-btn-click .x-btn-ml, .x-btn-menu-active .x-btn-ml, .x-btn-pressed .x-btn-ml{
+	
+}
+
+.x-btn-click .x-btn-mr, .x-btn-menu-active .x-btn-mr, .x-btn-pressed .x-btn-mr{
+	
+}
+
+.x-btn-click .x-btn-mc, .x-btn-menu-active .x-btn-mc, .x-btn-pressed .x-btn-mc{
+	
+}
+
+.x-btn-click .x-btn-bl, .x-btn-menu-active .x-btn-bl, .x-btn-pressed .x-btn-bl{
+	
+}
+
+.x-btn-click .x-btn-br, .x-btn-menu-active .x-btn-br, .x-btn-pressed .x-btn-br{
+	
+}
+
+.x-btn-click .x-btn-bc, .x-btn-menu-active .x-btn-bc, .x-btn-pressed .x-btn-bc{
+	
+}
+
+.x-btn-disabled *{
+	cursor:default !important;
+}
+
+
+/* With a menu arrow */
+/* right */
+.x-btn-mc em.x-btn-arrow {
+    display:block;
+	padding-right:10px;
+}
+
+.x-btn-mc em.x-btn-split {
+    display:block;
+	padding-right:14px;
+}
+
+/* bottom */
+.x-btn-mc em.x-btn-arrow-bottom {
+    display:block;
+	padding-bottom:14px;
+}
+
+.x-btn-mc em.x-btn-split-bottom {
+    display:block;
+	padding-bottom:14px;
+}
+
+/* height adjustment class */
+.x-btn-as-arrow .x-btn-mc em {
+    display:block;
+	padding-bottom:14px;
+}
+
+/* groups */
+.x-btn-group {
+    padding:1px;
+}
+
+.x-btn-group-header {
+    padding:2px;
+    text-align:center;
+}
+
+.x-btn-group-tc {
+	overflow:hidden;
+}
+
+.x-btn-group-tl {
+	padding-left:3px;
+    zoom:1;
+}
+
+.x-btn-group-tr {
+	zoom:1;
+    padding-right:3px;
+}
+
+.x-btn-group-bc {
+    zoom:1;
+}
+
+.x-btn-group-bc .x-panel-footer {
+    zoom:1;
+}
+
+.x-btn-group-bl {
+	padding-left:3px;
+    zoom:1;
+}
+
+.x-btn-group-br {
+	padding-right:3px;
+    zoom:1;
+}
+
+.x-btn-group-mc {
+    border:0 none;
+    padding:1px 0 0 0;
+    margin:0;
+}
+
+.x-btn-group-mc .x-btn-group-body {
+    border: 0 none;
+}
+
+.x-btn-group-ml {
+	padding-left:3px;
+    zoom:1;
+}
+
+.x-btn-group-mr {
+	padding-right:3px;
+    zoom:1;
+}
+
+.x-btn-group-bc .x-btn-group-footer {
+    padding-bottom:6px;
+}
+
+.x-panel-nofooter .x-btn-group-bc {
+	height:3px;
+    font-size:0;
+    line-height:0;
+}
+
+.x-btn-group-bwrap {
+    overflow:hidden;
+    zoom:1;
+}
+
+.x-btn-group-body {
+    overflow:hidden;
+    zoom:1;
+}
+
+.x-btn-group-notitle .x-btn-group-tc {
+	overflow:hidden;
+    height:2px;
+}.x-toolbar{
+    border-style:solid;
+    border-width:0 0 1px 0;
+    display: block;
+	padding:2px;
+    position:relative;
+    left:0;
+    top:0;
+    zoom:1;
+    overflow:hidden;
+}
+
+.x-toolbar-left {
+    width: 100%;
+}
+
+.x-toolbar .x-item-disabled .x-btn-icon {
+    opacity: .35;
+    -moz-opacity: .35;
+    filter: alpha(opacity=35);
+}
+
+.x-toolbar td {
+	vertical-align:middle;
+}
+
+.x-toolbar td,.x-toolbar span,.x-toolbar input,.x-toolbar div,.x-toolbar select,.x-toolbar label{
+	white-space: nowrap;
+}
+
+.x-toolbar .x-item-disabled {
+	cursor:default;
+	opacity:.6;
+	-moz-opacity:.6;
+	filter:alpha(opacity=60);
+}
+
+.x-toolbar .x-item-disabled * {
+	cursor:default;
+}
+
+.x-toolbar .x-toolbar-cell {
+    vertical-align:middle;
+}
+
+.x-toolbar .x-btn-tl, .x-toolbar .x-btn-tr, .x-toolbar .x-btn-tc, .x-toolbar .x-btn-ml, .x-toolbar .x-btn-mr,
+.x-toolbar .x-btn-mc, .x-toolbar .x-btn-bl, .x-toolbar .x-btn-br, .x-toolbar .x-btn-bc
+{
+	
+}
+
+/* These rules are duplicated from button.css to give priority of x-toolbar rules above */
+.x-toolbar .x-btn-over .x-btn-tl{
+	
+}
+
+.x-toolbar .x-btn-over .x-btn-tr{
+	
+}
+
+.x-toolbar .x-btn-over .x-btn-tc{
+	
+}
+
+.x-toolbar .x-btn-over .x-btn-ml{
+	
+}
+
+.x-toolbar .x-btn-over .x-btn-mr{
+	
+}
+
+.x-toolbar .x-btn-over .x-btn-mc{
+	
+}
+
+.x-toolbar .x-btn-over .x-btn-bl{
+	
+}
+
+.x-toolbar .x-btn-over .x-btn-br{
+	
+}
+
+.x-toolbar .x-btn-over .x-btn-bc{
+	
+}
+
+.x-toolbar .x-btn-click .x-btn-tl, .x-toolbar .x-btn-menu-active .x-btn-tl, .x-toolbar .x-btn-pressed .x-btn-tl{
+	
+}
+
+.x-toolbar .x-btn-click .x-btn-tr, .x-toolbar .x-btn-menu-active .x-btn-tr, .x-toolbar .x-btn-pressed .x-btn-tr{
+	
+}
+
+.x-toolbar .x-btn-click .x-btn-tc, .x-toolbar .x-btn-menu-active .x-btn-tc, .x-toolbar .x-btn-pressed .x-btn-tc{
+	
+}
+
+.x-toolbar .x-btn-click .x-btn-ml, .x-toolbar .x-btn-menu-active .x-btn-ml, .x-toolbar .x-btn-pressed .x-btn-ml{
+	
+}
+
+.x-toolbar .x-btn-click .x-btn-mr, .x-toolbar .x-btn-menu-active .x-btn-mr, .x-toolbar .x-btn-pressed .x-btn-mr{
+	
+}
+
+.x-toolbar .x-btn-click .x-btn-mc, .x-toolbar .x-btn-menu-active .x-btn-mc, .x-toolbar .x-btn-pressed .x-btn-mc{
+	
+}
+
+.x-toolbar .x-btn-click .x-btn-bl, .x-toolbar .x-btn-menu-active .x-btn-bl, .x-toolbar .x-btn-pressed .x-btn-bl{
+	
+}
+
+.x-toolbar .x-btn-click .x-btn-br, .x-toolbar .x-btn-menu-active .x-btn-br, .x-toolbar .x-btn-pressed .x-btn-br{
+	
+}
+
+.x-toolbar .x-btn-click .x-btn-bc, .x-toolbar .x-btn-menu-active .x-btn-bc, .x-toolbar .x-btn-pressed .x-btn-bc{
+	
+}
+
+.x-toolbar div.xtb-text{
+    padding:2px 2px 0;
+    line-height:16px;
+    display:block;
+}
+
+.x-toolbar .xtb-sep {
+	
+	
+	display: block;
+	font-size: 1px;
+	height: 16px;
+	width:4px;
+	overflow: hidden;
+	cursor:default;
+	margin: 0 2px 0;
+	border:0;
+}
+
+.x-toolbar .xtb-spacer {
+    width:2px;
+}
+
+/* Paging Toolbar */
+.x-tbar-page-number{
+	width:30px;
+	height:14px;
+}
+
+.ext-ie .x-tbar-page-number{
+    margin-top: 2px;
+}
+
+.x-paging-info {
+    position:absolute;
+    top:5px;
+    right: 8px;
+}
+
+/* floating */
+.x-toolbar-ct {
+    width:100%;
+}
+
+.x-toolbar-right td {
+    text-align: center;
+}
+
+.x-panel-tbar, .x-panel-bbar, .x-window-tbar, .x-window-bbar, .x-tab-panel-tbar, .x-tab-panel-bbar, .x-plain-tbar, .x-plain-bbar {
+    overflow:hidden;
+    zoom:1;
+}
+
+.x-toolbar-more .x-btn-small .x-btn-text{
+	height: 16px;
+	width: 12px;
+}
+
+.x-toolbar-more em.x-btn-arrow {
+    display:inline;
+	padding-right:0;
+}
+
+.x-toolbar-more .x-btn-mc em.x-btn-arrow {
+}
+
+div.x-toolbar-no-items {
+    color:gray !important;
+    padding:5px 10px !important;
+}
+
+/* fix ie toolbar form items */
+.ext-border-box .x-toolbar-cell .x-form-text {
+    margin-bottom:-1px !important;
+}
+
+.ext-border-box .x-toolbar-cell .x-form-field-wrap .x-form-text {
+    margin:0 !important;
+}
+
+.ext-ie .x-toolbar-cell .x-form-field-wrap {
+    height:21px;
+}
+
+.ext-ie .x-toolbar-cell .x-form-text {
+    position:relative;
+    top:-1px;
+}
+
+.ext-strict .ext-ie8 .x-toolbar-cell .x-form-field-trigger-wrap .x-form-text, .ext-strict .ext-ie .x-toolbar-cell .x-form-text {
+    top: 0px;
+}
+
+.x-toolbar-right td .x-form-field-trigger-wrap{
+    text-align: left;
+}
+
+.x-toolbar-cell .x-form-checkbox, .x-toolbar-cell .x-form-radio{
+    margin-top: 5px;
+}
+
+.x-toolbar-cell .x-form-cb-label{
+    vertical-align: bottom;
+    top: 1px;
+}
+
+.ext-ie .x-toolbar-cell .x-form-checkbox, .ext-ie .x-toolbar-cell .x-form-radio{
+    margin-top: 4px;
+}
+
+.ext-ie .x-toolbar-cell .x-form-cb-label{
+    top: 0;
+}
+/* Grid3 styles */
+.x-grid3 {
+	position:relative;
+	overflow:hidden;
+}
+
+.x-grid-panel .x-panel-body {
+    overflow:hidden !important;
+}
+
+.x-grid-panel .x-panel-mc .x-panel-body {
+    border:1px solid;
+}
+
+.x-grid3 table {
+    table-layout:fixed;
+}
+
+.x-grid3-viewport{
+	overflow:hidden;
+}
+
+.x-grid3-hd-row td, .x-grid3-row td, .x-grid3-summary-row td{
+    -moz-outline: none;
+    outline: none;
+	-moz-user-focus: normal;
+}
+
+.x-grid3-row td, .x-grid3-summary-row td {
+    line-height:13px;
+    vertical-align: top;
+	padding-left:1px;
+    padding-right:1px;
+  }
+
+
+.x-grid3-hd-row td {
+    line-height:15px;
+    vertical-align:middle;
+    border-left:1px solid;
+    border-right:1px solid;
+}
+
+.x-grid3-hd-row .x-grid3-marker-hd {
+    padding:3px;
+}
+
+.x-grid3-row .x-grid3-marker {
+    padding:3px;
+}
+
+.x-grid3-cell-inner, .x-grid3-hd-inner{
+	overflow:hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+    padding:3px 3px 3px 5px;
+}
+
+.x-grid3-hd-inner {
+    position:relative;
+	cursor:inherit;
+	padding:4px 3px 4px 5px;
+}
+
+.x-grid3-row-body {
+    white-space:normal;
+}
+
+.x-grid3-body-cell {
+    -moz-outline:0 none;
+    outline:0 none;
+}
+
+/* IE Quirks to clip */
+.ext-ie .x-grid3-cell-inner, .ext-ie .x-grid3-hd-inner{
+	width:100%;
+}
+
+/* reverse above in strict mode */
+.ext-strict .x-grid3-cell-inner, .ext-strict .x-grid3-hd-inner{
+	width:auto;
+}
+
+.x-grid-row-loading {
+}
+
+.x-grid-page {
+    overflow:hidden;
+}
+
+.x-grid3-row {
+	cursor: default;
+    border: 1px solid;
+    width:100%;
+}
+
+.x-grid3-row-over {
+	border:1px solid;
+}
+
+.x-grid3-resize-proxy {
+	width:1px;
+    left:0;
+	cursor: e-resize;
+	cursor: col-resize;
+	position:absolute;
+	top:0;
+	height:100px;
+	overflow:hidden;
+	visibility:hidden;
+	border:0 none;
+	z-index:7;
+}
+
+.x-grid3-resize-marker {
+	width:1px;
+	left:0;
+	position:absolute;
+	top:0;
+	height:100px;
+	overflow:hidden;
+	visibility:hidden;
+	border:0 none;
+	z-index:7;
+}
+
+.x-grid3-focus {
+	position:absolute;
+	left:0;
+	top:0;
+	width:1px;
+	height:1px;
+    line-height:1px;
+    font-size:1px;
+    -moz-outline:0 none;
+    outline:0 none;
+    -moz-user-select: text;
+    -khtml-user-select: text;
+ }
+
+/* header styles */
+.x-grid3-header{
+	cursor:default;
+    zoom:1;
+    padding:1px 0 0 0;
+}
+
+.x-grid3-header-pop {
+    border-left:1px solid;
+    float:right;
+    clear:none;
+}
+
+.x-grid3-header-pop-inner {
+    border-left:1px solid;
+    width:14px;
+    height:19px;
+}
+
+.ext-ie .x-grid3-header-pop-inner {
+    width:15px;
+}
+
+.ext-strict .x-grid3-header-pop-inner {
+    width:14px; 
+}
+
+.x-grid3-header-inner {
+    overflow:hidden;
+    zoom:1;
+    float:left;
+}
+
+.x-grid3-header-offset {
+    padding-left:1px;
+    text-align: left;
+}
+
+td.x-grid3-hd-over, td.sort-desc, td.sort-asc, td.x-grid3-hd-menu-open {
+    border-left:1px solid;
+    border-right:1px solid;
+}
+
+td.x-grid3-hd-over .x-grid3-hd-inner, td.sort-desc .x-grid3-hd-inner, td.sort-asc .x-grid3-hd-inner, td.x-grid3-hd-menu-open .x-grid3-hd-inner {
+
+}
+
+.x-grid3-sort-icon{
+	
+	display: none;
+	height: 4px;
+	width: 13px;
+	margin-left:3px;
+	vertical-align: middle;
+}
+
+.sort-asc .x-grid3-sort-icon, .sort-desc .x-grid3-sort-icon {
+	display: inline;
+}
+
+/* Header position fixes for IE strict mode */
+.ext-strict .ext-ie .x-grid3-header-inner {
+    position:relative;
+}
+
+/* Body Styles */
+.x-grid3-body {
+	zoom:1;
+}
+
+.x-grid3-scroller {
+	overflow:auto;
+    zoom:1;
+    position:relative;
+}
+
+.x-grid3-cell-text, .x-grid3-hd-text {
+	display: block;
+	padding: 3px 5px 3px 5px;
+ }
+
+.x-grid3-split {
+	
+	
+	cursor: e-resize;
+	cursor: col-resize;
+	display: block;
+	font-size: 1px;
+	height: 16px;
+	overflow: hidden;
+	position: absolute;
+	top: 2px;
+	width: 6px;
+	z-index: 3;
+}
+
+/* Column Reorder DD */
+.x-dd-drag-proxy .x-grid3-hd-inner{
+	width:120px;
+	padding:3px;
+	border:1px solid;
+	overflow:hidden;
+}
+
+.col-move-top, .col-move-bottom{
+	width:9px;
+	height:9px;
+	position:absolute;
+	top:0;
+	line-height:1px;
+	font-size:1px;
+	overflow:hidden;
+	visibility:hidden;
+	z-index:20000;
+}
+
+/* Selection Styles */
+.x-grid3-row-selected {
+	border:1px dotted;
+}
+
+.x-grid3-locked td.x-grid3-row-marker, .x-grid3-locked .x-grid3-row-selected td.x-grid3-row-marker{
+    vertical-align:middle !important;
+    padding:0;
+    border-top:1px solid;
+    border-bottom:none !important;
+    border-right:1px solid !important;
+    text-align:center;
+}
+
+.x-grid3-locked td.x-grid3-row-marker div, .x-grid3-locked .x-grid3-row-selected td.x-grid3-row-marker div{
+    padding:0 4px;
+    text-align:center;
+}
+
+/* dirty cells */
+.x-grid3-dirty-cell {
+}
+
+/* Grid Toolbars */
+.x-grid3-topbar, .x-grid3-bottombar{
+    overflow:hidden;
+	display:none;
+	zoom:1;
+    position:relative;
+}
+
+.x-grid3-topbar .x-toolbar{
+	border-right:0 none;
+}
+
+.x-grid3-bottombar .x-toolbar{
+	border-right:0 none;
+	border-bottom:0 none;
+	border-top:1px solid;
+}
+
+/* Props Grid Styles */
+.x-props-grid .x-grid3-cell{
+	padding:1px;
+}
+
+.x-props-grid .x-grid3-td-name .x-grid3-cell-inner{
+    padding-left:12px;
+}
+
+.x-props-grid .x-grid3-body .x-grid3-td-name{
+    padding:1px;
+    padding-right:0;
+    border:0 none;
+    border-right:1px solid;
+}
+
+/* dd */
+.x-grid3-col-dd {
+    border:0 none;
+    padding:0;
+}
+
+.x-dd-drag-ghost .x-grid3-dd-wrap {
+    padding:1px 3px 3px 1px;
+}
+
+.x-grid3-hd-btn {
+    display:none;
+    position:absolute;
+    width:14px;
+    right:0;
+    top:0;
+    z-index:2;
+	cursor:pointer;
+}
+
+.x-grid3-hd-over .x-grid3-hd-btn, .x-grid3-hd-menu-open .x-grid3-hd-btn {
+    display:block;
+}
+
+a.x-grid3-hd-btn:hover {
+    
+}
+
+/* Expanders */
+.x-grid3-body .x-grid3-td-expander {
+}
+
+.x-grid3-body .x-grid3-td-expander .x-grid3-cell-inner {
+    padding:0 !important;
+    height:100%;
+}
+
+.x-grid3-row-expander {
+    width:100%;
+    height:18px;
+    
+    
+    background-color:transparent;
+}
+
+.x-grid3-row-collapsed .x-grid3-row-expander {
+    
+}
+
+.x-grid3-row-expanded .x-grid3-row-expander {
+    
+}
+
+.x-grid3-row-collapsed .x-grid3-row-body {
+    display:none !important;
+}
+
+.x-grid3-row-expanded .x-grid3-row-body {
+    display:block !important;
+}
+
+/* Checkers */
+.x-grid3-body .x-grid3-td-checker {
+}
+
+.x-grid3-body .x-grid3-td-checker .x-grid3-cell-inner, .x-grid3-header .x-grid3-td-checker .x-grid3-hd-inner {
+    padding:0 !important;
+    height:100%;
+}
+
+.x-grid3-row-checker, .x-grid3-hd-checker {
+    width:100%;
+    height:18px;
+    
+    
+    background-color:transparent;
+}
+
+.x-grid3-row .x-grid3-row-checker {
+    
+}
+
+.x-grid3-row-selected .x-grid3-row-checker, .x-grid3-hd-checker-on .x-grid3-hd-checker,.x-grid3-row-checked .x-grid3-row-checker {
+    
+}
+
+.x-grid3-hd-checker {
+    
+}
+
+.ext-border-box .x-grid3-hd-checker {
+    
+}
+
+.x-grid3-hd-checker-on .x-grid3-hd-checker {
+    
+}
+
+.ext-border-box .x-grid3-hd-checker-on .x-grid3-hd-checker {
+    
+}
+
+/* Numberer */
+.x-grid3-body .x-grid3-td-numberer {
+}
+
+.x-grid3-body .x-grid3-td-numberer .x-grid3-cell-inner {
+    padding:3px 5px 0 0 !important;
+    text-align:right;
+}
+
+/* Row Icon */
+
+.x-grid3-body .x-grid3-td-row-icon {
+    vertical-align:top;
+    text-align:center;
+}
+
+.x-grid3-body .x-grid3-td-row-icon .x-grid3-cell-inner {
+    padding:0 !important;
+    
+    
+    width:16px;
+    height:16px;
+    margin-left:2px;
+    margin-top:3px;
+}
+
+/* All specials */
+.x-grid3-body .x-grid3-row-selected .x-grid3-td-numberer,
+.x-grid3-body .x-grid3-row-selected .x-grid3-td-checker,
+.x-grid3-body .x-grid3-row-selected .x-grid3-td-expander {
+}
+
+.x-grid3-body .x-grid3-check-col-td .x-grid3-cell-inner {
+    padding: 1px 0 0 0 !important;
+}
+
+.x-grid3-check-col {
+    width:100%;
+    height:16px;
+    
+    
+    background-color:transparent;
+}
+
+.x-grid3-check-col-on {
+    width:100%;
+    height:16px;
+    
+    
+    background-color:transparent;
+}
+
+/* Grouping classes */
+.x-grid-group, .x-grid-group-body, .x-grid-group-hd {
+    zoom:1;
+}
+
+.x-grid-group-hd {
+    border-bottom: 2px solid;
+    cursor:pointer;
+    padding-top:6px;
+}
+
+.x-grid-group-hd div.x-grid-group-title {
+    padding:4px 4px 4px 17px;
+}
+
+.x-grid-group-collapsed .x-grid-group-body {
+    display:none;
+}
+
+.ext-ie7 .x-grid3 .x-editor .x-form-text {
+    position:relative;
+    top:-1px;
+}
+
+.ext-ie .x-props-grid .x-editor .x-form-text {
+    position:static;
+    top:0;
+}
+
+.x-grid-empty {
+    padding:10px;
+}
+
+/* fix floating toolbar issue */
+.ext-ie7 .x-grid-panel .x-panel-bbar {
+    position:relative;
+}
+
+
+/* Reset position to static when Grid Panel has been framed */
+/* to resolve 'snapping' from top to bottom behavior. */
+/* @forumThread 86656 */
+.ext-ie7 .x-grid-panel .x-panel-mc .x-panel-bbar {
+    position: static;
+}
+
+/* column lines */
+.x-grid-with-col-lines .x-grid3-row td.x-grid3-cell {
+    padding-right:0;
+    border-right:1px solid;
+}
+.x-dd-drag-proxy{
+	position:absolute;
+	left:0;
+    top:0;
+	visibility:hidden;
+	z-index:15000;
+}
+
+.x-dd-drag-ghost{
+	-moz-opacity: 0.85;
+    opacity:.85;
+    filter: alpha(opacity=85);
+    border: 1px solid;
+	padding:3px;
+	padding-left:20px;
+	white-space:nowrap;
+}
+
+.x-dd-drag-repair .x-dd-drag-ghost{
+	-moz-opacity: 0.4;
+    opacity:.4;
+    filter: alpha(opacity=40);
+	border:0 none;
+	padding:0;
+	background-color:transparent;
+}
+
+.x-dd-drag-repair .x-dd-drop-icon{
+	visibility:hidden;
+}
+
+.x-dd-drop-icon{
+    position:absolute;
+	top:3px;
+	left:3px;
+	display:block;
+	width:16px;
+	height:16px;
+	background-color:transparent;
+	
+	
+	z-index:1;
+}
+
+.x-view-selector {
+    position:absolute;
+    left:0;
+    top:0;
+    width:0;
+    border:1px dotted;
+	opacity: .5;
+    -moz-opacity: .5;
+    filter:alpha(opacity=50);
+    zoom:1;
+}.ext-strict .ext-ie .x-tree .x-panel-bwrap{
+    position:relative;
+    overflow:hidden;
+}
+
+.x-tree-icon, .x-tree-ec-icon, .x-tree-elbow-line, .x-tree-elbow, .x-tree-elbow-end, .x-tree-elbow-plus, .x-tree-elbow-minus, .x-tree-elbow-end-plus, .x-tree-elbow-end-minus{
+	border: 0 none;
+	height: 18px;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	width: 16px;
+    
+}
+
+.x-tree-node-collapsed .x-tree-node-icon, .x-tree-node-expanded .x-tree-node-icon, .x-tree-node-leaf .x-tree-node-icon{
+	border: 0 none;
+	height: 18px;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	width: 16px;
+	
+    
+}
+
+.ext-ie .x-tree-node-indent img, .ext-ie .x-tree-node-icon, .ext-ie .x-tree-ec-icon {
+    vertical-align: middle !important;
+}
+
+.ext-strict .ext-ie8 .x-tree-node-indent img, .ext-strict .ext-ie8 .x-tree-node-icon, .ext-strict .ext-ie8 .x-tree-ec-icon {
+    vertical-align: top !important;
+}
+
+/* checkboxes */
+
+input.x-tree-node-cb {
+    margin-left:1px;
+    height: 19px;
+	vertical-align: bottom;
+}
+
+.ext-ie input.x-tree-node-cb {
+    margin-left:0;
+    margin-top: 1px;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.ext-strict .ext-ie8 input.x-tree-node-cb{
+    margin: 1px 1px;
+    height: 14px;
+    vertical-align: bottom;
+}
+
+.ext-strict .ext-ie8 input.x-tree-node-cb + a{
+    vertical-align: bottom;
+}
+
+.ext-opera input.x-tree-node-cb {
+    height: 14px;
+    vertical-align: middle;
+}
+
+.x-tree-noicon .x-tree-node-icon{
+	width:0; height:0;
+}
+
+/* No line styles */
+.x-tree-no-lines .x-tree-elbow{
+}
+
+.x-tree-no-lines .x-tree-elbow-end{
+}
+
+.x-tree-no-lines .x-tree-elbow-line{
+}
+
+/* Arrows */
+.x-tree-arrows .x-tree-elbow{
+}
+
+.x-tree-arrows .x-tree-elbow-plus{
+}
+
+.x-tree-arrows .x-tree-elbow-minus{
+}
+
+.x-tree-arrows .x-tree-elbow-end{
+}
+
+.x-tree-arrows .x-tree-elbow-end-plus{
+}
+
+.x-tree-arrows .x-tree-elbow-end-minus{
+}
+
+.x-tree-arrows .x-tree-elbow-line{
+}
+
+.x-tree-arrows .x-tree-ec-over .x-tree-elbow-plus{
+    
+}
+
+.x-tree-arrows .x-tree-ec-over .x-tree-elbow-minus{
+    
+}
+
+.x-tree-arrows .x-tree-ec-over .x-tree-elbow-end-plus{
+    
+}
+
+.x-tree-arrows .x-tree-ec-over .x-tree-elbow-end-minus{
+    
+}
+
+.x-tree-elbow-plus, .x-tree-elbow-minus, .x-tree-elbow-end-plus, .x-tree-elbow-end-minus{
+	cursor:pointer;
+}
+
+.ext-ie ul.x-tree-node-ct{
+    font-size:0;
+    line-height:0;
+    zoom:1;
+}
+
+.x-tree-node{
+	white-space: nowrap;
+}
+
+.x-tree-node-el {
+    line-height:18px;
+    cursor:pointer;
+}
+
+.x-tree-node a, .x-dd-drag-ghost a{
+	text-decoration:none;
+      -kthml-user-focus:normal;
+    -moz-user-focus:normal;
+    -moz-outline: 0 none;
+    outline:0 none;
+}
+
+.x-tree-node a span, .x-dd-drag-ghost a span{
+	text-decoration:none;
+	padding:1px 3px 1px 2px;
+}
+
+.x-tree-node .x-tree-node-disabled .x-tree-node-icon{
+	-moz-opacity: 0.5;
+   opacity:.5;
+   filter: alpha(opacity=50);
+}
+
+.x-tree-node .x-tree-node-inline-icon{
+}
+
+.x-tree-node a:hover, .x-dd-drag-ghost a:hover{
+	text-decoration:none;
+}
+
+.x-tree-node div.x-tree-drag-insert-below{
+ 	 border-bottom:1px dotted;
+}
+
+.x-tree-node div.x-tree-drag-insert-above{
+	 border-top:1px dotted;
+}
+
+.x-tree-dd-underline .x-tree-node div.x-tree-drag-insert-below{
+ 	 border-bottom:0 none;
+}
+
+.x-tree-dd-underline .x-tree-node div.x-tree-drag-insert-above{
+	 border-top:0 none;
+}
+
+.x-tree-dd-underline .x-tree-node div.x-tree-drag-insert-below a{
+ 	 border-bottom:2px solid;
+}
+
+.x-tree-dd-underline .x-tree-node div.x-tree-drag-insert-above a{
+	 border-top:2px solid;
+}
+
+.x-tree-node .x-tree-drag-append a span{
+	 border:1px dotted;
+}
+
+.x-dd-drag-ghost .x-tree-node-indent, .x-dd-drag-ghost .x-tree-ec-icon{
+	display:none !important;
+}
+
+/* Fix for ie rootVisible:false issue */
+.x-tree-root-ct {
+    zoom:1;
+}
+.x-date-picker {
+    border: 1px solid;
+    border-top:0 none;
+	position:relative;
+}
+
+.x-date-picker a {
+    -moz-outline:0 none;
+    outline:0 none;
+}
+
+.x-date-inner, .x-date-inner td, .x-date-inner th{
+    border-collapse:separate;
+}
+
+.x-date-middle,.x-date-left,.x-date-right {
+	overflow:hidden;
+}
+
+.x-date-middle .x-btn-tc,.x-date-middle .x-btn-tl,.x-date-middle .x-btn-tr,
+.x-date-middle .x-btn-mc,.x-date-middle .x-btn-ml,.x-date-middle .x-btn-mr,
+.x-date-middle .x-btn-bc,.x-date-middle .x-btn-bl,.x-date-middle .x-btn-br{
+    vertical-align:middle;
+}
+
+.x-date-middle .x-btn-mc em.x-btn-arrow {
+}
+
+.x-date-right, .x-date-left {
+    width:18px;
+}
+
+.x-date-right{
+    text-align:right;
+}
+
+.x-date-middle {
+    padding-top:2px;
+    padding-bottom:2px;
+    width:130px; /* FF3 */
+}
+
+.x-date-right a, .x-date-left a{
+    display:block;
+    width:16px;
+	height:16px;
+	
+	
+	cursor:pointer;
+    -moz-opacity: 0.6;
+    opacity:.6;
+    filter: alpha(opacity=60);
+}
+
+.x-date-right a:hover, .x-date-left a:hover{
+    -moz-opacity: 1;
+    opacity:1;
+    filter: alpha(opacity=100);
+}
+
+.x-item-disabled .x-date-right a:hover, .x-item-disabled .x-date-left a:hover{
+    -moz-opacity: 0.6;
+    opacity:.6;
+    filter: alpha(opacity=60);
+}
+
+.x-date-right a {
+    margin-right:2px;
+    text-decoration:none !important;
+}
+
+.x-date-left a{
+    margin-left:2px;
+    text-decoration:none !important;
+}
+
+table.x-date-inner {
+    width: 100%;
+    table-layout:fixed;
+}
+
+.ext-webkit table.x-date-inner{
+    /* Fix for webkit browsers */
+    width: 175px;
+}
+
+
+.x-date-inner th {
+    width:25px;
+}
+
+.x-date-inner th {
+    text-align:right !important;
+	border-bottom: 1px solid;
+	cursor:default;
+    padding:0;
+    border-collapse:separate;
+}
+
+.x-date-inner th span {
+    display:block;
+    padding:2px;
+    padding-right:7px;
+}
+
+.x-date-inner td {
+    border: 1px solid;
+	text-align:right;
+    padding:0;
+}
+
+.x-date-inner a {
+    padding:2px 5px;
+    display:block;
+	text-decoration:none;
+    text-align:right;
+    zoom:1;
+}
+
+.x-date-inner .x-date-active{
+	cursor:pointer;
+	color:black;
+}
+
+.x-date-inner .x-date-selected a{
+	border:1px solid;
+    padding:1px 4px;
+}
+
+.x-date-inner .x-date-today a{
+	border: 1px solid;
+    padding:1px 4px;
+}
+
+.x-date-inner .x-date-prevday a,.x-date-inner .x-date-nextday a {
+    text-decoration:none !important;
+}
+
+.x-date-bottom {
+    padding:4px;
+    border-top: 1px solid;
+}
+
+.x-date-inner a:hover, .x-date-inner .x-date-disabled a:hover{
+    text-decoration:none !important;
+}
+
+.x-item-disabled .x-date-inner a:hover{
+}
+
+.x-date-inner .x-date-disabled a {
+	cursor:default;
+}
+
+.x-date-menu .x-menu-item {
+	padding:1px 24px 1px 4px;
+	white-space: nowrap;
+}
+
+.x-date-menu .x-menu-item .x-menu-item-icon {
+    width:10px;
+    height:10px;
+    margin-right:5px;
+    
+}
+
+.x-date-mp {
+	position:absolute;
+	left:0;
+	top:0;
+	display:none;
+}
+
+.x-date-mp td {
+    padding:2px;
+	font:normal 11px arial, helvetica,tahoma,sans-serif;
+}
+
+td.x-date-mp-month,td.x-date-mp-year,td.x-date-mp-ybtn {
+    border: 0 none;
+	text-align:center;
+	vertical-align: middle;
+	width:25%;
+}
+
+.x-date-mp-ok {
+	margin-right:3px;
+}
+
+.x-date-mp-btns button {
+	text-decoration:none;
+	text-align:center;
+	text-decoration:none !important;
+	border:1px solid;
+	padding:1px 3px 1px;
+	cursor:pointer;
+}
+
+.x-date-mp-btns {
+}
+
+.x-date-mp-btns td {
+	border-top: 1px solid;
+    text-align:center;
+}
+
+td.x-date-mp-month a,td.x-date-mp-year a {
+	display:block;
+	padding:2px 4px;
+	text-decoration:none;
+	text-align:center;
+}
+
+td.x-date-mp-month a:hover,td.x-date-mp-year a:hover {
+	text-decoration:none;
+	cursor:pointer;
+}
+
+td.x-date-mp-sel a {
+	padding:1px 3px;
+	border:1px solid;
+}
+
+.x-date-mp-ybtn a {
+    overflow:hidden;
+    width:15px;
+    height:15px;
+    cursor:pointer;
+    display:block;
+    margin:0 auto;
+}
+
+.x-date-mp-ybtn a.x-date-mp-next {
+    
+}
+
+.x-date-mp-ybtn a.x-date-mp-next:hover {
+    
+}
+
+.x-date-mp-ybtn a.x-date-mp-prev {
+    
+}
+
+.x-date-mp-ybtn a.x-date-mp-prev:hover {
+    
+}
+
+.x-date-mp-ybtn {
+   text-align:center;
+}
+
+td.x-date-mp-sep {
+   border-right:1px solid;
+}.x-tip{
+	position: absolute;
+	top: 0;
+    left:0;
+    visibility: hidden;
+	z-index: 20002;
+    border:0 none;
+}
+
+.x-tip .x-tip-close{
+	height: 15px;
+	float:right;
+	width: 15px;
+    margin:0 0 2px 2px;
+    cursor:pointer;
+    display:none;
+}
+
+.x-tip .x-tip-tc {
+	padding-top:3px;
+    overflow:hidden;
+    zoom:1;
+}
+
+.x-tip .x-tip-tl {
+	padding-left:6px;
+    overflow:hidden;
+    zoom:1;
+}
+
+.x-tip .x-tip-tr {
+	padding-right:6px;
+    overflow:hidden;
+    zoom:1;
+}
+
+.x-tip .x-tip-bc {
+	height:3px;
+    overflow:hidden;
+}
+
+.x-tip .x-tip-bl {
+	padding-left:6px;
+    zoom:1;
+}
+
+.x-tip .x-tip-br {
+	padding-right:6px;
+    zoom:1;
+}
+
+.x-tip .x-tip-mc {
+    border:0 none;
+}
+
+.x-tip .x-tip-ml {
+	padding-left:6px;
+    zoom:1;
+}
+
+.x-tip .x-tip-mr {
+	padding-right:6px;
+    zoom:1;
+}
+
+.ext-ie .x-tip .x-tip-header,.ext-ie .x-tip .x-tip-tc {
+    font-size:0;
+    line-height:0;
+}
+
+.ext-border-box .x-tip .x-tip-header, .ext-border-box .x-tip .x-tip-tc{
+    line-height: 1px;
+}
+
+.x-tip .x-tip-header-text {
+    padding:0;
+    margin:0 0 2px 0;
+}
+
+.x-tip .x-tip-body {
+    margin:0 !important;
+    line-height:14px;
+    padding:0;
+}
+
+.x-tip .x-tip-body .loading-indicator {
+    margin:0;
+}
+
+.x-tip-draggable .x-tip-header,.x-tip-draggable .x-tip-header-text {
+    cursor:move;
+}
+
+.x-form-invalid-tip .x-tip-tc {
+    padding-top:6px;
+}
+
+.x-form-invalid-tip .x-tip-bc {
+    height:6px;
+}
+
+.x-form-invalid-tip .x-tip-bl {
+}
+
+.x-form-invalid-tip .x-tip-br {
+}
+
+.x-form-invalid-tip .x-tip-body {
+    padding:2px;
+}
+
+.x-form-invalid-tip .x-tip-body {
+    padding-left:24px;
+}
+
+.x-tip-anchor {
+    position: absolute;
+    width: 9px;
+    height: 10px;
+    overflow:hidden;
+    zoom:1;
+}
+.x-tip-anchor-bottom {
+    
+}
+.x-tip-anchor-right {
+    
+    width: 10px;
+}
+.x-tip-anchor-left {
+    
+    width: 10px;
+}.x-menu {
+	z-index: 15000;
+	zoom: 1;
+}
+
+.x-menu-floating{
+    border: 1px solid;
+}
+
+.x-menu a {
+    text-decoration: none !important;
+}
+
+.ext-ie .x-menu {
+    zoom:1;
+    overflow:hidden;
+}
+
+.x-menu-list{
+    padding: 2px;
+	border:0 none;
+    overflow:hidden;
+    overflow-y: hidden;
+}
+
+.ext-strict .ext-ie .x-menu-list{
+    position: relative;
+}
+
+.x-menu li{
+	line-height:100%;
+}
+
+.x-menu li.x-menu-sep-li{
+	font-size:1px;
+	line-height:1px;
+}
+
+.x-menu-list-item{
+    white-space: nowrap;
+	display:block;
+	padding:1px;
+}
+
+.x-menu-item{
+  }
+
+.x-menu-item-arrow{
+}
+
+.x-menu-sep {
+	display:block;
+	font-size:1px;
+	line-height:1px;
+	margin: 2px 3px;
+	border-bottom:1px solid;
+    overflow:hidden;
+}
+
+.x-menu-focus {
+	position:absolute;
+	left:-1px;
+	top:-1px;
+	width:1px;
+	height:1px;
+    line-height:1px;
+    font-size:1px;
+    -moz-outline:0 none;
+    outline:0 none;
+      overflow:hidden;
+    display:block;
+}
+
+a.x-menu-item {
+    cursor: pointer;
+    display: block;
+    line-height: 16px;
+    outline-color: -moz-use-text-color;
+    outline-style: none;
+    outline-width: 0;
+    padding: 3px 21px 3px 27px;
+    position: relative;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.x-menu-item-active {
+    
+    
+    border-style:solid;
+    border-width: 1px 0;
+    margin:0 1px;
+	padding: 0;
+}
+
+.x-menu-item-active a.x-menu-item {
+    border-style:solid;
+    border-width:0 1px;
+    margin:0 -1px;
+}
+
+.x-menu-item-icon {
+	border: 0 none;
+	height: 16px;
+	padding: 0;
+	vertical-align: top;
+	width: 16px;
+	position: absolute;
+    left: 3px;
+    top: 3px;
+    margin: 0;
+    
+}
+
+.ext-ie .x-menu-item-icon {
+    left: -24px;
+}
+.ext-strict .x-menu-item-icon {
+    left: 3px;
+}
+
+.ext-ie .x-menu-item-icon {
+    vertical-align: middle;
+}
+
+.x-menu-check-item .x-menu-item-icon{
+}
+
+.x-menu-group-item .x-menu-item-icon{
+}
+
+.x-menu-item-checked .x-menu-group-item .x-menu-item-icon{
+}
+
+.x-date-menu .x-menu-list{
+    padding: 0;
+}
+
+.x-menu-date-item{
+	padding:0;
+}
+
+.x-menu .x-color-palette, .x-menu .x-date-picker{
+    margin-left: 26px;
+	margin-right:4px;
+}
+
+.x-menu .x-date-picker{
+    border:1px solid;
+    margin-top:2px;
+    margin-bottom:2px;
+}
+
+.x-menu-plain .x-color-palette, .x-menu-plain .x-date-picker{
+	 margin: 0;
+	 border: 0 none;
+}
+
+.x-date-menu {
+   padding:0 !important;
+}
+
+/*
+ * Ugly mess to remove the white border under the picker
+ */
+.ext-ie .x-date-menu{
+    height: 199px;
+}
+
+.ext-strict .ext-ie .x-date-menu, .ext-border-box .ext-ie8 .x-date-menu{
+    height: 197px;
+}
+
+.ext-strict .ext-ie7 .x-date-menu{
+    height: 195px;
+}
+
+.ext-strict .ext-ie8 .x-date-menu{
+    height: auto;
+}
+
+.x-cycle-menu .x-menu-item-checked {
+    border:1px dotted !important;
+	padding:0;
+}
+
+.x-menu .x-menu-scroller {
+    width: 100%;
+	
+	
+	height:8px;
+    line-height: 8px;
+	cursor:pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.x-menu .x-menu-scroller-active{
+    height: 6px;
+    line-height: 6px;
+}
+
+.x-menu-list-item-indent{
+    padding-left: 27px;
+}/*
+ Creates rounded, raised boxes like on the Ext website - the markup isn't pretty:
+  <div class="x-box-blue">
+        <div class="x-box-tl"><div class="x-box-tr"><div class="x-box-tc"></div></div></div>
+        <div class="x-box-ml"><div class="x-box-mr"><div class="x-box-mc">
+            <h3>YOUR TITLE HERE (optional)</h3>
+            <div>YOUR CONTENT HERE</div>
+        </div></div></div>
+        <div class="x-box-bl"><div class="x-box-br"><div class="x-box-bc"></div></div></div>
+    </div>
+ */
+
+.x-box-tl {
+    zoom:1;
+}
+
+.x-box-tc {
+	height: 8px;
+	overflow: hidden;
+}
+
+.x-box-tr {
+}
+
+.x-box-ml {
+	padding-left: 4px;
+	overflow: hidden;
+    zoom:1;
+}
+
+.x-box-mc {
+	padding: 4px 10px;
+}
+
+.x-box-mc h3 {
+	margin: 0 0 4px 0;
+    zoom:1;
+}
+
+.x-box-mr {
+	padding-right: 4px;
+	overflow: hidden;
+}
+
+.x-box-bl {
+    zoom:1;
+}
+
+.x-box-bc {
+	height: 8px;
+	overflow: hidden;
+}
+
+.x-box-br {
+}
+
+.x-box-tl, .x-box-bl {
+	padding-left: 8px;
+	overflow: hidden;
+}
+
+.x-box-tr, .x-box-br {
+	padding-right: 8px;
+	overflow: hidden;
+}.x-combo-list {
+    border:1px solid;
+    zoom:1;
+    overflow:hidden;
+}
+
+.x-combo-list-inner {
+    overflow:auto;
+    position:relative; /* for calculating scroll offsets */
+    zoom:1;
+    overflow-x:hidden;
+}
+
+.x-combo-list-hd {
+    border-bottom:1px solid;
+    padding:3px;
+}
+
+.x-resizable-pinned .x-combo-list-inner {
+    border-bottom:1px solid;
+}
+
+.x-combo-list-item {
+    padding:2px;
+    border:1px solid;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+.x-combo-list .x-combo-selected{
+	border:1px dotted !important;
+    cursor:pointer;
+}
+
+.x-combo-list .x-toolbar {
+    border-top:1px solid;
+    border-bottom:0 none;
+}.x-panel {
+    border-style: solid;
+    border-width:0;
+}
+
+.x-panel-header {
+    overflow:hidden;
+    zoom:1;
+    padding:5px 3px 4px 5px;
+    border:1px solid;
+    line-height: 15px;
+}
+
+.x-panel-body {
+    border:1px solid;
+    border-top:0 none;
+    overflow:hidden;
+    position: relative; /* added for item scroll positioning */
+}
+
+.x-panel-bbar .x-toolbar, .x-panel-tbar .x-toolbar {
+    border:1px solid;
+    border-top:0 none;
+    overflow:hidden;
+    padding:2px;
+}
+
+.x-panel-tbar-noheader .x-toolbar, .x-panel-mc .x-panel-tbar .x-toolbar {
+    border-top:1px solid;
+    border-bottom: 0 none;
+}
+
+.x-panel-body-noheader, .x-panel-mc .x-panel-body {
+    border-top:1px solid;
+}
+
+.x-panel-header {
+    overflow:hidden;
+    zoom:1;
+}
+
+.x-panel-tl .x-panel-header {
+    padding:5px 0 4px 0;
+    border:0 none;
+}
+
+.x-panel-tl .x-panel-icon, .x-window-tl .x-panel-icon {
+    padding-left:20px !important;
+    
+    
+    zoom:1;
+}
+
+.x-panel-inline-icon {
+    width:16px;
+	height:16px;
+    
+    
+	vertical-align:middle;
+	margin-right:4px;
+	margin-top:-1px;
+	margin-bottom:-1px;
+}
+
+.x-panel-tc {
+	overflow:hidden;
+}
+
+/* fix ie7 strict mode bug */
+.ext-strict .ext-ie7 .x-panel-tc {
+    overflow: visible;
+}
+
+.x-panel-tl {
+	padding-left:6px;
+    zoom:1;
+    border-bottom:1px solid;
+}
+
+.x-panel-tr {
+	zoom:1;
+    padding-right:6px;
+}
+
+.x-panel-bc {
+    zoom:1;
+}
+
+.x-panel-bc .x-panel-footer {
+    zoom:1;
+}
+
+.x-panel-bl {
+	padding-left:6px;
+    zoom:1;
+}
+
+.x-panel-br {
+	padding-right:6px;
+    zoom:1;
+}
+
+.x-panel-mc {
+    border:0 none;
+    padding:0;
+    margin:0;
+    padding-top:6px;
+}
+
+.x-panel-mc .x-panel-body {
+    border: 0 none;
+}
+
+.x-panel-ml {
+	padding-left:6px;
+    zoom:1;
+}
+
+.x-panel-mr {
+	padding-right:6px;
+    zoom:1;
+}
+
+.x-panel-bc .x-panel-footer {
+    padding-bottom:6px;
+}
+
+.x-panel-nofooter .x-panel-bc, .x-panel-nofooter .x-window-bc {
+	height:6px;
+    font-size:0;
+    line-height:0;
+}
+
+.x-panel-bwrap {
+    overflow:hidden;
+    zoom:1;
+    left:0;
+    top:0;
+}
+.x-panel-body {
+    overflow:hidden;
+    zoom:1;
+}
+
+.x-panel-collapsed .x-resizable-handle{
+    display:none;
+}
+
+.ext-gecko .x-panel-animated div {
+    overflow:hidden !important;
+}
+
+/* Plain */
+.x-plain-body {
+    overflow:hidden;
+}
+
+.x-plain-bbar .x-toolbar {
+    overflow:hidden;
+    padding:2px;
+}
+
+.x-plain-tbar .x-toolbar {
+    overflow:hidden;
+    padding:2px;
+}
+
+.x-plain-bwrap {
+    overflow:hidden;
+    zoom:1;
+}
+
+.x-plain {
+    overflow:hidden;
+}
+
+/* Tools */
+.x-tool {
+    overflow:hidden;
+    width:15px;
+    height:15px;
+    float:right;
+    cursor:pointer;
+    margin-left:2px;
+}
+
+/* expand / collapse tools */
+.x-tool-toggle {
+    
+}
+
+.x-tool-toggle-over {
+    
+}
+
+.x-panel-collapsed .x-tool-toggle {
+    
+}
+
+.x-panel-collapsed .x-tool-toggle-over {
+    
+}
+
+
+.x-tool-close {
+    
+}
+
+.x-tool-close-over {
+    
+}
+
+.x-tool-minimize {
+    
+}
+
+.x-tool-minimize-over {
+    
+}
+
+.x-tool-maximize {
+    
+}
+
+.x-tool-maximize-over {
+    
+}
+
+.x-tool-restore {
+    
+}
+
+.x-tool-restore-over {
+    
+}
+
+.x-tool-gear {
+    
+}
+
+.x-tool-gear-over {
+    
+}
+
+.x-tool-pin {
+    
+}
+
+.x-tool-pin-over {
+    
+}
+
+.x-tool-unpin {
+    
+}
+
+.x-tool-unpin-over {
+    
+}
+
+.x-tool-right {
+    
+}
+
+.x-tool-right-over {
+    
+}
+
+.x-tool-left {
+    
+}
+
+.x-tool-left-over {
+    
+}
+
+.x-tool-up {
+    
+}
+
+.x-tool-up-over {
+    
+}
+
+.x-tool-down {
+    
+}
+
+.x-tool-down-over {
+    
+}
+
+.x-tool-refresh {
+    
+}
+
+.x-tool-refresh-over {
+    
+}
+
+.x-tool-minus {
+    
+}
+
+.x-tool-minus-over {
+    
+}
+
+.x-tool-plus {
+    
+}
+
+.x-tool-plus-over {
+    
+}
+
+.x-tool-search {
+    
+}
+
+.x-tool-search-over {
+    
+}
+
+.x-tool-save {
+    
+}
+
+.x-tool-save-over {
+    
+}
+
+.x-tool-help {
+    
+}
+
+.x-tool-help-over {
+    
+}
+
+.x-tool-print {
+    
+}
+
+.x-tool-print-over {
+    
+}
+
+/* Ghosting */
+.x-panel-ghost {
+    z-index:12000;
+    overflow:hidden;
+    position:absolute;
+    left:0;top:0;
+    opacity:.65;
+    -moz-opacity:.65;
+    filter:alpha(opacity=65);
+}
+
+.x-panel-ghost ul {
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    font-size:0;
+    line-height:0;
+    border:1px solid;
+    border-top:0 none;
+    display:block;
+}
+
+.x-panel-ghost * {
+    cursor:move !important;
+}
+
+.x-panel-dd-spacer {
+    border:2px dashed;
+}
+
+/* Buttons */
+.x-panel-btns {
+    padding:5px;
+    overflow:hidden;
+}
+
+.x-panel-btns td.x-toolbar-cell{
+	padding:3px;
+}
+
+.x-panel-btns .x-btn-focus .x-btn-left{
+	
+}
+
+.x-panel-btns .x-btn-focus .x-btn-right{
+	
+}
+
+.x-panel-btns .x-btn-focus .x-btn-center{
+	
+}
+
+.x-panel-btns .x-btn-over .x-btn-left{
+	
+}
+
+.x-panel-btns .x-btn-over .x-btn-right{
+	
+}
+
+.x-panel-btns .x-btn-over .x-btn-center{
+	
+}
+
+.x-panel-btns .x-btn-click .x-btn-center{
+	
+}
+
+.x-panel-btns .x-btn-click  .x-btn-right{
+	
+}
+
+.x-panel-btns .x-btn-click .x-btn-left{
+	
+}
+
+.x-panel-fbar td,.x-panel-fbar span,.x-panel-fbar input,.x-panel-fbar div,.x-panel-fbar select,.x-panel-fbar label{
+	white-space: nowrap;
+}
+
+.x-window .x-window-handle {
+    opacity:0;
+    -moz-opacity:0;
+    filter:alpha(opacity=0);
+}
+
+.x-window-proxy {
+    border:1px solid;
+    z-index:12000;
+    overflow:hidden;
+    position:absolute;
+    left:0;top:0;
+    display:none;
+    opacity:.5;
+    -moz-opacity:.5;
+    filter:alpha(opacity=50);
+}
+
+.x-window-header {
+    overflow:hidden;
+    zoom:1;
+}
+
+.x-window-bwrap {
+    z-index:1;
+    position:relative;
+    zoom:1;
+    left:0;top:0;
+}
+
+.x-window-tl .x-window-header {
+    padding:5px 0 4px 0;
+}
+
+.x-window-header-text {
+    cursor:pointer;
+}
+
+.x-window-tc {
+	overflow:hidden;
+    zoom:1;
+}
+
+.x-window-tl {
+	padding-left:6px;
+    zoom:1;
+    z-index:1;
+    position:relative;
+}
+
+.x-window-tr {
+	padding-right:6px;
+}
+
+.x-window-bc {
+    zoom:1;
+}
+
+.x-window-bc .x-window-footer {
+    padding-bottom:6px;
+    zoom:1;
+    font-size:0;
+    line-height:0;
+}
+
+.x-window-bl {
+	padding-left:6px;
+    zoom:1;
+}
+
+.x-window-br {
+	padding-right:6px;
+    zoom:1;
+}
+
+.x-window-mc {
+    border:1px solid;
+    padding:0;
+    margin:0;
+}
+
+.x-window-ml {
+	padding-left:6px;
+    zoom:1;
+}
+
+.x-window-mr {
+	padding-right:6px;
+    zoom:1;
+}
+
+.x-window-body {
+    overflow:hidden;
+}
+
+.x-window-bwrap {
+    overflow:hidden;
+}
+
+.x-window-maximized .x-window-bl, .x-window-maximized .x-window-br,
+    .x-window-maximized .x-window-ml, .x-window-maximized .x-window-mr,
+    .x-window-maximized .x-window-tl, .x-window-maximized .x-window-tr {
+    padding:0;
+}
+
+.x-window-maximized .x-window-footer {
+    padding-bottom:0;
+}
+
+.x-window-maximized .x-window-tc {
+    padding-left:3px;
+    padding-right:3px;
+}
+
+.x-window-maximized .x-window-mc {
+    border-left:0 none;
+    border-right:0 none;
+}
+
+.x-window-tbar .x-toolbar, .x-window-bbar .x-toolbar {
+    border-left:0 none;
+    border-right: 0 none;
+}
+
+.x-window-bbar .x-toolbar {
+    border-top:1px solid;
+    border-bottom:0 none;
+}
+
+.x-window-draggable, .x-window-draggable .x-window-header-text {
+    cursor:move;
+}
+
+.x-window-maximized .x-window-draggable, .x-window-maximized .x-window-draggable .x-window-header-text {
+    cursor:default;
+}
+
+.x-window-body {
+}
+
+.x-panel-ghost .x-window-tl {
+    border-bottom:1px solid;
+}
+
+.x-panel-collapsed .x-window-tl {
+    border-bottom:1px solid;
+}
+
+.x-window-maximized-ct {
+    overflow:hidden;
+}
+
+.x-window-maximized .x-window-handle {
+    display:none;
+}
+
+.x-window-sizing-ghost ul {
+    border:0 none !important;
+}
+
+.x-dlg-focus{
+	-moz-outline:0 none;
+	outline:0 none;
+	width:0;
+	height:0;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.ext-webkit .x-dlg-focus{
+    width: 1px;
+    height: 1px;
+}
+
+.x-dlg-mask{
+    z-index:10000;
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    -moz-opacity: 0.5;
+    opacity:.50;
+    filter: alpha(opacity=50);
+}
+
+.x-window-plain .x-window-mc {
+    border: 1px solid;
+}
+
+.x-window-plain .x-window-body {
+    border: 1px solid;
+}.x-html-editor-wrap {
+    border:1px solid;
+}
+
+.x-html-editor-tb .x-btn-text {
+}
+
+.x-html-editor-tb .x-edit-bold, .x-menu-item img.x-edit-bold {
+        
+}
+
+.x-html-editor-tb .x-edit-italic, .x-menu-item img.x-edit-italic {
+    
+}
+
+.x-html-editor-tb .x-edit-underline, .x-menu-item img.x-edit-underline {
+    
+}
+
+.x-html-editor-tb .x-edit-forecolor, .x-menu-item img.x-edit-forecolor {
+    
+}
+
+.x-html-editor-tb .x-edit-backcolor, .x-menu-item img.x-edit-backcolor {
+    
+}
+
+.x-html-editor-tb .x-edit-justifyleft, .x-menu-item img.x-edit-justifyleft {
+    
+}
+
+.x-html-editor-tb .x-edit-justifycenter, .x-menu-item img.x-edit-justifycenter {
+    
+}
+
+.x-html-editor-tb .x-edit-justifyright, .x-menu-item img.x-edit-justifyright {
+    
+}
+
+.x-html-editor-tb .x-edit-insertorderedlist, .x-menu-item img.x-edit-insertorderedlist {
+    
+}
+
+.x-html-editor-tb .x-edit-insertunorderedlist, .x-menu-item img.x-edit-insertunorderedlist {
+    
+}
+
+.x-html-editor-tb .x-edit-increasefontsize, .x-menu-item img.x-edit-increasefontsize {
+    
+}
+
+.x-html-editor-tb .x-edit-decreasefontsize, .x-menu-item img.x-edit-decreasefontsize {
+    
+}
+
+.x-html-editor-tb .x-edit-sourceedit, .x-menu-item img.x-edit-sourceedit {
+    
+}
+
+.x-html-editor-tb .x-edit-createlink, .x-menu-item img.x-edit-createlink {
+    
+}
+
+.x-html-editor-tip .x-tip-bd .x-tip-bd-inner {
+    padding:5px;
+    padding-bottom:1px;
+}
+
+.x-html-editor-tb .x-toolbar {
+    position:static !important;
+}.x-panel-noborder .x-panel-body-noborder {
+    border-width:0;
+}
+
+.x-panel-noborder .x-panel-header-noborder {
+    border-width:0 0 1px;
+    border-style:solid;
+}
+
+.x-panel-noborder .x-panel-tbar-noborder .x-toolbar {
+    border-width:0 0 1px;
+    border-style:solid;
+}
+
+.x-panel-noborder .x-panel-bbar-noborder .x-toolbar {
+    border-width:1px 0 0 0;
+    border-style:solid;
+}
+
+.x-window-noborder .x-window-mc {
+    border-width:0;
+}
+
+.x-window-plain .x-window-body-noborder {
+    border-width:0;
+}
+
+.x-tab-panel-noborder .x-tab-panel-body-noborder {
+	border-width:0;
+}
+
+.x-tab-panel-noborder .x-tab-panel-header-noborder {
+    border-width: 0 0 1px 0;
+}
+
+.x-tab-panel-noborder .x-tab-panel-footer-noborder {
+    border-width: 1px 0 0 0;
+}
+
+.x-tab-panel-bbar-noborder .x-toolbar {
+    border-width: 1px 0 0 0;
+    border-style:solid;
+}
+
+.x-tab-panel-tbar-noborder .x-toolbar {
+    border-width:0 0 1px;
+    border-style:solid;
+}.x-border-layout-ct {
+    position: relative;
+}
+
+.x-border-panel {
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+.x-tool-collapse-south {
+    
+}
+
+.x-tool-collapse-south-over {
+    
+}
+
+.x-tool-collapse-north {
+    
+}
+
+.x-tool-collapse-north-over {
+    
+}
+
+.x-tool-collapse-west {
+    
+}
+
+.x-tool-collapse-west-over {
+    
+}
+
+.x-tool-collapse-east {
+    
+}
+
+.x-tool-collapse-east-over {
+    
+}
+
+.x-tool-expand-south {
+    
+}
+
+.x-tool-expand-south-over {
+    
+}
+
+.x-tool-expand-north {
+    
+}
+.x-tool-expand-north-over {
+    
+}
+
+.x-tool-expand-west {
+    
+}
+
+.x-tool-expand-west-over {
+    
+}
+
+.x-tool-expand-east {
+    
+}
+
+.x-tool-expand-east-over {
+    
+}
+
+.x-tool-expand-north, .x-tool-expand-south {
+    float:right;
+    margin:3px;
+}
+
+.x-tool-expand-east, .x-tool-expand-west {
+    float:none;
+    margin:3px auto;
+}
+
+.x-accordion-hd .x-tool-toggle {
+    
+}
+
+.x-accordion-hd .x-tool-toggle-over {
+    
+}
+
+.x-panel-collapsed .x-accordion-hd .x-tool-toggle {
+    
+}
+
+.x-panel-collapsed .x-accordion-hd .x-tool-toggle-over {
+    
+}
+
+.x-accordion-hd {
+	padding-top:4px;
+	padding-bottom:3px;
+	border-top:0 none;
+}
+
+.x-layout-collapsed{
+    position:absolute;
+    left:-10000px;
+    top:-10000px;
+    visibility:hidden;
+    width:20px;
+    height:20px;
+    overflow:hidden;
+	border:1px solid;
+	z-index:20;
+}
+
+.ext-border-box .x-layout-collapsed{
+    width:22px;
+    height:22px;
+}
+
+.x-layout-collapsed-over{
+    cursor:pointer;
+}
+
+.x-layout-collapsed-west .x-layout-collapsed-tools, .x-layout-collapsed-east .x-layout-collapsed-tools{
+	position:absolute;
+    top:0;
+    left:0;
+    width:20px;
+    height:20px;
+}
+
+
+.x-layout-split{
+    position:absolute;
+    height:5px;
+    width:5px;
+    line-height:1px;
+    font-size:1px;
+    z-index:3;
+    background-color:transparent;
+}
+
+.x-layout-split-h{
+    
+}
+
+.x-layout-split-v{
+    
+}
+
+.x-column-layout-ct {
+    overflow:hidden;
+    zoom:1;
+}
+
+.x-column {
+    float:left;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    zoom:1;
+}
+
+.x-column-inner {
+    overflow:hidden;
+    zoom:1;
+}
+
+/* mini mode */
+.x-layout-mini {
+    position:absolute;
+    top:0;
+    left:0;
+    display:block;
+    width:5px;
+    height:35px;
+    cursor:pointer;
+    opacity:.5;
+    -moz-opacity:.5;
+    filter:alpha(opacity=50);
+}
+
+.x-layout-mini-over, .x-layout-collapsed-over .x-layout-mini{
+    opacity:1;
+    -moz-opacity:1;
+    filter:none;
+}
+
+.x-layout-split-west .x-layout-mini {
+    top:48%;
+}
+
+.x-layout-split-east .x-layout-mini {
+    top:48%;
+}
+
+.x-layout-split-north .x-layout-mini {
+    left:48%;
+    height:5px;
+    width:35px;
+}
+
+.x-layout-split-south .x-layout-mini {
+    left:48%;
+    height:5px;
+    width:35px;
+}
+
+.x-layout-cmini-west .x-layout-mini {
+    top:48%;
+}
+
+.x-layout-cmini-east .x-layout-mini {
+    top:48%;
+}
+
+.x-layout-cmini-north .x-layout-mini {
+    left:48%;
+    height:5px;
+    width:35px;
+}
+
+.x-layout-cmini-south .x-layout-mini {
+    left:48%;
+    height:5px;
+    width:35px;
+}
+
+.x-layout-cmini-west, .x-layout-cmini-east {
+    border:0 none;
+    width:5px !important;
+    padding:0;
+}
+
+.x-layout-cmini-north, .x-layout-cmini-south {
+    border:0 none;
+    height:5px !important;
+    padding:0;
+}
+
+.x-viewport, .x-viewport body {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    overflow: hidden;
+    height: 100%;
+}
+
+.x-abs-layout-item {
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+.ext-ie input.x-abs-layout-item, .ext-ie textarea.x-abs-layout-item {
+    margin:0;
+}
+
+.x-box-layout-ct {
+    overflow:hidden;
+    zoom:1;
+}
+
+.x-box-inner {
+    overflow:hidden;
+    zoom:1;
+    position:relative;
+    left:0;
+    top:0;
+}
+
+.x-box-item {
+    position:absolute;
+    left:0;
+    top:0;
+}.x-progress-wrap {
+    border:1px solid;
+    overflow:hidden;
+}
+
+.x-progress-inner {
+    height:18px;
+    position:relative;
+}
+
+.x-progress-bar {
+    height:18px;
+    float:left;
+    width:0;
+    border-top:1px solid;
+    border-bottom:1px solid;
+    border-right:1px solid;
+}
+
+.x-progress-text {
+    padding:1px 5px;
+    overflow:hidden;
+    position:absolute;
+    left:0;
+    text-align:center;
+}
+
+.x-progress-text-back {
+    line-height:16px;
+}
+
+.ext-ie .x-progress-text-back {
+    line-height:15px;
+}
+
+.ext-strict .ext-ie7 .x-progress-text-back{
+    width: 100%;
+}
+.x-list-header{
+	cursor:default;
+    zoom:1;
+    height:22px;
+}
+
+.x-list-header-inner div {
+    display:block;
+    float:left;
+    overflow:hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.x-list-header-inner div em {
+    display:block;
+    border-left:1px solid;
+    padding:4px 4px;
+    overflow:hidden;
+     line-height:14px;
+}
+
+.x-list-body {
+    overflow:auto;
+    overflow-x:hidden;
+    overflow-y:auto;
+    zoom:1;
+    float: left;
+    width: 100%;
+}
+
+.x-list-body dl {
+    zoom:1;
+}
+
+.x-list-body dt {
+    display:block;
+    float:left;
+    overflow:hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor:pointer;
+    zoom:1;
+}
+
+.x-list-body dt em {
+    display:block;
+    padding:3px 4px;
+    overflow:hidden;
+ }
+
+.x-list-resizer {
+    border-left:1px solid;
+    border-right:1px solid;
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+.x-list-header-inner em.sort-asc {
+    border-style:solid;
+    border-width: 0 1px 1px;
+    padding-bottom:3px;
+}
+
+.x-list-header-inner em.sort-desc {
+    border-style:solid;
+    border-width: 0 1px 1px;
+    padding-bottom:3px;
+}
+
+/* Shared styles */
+.x-slider {
+    zoom:1;
+}
+
+.x-slider-inner {
+    position:relative;
+    left:0;
+    top:0;
+    overflow:visible;
+    zoom:1;
+}
+
+.x-slider-focus {
+	position:absolute;
+	left:0;
+	top:0;
+	width:1px;
+	height:1px;
+    line-height:1px;
+    font-size:1px;
+    -moz-outline:0 none;
+    outline:0 none;
+  	display:block;
+	overflow:hidden;  
+}
+
+/* Horizontal styles */
+.x-slider-horz {
+    padding-left:7px;
+}
+
+.x-slider-horz .x-slider-end {
+    padding-right:7px;
+    zoom:1;
+}
+
+.x-slider-horz .x-slider-inner {
+    height:22px;
+}
+
+.x-slider-horz .x-slider-thumb {
+    width:14px;
+    height:15px;
+    position:absolute;
+    left:0;
+    top:3px;
+}
+
+.x-slider-horz .x-slider-thumb-over {
+    
+}
+
+.x-slider-horz .x-slider-thumb-drag {
+    
+}
+
+/* Vertical styles */
+.x-slider-vert {
+    padding-top:7px;
+    width:22px;
+}
+
+.x-slider-vert .x-slider-end {
+    padding-bottom:7px;
+    zoom:1;
+}
+
+.x-slider-vert .x-slider-inner {
+}
+
+.x-slider-vert .x-slider-thumb {
+    width:15px;
+    height:14px;
+    position:absolute;
+    left:3px;
+    bottom:0;
+}
+
+.x-slider-vert .x-slider-thumb-over {
+    
+}
+
+.x-slider-vert .x-slider-thumb-drag {
+    
+}.x-window-dlg .x-window-body {
+    border:0 none !important;
+    padding:5px 10px;
+    overflow:hidden !important;
+}
+
+.x-window-dlg .x-window-mc {
+    border:0 none !important;
+}
+
+.x-window-dlg .ext-mb-input {
+    margin-top:4px;
+    width:95%;
+}
+
+.x-window-dlg .ext-mb-textarea {
+    margin-top:4px;
+}
+
+.x-window-dlg .x-progress-wrap {
+    margin-top:4px;
+}
+
+.ext-ie .x-window-dlg .x-progress-wrap {
+    margin-top:6px;
+}
+
+.x-window-dlg .x-msg-box-wait {
+    display:block;
+    width:300px;
+    padding-left:18px;
+    line-height:18px;
+}
+
+.x-window-dlg .ext-mb-icon {
+    float:left;
+    width:47px;
+    height:32px;
+}
+
+.ext-ie .x-window-dlg .ext-mb-icon {
+    width:44px; /* 3px IE margin issue */
+}
+
+.x-window-dlg .x-dlg-icon .ext-mb-content{
+    zoom: 1; margin-left: 47px;
+}
+
+.x-window-dlg .ext-mb-info, .x-window-dlg .ext-mb-warning, .x-window-dlg .ext-mb-question, .x-window-dlg .ext-mb-error {
+}
+
+.ext-gecko2 .ext-mb-fix-cursor {
+    overflow:auto;
+}
+
+/* ------------ END OF CSS FILE  ext-all-notheme.css */
+/* ------------ START OF CSS FILE  panel-reset.css */
+/*!
+ * Ext JS Library 3.2.1
+ * Copyright(c) 2006-2010 Ext JS, Inc.
+ * licensing@extjs.com
+ * http://www.extjs.com/license
+ */
+/*!
+ * Ext JS Library 3.2.1
+ * Copyright(c) 2006-2010 Ext JS, Inc.
+ * licensing@extjs.com
+ * http://www.extjs.com/license
+ */
+/**
+ * W3C Suggested Default style sheet for HTML 4
+ * http://www.w3.org/TR/CSS21/sample.html
+ *
+ * Resets for Ext.Panel @cfg normal: true
+ */
+.x-panel-reset .x-panel-body html,    .x-reset html,
+.x-panel-reset .x-panel-body address,    .x-reset address,
+.x-panel-reset .x-panel-body blockquote,	.x-reset blockquote,
+.x-panel-reset .x-panel-body body,    .x-reset body,
+.x-panel-reset .x-panel-body dd,    .x-reset dd,
+.x-panel-reset .x-panel-body div,    .x-reset div,
+.x-panel-reset .x-panel-body dl,    .x-reset dl,
+.x-panel-reset .x-panel-body dt,    .x-reset dt,
+.x-panel-reset .x-panel-body fieldset,	.x-reset fieldset,
+.x-panel-reset .x-panel-body form,    .x-reset form,
+.x-panel-reset .x-panel-body frame,    .x-reset frame,
+.x-panel-reset .x-panel-body frameset,	.x-reset frameset,
+.x-panel-reset .x-panel-body h1,    .x-reset h1,
+.x-panel-reset .x-panel-body h2,    .x-reset h2,
+.x-panel-reset .x-panel-body h3,    .x-reset h3,
+.x-panel-reset .x-panel-body h4,    .x-reset h4,
+.x-panel-reset .x-panel-body h5,    .x-reset h5,
+.x-panel-reset .x-panel-body h6,    .x-reset h6,
+.x-panel-reset .x-panel-body noframes,	.x-reset noframes,
+.x-panel-reset .x-panel-body ol,    .x-reset ol,
+.x-panel-reset .x-panel-body p,    	.x-reset p,
+.x-panel-reset .x-panel-body ul,    .x-reset ul,
+.x-panel-reset .x-panel-body center,	.x-reset center,
+.x-panel-reset .x-panel-body dir,    .x-reset dir,
+.x-panel-reset .x-panel-body hr,    .x-reset hr,
+.x-panel-reset .x-panel-body menu,    .x-reset menu,
+.x-panel-reset .x-panel-body pre,    .x-reset pre    { display: block }
+.x-panel-reset .x-panel-body li,    .x-reset li    { display: list-item }
+.x-panel-reset .x-panel-body head,    .x-reset head    { display: none }
+.x-panel-reset .x-panel-body table,    .x-reset table    { display: table }
+.x-panel-reset .x-panel-body tr,    .x-reset tr    { display: table-row }
+.x-panel-reset .x-panel-body thead,    .x-reset thead    { display: table-header-group }
+.x-panel-reset .x-panel-body tbody,    .x-reset tbody    { display: table-row-group }
+.x-panel-reset .x-panel-body tfoot,    .x-reset tfoot    { display: table-footer-group }
+.x-panel-reset .x-panel-body col,    .x-reset col    { display: table-column }
+.x-panel-reset .x-panel-body colgroup,	.x-reset colgroup    { display: table-column-group }
+.x-panel-reset .x-panel-body td,    .x-reset td,
+.x-panel-reset .x-panel-body th,    .x-reset th    { display: table-cell }
+.x-panel-reset .x-panel-body caption,	.x-reset caption    { display: table-caption }
+.x-panel-reset .x-panel-body th,    .x-reset th    { font-weight: bolder; text-align: center }
+.x-panel-reset .x-panel-body caption,	.x-reset caption    { text-align: center }
+.x-panel-reset .x-panel-body body,    .x-reset body    { margin: 8px }
+.x-panel-reset .x-panel-body h1,    .x-reset h1    { font-size: 2em; margin: .67em 0 }
+.x-panel-reset .x-panel-body h2,    .x-reset h2    { font-size: 1.5em; margin: .75em 0 }
+.x-panel-reset .x-panel-body h3,    .x-reset h3    { font-size: 1.17em; margin: .83em 0 }
+.x-panel-reset .x-panel-body h4,    .x-reset h4,
+.x-panel-reset .x-panel-body p,        .x-reset p,
+.x-panel-reset .x-panel-body blockquote,.x-reset blockquote,
+.x-panel-reset .x-panel-body ul,    .x-reset ul,
+.x-panel-reset .x-panel-body fieldset,	.x-reset fieldset,
+.x-panel-reset .x-panel-body form,    .x-reset form,
+.x-panel-reset .x-panel-body ol,    .x-reset ol,
+.x-panel-reset .x-panel-body dl,    .x-reset dl,
+.x-panel-reset .x-panel-body dir,    .x-reset dir,
+.x-panel-reset .x-panel-body menu,    .x-reset menu    { margin: 1.12em 0 }
+.x-panel-reset .x-panel-body h5,    .x-reset h5    { font-size: .83em; margin: 1.5em 0 }
+.x-panel-reset .x-panel-body h6,    .x-reset h6    { font-size: .75em; margin: 1.67em 0 }
+.x-panel-reset .x-panel-body h1,    .x-reset h1,
+.x-panel-reset .x-panel-body h2,    .x-reset h2,
+.x-panel-reset .x-panel-body h3,    .x-reset h3,
+.x-panel-reset .x-panel-body h4,    .x-reset h4,
+.x-panel-reset .x-panel-body h5,    .x-reset h5,
+.x-panel-reset .x-panel-body h6,    .x-reset h6,
+.x-panel-reset .x-panel-body b,    	.x-reset b,
+.x-panel-reset .x-panel-body strong em,	.x-reset strong em,
+.x-panel-reset .x-panel-body strong,	.x-reset strong    { font-weight: bolder }
+.x-panel-reset .x-panel-body blockquote,.x-reset blockquote    { margin-left: 40px; margin-right: 40px }
+.x-panel-reset .x-panel-body i,        .x-reset i,
+.x-panel-reset .x-panel-body cite,    .x-reset cite,
+.x-panel-reset .x-panel-body em,    .x-reset em,
+.x-panel-reset .x-panel-body em strong,	.x-reset em strong,
+.x-panel-reset .x-panel-body var,    .x-reset var,
+.x-panel-reset .x-panel-body address,	.x-reset address    { font-style: italic }
+.x-panel-reset .x-panel-body pre,    .x-reset pre,
+.x-panel-reset .x-panel-body tt,    .x-reset tt,
+.x-panel-reset .x-panel-body code,    .x-reset code,
+.x-panel-reset .x-panel-body kbd,    .x-reset kbd,
+.x-panel-reset .x-panel-body samp,    .x-reset samp    { font-family: monospace }
+.x-panel-reset .x-panel-body pre,    .x-reset pre    { white-space: pre }
+.x-panel-reset .x-panel-body button,	.x-reset button,
+.x-panel-reset .x-panel-body textarea,	.x-reset textarea,
+.x-panel-reset .x-panel-body input,    .x-reset input,
+.x-panel-reset .x-panel-body select,	.x-reset select    { display: inline-block }
+.x-panel-reset .x-panel-body big,    .x-reset big    { font-size: 1.17em }
+.x-panel-reset .x-panel-body small,    .x-reset small,
+.x-panel-reset .x-panel-body sub,    .x-reset sub,
+.x-panel-reset .x-panel-body sup,    .x-reset sup    { font-size: .83em }
+.x-panel-reset .x-panel-body sub,    .x-reset sub    { vertical-align: sub }
+.x-panel-reset .x-panel-body sup,    .x-reset sup    { vertical-align: super }
+.x-panel-reset .x-panel-body table,    .x-reset table    { border-spacing: 2px; }
+.x-panel-reset .x-panel-body thead,    .x-reset thead,
+.x-panel-reset .x-panel-body tbody,    .x-reset tbody,
+.x-panel-reset .x-panel-body tfoot,    .x-reset tfoot    { vertical-align: middle }
+.x-panel-reset .x-panel-body td,    .x-reset td,
+.x-panel-reset .x-panel-body th,    .x-reset th    { vertical-align: inherit }
+.x-panel-reset .x-panel-body s,    	.x-reset s,
+.x-panel-reset .x-panel-body strike,	.x-reset strike,
+.x-panel-reset .x-panel-body del,    .x-reset del    { text-decoration: line-through }
+.x-panel-reset .x-panel-body hr,    .x-reset hr    { border: 1px inset }
+.x-panel-reset .x-panel-body ol,    .x-reset ol,
+.x-panel-reset .x-panel-body ul,    .x-reset ul,
+.x-panel-reset .x-panel-body dir,    .x-reset dir,
+.x-panel-reset .x-panel-body menu,    .x-reset menu,
+.x-panel-reset .x-panel-body dd,    .x-reset dd    { margin-left: 40px }
+.x-panel-reset .x-panel-body ul,    .x-reset ul,    
+.x-panel-reset .x-panel-body menu,    .x-reset menu,    
+.x-panel-reset .x-panel-body dir,    .x-reset dir { list-style-type: disc;}
+.x-panel-reset .x-panel-body ol,    .x-reset ol    { list-style-type: decimal }
+.x-panel-reset .x-panel-body ol ul,    .x-reset ol ul,
+.x-panel-reset .x-panel-body ul ol,    .x-reset ul ol,
+.x-panel-reset .x-panel-body ul ul,    .x-reset ul ul,
+.x-panel-reset .x-panel-body ol ol,    .x-reset ol ol    { margin-top: 0; margin-bottom: 0 }
+.x-panel-reset .x-panel-body u,    	.x-reset u,
+.x-panel-reset .x-panel-body ins,    .x-reset ins    { text-decoration: underline }
+.x-panel-reset .x-panel-body br:before,	.x-reset br:before    { content: "\A" }
+.x-panel-reset .x-panel-body :before,	.x-reset :before,
+.x-panel-reset .x-panel-body :after,	.x-reset :after { white-space: pre-line }
+.x-panel-reset .x-panel-body center,	.x-reset center    { text-align: center }
+.x-panel-reset .x-panel-body :link,    .x-reset :link,
+.x-panel-reset .x-panel-body :visited,	.x-reset :visited { text-decoration: underline }
+.x-panel-reset .x-panel-body :focus,	.x-reset :focus    { outline: invert dotted thin }
+
+
+/* Begin bidirectionality settings (do not change) */
+.x-panel-reset .x-panel-body BDO[DIR="ltr"]  { direction: ltr; unicode-bidi: bidi-override }
+.x-panel-reset .x-panel-body BDO[DIR="rtl"]  { direction: rtl; unicode-bidi: bidi-override }
+
+
+/* ------------ END OF CSS FILE  panel-reset.css */
+/* ------------ START OF CSS FILE  TreeGrid.css */
+.ux-maximgb-tg-panel .x-grid3-scroller
+{
+    /*overflow: scroll !important;*/
+}
+
+div.ux-maximgb-tg-mastercell-wrap
+{
+    border: 0px none !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.ux-maximgb-tg-uiwrap
+{
+	float: left; 
+	position: relative;
+	height: 18px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.ux-maximgb-tg-elbow-empty
+{
+	position: absolute;
+	height: 18px; 
+	width: 16px;
+	overflow: hidden;
+}
+
+.ux-maximgb-tg-elbow-line
+{
+	position: absolute;
+	height: 18px; 
+	width: 16px;
+	overflow: hidden;
+}
+
+.ux-maximgb-tg-elbow
+{
+	position: absolute;
+	height: 18px; 
+	width: 16px;
+	overflow: hidden;
+}
+
+.ux-maximgb-tg-elbow-end
+{
+	position: absolute;
+	height: 18px; 
+	width: 16px;
+	overflow: hidden;
+}
+
+.ux-maximgb-tg-elbow-active
+{
+	cursor: pointer;
+}
+
+.ux-maximgb-tg-elbow-minus
+{
+	position: absolute;
+	height: 18px; 
+	width: 16px;
+	overflow: hidden;
+}
+
+.ux-maximgb-tg-elbow-end-minus
+{
+	position: absolute;
+	height: 18px; 
+	width: 16px;
+	overflow: hidden;
+}
+
+.ux-maximgb-tg-nl-minus
+{
+	position: absolute;
+	height: 18px;
+	width: 16px;
+	overflow: hidden;
+}
+
+.ux-maximgb-tg-elbow-plus
+{
+	position: absolute;
+	height: 18px; 
+	width: 16px;
+	overflow: hidden;
+}
+
+.ux-maximgb-tg-elbow-end-plus
+{
+	position: absolute;
+	height: 18px;
+	width: 16px;
+	overflow: hidden;
+}
+
+.ux-maximgb-tg-nl-plus
+{
+	position: absolute;
+	height: 18px;
+	width: 16px;
+	overflow: hidden;
+}
+
+
+/* ------------ END OF CSS FILE  TreeGrid.css */
+/* ------------ START OF CSS FILE  LockingGridView.css */
+/*!
+ * Ext JS Library 3.2.1
+ * Copyright(c) 2006-2010 Ext JS, Inc.
+ * licensing@extjs.com
+ * http://www.extjs.com/license
+ */
+.x-grid3-locked, .x-grid3-unlocked {
+	overflow: hidden;
+	position: absolute;
+}
+
+.x-grid3-locked {
+	border-right: 1px solid #99BBE8;
+}
+
+.x-grid3-locked .x-grid3-scroller {
+	overflow: hidden;
+}
+
+.x-grid3-locked .x-grid3-row {
+	border-right: 0;
+}
+
+.x-grid3-scroll-spacer {
+	height: 19px;
+}
+
+.x-grid3-unlocked .x-grid3-header-offset {
+	padding-left: 0;
+}
+
+.x-grid3-unlocked .x-grid3-row {
+	border-left: 0;
+}
+
+
+/* ------------ END OF CSS FILE  LockingGridView.css */
+/* ------------ START OF CSS FILE  PanelResizer.css */
+/*!
+ * Ext JS Library 3.2.1
+ * Copyright(c) 2006-2010 Ext JS, Inc.
+ * licensing@extjs.com
+ * http://www.extjs.com/license
+ */
+.x-panel-resize {
+        height:5px;
+        position:relative;
+        left:0;
+        top:2px;
+        cursor:n-resize;
+        cursor:row-resize;
+        /* for IE */
+        font-size:1px;
+        line-height:1px;
+        overflow:hidden;
+}
+
+/* ------------ END OF CSS FILE  PanelResizer.css */
+/* ------------ START OF CSS FILE  Portal.css */
+/*!
+ * Ext JS Library 3.2.1
+ * Copyright(c) 2006-2010 Ext JS, Inc.
+ * licensing@extjs.com
+ * http://www.extjs.com/license
+ */
+.x-portal .x-panel-dd-spacer {
+    margin-bottom:10px;
+}
+
+.x-portlet {
+    margin-bottom:10px;
+}
+
+/* Clean up the look of the portlets */
+.x-portlet .x-panel-ml {
+    padding-left:2px;
+}
+.x-portlet .x-panel-mr {
+    padding-right:2px;
+}
+.x-portlet .x-panel-bl {
+    padding-left:2px;
+}
+
+.x-portlet .x-panel-br {
+    padding-right:2px;
+}
+.x-portlet .x-panel-body {
+}
+.x-portlet .x-panel-mc {
+    padding-top:2px;
+}
+.x-portlet .x-panel-bc .x-panel-footer {
+    padding-bottom:2px;
+}
+.x-portlet .x-panel-nofooter .x-panel-bc {
+    height:2px;
+}
+
+/* ------------ END OF CSS FILE  Portal.css */
+/* ------------ START OF CSS FILE  siteStyles.css */
+/** 
+ * Structural CSS
+ * 
+ * This file should contain structural css ONLY as much as possible. That is:
+ * 
+ *  1. without the css style, the functionality of the feature would be unusable
+ *      * A one-off example of this might be a image for an action. Although it is an image, without it the action
+ *          could not be performed
+ *  2. the style performs layout like margins, floats, etc.
+ *  
+ * Simple examples:
+ * 
+ *  position: absolute;
+ *  width: 25px;
+ *  margin-bottom: 6px;
+ * 
+ * NOTE: You may often create or change the same definitions in multiple files. The purpose of this split is so that
+ * we can support multiple themes in the future--making it easy to customize the skin of the app.
+ * 
+ * Please add theme code (e.g., fonts, colors, images, etc.) to the appropriate theme, located under:
+ * wcCliImages\CoreFoundation\src_web\netmarkets\themes
+ * 
+ */
+
+/** Begin gxt-all.css needed for Ext-GWT clients.*/
+
+.x-portlet {
+    margin-bottom: 10px;
+}
+
+.x-drag-proxy {
+    z-index: 20000;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: move;
+}
+
+.ext-ie .x-btn-icon .x-btn-center .x-btn-text {
+    height: auto;
+}
+
+.x-panel-icon {
+    padding-left: 20px !important;
+}
+
+.x-icon-btn {
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    
+    cursor: pointer;
+}
+
+.x-panel-inline-icon {
+    margin-top: 0;
+}
+
+.x-float-right {
+    float: right;
+}
+
+.x-toolbar .x-float-right {
+    margin-right: 4px;
+}
+
+.x-layout-collapsed .x-panel-header {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.x-layout-collapsed .x-panel-header .x-tool {
+    margin: 0 0 0 -4px;
+    padding: 0px;
+}
+
+.x-panel-toolbar {
+    float: right;
+}
+
+.x-date-days {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.x-date-days td {
+    width: 25px;
+    border: none;
+}
+
+.x-date-days td span {
+    display: block;
+    padding: 2px 7px 2px 2px;
+}
+
+.x-date-picker-footer {
+    width: 100%;
+}
+
+.ext-ie8-compatibility .x-form-text {
+    margin: 0;
+}
+
+.x-date-picker-footer td {
+    text-align: center;
+}
+
+.x-cursor-col-resize {
+    cursor: e-resize;
+    cursor: col-resize;
+}
+
+.x-tab-panel {
+    -moz-outline: none;
+    outline: 0 none;
+}
+
+.x-form-field-wrap .x-form-text {
+    position: relative;
+}
+
+.x-editor .x-form-check-wrap {
+    border: 1px solid;
+    padding: 2px;
+    height: 14px;
+}
+
+.ext-safari .x-form-field-wrap .x-form-trigger, .ext-gecko .x-form-field-wrap .x-form-trigger {
+    right: 0;
+}
+
+.x-form-label-top .x-form-item label {
+    width: auto;
+    float: none;
+    clear: none;
+    display: inline;
+    margin-bottom: 4px;
+    position: static;
+}
+
+.x-form-cb-label {
+    width: auto !important;
+    float: none !important;
+    clear: none !important;
+    display: inline !important;
+    margin-left: 4px;
+}
+
+.ext-gecko .x-form-file {
+    height: inherit !important;
+}
+
+.x-form-check {
+    background: none !important
+}
+
+.x-form-radio {
+    background: none !important
+}
+
+.ext-safari .x-form-text {
+    height: 22px; /* safari always same size */
+    padding: 0 3px; /* remove extra top/bottom padding */
+}
+
+.ext-safari .x-small-editor .x-form-text {
+    height: 20px;
+}
+
+.x-form-group .x-form-check-wrap {
+    float: left;
+    padding-right: 2px;
+}
+
+.x-form-group .x-form-check-wrap .x-form-group-label {
+    float: left;
+}
+
+.x-form-group .x-form-radio-wrap {
+    float: left;
+    padding-right: 2px;
+}
+
+/*
+ * FileUploadField component styles
+ */
+.x-form-file-wrap {
+    height: 22px;
+}
+
+.ext-ie .x-form-file-wrap {
+    height: 20px;
+}
+
+.x-form-file-wrap .x-form-file {
+    position: absolute;
+    right: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity : 0);
+    opacity:
+    0;
+    z-index:
+    2;
+    height:
+    22px;
+    top:
+    0;
+}
+
+.x-form-file-wrap .x-form-file-btn {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    top: 0;
+}
+
+.x-form-file-wrap .x-form-file-text {
+    z-index: 3;
+}
+
+.x-form-invalid-icon {
+    
+}
+
+.x-triggerfield-noedit {
+    cursor: pointer;
+}
+
+.x-grid3 .x-grid3-row-table, .x-grid3 .x-grid3-summary-table {
+    table-layout: fixed;
+}
+
+.x-grid3-header {
+    padding: 0px 0 0 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.x-grid3-header-inner {
+    overflow: hidden;
+    float: none;
+}
+
+.x-grid3-hd-row .x-grid3-hd, .x-grid3-row .x-grid3-hd, .x-grid3-summary-row .x-grid3-hd {
+    -moz-outline: none;
+    -moz-user-focus: normal;
+    outline: 0 none;
+}
+
+.x-grid3-row td.x-grid3-cell, .x-grid3-summary-row td.x-grid3-cell {
+    line-height: 14px;
+    vertical-align: top;
+    padding-left: 1px;
+    padding-right: 1px;
+    -moz-outline: none;
+    outline: 0 none;
+}
+
+.x-grid3-hd-row .x-grid3-hd {
+    line-height: 15px;
+    vertical-align: middle;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.x-grid3-hd-checker {
+    padding-bottom: 0px !important;
+}
+
+.x-grid-group-hd .x-grid-group-div {
+    padding: 4px 4px 4px 17px;
+}
+
+.x-grid-group-collapsed .x-grid-group-hd .x-grid-group-div {
+    
+}
+
+.x-grid3-check-col-disabled {
+    width: 100%;
+    height: 16px;
+    
+    
+}
+
+.x-row-editor-header {
+    height: 2px;
+    overflow: hidden;
+}
+
+.x-row-editor-footer {
+    height: 2px;
+    overflow: hidden;
+}
+
+.ext-ie8 .x-row-editor .x-form-field-wrap .x-form-text, .ext-ie8-compatibility .x-row-editor .x-form-field-wrap .x-form-text {
+    margin: -1px 0;
+}
+
+.ext-ie .x-row-editor-footer {
+    margin-top: -1px;
+}
+
+.x-row-editor-body {
+    overflow: hidden;
+    zoom: 1;
+    padding-top: 2px;
+}
+
+.x-row-editor .x-btns {
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    padding-left: 5px;
+}
+
+.x-row-editor .x-btns .x-plain-bwrap {
+    padding-right: 5px;
+}
+
+.x-row-editor .x-btns .x-plain-body {
+    height: 31px;
+}
+
+.x-row-editor .x-btns .x-table-layout-cell {
+    padding: 3px;
+}
+
+.x-dd-cursor {
+    cursor: default !important;
+}
+
+.x-insert-bar {
+    position: absolute;
+    z-index: 99999;
+}
+
+.x-ftree-item {
+    line-height: 18px;
+}
+
+.x-ftree-joint, .x-ftree-icon {
+    border: 0 none;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    width: 16px;
+    
+    
+}
+
+.x-ftree-arrows .x-ftree-ec-over .x-ftree-joint-plus {
+    
+}
+
+.x-ftree-arrows .x-ftree-ec-over .x-ftree-joint-minus {
+    
+}
+
+.x-ftree2-joint, .x-ftree2-icon {
+    border: 0 none;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    width: 16px;
+    
+    
+}
+
+.x-ftree2-joint div {
+    width: 16px;
+}
+
+.x-ftree2-el-ct {
+    display: none;
+}
+
+.x-ftree2-node {
+    padding-bottom: 1px;
+}
+
+.x-ftree2-text {
+    vertical-align: middle !important;
+    white-space: nowrap !important;
+}
+
+.ext-ie .x-ftree2-text span {
+    padding-left: 3px;
+}
+
+.x-ftree2-check {
+    width: 17px;
+}
+
+.x-ftree2-check div {
+    width: 17px;
+    height: 17px;
+}
+
+.x-ftree2-arrows .x-ftree2-ec-over .x-ftree2-joint-plus {
+    
+}
+
+.x-ftree2-arrows .x-ftree2-ec-over .x-ftree2-joint-minus {
+    
+}
+
+.x-treegrid {
+    -moz-outline: none;
+    -moz-user-focus: none;
+    outline: 0 none;
+}
+
+.x-treegrid .x-treegrid-column .x-grid3-cell-inner {
+    padding: 0px !important;
+}
+
+.x-tree3 {
+    cursor: default;
+    -moz-outline: none;
+    -moz-user-focus: none;
+    outline: 0 none;
+}
+
+.ext-strict .ext-gecko .x-tree3, .ext-strict .ext-webkit .x-tree3 {
+    padding-bottom: 1px;
+}
+
+.x-tree3-node {
+    cursor: default;
+}
+
+.x-tree3-el {
+    white-space: nowrap;
+    height: 21px;
+    position: relative;
+}
+
+.x-tree3-node-text {
+    white-space: nowrap;
+    line-height: 11px;
+    text-decoration: none;
+    padding: 0 0 0 3px;
+    position: relative;
+    top: -4px;
+}
+
+.x-tree3-node-ct {
+    display: none;
+}
+
+.x-tree3-node-text-widget {
+    position: static !important;
+    padding: 0px !important;
+}
+
+.x-date-mmenu .x-menu-item {
+    padding: 1px 24px 1px 4px;
+    white-space: nowrap;
+}
+
+.x-date-mmenu .x-menu-item .x-menu-item-icon {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    
+}
+
+.x-panel-tl .x-panel-header {
+    line-height: 15px;
+}
+
+.x-panel-btns-left .x-buttonbar {
+    clear: none;
+}
+
+.x-panel-fbar td.x-toolbar-cell {
+    padding: 0px;
+}
+
+.x-panel-fbar {
+    display: block;
+    padding: 2px;
+    position: relative;
+    left: 0;
+    top: 0;
+    zoom: 1;
+    overflow: hidden;
+}
+
+.x-panel-fbar .x-toolbar-cell {
+    vertical-align: middle;
+}
+
+.x-panel-fbar td {
+    vertical-align: middle;
+}
+
+.x-box-item {
+    position: absolute !important;
+}
+
+.x-info-tl .x-info-icon, .x-window-tl .x-info-icon {
+    padding-left: 20px !important;
+    
+    
+    zoom: 1;
+}
+
+.x-info-inline-icon {
+    width: 16px;
+    height: 16px;
+    
+    
+    vertical-align: middle;
+    margin-right: 4px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+
+/* fix ie7 strict mode bug */
+.ext-ie7 .x-info-tc {
+    overflow: visible;
+}
+
+.x-info-bc .x-info-footer {
+    padding-bottom: 6px;
+}
+
+.x-info-nofooter .x-info-bc, .x-panel-nofooter .x-info-bc {
+    height: 6px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.x-info-bwrap {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.x-view-item-check {
+    padding: 0px;
+}
+
+.x-status {
+    padding: 0 4px;
+    height: 21px;
+    line-height: 21px !important;
+    cursor: default;
+}
+
+.x-status .x-status-text {
+    padding: 2px;
+    line-height: 21px !important;
+}
+
+.x-status-icon {
+    padding-left: 25px !important;
+}
+
+.x-contrast-test {
+    visibility: hidden;
+    position: relative;
+    left: -1000px;
+    top: -1000px;
+}
+
+.ext-webkit .x-form-check-wrap input:focus {
+    outline: auto !important;
+}
+
+/*SPR Task: 5176080 : After multiple rows are selected using Shift-Select, in a JCA table, unable to select the text(Filename, name) context in row via mouse drag
+  to highlight it from row */
+.x-unselectable-single, .x-unselectable, .x-unselectable * {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.x-repaint {
+    zoom: 1;
+    background-color: transparent;
+    -moz-outline: none;
+    outline: 0 none;
+}
+
+.ext-ie .x-item-disabled {
+    filter: alpha(opacity=60);
+}
+
+.x-tab-strip li .x-tab-image {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+}
+
+.ext-ie8 .x-tab-strip li .x-tab-image, .ext-ie8-compatibility .x-tab-strip li .x-tab-image {
+    top: 4px;
+    left: 6px;
+}
+
+.ext-ie8 .x-tab-strip-top .x-tab-right, .ext-ie8-compatibility .x-tab-strip-top .x-tab-right {
+    top: 1px;
+}
+
+.ext-strict .ext-ie8 .x-tab-strip-top .x-tab-right, .ext-ie8 .x-tab-panel-header-plain .x-tab-strip-top .x-tab-right, .ext-ie8-compatibility .x-tab-panel-header-plain .x-tab-strip-top .x-tab-right {
+    top: 0;
+}
+
+.ext-strict .ext-ie7 .x-panel-body {
+    position: relative !important;
+}
+
+.foo {
+    padding: 1px;
+}
+
+.foo {
+    margin: 4px;
+}
+
+.ext-gecko textarea.x-form-field {
+    padding: 0;
+}
+
+.ext-ie textarea.x-form-field {
+    margin: -1px 0; /* ie bogus margin bug */
+}
+
+.ext-strict .ext-ie8 textarea.x-form-field, .ext-strict .ext-ie8-compatibility textarea.x-form-field {
+    margin: 0;
+}
+
+.ext-webkit .x-form-checkbox:focus {
+    outline: auto !important;
+}
+
+.x-spinner-field .x-form-twin-triggers .x-form-spinner-up, .x-spinner-field .x-form-twin-triggers .x-form-spinner-down {
+    height: 10px;
+    position: absolute;
+}
+
+.ext-strict .ext-safari .x-form-field-wrap .x-form-spinner-up {
+    height: 10px;
+}
+
+.ext-strict .ext-safari .x-form-field-wrap .x-form-spinner-down {
+    height: 12px;
+}
+
+.x-spinner-field .x-form-twin-triggers .x-form-spinner-up {
+    top: 0px;
+}
+
+.x-spinner-field .x-form-twin-triggers .x-form-spinner-down {
+    top: 11px;
+}
+
+.x-spinner-field .x-form-twin-triggers {
+    width: 17px;
+}
+
+.x-spinner-field .x-form-spinner-down {
+    
+}
+
+.x-trigger-wrap-focus .x-form-spinner-up {
+    
+}
+
+.x-trigger-wrap-focus .x-form-spinner-down {
+    
+}
+
+.x-form-field-wrap .x-form-spinner-overup {
+    
+}
+
+.x-form-field-wrap .x-form-spinner-clickup {
+    
+}
+
+.x-trigger-wrap-focus .x-form-spinner-overup {
+    
+}
+
+.x-trigger-wrap-focus .x-form-spinner-clickup {
+    
+}
+
+.x-form-field-wrap .x-form-spinner-overdown {
+    
+}
+
+.x-form-field-wrap .x-form-spinner-clickdown {
+    
+}
+
+.x-trigger-wrap-focus .x-form-spinner-overdown {
+    
+}
+
+.x-trigger-wrap-focus .x-form-spinner-clickdown {
+    
+}
+
+.x-grid-panel {
+    -moz-outline: none;
+    -moz-user-focus: normal;
+    outline: 0 none;
+}
+
+.x-grid3-summary-row {
+    outline: 0 none;
+}
+
+.x-grid3-invalid-cell {
+}
+
+.x-grid3-hd-btn {
+    outline: none;
+}
+
+.x-grid3-group-checker {
+    float: left;
+}
+
+.ext-ie6 .x-grid3 .x-editor .x-form-text, .ext-ie7 .x-grid3 .x-editor .x-form-text {
+    top: -1px;
+}
+
+.ext-ie8-compatibility .x-grid3 .x-editor .x-form-text {
+    top: 0;
+}
+
+.x-grid-panel .x-livegrid-scroller {
+    z-index: 1;
+    position: absolute;
+    right: 0px;
+    width: 18px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.x-grid3-group-checker div {
+    width: 14px;
+    height: 18px;
+    
+    
+    background-color: transparent;
+}
+
+.x-grid-group-hd .x-grid3-group-check {
+}
+
+.x-grid-group-hd .x-grid3-group-uncheck {
+}
+
+.x-grid3-hd-row .x-filtered-column {
+    font-style: italic !important;
+    font-weight: bold !important;
+}
+
+.x-date-picker {
+    -moz-outline: 0 none;
+    outline: 0 none;
+}
+
+.ext-border-box .x-tip .x-tip-header, .ext-border-box .ext-ie .x-tip .x-tip-tc {
+    line-height: 1px;
+}
+
+/*SPR 2039539: wrap long text without spaces in tooltip*/
+/*SPR 5693972: GWT tooltip max width never set. Previous max width: 500px for JCA. 
+               This max width affects both JCA and GWT ToolTips.*/
+.x-tip-body {
+    word-wrap: break-word;
+    max-width: 450px;
+}
+
+.wctip .x-tip-body {
+    word-wrap: normal;
+    white-space: nowrap;
+}
+
+.x-panel-body .breadcrumb {    
+    /* need nowrap to resolve IE bugs: v1 D-15215, SPRs 2083215 & 2087732 */
+    white-space: nowrap;
+}
+
+.breadcrumb {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+.breadcrumb img {
+    vertical-align: text-bottom;
+}
+
+.x-abs-layout-container {
+    position: relative;
+}
+
+.x-border-layout-ct {
+    position: relative;
+}
+
+.x-slider {
+    -moz-outline: none;
+    outline: 0 none;
+}
+
+.x-slider-thumb {
+    line-height: 0px;
+    font-size: 0px;
+    position: absolute;
+}
+
+.x-splitbar-shim {
+    outline: 0 none;
+}
+
+.x-combo-list {
+    position: absolute;
+}
+
+/**
+ * End gxt-all.css needed for Ext-GWT clients.
+ */
+/**
+ * Begin css needed for CAT Ext-GWT clients.
+ */
+/* TABULAR INPUT SEARCH SUPPORT */
+.cat-search-item-message {
+    position: absolute;
+    left: 1px;
+    width: 99%;
+    white-space: normal;
+}
+
+.cat-search-item span {
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cat-search-item-1col {
+    left: 1px;
+    width: 99%;
+}
+
+.cat-search-item-2cols-number {
+    left: 1px;
+    width: 48%;
+}
+
+.cat-search-item-2cols-name {
+    left: 50%;
+    width: 48%;
+}
+
+.cat-search-item-3coslVer-number {
+    left: 1px;
+    width: 43%;
+}
+
+.cat-search-item-3colsVer-name {
+    left: 45%;
+    width: 43%;
+}
+
+.cat-search-item-3colsVer-version {
+    left: 90%;
+    width: 10%;
+}
+
+.cat-search-item-3colsOrg-number {
+    left: 1px;
+    width: 32%;
+}
+
+.cat-search-item-3colsOrg-name {
+    left: 33%;
+    width: 32%;
+}
+
+.cat-search-item-3colsOrg-org {
+    left: 66%;
+    width: 32%;
+}
+
+.cat-search-item-4cols-number {
+    left: 1px;
+    width: 29%;
+}
+
+.cat-search-item-4cols-name {
+    left: 30%;
+    width: 29%;
+}
+
+.cat-search-item-4cols-version {
+    left: 60%;
+    width: 9%;
+}
+
+.cat-search-item-4cols-org {
+    left: 70%;
+    width: 29%;
+}
+
+.cat-disabled-look {
+}
+
+.cat-disabled-look .x-grid3-row-checker {
+    opacity: .5;
+    -moz-opacity: .5;
+    filter: alpha(opacity = 50);
+}
+
+.cat-more-disabled-look {
+    opacity: 0.4;
+    -moz-opacity: 0.4; 
+    filter: alpha(opacity=40); 
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";   
+}
+
+.cat-grid3-row-selected-check-only .x-grid3-row-checker, .x-grid3-hd-checker-on .x-grid3-hd-checker, .x-grid3-row-checked .x-grid3-row-checker {
+    
+}
+
+/**
+ * End css needed for CAT Ext-GWT clients.
+ */
+/**** styles for the Header Navigation area */
+/* Style for the header pane of a horizontal, two-pane content area. */
+#headerPane .x-panel-body {
+    border: none;
+}
+
+#header li {
+    display: inline;
+    list-style: none;
+}
+
+#header #globalMessage div {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/****/
+/**** style for actions that appear in the page header */
+#header .pageHeaderActions {
+    white-space: nowrap;
+    font-size: 0.8em;
+    margin-right: 4px;
+    text-align: right;
+    float: right;
+    width: 90%;
+    max-width: 600px;
+    color: #4E698A;
+}
+
+#header .pageHeaderActions .search {
+    margin-right: 8px;
+}
+
+#header .pageHeaderActions .one, #header .pageHeaderActions .two {
+    font-size: var--regular-text-font-size;
+    margin: 2px 0px;
+    width: auto;
+    min-width: 100px;
+}
+
+#header .pageHeaderActions a {
+    color: #4E698A;
+    margin: 8px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+#header .pageHeaderActions a:hover {
+    text-decoration: underline;
+}
+
+#header .pageHeaderActions a:focus, #header .pageHeaderActions a:active {
+    background-color: #D9E8FB;
+    color: #4E698A;
+}
+
+#header .loading-indicator {
+    float: right;
+    padding-right: 20px;
+    margin-top: 12px
+}
+
+#pageHeaderActions, #license, #globalSearch, #typeChooserTrigger {
+    float: right;
+    height: 40px;
+}
+
+/****/
+#tMenubar {
+    padding: 2px;
+}
+
+#tMenubar a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#tMenubar a:hover, #tMenubar a:focus, #tMenubar a:active {
+    border-top: 1px solid #d6d5c7;
+    border-left: 1px solid #d6d5c7;
+    border-bottom: 2px solid #8c8972;
+    border-right: 2px solid #8c8972;
+}
+
+#footerPanel .footer {
+    margin: 0px;
+    background-color: #4E698A;
+}
+
+/** so the icons in the accordion panel have space between them, and are not stretched */
+#accordion .x-tree-node-icon {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    width: 16px;
+    height: 16px;
+}
+
+/** styles for the list link in accordian panels which have recent items */
+#accordion .listLink .x-tree-node-icon, #accordion .listLink .x-tree-elbow, #accordion .listLink .x-tree-elbow-end {
+    width: 0px;
+}
+
+#accordion .listLink a {
+    margin-left: 6px;
+}
+
+#accordion .listLink a span {
+    text-decoration: underline;
+    color: #0000AA;
+    padding: 1px 0;
+}
+
+/** so icon and status glyph column headers are hidden, but still show up in the columns menu */
+.x-grid3-header .hiddenHeader {
+    display: inline-block;
+    visibility: hidden;
+    width: 1px;
+}
+
+/** so toolbar & titlebar actions show up ok **/
+.frame_outer .x-btn-text, .frame_outer .x-btn-icon {
+    
+    
+}
+
+/** so toolbar actions show up ok **/
+.frame_outer .x-btn-icon .x-btn-small .x-btn-text {
+    width: 20px;
+}
+
+.frame_outer .x-panel-body table {
+    border-spacing: 0;
+}
+
+/** for the table options button **/
+.optionsButton {
+    width: 20px;
+}
+
+.x-grid3-cell-inner, .x-grid3-hd-inner {
+    padding: 3px 1px;
+}
+
+/** CSS for applying wrapping*/
+.x-grid3-hd-inner{
+    white-space: nowrap; 
+}
+
+.x-grid3-cell {
+    white-space: nowrap; 
+}
+
+.x-grid3-cell-wrap{
+    white-space: normal;
+    word-wrap: break-word;
+    
+}
+
+/** styles for the utilities pages */
+.utilities .header {
+    font-weight: bold;
+    padding-left: 0px;
+    padding-top: 1em;
+}
+
+.utilities .title {
+    white-space: nowrap;
+}
+
+/** help button styling */
+button.helpButton {
+}
+
+button.clearacrosspg_disabled {
+}
+
+button.clearacrosspg_enabled {
+}
+
+button.table-level-message {
+}
+
+button.table-level-error-message {
+}
+
+/** table / tree expand-collapse button styling */
+button.expandCollapse_collapsed {
+}
+
+button.expandCollapse_expanded {
+}
+
+.mnemonic {
+    text-decoration: none;    
+}
+
+/* Only shortcuts for buttons and navlinks are working */
+.x-btn .mnemonic {
+    text-decoration: underline;   
+}
+
+/* mnemonics in label for these links prevent the jumping */
+#navlinks.rotate-text a {
+    text-decoration: none;
+}
+
+#navlinks .mnemonic, #navigatorTabPanel .x-tab-strip-wrap .mnemonic {
+    text-decoration: underline;
+}
+
+.ext-ie9 #navlinks .mnemonic{
+    padding-right: 2px;
+}
+
+/**
+ * Styles that affect wizards
+ */
+.wizard-title-text div {
+    color: #15428B;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.wizard-title-text button {
+    width: 15px;
+}
+
+.wizard-step-panel div {
+    padding: 2px;
+}
+
+/* used for multi step wizards */
+.wizContentArea {
+    position: relative;
+    min-height: 10%;
+    overflow: auto;
+    width: 100%;
+}
+
+/* used for single step wizards */
+.wizDialogContentArea {
+    position: relative;
+    min-height: 10%;
+    overflow: auto;
+}
+
+/* used to add extra padding for table row checkbox*/
+.x-grid3-row-checker {
+    padding: 2px;
+}
+
+/* ascending column sort icons */
+.x-grid3-sort-asc1 .x-grid3-sort-icon {
+    /*display: inline;
+    height: 8px;
+    width: 16px;*/
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent; 
+    border-right: 5px solid transparent; 
+    border-bottom: 5px solid #E0E0E0;    
+    background-image: none;
+}
+
+.x-grid3-sort-asc2 .x-grid3-sort-icon {
+    display: inline;
+    height: 8px;
+    width: 16px;
+}
+
+.x-grid3-sort-asc3 .x-grid3-sort-icon {
+    display: inline;
+    height: 8px;
+    width: 18px;
+    margin-left: 5px;
+}
+
+/* descending column sort icons */
+.x-grid3-sort-desc1 .x-grid3-sort-icon {
+    /*display: inline;
+    height: 9px;
+    width: 16px;*/
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent; 
+    border-right: 5px solid transparent; 
+    border-top: 5px solid #E0E0E0;    
+    background-image: none;
+}
+
+.x-grid3-sort-desc2 .x-grid3-sort-icon {
+    display: inline;
+    height: 8px;
+    width: 16px;
+}
+
+.x-grid3-sort-desc3 .x-grid3-sort-icon {
+    display: inline;
+    height: 8px;
+    width: 18px;
+    margin-left: 5px;
+}
+
+/* Header on Info Page and Folder Browser */
+#headerPane .pp {
+    padding: 0 0 0 8px;
+}
+
+/* SPR  2114013, 2128062 - In FireFox and Chrome the 3D thumbnail on the Details tab of a part, the plugin was being reloaded when the user 
+ * went to a different tab and then back to the Details tab.  Overriding "display: none" in ext css.  This is supposed
+ * to be fixed in FF 13 (see https://bugzilla.mozilla.org/show_bug.cgi?id=90268) so we're only going to apply this change to versions of FF 
+ * before version 13 and chrome
+ *******************
+ * SPR 2202027 - In the FireFox after version 13, the similar issue is still reproducible when the Creo View is embedded in an Iframe within the structure 
+ * tab. In addition, Windchill X-24 M20 only supports FireFox 24+, so we remove FireFox 13 condition and make the changes to apply the following style in all FireFox
+ * version.  
+ */
+.ext-gecko .infoPage-tabs .x-tab-panel-body > .x-hide-display,
+.ext-chrome .infoPage-tabs .x-tab-panel-body > .x-hide-display {
+  display: block !important;
+  height: 0 !important;
+  width: 0 !important;
+  visibility: hidden !important;
+}
+
+/** keep same space between top of content area to Actions to tabs
+ *  vertically align info page title area with Details tab */
+.infoPage-title {
+    padding-left: 9px;
+    padding-bottom: 7px;
+}
+
+#miniInfo_centerContentPanel .infoPage-title {
+    padding: 0;
+}
+
+.infoPage .goToLatest {
+    margin-right: 6px;
+    margin-top: 1px;
+    font-weight: bold;
+    background-color: red;
+}
+
+.infoPage .goToLatest a {
+    color: white !important;
+    padding: 2px;
+}
+
+/**
+ * For info page item id line, space between Actions menu and item id
+ */
+.infoPageActionsMenu {
+    margin-right: 6px;
+}
+
+.infoPage .toggle {
+    margin-right: 5px;
+}
+
+/**
+ * For info page item id line, space between icon img and item id
+ */
+#infoPageIdentityDisplayText {
+    margin-left: 4px;
+}
+
+/**
+ * For info page item id line, just for state
+ */
+.infoPage div.state {
+    float: right;
+    font-size: 12px;
+    font-weight: normal;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+/**
+ * For info page item id line, just for help
+ */
+.infoPage .help {
+    float: right;
+    font-size: 12px;
+    font-weight: normal;
+    margin-right: 8px;
+}
+
+.title {
+    font-weight: bold;
+    color: #000000;
+    white-space: nowrap;
+}
+
+/**
+ * style to provide strikethrough
+ */
+.strikethroughText {
+    text-decoration: line-through;
+}
+
+/**
+ * My Tab styles
+ */
+.myTab-link {
+    border-left: 1px solid #40637A !important;
+    color: #40637A;
+    cursor: pointer;
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+.myTab-link:first-child {
+    border-left: medium none !important;
+    padding: 0 4px 0 0;
+}
+
+.myTab-link:hover {
+    text-decoration: underline;
+}
+
+.myTab-link div {
+    display: inline;
+}
+
+.myTab-link-divider-over {
+    border-left: 5px double #40637a !important;
+}
+
+.myTab-link-divider-over:first-child {
+    border-left: 5px double #40637a !important;
+    padding-left: 5px;
+}
+
+.myTab-table-after {
+    border-bottom: 2px dashed #a0a0a0;
+}
+
+.myTab-table-before {
+    border-top: 2px dashed #a0a0a0;
+}
+
+.dragDrop-noDrop {
+    cursor: no-drop !important;
+}
+
+.dragDrop-fade {
+    opacity: 0.4;
+    -moz-opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+/** Quick fix for hiding customize menu on locked tabs */
+.lockedTab .add-item-button {
+    display: none;
+}
+
+/** For the DS table cancel button **/ 
+.cancelButton {
+   margin-right:100%;   
+}
+
+.cancelButtonIcon {
+    width: 20px;
+}
+/** For  Next Previous links on table footer**/ 
+.extLink{
+  color: #03447E;
+  cursor : pointer;
+}
+
+.extLink:hover{
+  text-decoration: underline;
+}
+
+/** When the table grid row is not selectable, don't show the checkbox icon*/
+.nonselectable-record .x-grid3-row-checker {
+}
+/** if grid row is not selectable then don't show the radio botton */
+.nonselectable-record .x-grid3-row-radio {
+    display:none;
+}
+/** so you can actually see the sort arrow on the status glyph columns **/
+.sort-asc-noHeader .x-grid3-sort-icon {
+   display:inline;
+   margin-left:-3px;
+}
+.sort-desc-noHeader .x-grid3-sort-icon {
+   display:inline;
+   margin-left:-3px;
+}
+/****/
+
+.contentloading { 
+}
+
+.inlineHelpBox {
+    border: 1px solid #897a0a; 
+    background-color: #ffffcc; 
+    vertical-align: middle; 
+    font-size: var--regular-text-font-size;
+    margin: 10px 10px 0 10px;
+    padding: 4px;
+}
+
+.inlineHelpBox img {
+    float: left;
+    margin-right: 4px;
+}
+/* Added to hide wizard step content while steps are loading.*/
+#wizard_viewport .ext-el-mask { 
+   opacity:1.0;
+ }
+
+/** the drop down arrow on old style menus, eg, help in the header, actions in table rows may not be needed if this are made EXT menu objects**/
+.arrow {
+
+
+padding-right:16px;
+}
+
+/** the details section at the top of the folder browser, detailsObjName is also  used on other legacy projectlink info pages **/
+.detailObjName {
+    color: #000000;
+    font-weight: bold;
+    font-size: 1em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.fbdetailsbox {
+    padding: 3px;
+    padding-bottom: 5px;
+}
+
+.fbDetailsName {
+    padding-top: 2px;
+                         padding-left:   0px;
+                         padding-bottom: 2px;
+                         width:          75%;
+                        }
+
+.fbDetailsLocation {
+    padding-top: 2px;
+                         padding-left:   3px;
+                         padding-bottom: 2px;
+                         width:          75%;
+                        }
+/** makes the font for labels in label value pairs in old PJL UIs bold **/
+.projectinfolabelfont {color:#000000; font-weight: bold;  font-size: 0.8em;}
+
+/*** styles for property panels */
+.pplabel {
+    text-align: left;
+    vertical-align: top;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+#domainPicker .pplabel {
+    vertical-align: inherit;
+}
+
+.pp .separator .line {
+    height: 1px;
+    border-top: 1px solid #7B7C77;
+    margin: 5px 0 5px 0;
+}
+
+.pp .separator .blank {
+    height: 10px;
+}
+
+/*
+ * Bar that contains "Search Within My Work:" (or is empty on some pages)
+ * Be very careful with changes here because the search bar impacts many pages
+ * This has to be absolute or it damages the div curtain on the folders page
+ */
+ .searchBar {
+     font-size: 0.8em;
+     color: #000000;
+     padding: 3px;
+     text-align: right;
+     position: absolute;
+     right: 20px
+ }
+ 
+ .searchBar A {
+     color: #000000;
+     text-decoration: none;
+ }
+ 
+ .searchBar A:hover {
+     text-decoration: underline;
+ }
+ /****/
+
+/*
+ * All keyboard selected links should have a focus indicator for section 508 compliance.
+ * Links are getting a black background with white text
+ */
+.searchBar A:focus, .searchBar A:active {
+     background-color: #D9E8FB;
+     }
+
+/** styles for hidden header text to make pages more accessible to users of assistive technology (section 508)*/
+SPAN.header, H1.header {
+    position: absolute;
+    left: -999em;
+    width: 0.1em;
+    overflow: hidden;
+}
+
+
+/** styles for wizards **/
+.wizardstepstitlefont {font-size: .9em; text-decoration: none; color: #000000; font-weight: bold; display: inline; padding-right: 2px; vertical-align: top;}
+.wizardstepstitlefont:hover, .wizardstepstitlefont:active, .wizardstepstitlefont:focus {text-decoration: underline}
+.wizardstepstitlefont2 {font-size: .9em; text-decoration: none; color: #000000; font-weight: normal; display: inline; padding-right: 2px; vertical-align: top;}
+.wizardstepstitlefont2:hover, .wizardstepstitlefont2:active, .wizardstepstitlefont2:focus {text-decoration: underline;}
+.wizardStepHeader_hidden {font-size: .9em; color: #000000; vertical-align: top; display: none} /** step titles for the optional hidden steps **/
+/* NOTE that .wizardlabel is no longer supported or styled post-X-20 */
+
+
+/* Styles for the footer */
+.footer {color: #FFFFFF; font-size: .7em; text-decoration: none; margin-top: 10px;}
+.footer {text-align: center; background-color: #40637A; height: 28px; padding-top: 3px; clear: both;}
+.footer A:visited, .footer A:hover, .footer A:active, .footer A:link { color: #FFFFFF;}
+.footer A:focus, .footer A:active { background-color: #000000; }
+/* Styles for the new footer PTC logo  This keeps the logo from aligning center with the rest of the footer.*/
+.footer IMG {float: left; border: none; padding-left: 10px; }
+
+/*  Styles affecting the look of the auditing screens */
+.auditlev1  { margin-left: 2px;  padding: 6px; white-space: nowrap }
+.auditlev2  { margin-left: 30px; padding: 6px; white-space: nowrap }
+.auditlev3  { margin-left: 60px; padding: 0px; white-space: nowrap }
+.audittable { white-space: nowrap; border-style: none; padding: 2px; }
+
+FIELDSET { 
+    margin-top: 10px;
+    padding: 0;
+    border-left: none; 
+    border-right: none; 
+    border-bottom: none;
+    border-top: 1px solid #abaca0;
+}
+
+FIELDSET LEGEND {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: black;
+    padding-right: 10px;
+}
+
+FIELDSET .fieldsetbody {
+    padding: 0.3em 0 0 0;
+}
+
+/*  Styles affecting the look of the calendar popup */
+.caltableborderbg {background: #000000;}
+.calcellbg {background: #CCCCCC;}
+.calcellheadingbg {background: #FFFFFF;}
+.calheadingfont {text-decoration: none; color: #000000; font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-size: .8em;}
+.calfocusDay:link { color: #ff0000; text-decoration: none; font-family: Arial, Helvetica, sans-serif; font-size: .8em;}
+.calfocusDay:link:visited { color: #ff0000; text-decoration: none; font-family: Arial, Helvetica, sans-serif; font-size: .8em;}
+.calfocusDay:link:hover, .calfocusDay:link:focus, .calfocusDay:link:active { color: #ff0000; text-decoration: none; font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-size: .8em;}
+.calweekday:link { color: blue; text-decoration: none; font-family: sans-serif; font-size: .8em;}
+.calweekday:link:visited {color: blue; text-decoration: none; font-family: sans-serif; font-size: .8em;}
+.calweekday:hover, .calweekday:active, .calweekday:focus { color: darkred; font-family: sans-serif; font-size: .8em;}
+.calpastday { color: #000000; text-decoration: none; font-family: sans-serif; font-size: .8em;}
+.calpastdaySel { color: #ff0000; text-decoration: none; font-family: sans-serif; font-size: .8em;}
+
+/**** style for suggest widget - required/defined by/for script.aculo.us. 
+ * Note:- the auto_complete needs a higher z-index, so that the auto suggest results is always on the top.
+ */
+.autoSuggestMessage {
+     font-weight: bold;
+}
+
+div.treeNodeMask { 
+    padding: 35px 5px 5px 25px; 
+    cursor:wait;
+}
+
+ /**** end style for suggest widget - required/defined by/for script.aculo.us*/
+
+/* mask panel with a message */ 
+.panel-mask div{
+    padding:5px 10px 5px 25px;
+    line-height:16px;
+} 
+ 
+/* for message dialogs that have radio groups so additional styles to produce the list effect. */
+.message-radiogroup-container {
+    padding: 5px;
+    border-bottom-style:solid; 
+    border-width:thin;
+    border-color: #D0D0D0;
+}
+
+/* Radio buttons are suppose to allow room before label per UX on 4/7/2010 */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.requiredfield {color: #000000; margin-right: 2px;}
+.requiredfieldfont {color: #000000;}
+.requiredfieldDisplay {display:inline; text-align:left; float:left; padding-top:8px;}
+
+/* styles for Attribute panel */
+.attributePanel-group-panel .attributePanel-label {
+    padding-bottom:0px;
+    font-weight: bold;
+    vertical-align: top;
+}
+.attributePanel-fieldset-title {
+    font-size: 1.2em;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    color: #000000;
+}
+.attributePanel-group-panel .attributePanel-asterisk {
+    padding-right:0px;
+    font-weight: bold;
+    width: 4px;
+    vertical-align: top;
+}
+.attributePanel-value {
+    vertical-align: top;
+    max-width: none;
+    word-break: break-all;
+}
+.attributePanel-group-panel {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.x-reset .attributePanel-value p{
+    margin-top: 0px;
+}
+.attributePanel-group-panel td {
+    padding: 0 5px 5px 0;
+}
+
+/* When there is a multi values attribute it is possible to display it's value in a table
+Then we have a table within a table cell and this bottom style gets applied twice so it 
+looks like there's a black row under the multivalued attribute. */
+ .cell_long_text_width {border-spacing: 0px !Important;}
+ .cell_long_text {padding-bottom: 0px !Important;}
+
+.attribute-apanel {
+    padding: 0px 10px 5px 10px;
+}
+
+/* Colspan styles */
+.attribute-apanel .fullWidth input[type = 'text'], 
+.attribute-apanel .fullWidth textarea {
+    width: 100%;
+}
+
+.attributePanel-group-panel .UrlComponent td {
+    padding: 0;
+    white-space: nowrap;
+}
+
+.attributePanel-group-panel .UrlComponent .labelUI {
+    padding-left: 5px;
+}
+
+.attribute-apanel .fullWidth .UrlComponent input[type ='text'],
+.attribute-apanel .fullWidth input[type ='text'].DateInputComponent,
+.attribute-apanel .fullWidth .NumericInputComponent input[type = 'text'] {
+    width: auto;
+    margin-top: 0px;
+}
+
+.attribute-apanel .MultiValuedInputComponent.StringInputComponent,
+.attribute-apanel .MultiValuedInputComponent.UrlInputComponent,
+.attribute-apanel .MultiValuedInputComponent.NumericInputComponent{
+    clear: both;
+    float: left;
+    padding-right: 35px;
+    min-height: 24px;
+}
+
+.attribute-apanel .MultiValuedInputComponent.StringInputComponent input[type="text"], 
+.attribute-apanel .MultiValuedInputComponent.StringInputComponent textarea,
+.attribute-apanel .MultiValuedInputComponent.UrlInputComponent .UrlComponent {
+    margin: 0px;
+    float: left;
+}
+
+.attribute-apanel .MultiValuedInputComponent {
+    white-space: nowrap;
+}
+
+.attribute-apanel .fullWidth .MultiValuedInputComponent.StringInputComponent {
+    float: none;
+}
+
+.attribute-apanel .MultiValuedInputComponent.StringInputComponent button,
+.attribute-apanel .MultiValuedInputComponent.UrlInputComponent button {
+    float: right;
+    margin-right: -35px;
+    margin-top: 0px;
+}
+
+.attribute-apanel .fullWidth .MultiValuedInputComponent.StringInputComponent input[type="text"], 
+.attribute-apanel .fullWidth .MultiValuedInputComponent.StringInputComponent textarea {
+    width: 99%;
+}
+
+.attribute-apanel .MultiValuedInputComponent.StringInputComponent + .MultiValuedInputComponent.StringInputComponent {
+    margin-top: 5px;
+}
+
+.simpleAttributePanel .x-fieldset {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+.simpleAttributePanel .x-tool-toggle {
+    display: none;
+}
+.simpleAttributePanel .attributePanel-asterisk {
+    padding: 0px;
+    margin: 0px;
+    width: 0px;
+}
+.simpleAttributePanel .attributePanel-label {
+    padding-left: 0px;
+}
+/* override overflow for fieldset Integrity Item #4456352 */
+.x-fieldset {
+    overflow:visible !important;
+}
+.x-fieldset-body {
+    width: auto !important;
+}
+
+/* end attribute panel styles */
+
+/*Title bar mask styles*/
+div.titleBarMask {
+     left: 0 !important;
+     top: -10px !important;
+     position: relative;
+     padding: 5px 30px;
+     border: 0px none;
+     z-index: 20;
+}
+div.titleBarkMaskMsg {
+     background-color: transparent;
+     border: 0 none;
+     padding: 7px 2px;
+} 
+
+/*Find in table and tree mask*/
+div.findInTableMask, div.findInTreeMask {
+     left: 0 !important;
+     top: -10px !important;
+     position: relative;
+     padding: 8px 30px;
+     border: 0px none;
+     z-index: 10000;
+}
+
+/* style used to hide gui components (e.g. TypePickerTag hides the type combo box and just displays text when there is a single type) */
+.hidden, .x-reset .hidden, .x-panel-reset .hidden {display:none;}
+
+/* begin PTC.jca.lwcCombo styles */
+.lwc-combobox-icon-inherited {
+}
+
+.lwc-combobox-icon-default {
+}
+
+.lwc-combobox-icon-blank {
+}
+
+.lwc-combobox-icon {
+   
+   
+   width: 18px;
+   height: 14px;
+}
+
+.lwc-combobox-input {
+   padding-left: 25px;
+}
+
+.x-form-field-wrap .lwc-combobox-icon {
+   top: 3px;
+   left: 5px;
+}
+
+.lwc-combobox-item {
+   
+   
+   padding-left: 24px;
+}
+/* end PTC.jca.lwcCombo styles */
+
+/** styles for drag and drop of tabs **/
+.x-dock-highlight {
+    border: 1px dashed #99BBE8;
+    opacity:0.45;
+    FILTER: alpha(opacity=45);
+    position: absolute;
+}
+.x-dock-tab-drop-highlight {
+    position: absolute;
+    z-index: 9999;
+    top:0px;
+}
+/** end of drag and drop styles **/
+
+/* style for the error icon for the Rename tab dialog */
+.renameTab-error {
+    
+}
+
+.ele-mouse-over{
+ background-color: lightblue;
+}
+
+.stepIcon-active{
+   
+   
+   text-align: center;
+   padding: 3px;
+}
+
+.stepIcon-visited{
+  
+  
+  text-align: center;
+  padding: 3px;
+}
+
+.stepIcon-nonVisited{
+  
+  
+  text-align: center;
+  padding: 3px;
+}
+
+.stepHeader{
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.stepHeader .x-panel-bwrap{
+  position: relative;
+  overflow: visible; 
+}
+
+/** gxt-all.css defines no padding, we need padding for the buttons in the footer panel **/
+#footerPanel .x-panel-fbar td.x-toolbar-cell {
+    padding: 3px;   
+}
+
+/** to clear the  floats**/
+.clear_float{
+  clear: both;
+}
+
+
+.stepHeader .x-panel-body {
+background-color: transparent;
+position: relative;
+overflow: visible;
+
+}
+
+
+.stepPanel {
+position: relative;
+white-space: nowrap;
+width: 100%;
+overflow: hidden;
+padding: 2px 10px;
+}
+
+.stepHeader > .stepPanel {
+  width: auto;
+}
+
+.stepHeader > .stepTabPanel {
+  width: auto;
+}
+
+.stepHeader a:hover{
+ text-decoration:none; 
+ }
+
+ul.header-strip li {
+  float:left;
+  
+  
+  text-decoration:none;
+  padding: 0 6px; 
+}
+
+ul.header-strip li.active {
+  cursor: pointer;
+  font-weight:bold;
+}
+
+ul.header-strip li.enabled {
+  cursor: pointer;
+}
+
+ul.header-strip li.first {
+  
+}
+
+ul.header-strip li.last {
+  
+}
+
+ul.header-strip li.single {
+}
+
+.x-header-strip-wrap {
+position:relative;
+margin-left:0;
+margin-right:0;
+overflow:visible;
+padding-top:0;
+}
+
+ul.header-strip {
+display:block;
+width:5000px;
+}
+
+.sequenceDropDown{
+    width:75px;
+}
+
+/** Spinner Field */
+
+.x-form-field-wrap .x-form-spinner-trigger {
+} 
+
+.x-form-field-wrap .x-form-spinner-overup{
+    
+}
+.x-form-field-wrap .x-form-spinner-clickup{
+    
+}
+.x-form-field-wrap .x-form-spinner-overdown{
+    
+}
+.x-form-field-wrap .x-form-spinner-clickdown{
+    
+}
+
+.x-trigger-wrap-focus .x-form-spinner-trigger{
+    
+}
+.x-trigger-wrap-focus .x-form-spinner-overup{
+    
+}
+.x-trigger-wrap-focus .x-form-spinner-clickup{
+    
+}
+.x-trigger-wrap-focus .x-form-spinner-overdown{
+    
+}
+.x-trigger-wrap-focus .x-form-spinner-clickdown{
+    
+}
+
+.x-form-field-wrap .x-form-spinner-splitter {
+    line-height:1px;
+    font-size:1px;
+    position:absolute;
+    cursor: n-resize;
+}
+.x-trigger-wrap-focus .x-form-spinner-splitter{
+    
+}
+
+.tab-add {
+    position:relative;
+    left:5px;
+}
+
+#contentArea {
+    background-color:transparent;
+    padding: 0px 10px;
+    overflow:auto;
+}
+
+#footerPanel .x-panel-fbar {
+    padding: 2px 0px 2px 8px;
+}
+
+#footerPanel .x-panel-btns {
+    padding: 5px 0px;
+}
+
+#wiz_step_contents {
+    width: 100%;
+}
+
+.wizardPanel-body {
+    overflow: auto;
+}
+
+ul.x-tab-strip-top {
+    padding-left:7px;
+}
+
+.x-tab-strip-closable span.x-tab-strip-text {
+    padding:4px 4px 4px 0;
+}
+
+span.navigator-tab-strip-text {
+    color: #333333 !important;
+}
+
+/* rotate a div (containing only text) 270 degrees clockwise in browsers
+ * which support that (webkit and Firefox).
+ * In Internet Explorer, writing mode only provides 90 degrees clockwise,
+ * so it will rotate differently.
+ */
+
+.ext-ie8 .rotate-text {
+   /*rotate in IE 9+ */
+   -ms-transform-origin: 0% 100%;
+   -ms-transform: rotate(90deg);
+}
+
+.rotate-text {
+    transform: rotate(90deg);
+    /*needed for creo/mozilla */
+    -moz-transform: rotate(90deg);
+    /* Still needed for Safari and creo/chrome */
+    -webkit-transform: rotate(90deg);
+    position: absolute;
+    overflow: visible;
+    white-space: nowrap;
+}
+
+.ext-ie8Only .rotate-text, .ie-docMode8 .rotate-text{
+    /* rotate in IE 8*/
+    writing-mode: tb-rl;
+}
+
+/* hide broken rotated text in old versions of gecko */
+.ext-gecko2 .rotate-text {
+    display:none;
+}
+
+.navigator-tab {
+    position: relative;
+    
+}
+
+.navigatorPanel-iframe {
+    height: 100%;
+    width: 101%;
+    position:absolute;
+    z-index:1;
+    top: 0px;
+    border:none;
+}
+
+.navigator-tab-text {
+    left: -5px;
+}
+.x-tab-strip .navigator-tab-text .x-tab-strip-inner span.x-tab-strip-text {
+    border-left: 1px solid;
+    padding : 0px 10px;
+}
+
+.x-tab-strip .navigator-tab-text span.x-tab-strip-inner {
+    padding: 5px 0px;
+}
+
+#navigatorPanel .x-tab-strip .x-tab-with-icon.navigator-tab .x-tab-strip-inner span.x-tab-strip-text {
+    margin: 0px;
+    padding: 3px;
+    width: 32px;
+    height: 32px;
+    
+}
+
+#navigatorPanel .x-tab-strip .x-tab-with-icon.navigator-tab:first-child .x-tab-strip-inner span.x-tab-strip-text {
+    border-right: 1px solid;
+    margin-right: 6px;
+    width: 40px;
+    
+}
+
+ .x-tab-strip .navigator-tab em.x-tab-left {
+    padding: 6px 0px;
+}
+
+.x-tab-strip .navigator-tab a.x-tab-right,
+.x-tab-strip li.navigator-tab {
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+#navigatorPanel .x-tab-strip .x-tab-with-icon.navigator-tab.x-tab-strip-active table.x-btn {
+    left: -3px;
+    top: -3px;
+    position: relative;
+}
+ 
+/**
+ * Don't let gxt-all.css override the position attribute for grid column headers in IE,
+ * because it will cause column menus to only be available on the right-most column.
+ */
+.ext-ie .x-grid3-hd-inner {
+  position: relative !important;
+}
+
+.wizardEmbeddedHelp {
+    padding: 0px 16px 2px;
+}
+
+/* This makes the search image picker display on the same line as the text box field.
+ * Ext is creating a DIV around the textbox when rendering the auto suggest. 
+ */
+.autoSuggestField-wrap, .x-reset .autoSuggestField-wrap {
+    display:inline;
+}
+
+/* This is used for the location picker - can be tested in a new doc and save as variant spec wizards 
+ * location-picker has no label for certain folder.id OIRs - if no label then should be no margin-left */
+label + .location-picker {
+    margin-left: 5px;
+}
+
+/*  for advanced search in the navigator */
+#typePickerItems div {
+    float:left;
+}
+
+
+/*  This is to hide the icon space provided in menus by default.
+ * 
+ */
+.x-menu-no-icon {
+}
+.x-menu-no-icon a.x-menu-item {
+    padding-left: 10px;
+}
+.x-menu-no-icon .x-menu-item-icon {
+    display: none;
+}
+
+/* The icon displayed in confirmation of delete tab of info page */
+.deleteTab-confirm-icon {
+    margin:10px;
+}
+
+/* Used in DSB and Dsv */
+.dsbStatusPanel .x-grid3-cell-inner {
+    padding: 0;
+}
+
+div.strikethroughRow {
+}
+
+/* For SPR 2220763. Issue is strikethrough backgrond image is not getting applied.*/
+#table__MoveEditTable_TABLE .x-grid3-row {
+   
+   
+}
+
+/* For the ladybug icon on the jca debug tab of an infopage */
+.tab-jcaDebug {
+    padding: 2px;
+}
+
+/* fixes SPR 1995207: checkbox disappears in IE - http://www.satzansatz.de/cssd/rpfloat.html */
+.x-form-element {
+    position:static;    
+}
+
+/* tree images */
+.ux-maximgb-tg-elbow-line
+{
+}
+
+.ux-maximgb-tg-elbow
+{
+}
+
+.ux-maximgb-tg-elbow-end
+{
+}
+
+.ux-maximgb-tg-elbow-minus
+{
+}
+
+.ux-maximgb-tg-elbow-end-minus
+{
+}
+
+.ux-maximgb-tg-nl-minus
+{
+}
+
+.ux-maximgb-tg-elbow-plus
+{
+}
+
+.ux-maximgb-tg-elbow-end-plus
+{
+}
+
+.ux-maximgb-tg-nl-plus
+{
+}
+
+/* panel resizer */
+
+.x-panel-resize {
+}
+
+/* ext-all-notheme */
+
+.x-layout-split-h, .x-layout-split-v, .x-drag-overlay {
+}
+/* make the + and - push buttons the same size*/
+.plus_minus {
+  width: 30px;
+}
+
+#psbproductStructureGWT {
+    height: 100%;
+}
+
+#cisbconfigInstanceStructureGWT {
+    height: 100%;
+}
+
+#parparStructureGWT {
+    height: 100%;
+}
+
+#docsbdocStructureGWT {
+    height: 100%;
+}
+
+#carcarStructure {
+    height: 100%;
+}
+
+#msrmodelStructureGWT {
+    height: 100%;
+}
+
+#pubstpubstructStructureGWT {
+    height: 100%;
+}
+
+#ruless1000DPubstructStructureGWT {
+    height: 100%;
+}
+
+#ataPubStructataPubstructStructureGWT {
+    height: 100%
+}
+
+#partlistpartsEditorGWT {
+    height: 100%;
+}
+
+/* common carambola styles */
+#example-main-panel td {
+    padding: 5px;
+}
+
+#example-main-panel .x-panel-tl .x-panel-header {
+    color: black;
+}
+/* end common carambola styles */
+
+/* styles for lifeCycleStateDiagram */
+.lifeCycleDiagramVerticalConnector {
+}
+
+.lifeCycleDiagramVerticalConnectorSelected {
+}
+
+.lifeCycleDiagramHorizontalIcon {
+    width: 10%;
+}
+
+.lifeCycleDiagramHorizontalIconSelected {
+    width: 10%;
+}
+
+.lifeCycleDiagramHorizontalIconSelectedNoBar {
+    width: 10%;
+}
+
+.lifeCycleDiagramText {
+    margin: 0px 0px 0px 5px;
+    white-space: nowrap;
+}
+
+.lifeCycleDiagramSubRecordTitleText {
+    margin: 0px 10px 0px 5px;
+    white-space: nowrap;
+}
+
+.lifeCycleDiagramSubRecordTitleTextSelected {
+    margin: 0px 10px 0px 5px;
+    white-space: nowrap;
+}
+
+.lifeCycleDiagramSubRecordText {
+    margin: 0px 10px 0px 0px;
+    white-space: nowrap;
+}
+
+.lifeCycleDiagramSubRecordTextSelected {
+    margin: 0px 10px 0px 0px;
+    white-space: nowrap;
+}
+
+/**
+ * Begin Customization Pages
+ */
+.componentCatalog {
+    padding-right: 10px;
+}
+
+.componentCatalog h1 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #636363;
+}
+
+.componentCatalog h2 {
+    border-bottom: 1px solid #DDDDDD;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #636363;
+}
+
+.componentCatalog table {
+    margin-bottom:25px;
+    margin-left: 12px;
+}
+
+.componentCatalog pre {
+    margin-bottom:25px;
+}
+
+.componentCatalog img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    width: 350px;
+}
+
+.componentCatalog p {
+    padding-bottom:10px;
+}
+
+.componentCatalog li {
+    list-style: disc inside none;
+}
+
+.componentCatalog #content {
+    clear: both;
+}
+
+.componentCatalog #parameters table {
+    text-align: left;
+    color: #404040;
+    background-color: #fafafa;
+    border: 1px #d79900 solid;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+.componentCatalog #parameters table th {
+    padding: 10px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 14px;
+    background-color: #b3b3b3;
+}
+
+.componentCatalog #parameters td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+.componentCatalog #parameters table .propertyName {
+    font-weight: bold;
+    background-color: #d3d3d3;
+}
+
+.componentCatalog .pickerImg {
+    width: 375px;
+    border:1px dashed #999999;
+}
+
+.componentCatalog .listTable td {
+    padding-right:5px;
+}
+
+.componentCatalog .title {
+    padding-right:10px;
+    font-weight:bold;
+    color: #636363;
+    padding-bottom:6px;
+}
+
+/* Needed, otherwise the .linkfont class will make this not bold. */
+.componentCatalog .title .linkfont {
+    font-weight:bold;
+}
+
+.componentCatalog td {
+  vertical-align: top;
+}
+
+.customizationPage td {
+  vertical-align: top;
+}
+
+.customizationPage h1 {
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 4px;
+    margin-right: 10px;
+    color: #636363;
+}
+
+.customizationPage h2 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #636363;
+}
+
+.customizationPage p {
+    padding-bottom:5px;
+    padding-left: 12px;
+}
+
+.customizationPage table {
+    margin-bottom:25px;
+    margin-left: 12px;
+}
+
+.customizationPage tr {
+    margin-bottom:4px;
+}
+
+.customizationPage .title {
+    padding-right:10px;
+    font-weight:bold;
+    color: #636363;
+    padding-bottom:6px;
+}
+
+/* Needed, otherwise the .linkfont class will make this not bold. */
+.customizationPage .title .linkfont {
+    font-weight:bold;
+}
+
+.componentCatalog #catalogTable {
+    margin-left: 0px;
+}
+
+.componentCatalog #catalogTable td {
+    padding: 10px;
+    vertical-align: top;
+    width:50%;
+}
+
+.componentCatalog #catalogTable td:hover {
+    background-color: #FEF1DE;
+    cursor: pointer;
+}
+
+.componentCatalog #catalogTable h2 {
+    margin-top:0px;
+    color: #636363;
+}
+
+.aboutThisExample {
+    font-weight:bold;
+    font-size:14px;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    height: 0px;
+}
+
+.suggestBoxExample {
+    padding: 5px 0;
+}
+
+.toc-public-icon {
+    float: right;
+    margin-right: 10px;
+}
+
+.lockedTab .toc-status {
+    display: none;
+}
+
+/**
+ * End Customization Pages
+ */
+
+
+/** BEGIN JSDoc */
+#jsDocHeader {
+    padding: 0px 10px;
+}
+
+#jsDocHeader h1 {
+    font-size: 16px;
+    color: #636363;
+    font-weight: bold;
+}
+
+#jsDocHeader p {
+    float: right;
+}
+
+#jsDocHeader #changesLink {
+    clear: both;
+}
+
+#jsDocCenter {
+    padding-right: 10px;
+}
+
+#jsDocCenter h1 {
+    font-size: 14px;
+    color: #636363;
+    font-weight: bold;
+}
+
+#jsDocCenter hr {
+    border: none 0;
+    border-top: 1px solid #9ccf7b;
+    height: 1px;
+}
+
+#jsDocCenter pre.code {
+    display: block;
+    padding: 8px;
+    border: 1px dashed #ccc;
+}
+
+#jsDocCenter caption, div.sectionTitle {
+    background-color: #9ccf7b;
+    color: black;
+    font-size: 130%;
+    text-align: left;
+    padding: 2px 6px 2px 6px;
+    border: 1px #9ccf7b solid;
+}
+
+#jsDocCenter div.sectionTitle {
+    margin-bottom: 8px;
+}
+
+#jsDocCenter .summaryTable thead {
+    display: none;
+}
+
+#jsDocCenter .summaryTable td {
+    vertical-align: top;
+    padding: 4px;
+    border-bottom: 1px #9ccf7b solid;
+    border-right: 1px #9ccf7b solid;
+}
+
+#jsDocCenter .summaryTable td.attributes {
+    border-left: 1px #9ccf7b solid;
+    width: 140px;
+    text-align: right;
+}
+
+#jsDocCenter td.attributes, .fixedFont {
+    line-height: 15px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 13px;
+}
+
+#jsDocCenter .summaryTable td.nameDescription {
+    text-align: left;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+#jsDocCenter .summaryTable td.nameDescription, .description {
+    padding: 4px;
+}
+
+#jsDocCenter .summaryTable {
+    margin-bottom: 8px;
+}
+
+#jsDocCenter ul.inheritsList {
+    list-style: square;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+#jsDocCenter .detailList {
+    margin-left: 20px;
+    line-height: 15px;
+}
+
+#jsDocCenter .detailList dt {
+    margin-left: 20px;
+}
+
+#jsDocCenter .detailList .heading {
+    font-weight: bold;
+    padding-bottom: 6px;
+    margin-left: 0;
+}
+
+#jsDocCenter .light, #jsDocCenter td.attributes, #jsDocCenter .light a:link, #jsDocCenter .light a:visited {
+    color: #777;
+    font-style: italic;
+}
+
+#jsDocCenter .fineprint {
+    text-align: right;
+    font-size: 10px;
+}
+
+#jsDocCenter tbody .internalapi {
+    background-color: #D0D0D0;
+}
+
+#jsDocChangesThisRelease h1 {
+    font-size: 16px;
+    color: #636363;
+    font-weight: bold;
+}
+
+#jsDocChangesThisRelease .content {
+    margin-right: 10px;
+}
+
+#jsDocChangesThisRelease h2 {
+    margin-top: 10px;
+    border-bottom: 1px solid #DDDDDD;
+    font-size: 14px;
+    color: #636363;
+    font-weight: bold;
+}
+
+#jsDocChangesThisRelease ul {
+    list-style: disc;
+    padding: 0 14px;
+}
+
+#jsDocChangesThisRelease li {
+    list-style: disc;
+}
+
+#jsDocChangesThisRelease strong {
+    font-weight: bold;
+}
+
+
+/** END JSDoc */
+
+/** BEGIN CAR */
+
+.editCARMaskStyle {
+    background-color:#6b6b6b;
+    position:relative;
+    z-index:9051;
+}
+
+.editCARDivStyle {
+    display:block;
+    width:100%; height:100%;
+    position:relative;
+    z-index: 9052;
+}
+
+.editCARIFrameStyle {
+    position:relative;
+    z-index: 9053;
+}
+
+/** END CAR */
+
+/* The style for gathering space combo box */
+#gsDataCombo {
+       padding-top: 0;
+}
+
+/** Overridden to accomodate custom scroller icons **/
+ .x-menu .x-menu-scroller {
+    height: 11px;
+    line-height: 11px;
+}
+
+.x-menu .x-menu-scroller-active{
+    height: 9px;
+    line-height: 9px;
+}
+
+/* Special Ext Window: Mini infos */
+.miniInfoTitleBar .x-toolbar-ct {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.miniInfoTitleBar .x-toolbar-left {
+    overflow: hidden;
+    cursor: move;
+}
+
+.miniInfoTitleBar .x-toolbar-right {
+    width: 40px;
+}
+
+.miniTable {
+    white-space: nowrap;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.miniTable td {
+    line-height: 21px;
+    padding: 0 2px;
+}
+
+.miniInfoTableIcon {
+    cursor: pointer;
+    border: none;
+    width: 16px;
+    height: 16px;
+    margin: 3px 0 3px 3px;
+    text-align: center;
+}
+
+.miniInfoThumbnail {
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+    width: 24px;
+    height: 16px;
+    margin: 2px;
+    text-align: center;
+}
+
+.miniTable_type_icon,
+.miniTable_formatIcon,
+.miniTable_infoPageAction,
+.miniTable_infoPageActionAttachment,
+.miniTable_EDIT {
+    width: 20px;
+}
+
+.miniTable_statusFamily_General {
+    width: 11px;
+}
+
+
+.miniInfoWindowStyle #vis .x-panel-nofooter .x-panel-bc, .miniInfoWindowStyle #vis .x-panel-nofooter .x-window-bc {
+    height: 0;
+}
+
+.miniTableTitle {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.miniTableCount {
+    float: right;
+}
+
+.miniTable_displayIdentifier {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/** styles for portlet in mini navigator */
+#minicontentPanel_parent .x-panel .x-portlet {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+#minicontentPanel_parent .x-panel .x-portlet .x-panel-bwrap {
+    margin-bottom: 6px;
+}
+
+#thumbNailNavPanel #tbn_nav_whereUsed .x-panel-bwrap {
+    margin-bottom: 6px;
+}
+
+#thumbNailNavPanel #tbn_nav_uses .x-panel-bwrap {
+    margin-bottom: 6px;
+}
+
+#thumbNailNavPanel #tbn_nav_whereUsed .x-panel-bwrap {
+    margin-bottom: 6px;
+}
+
+#thumbNailNavPanel #tbn_nav_uses .x-panel-bwrap {
+    margin-bottom: 6px;
+}
+
+#relatedInformationPortal_column {
+    width:100%;
+}
+
+#MTWindow #actionstoolbar .x-table-layout-cell {
+  padding: 0px 1px;
+}
+    /*Chrome's input padding and margin are off by 2px */
+    input {
+        -webkit-margin-before: 2px;
+        -webkit-padding-before: 2px;
+    }
+    
+    /* Overriding and assigning vertical-align to top */
+    .x-panel-reset .x-panel-body td, .x-reset td, .x-panel-reset .x-panel-body th, .x-reset th {
+        vertical-align: top;
+    }
+
+/* Structure tab - Prevent Viz plugin from reloading on x-hide-display display:none */
+.viz-hidden {
+     display: block !important;
+     height: 0 !important;
+     width: 0 !important;
+     visibility: hidden;
+}
+
+/* hides the top level tabs on the homepage for a non-admin user */
+#user-homepageinfoPanelID .x-tab-panel-header {
+    display: none;
+}
+
+/* Set body width for printing */
+@media print {
+    body {
+        width: device-width;
+        overflow: scroll;
+    }
+
+    #contentPanel_contentArea .x-panel-body {
+        overflow: visible !important;
+    }
+}
+
+/* Fix for super long folder names going onto a second line and essentially disappearing in the folder browser*/
+.infoPage-Identity {
+    max-width: 85%;
+}
+
+.infoPage-Identity .x-panel-body {
+    word-wrap: break-word;
+}
+
+.pickerInputComponentFindButton,  .pickerInputComponentClearButton {
+    border: medium none;
+    display: inline-flex !important;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.pickerInputComponentFindButton.x-item-disabled,  .pickerInputComponentClearButton.x-item-disabled {
+    cursor: default;
+}
+
+/* The if the text area is used with the picker, cause it to scroll vertically */
+textarea.pickerInputValueComponent {
+    overflow-y: scroll;
+}
+
+
+/* ------------ END OF CSS FILE  siteStyles.css */
+/* ------------ START OF CSS FILE  searchNavigation.css */
+#advancedSearchPanel {
+    border-width: .1em;
+    border-style: solid;
+    border-color: #BABFB0;
+    margin-left: 10px;
+    width: 410;
+}
+
+.QBRowHighlight {
+    background-color: #feedd3
+}
+
+.chk-same-line {
+    display: inline;
+}
+
+.removableCheckboxHover {
+    background-color: #feedd3
+}
+
+FIELDSET .qbFieldset {
+    margin-top: 10px;
+    padding: 0;
+    border-left: 1px solid #abaca0;
+    border-right: 1px solid #abaca0;
+    border-bottom: 1px solid #abaca0;
+    border-top: 1px solid #abaca0;
+}
+
+.childFacetPanel {
+    padding: 0px;
+    padding-left: 10px;
+    border: none;
+}
+
+.attributeFacetPanel {
+    padding: 0px;
+}
+
+.attributeFacetPanel .x-fieldset-header-text {
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 105px;
+    position: relative;
+    top: -3px;
+}
+
+.attributeFacetPanel .x-fieldset-header {
+    white-space: nowrap;
+}
+
+.attributeFacetPanelOver .x-fieldset-header-text {
+    white-space: nowrap;
+    overflow: visible;
+}
+
+
+.checkboxTooltip {
+    padding: 0px;
+}
+
+.x-form-item .checkboxTooltip {
+    margin-bottom: 2px;
+}
+
+.checkboxTooltip .x-form-check-wrap {
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 200px;
+    float: left;
+    padding-bottom: 4px;
+}
+
+.checkboxTooltip .x-form-cb-label{
+	cursor: pointer;
+}
+
+.checkboxTooltipHover{
+   background-color: #feedd3
+}
+
+.searchFacetMoreLabel.searchFacetMoreLabelMouseHover {
+    cursor: pointer;
+    color: #B66036;
+}
+
+.searchFacetMoreLabel {
+    color: #03447E;
+    font-size: 12px;
+    padding: 0 0 0 0;
+    position : relative;
+    left: 38px;
+}
+
+
+.linkText {
+    color: #03447E;
+}
+
+.linkText.linkTextOver {
+    cursor: pointer;
+    color: #B66036;
+}
+
+
+
+.x-form-item.checkboxTooltip.x-hide-label {
+    overflow: hidden;
+}
+
+.x-form-check-group.x-column-layout-ct.x-form-field.searchFacetFlyoutCbGroup {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+.FacetTimeRange {
+    margin-bottom: 3px;
+    padding: 5px 0;
+    position: relative;
+}
+
+.typeIcon {
+    margin-right: 4px;
+    padding-bottom: 3px;
+    position: relative;
+    top: 6px;
+}
+
+#searchResultTableDiv {
+    margin-left: 4px;
+}
+#search-facet-panel{
+    background-color : white;
+}
+#search-facet-panel .x-panel-body {
+    height: auto;
+}
+
+#searchFacetPanelCollapsedTitle {
+    font-family: sans-serif;
+    font-size: small;
+    line-height: 15px;
+    position: relative;
+    text-align: left;
+    top: 10px;
+    transform: rotate(90deg);
+    white-space: nowrap;
+}
+#search-facet-panel-xcollapsed{
+}
+
+#search-facet-panel-xsplit.x-layout-split{
+    height : 100%;
+}
+
+#clfTreePanel{
+    background-color : white;
+}
+
+#clfTreePanel .x-panel-body {
+    height: auto;
+}
+
+#clfTreePanel-xcollapsed{
+}
+#clfTreePanel-xsplit.x-layout-split{
+    height : 100%;
+}
+
+#clfContentArea {
+    left: 389px;
+    width: 1000px;
+}
+#clfTreePanel-xsplit{
+       left: 384px;
+}
+
+.breadcrumbRemove {
+    height: 11px !important;
+    width: 11px !important;
+    padding-left: 0px !important;
+}
+.transpButtonPanel{
+	width: 16px;
+	height: 16px;
+}
+
+.transpButtonPanel .x-btn {background-image: none;}
+.transpButtonPanel td {background-image: none !important;}
+
+.transpButtonPanel tr {background-image: none;}
+
+.transpButtonPanel .x-btn-over {background-image: none !important;}
+
+#search-facet-panel Fieldset {
+    border: none;
+}
+
+#search-facet-panel Fieldset > div{
+    overflow: none;
+}
+
+.x-form-item {
+    padding-left:10px;
+}
+
+.dateComponentTextFieldPading {
+ padding-left: 10px;
+}
+
+#attributesFacet .x-panel-bodyx-panel-body-noheader{
+    overflow: hidden;
+}
+
+#search-facet-panel .x-panel-collapsed .x-tool-toggle {
+    
+}
+
+#search-facet-panel FIELDSET .x-panel-collapsed .x-tool-toggle-over{
+}
+
+#search-facet-panel FIELDSET .x-tool-toggle {
+    
+
+}
+
+.x-tool.x-tool-FacetFilterRemove{
+    position: relative;
+    width: 16px;
+}
+.x-tool.x-tool-FacetFilterRemove-over {
+    position: relative;
+}
+
+.facetApplyCls {
+    color: #03447e;
+    font-size: 12px;
+    left: 194px;
+    position: relative;
+    cursor: pointer;
+}
+
+#search-facet-panel input[type="checkbox"] {
+	display: none;
+}
+
+#search-facet-panel input[type="checkbox"] + label {
+    padding: 0 0 0 19px;
+}
+
+#search-facet-panel input[type="radio"] + label {
+    cursor: pointer;
+}
+
+#search-facet-panel input[type="checkbox"]:checked + label{
+}
+
+#search-facet-panel input[type="checkbox"] + a {
+    padding: 0 0 1px 19px;
+}
+
+#search-facet-panel input[type="checkbox"]:checked + a {
+}
+
+#search-facet-panel .x-tree-arrows .x-tree-elbow-end-plus {
+	margin-top: 4px;
+}
+
+#search-facet-panel .x-tree-arrows .x-tree-elbow-end-minus{
+	margin-top: 4px;
+}
+
+#search-facet-panel .x-slider.x-slider-horz {
+    left: 20px;
+    position: relative;
+}
+.DisplayNone {
+    display : none;
+}
+
+#search-facet-panel .x-tool-help {
+    float: left;
+    width: 16px;
+    height: 16px;
+    
+}
+
+#attSelection .x-form-text {
+	height: 16px;
+}
+
+
+.qbOperators {
+	width:'100%';
+	-webkit-appearance: none
+
+}
+
+/* ------------ END OF CSS FILE  searchNavigation.css */
+/* ------------ START OF CSS FILE  partSupersede.css */
+.boldComponent {
+    font-weight: bold;
+}
+
+/* ------------ END OF CSS FILE  partSupersede.css */
+/* ------------ START OF CSS FILE  GridFilters.css */
+/*!
+ * Ext JS Library 3.2.1
+ * Copyright(c) 2006-2010 Ext JS, Inc.
+ * licensing@extjs.com
+ * http://www.extjs.com/license
+ */
+/**
+ * GridFilters Styles
+ **/
+/*
+.x-grid3-hd-row .ux-filtered-column {
+	border-left:  1px solid #C7E3B4;
+	border-right: 1px solid #C7E3B4;
+}
+
+.x-grid3-hd-row .ux-filtered-column .x-grid3-hd-inner {
+}
+
+.ux-filtered-column .x-grid3-hd-btn {
+}
+*/
+.x-grid3-hd-row td.ux-filtered-column {   
+    font-style: italic;  
+    font-weight: bold;
+}    
+
+.ux-filtered-column.sort-asc .x-grid3-sort-icon {
+}
+
+.ux-filtered-column.sort-desc .x-grid3-sort-icon {
+}
+
+.ux-gridfilter-text-icon {
+}
+
+.clearAllFilters {
+}
+
+/* Temporary Patch for Bug ??? */
+.x-menu-list-item-indent .x-menu-item-icon {
+	position: relative;
+    top: 3px;
+    left: 3px;
+	margin-right: 10px;
+}
+li.x-menu-list-item-indent {
+	padding-left:0px;
+}
+li.x-menu-list-item div {
+	display: block;
+}
+
+
+
+/* ------------ END OF CSS FILE  GridFilters.css */
+/* ------------ START OF CSS FILE  RangeMenu.css */
+/*!
+ * Ext JS Library 3.2.1
+ * Copyright(c) 2006-2010 Ext JS, Inc.
+ * licensing@extjs.com
+ * http://www.extjs.com/license
+ */
+/**
+ * RangeMenu Styles
+ **/
+.ux-rangemenu-gt {
+}
+
+.ux-rangemenu-lt {
+}
+
+.ux-rangemenu-eq {
+}
+
+
+/* ------------ END OF CSS FILE  RangeMenu.css */

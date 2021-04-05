@@ -1,0 +1,5 @@
+{
+	"extends": "ChangeTask",
+	"operations": "READ,UPDATE",
+}
+  

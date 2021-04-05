@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE NmLoader SYSTEM "standard12_0.dtd">
+<!--
+    windchill wt.load.LoadFromFile -d loadFiles/com/bmw/psmg/sbb/containers/SSTTestProduct.xml -u [site-admin] -p [site-admin-secret] -CONT_PATH "/wt.inf.container.OrgContainer=SBB"
+-->
+<NmLoader>
+    <csvProductContainer handler="wt.part.LoadPart.createProductContainer">
+        <csvuser></csvuser>
+        <csvname>SST_Test_Product</csvname>
+        <csvnumber></csvnumber>
+        <csvdescription>SST_Test_Product</csvdescription>
+        <csvview>Design</csvview>
+        <csvsource>make</csvsource>
+        <csvdefaultUnit/>
+        <csvtype>separable</csvtype>
+         <csvcontainerTemplate></csvcontainerTemplate>
+        <csvorganizationName>SBB</csvorganizationName>
+        <csvorganizationID></csvorganizationID>
+    </csvProductContainer>
+</NmLoader>

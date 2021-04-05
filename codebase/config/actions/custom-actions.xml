@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listofactions SYSTEM "actions.dtd">
+<listofactions>
+    <objecttype name="effectivity" class="java.lang.Object"
+                resourceBundle="com.ptc.windchill.enterprise.effectivity.effectivityActionsRB">
+        <action name="addEffectivityForPartsAndMPMLinkInfoPage" ajax="page">
+            <command class="com.bmw.psmg.sbb.part.effectivity.forms.ValidateLotEffectivityFormProcessor"
+                     method="execute" windowType="new"/>
+        </action>
+        <action name="modifyEffectivity" ajax="page">
+            <command onClick="setEffGroupValueInForm(event, false)"
+                     class="com.bmw.psmg.sbb.part.effectivity.forms.ValidateModifyEffectivityFormProcessor"
+                     method="execute" windowType="new"/>
+        </action>
+        <action name="setEffectivityOnWizard_PendingEff" selectRequired="true">
+            <command class="com.bmw.psmg.sbb.part.effectivity.forms.ValidateLotPendingEffectivityOnChangeFormProcessor"
+                     method="execute" windowType="new" onClick="eff_setFormData_LaunchClient(event,false)"/>
+            <includeFilter name="hideForObjectInProject"/>
+            <includeFilter name="hideForChangeTemplates"/>
+            <includeFilter name="hideForAddToChangeTask"/>
+        </action>
+        <action name="setEffectivityOnViewPage_PendingEff" selectRequired="true">
+            <command class="com.bmw.psmg.sbb.part.effectivity.forms.ValidateLotPendingEffectivityFormProcessor"
+                     method="execute" windowType="new"/>
+            <includeFilter name="hideForObjectInProject"/>
+            <includeFilter name="hideForChangeTemplates"/>
+        </action>
+    </objecttype>
+    <objecttype name="psb" resourceBundle="com.bmw.psmg.sbb.reports.resources.psbCustomActionsRB">
+        <action name="psbCustomReportGWT01" ajax="component">
+            <command class="com.ptc.cat.ui.client.action.LaunchURLAction" method="execute"
+                     url="/ptc1/com/bmw/psmg/sbb/psb/reports/mtReport" windowType="popup"/>
+            <supportedTypes>
+                <type value="wt.part.WTPart"/>
+                <type value="wt.part.WTPartUsageLink"/>
+            </supportedTypes>
+        </action>
+    </objecttype>
+    <!-- Binding JSP to Object Reference Release Attribute of Custom Config Spec -->
+    <objecttype name="BMW_INPUT_RELEASE">
+        <action name="CustomConfigSpecObjReferenceSearchPicker">
+            <command url="netmarkets/jsp/com/bmw/psmg/sbb/psb/showObjRefPicker.jsp"/>
+            <moreurlinfo>height=300,width=500</moreurlinfo>
+            <title>Search Release Effectivity</title>
+        </action>
+    </objecttype>
+    <objecttype name="baseclient" resourceBundle="com.ptc.windchill.baseclient.client.baseClientActionsRB">
+        <action name="newPlantFunctionalDataAttrWizStep_custom" preloadWizardPage="false" required="true">
+            <component name="bmwCustomBaseclient.newPlantFunctionalData" windowType="wizard_step"/>
+        </action>
+    </objecttype>
+    <objecttype name="sbb" resourceBundle="com.bmw.psmg.sbb.interfaces.interfaceResource">
+        <action name="sbbTools">
+            <command url="/netmarkets/jsp/com/bmw/psmg/sbb/interfaces/tools.jsp" windowType="page"/>
+            <includeFilter name="hideNonSiteAdmin"/>
+        </action>
+    </objecttype>
+
+    <!-- Change Notice E-Release Groups -->
+    <objecttype resourceBundle="com.ptc.windchill.enterprise.change2.changeManagementActionsRB" name="changeNotice" class="wt.change2.WTChangeOrder2">
+        <action name="edit" ajax="row" >
+            <command method="execute" class="com.ptc.windchill.enterprise.change2.forms.processors.EditChangeNoticeFormProcessor" windowType="popup"/>
+            <includeFilter name="sandboxSharingValidationSimple"/>
+            <includeFilter name="adminLockModifyChangeObjectsFilter"/>
+            <includeFilter name="hideForChangeTemplates"/>
+            <includeFilter name="hideForEReleaseGroups"/>
+        </action>
+    </objecttype>
+    <objecttype resourceBundle="com.ptc.windchill.enterprise.change2.changeManagementActionsRB" name="change" class="wt.change2.ChangeItem">
+        <action name="reissueChange" ajax="false" >
+            <command method="execute" class="com.ptc.windchill.enterprise.change2.forms.delegates.ReissueFormDelegate" windowType="popup"/>
+            <includeFilter name="hideForChangeTemplates"/>
+            <includeFilter name="hideForAdminLocked"/>
+            <includeFilter name="hideForEReleaseGroups"/>
+        </action>
+        <action name="deleteChangeItem" ajax="row" uicomponent="DELETE" >
+            <command onClick="JCAConfirm(event,'com.ptc.core.ui.confirmationMessagesRB.DELETE')" method="delete" class="com.ptc.windchill.enterprise.object.commands.DeleteObjectCommands"/>
+            <includeFilter name="sandboxSharingValidationSimple"/>
+            <includeFilter name="hideForEReleaseGroups"/>
+        </action>
+    </objecttype>
+    <objecttype name="object" class="wt.fc.Persistable" >
+        <action name="copy" uicomponent="COPY" >
+            <command onClick="onClickValidation( event, 'copy' )" method="copy" class="com.ptc.netmarkets.model.NmObjectCommands" windowType="no_content"/>
+            <includeFilter name="hideFromNonAgreementMgrs"/>
+            <includeFilter name="hideForNewObjectInWorkspace"/>
+            <includeFilter name="manAuthorized"/>
+            <includeFilter name="hideForEReleaseGroups"/>
+        </action>
+    </objecttype>
+    <objecttype name="pdmObject" class="wt.fc.WTObject" >
+        <action checkaccess="true" name="CONTAINERMOVE" enabledwhensuspended="true" renderType="PDM" uicomponent="CONTAINERMOVE" selectRequired="true" >
+            <command method="CONTAINERMOVE" class="java.lang.Object" windowType="popup"/>
+            <includeFilter name="sandboxSharingValidationSimple"/>
+            <includeFilter name="hideFromNonAgreementMgrs"/>
+            <includeFilter name="hideForNoteTemplates"/>
+            <includeFilter name="hideForNoteTemplates"/>
+            <includeFilter name="hideForChangeTemplates"/>
+            <includeFilter name="hideForEReleaseGroups"/>
+        </action>
+    </objecttype>
+    <objecttype resourceBundle="com.ptc.windchill.enterprise.object.objectResource" name="object" class="wt.fc.Persistable" >
+        <action name="renameObjectWizard" ajax="row" >
+            <command method="execute" class="com.ptc.windchill.enterprise.object.forms.RenameObjectFormProcessor" windowType="popup"/>
+            <includeFilter name="sandboxSharingValidationSimple"/>
+            <includeFilter name="hideFromNonAgreementMgrs"/>
+            <includeFilter name="hideSBHiddenFilter"/>
+            <includeFilter name="hideForNewObjectInWorkspace"/>
+            <includeFilter name="hideForEReleaseGroups"/>
+        </action>
+    </objecttype>
+    <objecttype resourceBundle="com.ptc.netmarkets.lifecycle.lifecycleResource" name="lifecycle" class="wt.lifecycle.LifeCycleTemplate" >
+        <action name="setState" ajax="row" >
+            <command method="setState" class="com.ptc.netmarkets.lifecycle.NmLifeCycleCommands" windowType="popup"/>
+            <includeFilter name="hideForNewObjectInWorkspace"/>
+            <includeFilter name="sandboxSharingValidationSimple"/>
+            <includeFilter name="hideFromNonAgreementMgrs"/>
+            <includeFilter name="hideSBHiddenFilter"/>
+            <includeFilter name="manAuthorized"/>
+            <includeFilter name="DisableActionForPendingRefreshFilter"/>
+            <includeFilter name="hideForEReleaseGroups"/>
+        </action>
+    </objecttype>
+
+    <!-- Change Task E-Release Groups  -->
+    <objecttype resourceBundle="com.ptc.windchill.enterprise.change2.changeManagementActionsRB" name="changeTask" class="wt.change2.WTChangeActivity2">
+        <action name="edit" ajax="page" >
+            <command method="execute" class="com.ptc.windchill.enterprise.change2.forms.processors.EditChangeTaskFormProcessor" windowType="popup"/>
+            <includeFilter name="adminLockModifyChangeObjectsFilter"/>
+            <includeFilter name="hideForChangeTemplates"/>
+            <includeFilter name="hideForEReleaseGroups"/>
+        </action>
+    </objecttype>
+
+    <objecttype resourceBundle="com.bmw.psmg.sbb.interfaces.interfaceResource" name="part" class="wt.part.WTPart">
+        <action name="displayPartNoInMatrX" ajax="component">
+            <command url="/netmarkets/jsp/com/bmw/psmg/sbb/interfaces/matrx.jsp" windowType="new"/>
+            <supportedTypes>
+                <type value="com.bmw.psmg.sbb.Material"/>
+                <type value="com.bmw.psmg.sbb.PositionVariantMMG"/>
+                <type value="com.bmw.psmg.sbb.AssemblyKitHeader"/>
+            </supportedTypes>
+        </action>
+        <action name="displayPartNoInMatrXGWT" ajax="component">
+            <command class="com.ptc.cat.ui.client.action.LaunchURLAction" method="execute" url="/netmarkets/jsp/com/bmw/psmg/sbb/interfaces/matrx.jsp" windowType="new"/>
+            <supportedTypes>
+                <type value="com.bmw.psmg.sbb.Material"/>
+                <type value="com.bmw.psmg.sbb.PositionVariantMMG"/>
+                <type value="com.bmw.psmg.sbb.AssemblyKitHeader"/>
+            </supportedTypes>
+        </action>
+    </objecttype>
+
+</listofactions>

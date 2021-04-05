@@ -1,0 +1,17 @@
+{
+    "name":"ReleasePositions",
+    "description":"Release Positions",
+    "attributes":[
+        {
+         "name":"TypeUsageChangeTask",
+         "type":"String"
+        }, {
+         "name":"hPV",
+         "type":"String"
+        }, {
+         "name":"TypeFilterVersions",
+         "type":"TypeFilterVersions",
+         "isCollection":true
+        }
+    ]
+}

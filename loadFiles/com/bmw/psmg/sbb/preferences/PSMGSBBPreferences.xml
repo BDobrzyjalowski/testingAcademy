@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NmLoader SYSTEM "standard12_0.dtd">
+<!--
+    windchill wt.load.LoadFromFile -d loadFiles/com/bmw/psmg/sbb/preferences/PSMGSBBPreferences.xml -u [site-admin] -p [site-admin-secret] -CONT_PATH /
+-->
+<NmLoader>
+
+    <!-- Part Management / Default Part View -->
+    <csvPreferenceInstance handler="wt.preference.LoadPreference.createPreferenceInstance">
+        <csvname>/wt/part/DefaultConfigSpecView</csvname>
+        <csvorganization></csvorganization>
+        <csvclientName>WINDCHILL</csvclientName>
+        <csvvalue>PSMG</csvvalue>
+        <csvlock>FALSE</csvlock>
+    </csvPreferenceInstance>
+
+
+</NmLoader>

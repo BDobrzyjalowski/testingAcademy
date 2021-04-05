@@ -1,0 +1,15 @@
+{
+    "name" : "PendingLotEffectivity",
+    "collectionName": "PendingLotEffectivities",
+    "type": "wcType",
+    "wcType": "wt.eff.PendingLotNumberEffectivity",
+    "description": "Serial or Lot Effectivity",
+    "includeInServiceDocument":false,
+    "operations":"READ",
+    "hasCommonProperties":false,
+    "parent": {
+        "name": "PendingUnitEffectivities"
+        },
+    "inherits":[],
+    "attributes" : []
+}

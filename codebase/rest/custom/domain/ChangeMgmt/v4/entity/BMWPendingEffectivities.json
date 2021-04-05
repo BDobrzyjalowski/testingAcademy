@@ -1,0 +1,27 @@
+{
+	"name": "BMWPendingEffectivity",
+	"collectionName": "BMWPendingEffectivities",
+	"type": "wcType",
+	"wcType": "wt.eff.PendingLotNumberEffectivity",
+	"description": "BMW Pending Effectivity",
+	"includeInServiceDocument": true,
+	"operations": "READ",
+	"hasCommonProperties": false,
+	"parent": {
+		"name": "WindchillEntities"
+	},
+	"inherits": [],
+	"attributes": [
+		{
+			"name": "EffectivityQualifier",
+			"internalName": "effTypeModifier",
+			"type": "PTC.EnumType"
+		},
+		{
+                  "name" : "BMWUnitRange",
+                  "type": "BMWPendingUnitRange"
+              }
+	],
+	"navigations": [
+	]
+}

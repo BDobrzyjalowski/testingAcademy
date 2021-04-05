@@ -1,0 +1,8 @@
+{
+"name": "BMW",
+"id": "BMW",
+"description": "BMW domain for custom operations",
+"nameSpace": "custom.BMW",
+"containerName": "Windchill",
+"defaultVersion": "1"
+}

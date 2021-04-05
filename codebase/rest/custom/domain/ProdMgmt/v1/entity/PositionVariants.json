@@ -1,0 +1,67 @@
+{
+  "name": "PositionVariant",
+  "type": "wcType",
+  "wcType": "com.bmw.psmg.sbb.PositionVariant",
+  "collectionName": "PositionVariants",
+  "description": "PositionVariant",
+  "parent": {
+    "name": "Parts"
+  },
+  "attributes": [
+    {
+      "name": "BmwMaterialVersion",
+      "internalName": "BMW_MATERIAL_VERSION",
+      "type": "String"
+    },
+    {
+      "name": "BmwSourcingType",
+      "internalName": "BMW_SOURCING_TYPE",
+      "type": "String"
+    },
+    {
+      "name": "BmwEffectivity",
+      "internalName": "BMW_EFFECTIVITY",
+      "type": "String"
+    },
+    {
+      "name": "BmwCharacterCode",
+      "internalName": "BMW_CHARACTER_CODE",
+      "type": "String"
+    },
+    {
+      "name": "BmwJitCode",
+      "internalName": "BMW_JIT_CODE",
+      "type": "String"
+    },
+    {
+      "name": "BmwJitVariant",
+      "internalName": "BMW_JIT_VARIANT",
+      "type": "String"
+    },
+    {
+      "name": "BmwLeftRightCode",
+      "internalName": "BMW_LEFT_RIGHT_CODE",
+      "type": "String"
+    },
+    {
+      "name": "BmwMaterialNo",
+      "internalName": "BMW_MATERIAL_NO",
+      "type": "String"
+    },
+    {
+      "name": "BmwStdDescMaterial",
+      "internalName": "BMW_STD_DESC_MATERIAL",
+      "type": "String"
+    },
+    {
+      "name": "BmwPartType",
+      "internalName": "BMW_PART_TYPE",
+      "type": "String"
+    },
+    {
+      "name": "BmwLCode",
+      "internalName": "BMW_L_CODE",
+      "type": "String"
+    }
+  ]
+}

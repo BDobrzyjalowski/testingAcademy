@@ -1,0 +1,18 @@
+{
+  "name": "releases",
+  "description": "releases",
+  "attributes": [
+    {
+      "name": "old",
+      "type": "String"
+    },
+    {
+      "name": "new",
+      "type": "String"
+    },
+    {
+      "name": "changeFlag",
+      "type": "String"
+    }
+  ]
+}

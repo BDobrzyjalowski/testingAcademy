@@ -1,0 +1,11 @@
+{
+    "extends": "Part",
+    "navigations": [
+	    {
+          "name":"BMWEffectivities",
+          "target":"BMWEffectivities",
+          "type":"PTC.ProdMgmt.BMWEffectivity",
+          "isCollection":true
+       }
+    ],
+}

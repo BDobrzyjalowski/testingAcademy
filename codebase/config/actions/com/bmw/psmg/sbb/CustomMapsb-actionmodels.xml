@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!DOCTYPE actionmodels SYSTEM '../../actionmodels.dtd'>
+
+<actionmodels>
+
+    <!-- ******* Context Menu Definitions ******* -->
+    
+    <model name="mapsbUpstreamSideTreeContextMenu">
+        <action name="asbViewInfoInNewWindowGWT" type="asb" />
+        <action name="displayPartNoInMatrXGWT" type="part"/>
+        <action name="openInProductViewGWT" type="apsb" />
+        <action name="selectEquivalentPartsAPSB" type="apsb"/>
+        <action name="selectEquivalentOccurrencesGWT" type="asb"/>
+        <action name="selectNonEquivalentOccurrencesGWT" type="asb"/>
+        <action name="separator" type="separator"/>
+        <action name="selectModelItemInViz" type="mpm"/>
+        <action name="separator" type="separator"/>
+        <action name="updateAllEquivalentLinkAPSB" type="apsb"/>
+        <action name="separator" type="separator"/>
+        <action name="upstreamPartCutAPSB" type="apsb"/>
+        <action name="upstreamPartCopyAPSB" type="apsb"/>
+        <action name="upstreamPasteAPSB" type="apsb"/>
+        <action name="mergeUsageLinkAPSB" type="apsb"/>
+        <action name="removePartsAPSB" type="apsb"/>
+        <action name="removePartOccurrencesAPSB" type="apsb"/>
+        <action name="removeMPMStandardCCGWT" type="mapsb"/>
+        <action name="removeViewSpecificEnterpriseDataMAPSB" type="mapsb"/>
+        <action name="separator" type="separator"/>
+        <action name="newDownstreamBranchUpstreamVersionAPSB" type="apsb"/>
+        <action name="newDownstreamPartUpstreamVersionAPSB" type="apsb"/>
+        <action name="separator" type="separator"/>
+        <action name="duplicatePartMAPSB" type="mapsb"/>
+        <action name="separator" type="separator"/>
+        <submodel name="apsbCheckOutInContextSubMenu"/>
+        <action name="separator" type="separator"/>
+        <action name="newViewSpecificEnterpriseDataMAPSB" type="mapsb"/>
+        <action name="newPlantFunctionalDataGWT" type="baseclient" />    <!-- Create PFD Manually-->
+        <action name="accessPlantDataGWT" type="baseclient" />
+        <action name="propogateAttributesGWT" type="baseclient" />
+        <action name="separator" type="separator"/>
+        <submodel name="insertSubMenuUpstreamMAPSB"/>
+        <submodel name="editingSubMenuUpstreamMAPSB"/>
+        <action name="separator" type="separator"/>
+        <submodel name="updateSubMenuUpstreamMAPSB" />
+        <action name="separator" type="separator"/>
+        <submodel name="apsbExpandContextSubmenuGWT"/>
+        <action name="showDefaultRelatedObjectsGWT" type="asb" />
+         <action name="setASBProximityExpansionCriteriaGWT" type="asb" />
+    </model>
+
+    <model name="mapsbDownstreamSideTreeContextMenu">
+        <action name="asbViewInfoInNewWindowGWT" type="asb" />
+        <action name="displayPartNoInMatrXGWT" type="part"/>
+        <action name="openInProductViewGWT" type="apsb" />
+        <action name="selectEquivalentPartsAPSB" type="apsb"/>
+        <action name="selectEquivalentOccurrencesGWT" type="asb"/>
+        <action name="selectNonEquivalentOccurrencesGWT" type="asb"/>
+        <action name="separator" type="separator"/>
+        <action name="selectModelItemInViz" type="mpm"/>
+        <action name="separator" type="separator"/>
+        <action name="reviseWithCurrentLinkAPSB" type="apsb"/>
+        <action name="updateEquivalenceLinkOnDownstreamSideAPSB" type="apsb"/>
+        <action name="separator" type="separator"/>
+        <action name="downstreamPartCutAPSB" type="apsb"/>
+        <action name="downstreamPartCopyAPSB" type="apsb"/>
+        <action name="pasteAsIsAPSB" type="apsb"/>
+        <action name="pasteAsNewBranchAPSB" type="apsb"/>
+        <action name="pasteAsNewPartAPSB" type="apsb"/>
+        <action name="mergeUsageLinkAPSB" type="apsb"/>
+        <action name="removePartsAPSB" type="apsb"/>
+        <action name="removePartOccurrencesAPSB" type="apsb"/>
+        <action name="removeMPMStandardCCGWT" type="mapsb"/>
+        <action name="removeAssemblyAndMoveUpChildPartActionAPSB" type="apsb"/>
+        <action name="removeViewSpecificEnterpriseDataMAPSB" type="mapsb"/>
+        <action name="separator" type="separator"/>
+        <action name="newDownstreamBranchDownstreamVersionAPSB" type="apsb"/>
+        <action name="newDownstreamPartDownstreamVersionAPSB" type="apsb"/>
+        <action name="separator" type="separator"/>
+        <action name="duplicatePartMAPSB" type="mapsb"/>
+        <action name="replacePartDownstreamVersionAPSB" type="apsb"/>
+        <action name="replaceWithPeerEquivalentPartAPSB" type="apsb"/>
+        <action name="separator" type="separator"/>
+        <submodel name="apsbCheckOutInContextSubMenu"/>
+        <action name="separator" type="separator"/>
+        <action name="newViewSpecificEnterpriseDataMAPSB" type="mapsb"/>
+        <action name="newPlantFunctionalDataGWT" type="baseclient" />   <!-- Create PFD Manually-->
+        <action name="accessPlantDataGWT" type="baseclient" />
+        <action name="propogateAttributesGWT" type="baseclient" />
+        <action name="separator" type="separator"/>
+        <submodel name="insertSubMenuDownstreamMAPSB"/>
+        <submodel name="editingSubMenuDownstreamMAPSB"/>
+        <action name="separator" type="separator"/>
+        <submodel name="updateSubMenuDownstreamMAPSB"/>
+        <action name="separator" type="separator"/>
+        <submodel name="apsbExpandContextSubmenuGWT"/>
+        <action name="showDefaultRelatedObjectsGWT" type="asb" />
+        <action name="setASBProximityExpansionCriteriaGWT" type="asb" />
+        <action name="separator" type="separator"/>
+        <action name="repositionAPSB" type="apsb"/>
+    </model>
+
+</actionmodels>

@@ -1,0 +1,33 @@
+<component name="psmgsbb"
+		   organisation="SBB"
+		   description="psmgsbb-21.49.00.20210402-987654"
+		   homepage="https://ssp.ptc.com/wiki/display/bif/BIF+Home"
+		   COTS="false"
+		   xmlns="http://ssp.ptc.com"
+		   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		   xsi:schemaLocation="http://ssp.ptc.com component.xsd">
+
+	<version major="21" minor="49" point="0" buildCode="20210402" trivial="0"/>
+	<windchill release="12.0" dateCode="12.0.1.1" installSequence="0"/>
+
+
+
+
+	<install>
+		
+
+		<load file="com/bmw/psmg/sbb/containers/SSTTestProduct.xml" username="${site-admin-user-name}" password="${site-admin-secret}" containerPath="/wt.inf.container.OrgContainer=SBB" option="DEV,DEV-VM,INT,INT02,QA"/>
+		<load file="com/bmw/psmg/sbb/containers/GENERIK-Product.xml" username="${site-admin-user-name}" password="${site-admin-secret}" containerPath="/wt.inf.container.OrgContainer=SBB"/>
+		<!-- Views -->
+		<load file="com/bmw/psmg/sbb/views/WT_ViewNetwork.xml" username="${site-admin-user-name}" password="${site-admin-secret}" containerPath="/"/>
+
+		<load file="com/bmw/psmg/sbb/types/WTPart_0.xml" username="${site-admin-user-name}" password="${site-admin-secret}" containerPath="/"/>
+		<load file="com/bmw/psmg/sbb/types/WTPart_1.xml" username="${site-admin-user-name}" password="${site-admin-secret}" containerPath="/"/>
+		<load file="com/bmw/psmg/sbb/types/WTPart_2.xml" username="${site-admin-user-name}" password="${site-admin-secret}" containerPath="/"/>
+		<load file="com/bmw/psmg/sbb/types/WTPart_3.xml" username="${site-admin-user-name}" password="${site-admin-secret}" containerPath="/"/>
+
+		<!-- Preferences -->
+		<load file="com/bmw/psmg/sbb/preferences/PSMGSBBPreferences" username="${site-admin-user-name}" password="${site-admin-secret}" containerPath="/"/>
+
+	</install>
+</component>

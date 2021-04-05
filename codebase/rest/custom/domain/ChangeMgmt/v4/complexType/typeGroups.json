@@ -1,0 +1,25 @@
+{
+  "name": "typeGroups",
+  "description": "typeGroups",
+  "attributes": [
+    {
+      "name": "types",
+      "type": "String",
+      "isCollection": true
+    },
+    {
+      "name": "changeFlag",
+      "type": "String"
+    },
+    {
+      "name": "threeCycle",
+      "type": "threeCycle",
+      "isCollection": false
+    },
+    {
+      "name": "targetUsageMaturity",
+      "type": "targetUsageMaturity",
+      "isCollection": false
+    }
+  ]
+}

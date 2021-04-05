@@ -1,0 +1,15 @@
+{
+  "name": "VorfReleasedHpvRelease",
+  "description": "Release",
+  "attributes": [
+    {
+      "name": "ReleaseName",
+      "type": "String"
+    },
+    {
+      "name": "ThreeCycles",
+      "type": "VorfReleasedHpvThreeCycle",
+      "isCollection": true
+    }
+  ]
+}

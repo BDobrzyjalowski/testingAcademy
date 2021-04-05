@@ -1,0 +1,20 @@
+{
+    "name" : "PendingDateEffectivity",
+    "collectionName": "PendingDateEffectivities",
+    "type": "wcType",
+    "wcType": "wt.eff.PendingDateEffectivity",
+    "description": "Date Effectivity",
+    "includeInServiceDocument":false,
+    "operations":"READ",
+    "hasCommonProperties":false,
+    "parent": {
+        "name": "PendingEffectivities"
+        },
+    "inherits":[],
+    "attributes" : [
+        {
+            "name": "DateRange",
+            "type": "PendingDateRange"
+        }
+    ]
+}

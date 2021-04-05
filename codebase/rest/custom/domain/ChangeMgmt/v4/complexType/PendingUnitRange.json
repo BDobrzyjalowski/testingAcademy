@@ -1,0 +1,15 @@
+{  
+    "name" : "PendingUnitRange",
+    "description": "Range of the Unit Effectivity",
+    "inherits":[],
+    "attributes" : [
+        {
+            "name" : "RangeStart",
+            "type":"String"
+        },
+        {
+            "name" : "RangeEnd",
+            "type":"String"
+        }
+    ]
+ }

@@ -1,0 +1,101 @@
+{
+    "name": "VariantSpecification",
+    "collectionName": "VariantSpecifications",
+    "type": "wcType",
+    "wcType": "com.ptc.wpcfg.doc.VariantSpec",
+    "description": "Type for Variant Specification objects.",
+    "includeInServiceDocument": true,
+    "operations": "READ",
+    "hasCommonProperties": true,
+    "parent": {
+        "name": "WindchillEntities"
+    },
+    "inherits": [
+        {
+            "name": "contextManaged"
+        },
+        {
+            "name": "lifecycleManaged"
+        },
+        {
+            "name": "variantSpecContentHolder"
+        },
+        {
+            "name": "versioned"
+        },
+        {
+            "name": "workable"
+        },
+		{
+ 	      "name": "subtypeable"
+        },	
+        {
+	      "name": "softattributable",
+	      "version": "2"
+        }
+    ],
+    "attributes": [
+        {
+            "name": "Name",
+            "internalName": "name",
+            "type": "String",
+            "required": true,
+            "common": true
+        },
+        {
+            "name": "Number",
+            "internalName": "number",
+            "type": "String",
+            "required": true,
+            "common": true
+        },
+        {
+            "name": "TypeIcon",
+            "internalName": "type_icon",
+            "type": "PTC.Icon",
+            "readOnly": true
+        },
+        {
+            "name": "ManagedAs",
+            "internalName": "managedAs",
+            "type": "PTC.EnumType",
+            "readOnly": true
+        },
+        {
+            "name": "Description",
+            "internalName": "description",
+            "type": "String"
+        },
+		{
+            "name":"Location",
+            "internalName":"location",
+            "type":"String"
+        }
+    ],
+    "navigations": [
+        {
+            "name": "NavigationCriteria",
+            "target": "NavigationCriterias",
+            "type": "PTC.NavCriteria.NavigationCriteria",
+            "isCollection": false,
+            "containsTarget": false,
+            "rbInfoForDisplayName":"com.ptc.odata.windchill.domain.ProdPlatformMgmtRB|STRUCTURE_FILTER"
+        },
+        {
+            "name": "ConfigurableModule",
+            "target": "Parts",
+            "type": "PTC.ProdMgmt.Part",
+            "isCollection": false,
+            "internalNameForDisplayName":"configurableAssemblyReference"
+        },
+        {
+            "name": "OptionSet",
+            "target": "OptionSets",
+            "type": "OptionSet",
+            "isCollection": false,
+            "internalNameForDisplayName":"optionSetReference"
+        }
+    ],
+    "functions": [],
+    "actions": []
+}

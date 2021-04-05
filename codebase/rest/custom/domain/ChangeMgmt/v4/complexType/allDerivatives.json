@@ -1,0 +1,21 @@
+{
+  "name": "allDerivatives",
+  "description": "allDerivatives",
+  "attributes": [
+    {
+      "name": "old",
+      "type": "String",
+      "isCollection": true
+
+    },
+    {
+      "name": "new",
+      "type": "String",
+      "isCollection": true
+    },
+    {
+      "name": "changeFlag",
+      "type": "String"
+    }
+  ]
+}

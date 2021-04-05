@@ -1,0 +1,19 @@
+{
+  "name": "PositionVariantMMG",
+  "type": "wcType",
+  "wcType": "com.bmw.psmg.sbb.PositionVariantMMG",
+  "collectionName": "PositionVariantMMGs",
+  "description": "MMG PositionVariant",
+  "parent": {
+    "name": "PositionVariants"
+  },
+  "attributes": [
+    {
+      "name": "BmwPdmChangeNo",
+      "internalName": "BMW_PDM_CHANGE_NO",
+      "type": "String"
+    }
+  ]
+
+
+}

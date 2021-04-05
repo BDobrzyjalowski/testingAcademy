@@ -1,0 +1,26 @@
+{
+    "name": "BMWEffectivity",
+    "collectionName": "BMWEffectivities",
+    "type": "wcType",
+    "wcType": "wt.part.ProductLotNumberEffectivity",
+    "description": "BMW Effectivity",
+    "includeInServiceDocument": true,
+    "operations": "READ",
+    "hasCommonProperties": false,
+    "parent": {
+        "name": "WindchillEntities"
+    },
+    "inherits": [],
+    "attributes": [
+        {
+            "name": "EffectivityQualifier",
+            "internalName": "effTypeModifier",
+            "type": "PTC.EnumType"
+        },
+        {
+            "name" : "BMWUnitRange",
+            "type": "BMWUnitRange"
+        }
+    ],
+    "navigations": []
+}

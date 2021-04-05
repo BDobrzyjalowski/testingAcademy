@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE NmLoader SYSTEM "standard12_0.dtd">
+<NmLoader>
+    <csvView handler="wt.vc.views.LoadView.createView">
+        <csvviewName>MMG</csvviewName>
+    </csvView>
+    <csvView handler="wt.vc.views.LoadView.createView">
+        <csvviewName>PSMG</csvviewName>
+    </csvView>
+    <csvViewAssociation handler="wt.vc.views.LoadView.associateViews">
+        <csvparentView>MMG</csvparentView>
+        <csvchildView>PSMG</csvchildView>
+    </csvViewAssociation>
+</NmLoader>

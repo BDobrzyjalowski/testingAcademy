@@ -1,0 +1,39 @@
+{
+    "name":"Folder",
+    "collectionName":"Folders",
+    "type":"wcType",
+    "wcType":"wt.folder.Folder",
+    "description":"Folders",
+    "includeInServiceDocument":false,
+	"operations":"CREATE",
+    "attributes":[
+        {    
+         "name":"Name",
+         "internalName":"name",
+         "type":"String"
+        }, {      
+         "name":"Description",
+         "internalName":"description",
+         "type":"String"
+        }, {
+         "name":"Location",
+         "internalName":"location",
+         "type":"String"
+        }
+    ],
+    "navigations":[
+        {
+         "name":"Folders",
+         "target":"Folders",
+         "type":"Folder",
+         "isCollection":true,
+         "containsTarget":true
+        }, {
+         "name":"Contents",
+         "target":"FolderContents",
+         "type":"FolderContent",
+         "isCollection":true,
+         "containsTarget":true
+        }
+    ]
+}

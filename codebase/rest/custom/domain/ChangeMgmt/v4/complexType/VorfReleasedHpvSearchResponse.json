@@ -1,0 +1,60 @@
+{
+  "name": "VorfReleasedHpvSearchResponse",
+  "description": "Response for Search for VORF Released hPV",
+  "inherits": [],
+  "attributes": [
+{
+        "name" : "ID",
+        "type":"String"
+    },
+    {
+        "name" : "HPvGuid",
+        "type":"String"
+    },
+    {
+        "name" : "Node",
+        "type":"String"
+    },
+    {
+        "name" : "GenericPart",
+        "type":"String"
+    },
+    {
+        "name" : "Class",
+        "type":"String"
+    },
+    {
+        "name" : "PVNumber",
+        "type": "String"
+    },
+    {
+        "name" : "MaterialNumber",
+        "type": "String"
+    },
+    {
+        "name" : "PartName",
+        "type": "String"
+    },
+    {
+        "name" : "Quantity",
+        "type": "Int64"
+    },
+    {
+        "name" : "Unit",
+        "type": "String"
+    },
+    {
+        "name" : "ItemExpression",
+        "type": "String"
+    },
+    {
+        "name" : "ApprovalPacketId",
+        "type": "String"
+    },
+    {
+      "name": "Derivatives",
+      "type": "VorfReleasedHpvDerivative",
+      "isCollection": true
+    }
+  ]
+}
